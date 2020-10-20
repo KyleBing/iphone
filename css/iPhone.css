@@ -1,0 +1,418 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+code,
+kbd,
+pre,
+samp,
+tt {
+  font-family: "Courier New", Courier, monospace;
+}
+
+:focus,
+:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  z-index: 50;
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #eee;
+  transition: all 0.2s;
+  height: 3px;
+}
+
+:hover::-webkit-scrollbar-thumb {
+  background-color: #dfdfdf;
+  transition: all 0.2s;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+@font-face {
+  font-family: "SF Display";
+  src: url("../font/SF-Pro-Display-Light.otf");
+}
+.code {
+  font-family: "Roboto Mono", sans-serif;
+}
+
+@font-face {
+  font-family: "SF Display";
+  src: url("../font/SF-Pro-Display-Light.otf");
+}
+.code {
+  font-family: "Roboto Mono", sans-serif;
+}
+
+.search-bar {
+  width: 20rem;
+  margin-top: 5px;
+}
+.search-bar input {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding: 5px 8px;
+  color: white;
+  transition: all 0.5s;
+}
+.search-bar input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.search-bar input:focus {
+  border-color: white;
+}
+.search-bar input:focus::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.about-header {
+  display: flex;
+  justify-content: space-between;
+}
+.about-header .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-header .icon img {
+  width: 80px;
+}
+.about-header .content {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 50px;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (max-width: 768px) {
+  .about-header {
+    margin-bottom: 20px;
+  }
+  .about-header .content {
+    margin-left: 5px;
+  }
+  .about-header .content .title {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.about {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  padding: 35px;
+  background-color: white;
+}
+.about a {
+  color: white;
+}
+.about a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .about {
+    align-items: stretch;
+    padding: 35px 20px;
+    flex-flow: column nowrap;
+  }
+}
+
+.copyright-group {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .copyright-group {
+    flex-flow: column nowrap;
+  }
+}
+
+.copyright {
+  margin-left: 30px;
+  padding: 10px 15px;
+  justify-content: space-between;
+  line-height: 1.5;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.copyright p {
+  color: rgba(255, 255, 255, 0.7);
+}
+.copyright p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .copyright {
+    margin: 0 0 10px;
+  }
+}
+
+.link:hover {
+  color: #FF2D70 !important;
+}
+.link:active {
+  transform: translateY(2px);
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    display: none;
+  }
+}
+body {
+  background-color: #eeeeee;
+  font-size: 15px;
+  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1800px;
+  background-color: white;
+}
+.iphone-list {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 30px 30px 50px 30px;
+}
+@media (max-width: 768px) {
+  .iphone-list {
+    padding: 10px;
+  }
+}
+
+.iphone {
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.iphone .content-frame {
+  flex-grow: 1;
+}
+
+.title-content {
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid #dadada;
+}
+.title-content .title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #333;
+}
+.title-content .slogan {
+  font-family: "SF Display";
+  letter-spacing: 0.3px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.ref-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-frame {
+  padding: 10px 0;
+  width: 120px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+.img-frame img {
+  width: 65px;
+  display: block;
+}
+
+.block {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-icon {
+  padding-top: 5px;
+  margin-right: 20px;
+  width: 35px;
+  height: 35px;
+}
+.block-icon img {
+  width: 100%;
+  display: block;
+}
+
+.ref-item {
+  white-space: nowrap;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 7px;
+}
+.ref-item .ref-label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #555;
+  cursor: pointer;
+}
+.ref-item .ref-content {
+  display: flex;
+  justify-content: flex-start;
+  letter-spacing: 0.25px;
+  color: #333;
+  margin-left: 15px;
+}
+
+.tip {
+  margin-right: 18px;
+}
+
+.cpu.active sub, .cpu.active sup {
+  color: #FF2D70;
+}
+.cpu.active .ref-label {
+  color: #FF2D70;
+  font-weight: bold;
+}
+.cpu.active .ref-content {
+  color: black;
+  font-weight: bold;
+}
+
+.screen.active sub, .screen.active sup {
+  color: #00b56b;
+}
+.screen.active .ref-label {
+  color: #00b56b;
+  font-weight: bold;
+}
+.screen.active .ref-content {
+  color: black;
+  font-weight: bold;
+}
+
+.wifi.active sub, .wifi.active sup {
+  color: #007AFF;
+}
+.wifi.active .ref-label {
+  color: #007AFF;
+  font-weight: bold;
+}
+.wifi.active .ref-content {
+  color: black;
+  font-weight: bold;
+}
+
+sub, sup {
+  font-size: 0.6rem;
+  margin-left: -2px;
+  vertical-align: sup;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .iphone {
+    overflow: hidden;
+    border: 1px solid #dadada;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .title-content {
+    background-color: #eeeeee;
+    padding: 10px 15px;
+    justify-content: center;
+  }
+  .title-content .slogan {
+    display: none;
+  }
+
+  .img-frame {
+    display: none;
+  }
+
+  .ref-container {
+    padding: 10px 20px;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+  }
+  .ref-container .block-icon {
+    display: none;
+  }
+  .ref-container .ref-content {
+    flex-flow: row wrap;
+  }
+
+  .block {
+    padding: 0;
+    justify-content: flex-start;
+  }
+}
+.gradient {
+  background-image: linear-gradient(to top left, #d03064, #0058a0);
+}
+
+/*# sourceMappingURL=iPhone.css.map */

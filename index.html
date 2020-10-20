@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+   <meta charset="UTF-8">
+   <meta name='description' content="iPhone 详细参数汇总">
+   <meta name='keywords' content="iPhone 详细参数汇总">
+   <title>iPhone 所有机型参数大全</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/iPhone.png" type="image/png">
+   <link rel="stylesheet" href="css/iPhone.css?v=20200917084107">
+   <link rel="apple-touch-icon" href="img/iPhone.png">
+   <script src="../../lib/js/jquery-2.2.4.min.js"></script>
+   <script src="../../lib/js/vue.min.2.6.10.js"></script>
+</head>
+<body>
+
+<div class="container" id="app" v-cloak>
+   <!--about-->
+   <div class="about gradient">
+      <div class="about-header">
+         <div class="icon">
+            <img src="img/iphone.svg" alt="">
+         </div>
+         <div class="content">
+            <h1 class="title">iPhone 参数大全</h1>
+            <div class="search-bar">
+               <input type="text" v-model="keyword" placeholder="按格式搜索： 7 / 12pro / xs">
+            </div>
+         </div>
+      </div>
+
+      <div class="copyright-group">
+         <div class="copyright">
+            <p>作者主页：<a class="link" href="https://kylebing.cn/">kylebing.cn</a></p>
+            <p>数据来源：<a class="link" href="https://en.wikipedia.org/wiki/iPhone">wikipedia.org</a></p>
+            <p>我的邮箱：<a class="link" href="mailto:kylebing@163.com">kylebing@163.com</a></p>
+         </div>
+         <div class="copyright">
+            <p>芯片参数：<a class="link" target="_blank" href="https://kylebing.cn/tools/apple-chip">苹果 A、S 系列处理器参数大全</a></p>
+            <p>iPad参数：<a class="link" target="_blank" href="https://kylebing.cn/tools/ipad">iPad 参数大全</a></p>
+            <p>最后更新：2020/10/20</p>
+         </div>
+      </div>
+   </div>
+
+   <!--content-->
+   <div class="iphone-list">
+      <div class="iphone" v-for="(iphone, index) in iphones" :key="index">
+         <div class="content-frame">
+            <div class="title-content">
+               <div class="title">{{iphone.name}}</div>
+               <div class="slogan">{{iphone.slogan}}</div>
+            </div>
+            <div class="ref-container">
+               <div class="img-frame">
+                  <img :src="`img/iphone/${iphone.pic}.png`" alt="icon">
+               </div>
+               <div class="block cpu-block">
+                  <div class="block-icon"><img :src="'img/icon/chip/'+iphone.cpu.model+'@2x.png'" alt="chip"></div>
+                  <div class="block-content">
+                     <div class="ref-item cpu" :class="[{'active': tags.some(item => item === 11)}]">
+                        <div @click="tagToggle(11)" class="ref-label">CPU</div>
+                        <div class="ref-content">
+                           <div class="tip">{{iphone.cpu.rate}} <sup>Ghz</sup> x {{iphone.cpu.core}}</div>
+                        </div>
+                     </div>
+                     <div class="ref-item cpu" :class="[{'active': tags.some(item => item === 12)}]">
+                        <div @click="tagToggle(12)" class="ref-label">GPU</div>
+                        <div class="ref-content">{{iphone.gpu.model}} x {{iphone.gpu.core}}</div>
+                     </div>
+                     <div class="ref-item cpu" :class="[{'active': tags.some(item => item === 13)}]">
+                        <div @click="tagToggle(13)" class="ref-label">内存</div>
+                        <div class="ref-content">
+                           <div class="tip">{{iphone.memory[0].size}}G <sup class="tip">{{iphone.memory[0].type}}</sup>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="ref-item cpu" :class="[{'active': tags.some(item => item === 14)}]">
+                        <div @click="tagToggle(14)" class="ref-label">日期</div>
+                        <div class="ref-content">
+                           <div class="tip">{{iphone.release}}</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="block screen-block">
+                  <div class="block-icon"><img src="img/icon/phone@2x.png" alt="screen"></div>
+                  <div class="block-content">
+                     <div class="ref-item screen" :class="[{'active': tags.some(item => item === 21)}]">
+                        <div @click="tagToggle(21)" class="ref-label">屏幕</div>
+                        <div class="ref-content">
+                           <div class="tip">{{iphone.screen_size}} <sup>寸</sup></div>
+                           <div class="tip">{{iphone.screen_density}} <sup>dpi</sup></div>
+                           <div class="tip">{{iphone.screen_resolution}} <sup>mm</sup></div>
+                        </div>
+                     </div>
+                     <div class="ref-item screen" :class="[{'active': tags.some(item => item === 22)}]">
+                        <div @click="tagToggle(22)" class="ref-label">尺寸</div>
+                        <div class="ref-content">
+                           <div class="tip">{{iphone.height}} x {{iphone.width}} x {{iphone.thickness}} <sup>mm</sup>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="ref-item screen" :class="[{'active': tags.some(item => item === 23)}]">
+                        <div @click="tagToggle(23)" class="ref-label">存储</div>
+                        <div class="ref-content">
+                           <div class="tip" v-for="(item, index) in iphone.storage" :key="index">{{item}} <sup>GB</sup>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="ref-item screen" :class="[{'active': tags.some(item => item === 24)}]">
+                        <div @click="tagToggle(24)" class="ref-label">重量</div>
+                        <div class="ref-content">
+                           <div class="tip">{{iphone.weight}} <sup>g</sup></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="block connection-block">
+                  <div class="block-icon"><img src="img/icon/wifi@2x.png" alt="wifi"></div>
+                  <div class="block-content">
+                     <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 31)}]">
+                        <div @click="tagToggle(31)" class="ref-label">连接</div>
+                        <div class="ref-content">
+                           <div class="tip" v-for="(item, index) in iphone.connectivity">{{item}}</div>
+                        </div>
+                     </div>
+                     <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 32)}]">
+                        <div @click="tagToggle(32)" class="ref-label">型号</div>
+                        <div class="ref-content">
+                           <div class="tip" v-for="(item, index) in iphone.models">{{item.name}} <sup v-if="item.type">{{item.type}}</sup></div>
+                        </div>
+                     </div>
+                     <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 33)}]">
+                        <div @click="tagToggle(33)" class="ref-label">系统</div>
+                        <div class="ref-content">
+                           <div class="tip">{{iphone.os.init}} <sup>初始</sup></div>
+                           <div class="tip">{{iphone.os.last}} <sup>最后</sup></div>
+                        </div>
+                     </div>
+                     <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 34)}]">
+                        <div @click="tagToggle(34)" class="ref-label">SIM</div>
+                        <div class="ref-content">
+                           <div class="tip">{{iphone.modem}}</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+</div>
+
+<script src="iPhone.js?v=20201019173722"></script>
+<script>
+   setTimeout(() => {
+      if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {
+
+      } else {
+         var hm = document.createElement("script");
+         hm.src = "https://hm.baidu.com/hm.js?d7bb69bd69175804550d93954dad56f0";
+         var s = document.getElementsByTagName("script")[0];
+         s.parentNode.insertBefore(hm, s);
+      }
+   }, 1000)
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+@import "variables";
+@import "reset";
+@import "utility";
+@import "mixin";
+@import "font";
+@import "about";
+
+$phone-width: 65px;
+
+body{
+  background-color: $bg-highlight;
+  font-size: 15px;
+  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
+}
+.container{
+  margin: 0 auto;
+  max-width: 1800px;
+  background-color: white;
+
+  @media (min-width: 1200px) and (max-width:1440px){
+  }
+  @media (min-width: 768px) and (max-width:1200px){
+  }
+  @media (max-width: 768px){
+  }
+}
+.searchbar{}
+.iphone-list{
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 30px 30px 50px 30px;
+  @media (max-width: 768px){
+    padding: 10px;
+  }
+}
+// LEVEL 1
+.iphone{
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  .content-frame{
+    flex-grow: 1;
+  }
+}
+// LEVEL 2
+.title-content{
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid $color-border;
+  .title{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: $text;
+  }
+  .slogan{
+    font-family: 'SF Display';
+    letter-spacing: 0.3px;
+    font-size: .8rem;
+    color: $text-label;
+  }
+}
+.ref-container{
+  display: flex;
+  justify-content: space-between;
+}
+.img-frame{
+  padding: 10px 0;
+  width: 120px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  img{
+    width: $phone-width;
+    display: block;
+  }
+}
+// LEVEL 3
+// BLOCKS
+.block{
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.cpu-block{}
+.screen-block{}
+.connection-block{
+}
+// LEVEL 4
+.block-icon{
+  padding-top: 5px;
+  margin-right: 20px;
+  width: 35px;
+  height: 35px;
+  img{
+    width: 100%;
+    display: block;
+  }
+}
+.block-content{
+}
+// LEVEL 5
+.ref-item{
+  white-space: nowrap;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 7px;
+  .ref-label{
+    @include unselectable;
+    @include border-radius(3px);
+    color: $text-label;
+    cursor: pointer;
+  }
+  .ref-content{
+    display: flex;
+    justify-content: flex-start;
+    letter-spacing: 0.25px;
+    color: $text;
+    margin-left: 15px;
+  }
+}
+// LEVEL 6
+.tip{
+  margin-right: 18px;
+}
+.cpu{
+  &.active {
+    sub,sup{
+      color: $magenta;
+    }
+    .ref-label {
+      color: $magenta;
+      font-weight: bold;
+    }
+    .ref-content {
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+.screen{
+  &.active {
+    sub,sup{
+      color: $green;
+    }
+    .ref-label {
+      color: $green;
+      font-weight: bold;
+    }
+    .ref-content {
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+.wifi{
+  &.active {
+    sub,sup{
+      color: $blue;
+    }
+    .ref-label {
+      color: $blue;
+      font-weight: bold;
+    }
+    .ref-content {
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+sub, sup{
+  font-size: 0.6rem;
+  margin-left: -2px;
+  vertical-align: sup;
+  color: $text-sup;
+}
+@media (max-width: 768px){
+  .iphone{
+    overflow: hidden;
+    border: 1px solid $color-border;
+    @include border-radius(10px);
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .title-content{
+    background-color: $bg-highlight;
+    padding: 10px 15px;
+    justify-content: center;
+    .slogan{
+      display: none;
+    }
+  }
+  .img-frame{
+    display: none;
+  }
+  .ref-container{
+    .block-icon{
+      display: none;
+    }
+    padding: 10px 20px;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    .ref-content{
+      flex-flow: row wrap;
+    }
+  }
+  .block{
+    padding: 0;
+    justify-content: flex-start;
+  }
+}
+
+.gradient{
+  //background-image: linear-gradient(to top left, #F550EC, #0A90FF);
+  background-image: linear-gradient(to top left, #d03064, #0058a0);
+  //background-image: linear-gradient(to top left, #1c1461, #ef9221);
+}
