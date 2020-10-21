@@ -64,9 +64,14 @@ body{
 }
 .ref-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
+
+
+// LEVEL 3
+// BLOCKS
 .img-frame{
+  margin-right: 50px;
   padding: 10px 0;
   width: 120px;
   flex-shrink: 0;
@@ -77,9 +82,8 @@ body{
     display: block;
   }
 }
-// LEVEL 3
-// BLOCKS
 .block{
+  margin-right: 20px;
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
