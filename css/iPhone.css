@@ -308,6 +308,7 @@ body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
+  align-items: center;
 }
 .img-frame img {
   width: 65px;
@@ -360,13 +361,21 @@ body {
 }
 
 .tip {
-  margin-left: 18px;
+  margin-right: 18px;
 }
-.tip:first-child {
-  margin-left: 0;
+.tip:last-child {
+  margin-right: 0;
 }
 .tip.little {
   font-size: 0.7rem;
+}
+@media (max-width: 768px) {
+  .tip {
+    margin-right: 10px;
+  }
+  .tip.little {
+    font-size: inherit;
+  }
 }
 
 .cpu.active sub, .cpu.active sup {

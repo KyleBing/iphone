@@ -156,7 +156,7 @@
                      <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 31)}]">
                         <div @click="tagToggle(31)" class="ref-label">连接</div>
                         <div class="ref-content" v-if="iphone.connectivity.length">
-                           <div class="tip little" v-for="(item, index) in iphone.connectivity">{{item}}</div>
+                           <div class="tip" v-for="(item, index) in iphone.connectivity">{{item}}</div>
                         </div>
                         <div class="ref-content" v-else>
                            <div class="tip">-</div>
@@ -165,7 +165,7 @@
                      <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 32)}]">
                         <div @click="tagToggle(32)" class="ref-label">网络</div>
                         <div class="ref-content"  v-if="iphone.network.length">
-                           <div class="tip little" v-for="(item, index) in iphone.network">{{item}}</div>
+                           <div class="tip" v-for="(item, index) in iphone.network">{{item}}</div>
                         </div>
                         <div class="ref-content" v-else>
                            <div class="tip">-</div>

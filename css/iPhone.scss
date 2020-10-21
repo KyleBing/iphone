@@ -78,6 +78,7 @@ body{
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
+  align-items: center;
   img{
     width: $phone-width;
     display: block;
@@ -130,12 +131,19 @@ body{
 }
 // LEVEL 6
 .tip{
-  margin-left: 18px;
-  &:first-child{
-    margin-left: 0;
+  margin-right: 18px;
+  &:last-child{
+    margin-right: 0;
   }
   &.little {
     font-size: 0.7rem;
+
+  }
+  @media (max-width: 768px){
+    margin-right: 10px;
+    &.little{
+      font-size: inherit;
+    }
   }
 
 }
