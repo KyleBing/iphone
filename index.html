@@ -38,7 +38,7 @@
          <div class="copyright">
             <p>芯片参数：<a class="link" target="_blank" href="https://kylebing.cn/tools/apple-chip">苹果处理器参数大全</a></p>
             <p>iPad参数：<a class="link" target="_blank" href="https://kylebing.cn/tools/ipad">iPad 参数大全</a></p>
-            <p>最后更新：2020/10/20</p>
+            <p>最后更新：2020/10/21</p>
          </div>
       </div>
    </div>
@@ -174,7 +174,7 @@
                      <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 33)}]">
                         <div @click="tagToggle(33)" class="ref-label">型号</div>
                         <div class="ref-content" v-if="iphone.models.length">
-                           <div class="tip-narrow" v-for="(item, index) in iphone.models">{{item.name}} <sup v-if="item.type">{{item.type}}</sup></div>
+                           <div class="tip little" v-for="(item, index) in iphone.models">{{item.name}} <sup v-if="item.type">{{item.type}}</sup></div>
                         </div>
                         <div class="ref-content" v-else >
                            <div class="tip">-</div>

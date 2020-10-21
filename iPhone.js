@@ -52,7 +52,7 @@ const iphones = [
    {
       name: "iPhone 3G",
       name_short: "3G",
-      pic: "3G",
+      pic: "3g",
       slogan: "New features, new price.",
       active: false,
       release: "2008-07-11",
@@ -98,7 +98,7 @@ const iphones = [
    {
       name: "iPhone 3Gs",
       name_short: "3Gs",
-      pic: "3Gs",
+      pic: "3gs",
       slogan: "The fastest, smartest phone yet. More to love. Less to pay.",
       active: false,
       release: "2009-06-19",
