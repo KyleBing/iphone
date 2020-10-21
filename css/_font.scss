@@ -4,6 +4,24 @@
   src: url("../font/SF-Pro-Display-Light.otf");
 }
 
+@font-face {
+  font-family: "PTSans-Narrow";
+  src: url("../font/PTSans-Narrow.ttf");
+}
+
+@font-face {
+  font-family: "Impact";
+  src: url("../font/ImpactPureNumber.ttf");
+}
+
 .code{
   font-family: 'Roboto Mono', sans-serif;
+}
+
+.narrow{
+  font-family: 'PTSans-Narrow';
+}
+
+.impact{
+  font-family: 'Impact';
 }

@@ -75,16 +75,48 @@ tt {
   font-family: "SF Display";
   src: url("../font/SF-Pro-Display-Light.otf");
 }
+@font-face {
+  font-family: "PTSans-Narrow";
+  src: url("../font/PTSans-Narrow.ttf");
+}
+@font-face {
+  font-family: "Impact";
+  src: url("../font/ImpactPureNumber.ttf");
+}
 .code {
   font-family: "Roboto Mono", sans-serif;
+}
+
+.narrow {
+  font-family: "PTSans-Narrow";
+}
+
+.impact {
+  font-family: "Impact";
 }
 
 @font-face {
   font-family: "SF Display";
   src: url("../font/SF-Pro-Display-Light.otf");
 }
+@font-face {
+  font-family: "PTSans-Narrow";
+  src: url("../font/PTSans-Narrow.ttf");
+}
+@font-face {
+  font-family: "Impact";
+  src: url("../font/ImpactPureNumber.ttf");
+}
 .code {
   font-family: "Roboto Mono", sans-serif;
+}
+
+.narrow {
+  font-family: "PTSans-Narrow";
+}
+
+.impact {
+  font-family: "Impact";
 }
 
 .search-bar {
@@ -274,7 +306,8 @@ body {
   width: 120px;
   flex-shrink: 0;
   display: flex;
-  justify-content: center;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
 }
 .img-frame img {
   width: 65px;
@@ -302,7 +335,7 @@ body {
 
 .ref-item {
   white-space: nowrap;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 7px;
@@ -327,7 +360,13 @@ body {
 }
 
 .tip {
-  margin-right: 18px;
+  margin-left: 18px;
+}
+.tip:first-child {
+  margin-left: 0;
+}
+.tip.little {
+  font-size: 0.7rem;
 }
 
 .cpu.active sub, .cpu.active sup {

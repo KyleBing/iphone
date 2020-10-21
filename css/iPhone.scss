@@ -76,7 +76,8 @@ body{
   width: 120px;
   flex-shrink: 0;
   display: flex;
-  justify-content: center;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
   img{
     width: $phone-width;
     display: block;
@@ -109,7 +110,7 @@ body{
 // LEVEL 5
 .ref-item{
   white-space: nowrap;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 7px;
@@ -129,7 +130,14 @@ body{
 }
 // LEVEL 6
 .tip{
-  margin-right: 18px;
+  margin-left: 18px;
+  &:first-child{
+    margin-left: 0;
+  }
+  &.little {
+    font-size: 0.7rem;
+  }
+
 }
 .cpu{
   &.active {

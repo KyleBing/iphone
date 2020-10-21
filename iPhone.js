@@ -496,7 +496,7 @@ const iphones = [
          {name: "A1688", type: ""},
          {name: "A1700", type: "国内"},
       ],
-      network: [],
+      network: ["GSM", "CDMA", "3G", "EVDO", "HSPA+", "LTE/4G", "LTE Advanced/4G+"],
       height: 138.3,
       width: 67.1,
       thickness: 7.1,
@@ -545,7 +545,7 @@ const iphones = [
          {name: "A1687", type: ""},
          {name: "A1699", type: "国内"},
       ],
-      network: [],
+      network: ["GSM", "CDMA", "3G", "EVDO", "HSPA+", "LTE/4G", "LTE Advanced/4G+"],
       height: 158.2,
       width: 77.9,
       thickness: 7.3,
@@ -594,7 +594,7 @@ const iphones = [
          {name: "A1778", type: "英特尔"},
          {name: "A1779", type: "日本"},
       ],
-      network: [],
+      network: ["GSM", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
       height: 138.3,
       width: 67.1,
       thickness: 7.1,
@@ -625,7 +625,7 @@ const iphones = [
          type: 'IPS LCD',
          resolution: "1334 × 750",
          density: "326",
-         touch3D: false
+         touch3D: true
       },
       connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
       prove: 'IP67',
@@ -643,7 +643,7 @@ const iphones = [
          {name: "A1784", type: "英特尔"},
          {name: "A1785", type: "日本"},
       ],
-      network: [],
+      network: ["GSM", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
       height: 158.2,
       width: 77.9,
       thickness: 7.3,
@@ -674,7 +674,7 @@ const iphones = [
          type: 'IPS LCD',
          resolution: "1920 × 1080",
          density: "401",
-         touch3D: false
+         touch3D: true
       },
       connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
       prove: 'IP67',
@@ -692,7 +692,7 @@ const iphones = [
          {name: "A1905", type: "英特尔"},
          {name: "A1906", type: "日本"},
       ],
-      network: [],
+      network: ["GSM", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
       height: 138.4,
       width: 67.3,
       thickness: 7.3,
@@ -723,10 +723,10 @@ const iphones = [
          type: 'IPS LCD',
          resolution: "1334 × 750",
          density: "326",
-         touch3D: false
+         touch3D: true
       },
       connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-      prove: 'IP',
+      prove: 'IP67',
       price: "",
    },
    {
@@ -741,7 +741,7 @@ const iphones = [
          {name: "A1907", type: "英特尔"},
          {name: "A1908", type: "日本"},
       ],
-      network: [],
+      network: ["GSM", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
       height: 158.4,
       width: 78.1,
       thickness: 7.5,
@@ -757,7 +757,7 @@ const iphones = [
          core: 6
       },
       gpu: {
-         model: "0",
+         model: "",
          core: 0
       },
       modem: '',
@@ -772,10 +772,10 @@ const iphones = [
          type: 'IPS LCD',
          resolution: "1920 × 1080",
          density: "401",
-         touch3D: false
+         touch3D: true
       },
       connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-      prove: 'IP',
+      prove: 'IP67',
       price: "",
    },
    {
@@ -790,7 +790,7 @@ const iphones = [
          {name: "A2296", type: ""},
          {name: "A2298", type: "国内"},
       ],
-      network: [],
+      network: ["GSM", "EDGE", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
       height: 138.4,
       width: 67.3,
       thickness: 7.3,
@@ -824,7 +824,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-      prove: 'IP',
+      prove: 'IP67',
       price: "",
    },
    {
@@ -839,7 +839,7 @@ const iphones = [
          {name: "A1901", type: "英特尔"},
          {name: "A1902", type: "日本"},
       ],
-      network: [],
+      network: ["GSM", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
       height: 143.6,
       width: 70.9,
       thickness: 7.7,
@@ -870,10 +870,10 @@ const iphones = [
          type: 'AMOLED',
          resolution: "2436 × 1125",
          density: "458",
-         touch3D: false
+         touch3D: true
       },
       connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-      prove: 'IP',
+      prove: 'IP67',
       price: "",
    },
    {
@@ -940,7 +940,7 @@ const iphones = [
          {name: "A2098", type: "日本"},
          {name: "A2100", type: "国内"},
       ],
-      network: [],
+      network: ["GSM", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
       height: 143.6,
       width: 70.9,
       thickness: 7.7,
@@ -974,7 +974,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: [],
-      prove: 'IP',
+      prove: 'IP68',
       price: "",
    },
    {
@@ -990,7 +990,7 @@ const iphones = [
          {name: "A2102", type: "日本"},
          {name: "A2104", type: "国内"},
       ],
-      network: [],
+      network: ["GSM", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
       height: 157.5,
       width: 77.4,
       thickness: 7.7,
@@ -1024,7 +1024,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: [],
-      prove: 'IP',
+      prove: 'IP68',
       price: "",
    },
    {
@@ -1039,7 +1039,7 @@ const iphones = [
          {name: "A2217", type: ""},
          {name: "A2215", type: ""},
       ],
-      network: [],
+      network: ["4G","LTE", "3G", "2G"],
       height: 150.9,
       width: 75.7,
       thickness: 8.3,
@@ -1073,9 +1073,10 @@ const iphones = [
          touch3D: false
       },
       connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-      prove: 'IP',
+      prove: 'IP68',
       price: "",
    },
+
    {
       name: "iPhone 11 Pro",
       name_short: "11 Pro",
@@ -1088,7 +1089,7 @@ const iphones = [
          {name: "A2217", type: ""},
          {name: "A2215", type: ""},
       ],
-      network: [],
+      network: ["4G","LTE", "3G", "2G"],
       height: 144,
       width: 71.4,
       thickness: 8.1,
@@ -1122,7 +1123,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-      prove: 'IP',
+      prove: 'IP68',
       price: "",
    },
    {
@@ -1137,7 +1138,7 @@ const iphones = [
          {name: "A2220", type: ""},
          {name: "A2218", type: ""},
       ],
-      network: [],
+      network: ["4G","LTE", "3G", "2G"],
       height: 158,
       width: 77.8,
       thickness: 8.1,
@@ -1171,7 +1172,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-      prove: 'IP',
+      prove: 'IP68',
       price: "",
    },
    {
@@ -1182,7 +1183,7 @@ const iphones = [
       active: false,
       release: "2020-10-23",
       models: [],
-      network: [],
+      network: ["5G","4G","LTE", "3G", "2G"],
       height: 131.5,
       width: 64.2,
       thickness: 7.44,
@@ -1215,7 +1216,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-      prove: 'IP',
+      prove: 'IP68',
       price: "",
    },
    {
@@ -1226,7 +1227,7 @@ const iphones = [
       active: false,
       release: "2020-10-23",
       models: [],
-      network: [],
+      network: ["5G","4G","LTE", "3G", "2G"],
       height: 146.7,
       width: 71.5,
       thickness: 7.44,
@@ -1259,7 +1260,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-      prove: 'IP',
+      prove: 'IP68',
       price: "",
    },
    {
@@ -1275,7 +1276,7 @@ const iphones = [
          {name: "A2407", type: ""},
          {name: "A2408", type: "国内"},
       ],
-      network: [],
+      network: ["5G","4G","LTE", "3G", "2G"],
       height: 146.7,
       width: 71.5,
       thickness: 7.4,
@@ -1308,7 +1309,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-      prove: 'IP',
+      prove: 'IP68',
       price: "",
    },
    {
@@ -1324,7 +1325,7 @@ const iphones = [
          {name: "A2411", type: ""},
          {name: "A2412", type: "国内"},
       ],
-      network: [],
+      network: ["5G","4G","LTE", "3G", "2G"],
       height: 160.8,
       width: 78.1,
       thickness: 7.4,
@@ -1357,7 +1358,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-      prove: 'IP',
+      prove: 'IP68',
       price: "",
    },
 ].reverse();

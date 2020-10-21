@@ -7,7 +7,7 @@
    <title>iPhone 所有机型参数大全</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="img/iPhone.png" type="image/png">
-   <link rel="stylesheet" href="css/iPhone.css?v=20200917084107">
+   <link rel="stylesheet" href="css/iPhone.css?v=20201021113912">
    <link rel="apple-touch-icon" href="img/iPhone.png">
    <script src="../../lib/js/jquery-2.2.4.min.js"></script>
    <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -36,7 +36,7 @@
             <p>我的邮箱：<a class="link" href="mailto:kylebing@163.com">kylebing@163.com</a></p>
          </div>
          <div class="copyright">
-            <p>芯片参数：<a class="link" target="_blank" href="https://kylebing.cn/tools/apple-chip">苹果 A、S 系列处理器参数大全</a></p>
+            <p>芯片参数：<a class="link" target="_blank" href="https://kylebing.cn/tools/apple-chip">苹果处理器参数大全</a></p>
             <p>iPad参数：<a class="link" target="_blank" href="https://kylebing.cn/tools/ipad">iPad 参数大全</a></p>
             <p>最后更新：2020/10/20</p>
          </div>
@@ -55,6 +55,8 @@
                <div class="img-frame">
                   <img :src="`img/iphone/${iphone.pic}.png`" alt="icon">
                </div>
+
+               <!--CPU-->
                <div class="block cpu-block">
                   <div class="block-icon" @click="tagToggle(10)">
                      <img v-if="tags.some(item => item === 10)" :src="'img/icon/chip/'+iphone.cpu.icon+'-active@2x.png'" alt="chip">
@@ -64,12 +66,16 @@
                      <div class="ref-item cpu" :class="[{'active': tags.some(item => item === 11)}]">
                         <div @click="tagToggle(11)" class="ref-label">CPU</div>
                         <div class="ref-content">
+                           <div class="tip">{{iphone.cpu.model}}</div>
                            <div class="tip">{{iphone.cpu.rate}} <sup>Ghz</sup> x {{iphone.cpu.core}}</div>
                         </div>
                      </div>
                      <div class="ref-item cpu" :class="[{'active': tags.some(item => item === 12)}]">
                         <div @click="tagToggle(12)" class="ref-label">GPU</div>
-                        <div class="ref-content">{{iphone.gpu.model}} x {{iphone.gpu.core}}</div>
+                        <div class="ref-content">
+                           <div class="tip" v-if="iphone.gpu.model">{{iphone.gpu.model}} <span v-if="iphone.gpu.core"> x {{iphone.gpu.core}}</span></div>
+                           <div class="tip" v-else>-</div>
+                        </div>
                      </div>
                      <div class="ref-item cpu" :class="[{'active': tags.some(item => item === 13)}]">
                         <div @click="tagToggle(13)" class="ref-label">内存</div>
@@ -84,8 +90,17 @@
                            <div class="tip">{{iphone.release}}</div>
                         </div>
                      </div>
+                     <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 15)}]">
+                        <div @click="tagToggle(15)" class="ref-label">SIM</div>
+                        <div class="ref-content">
+                           <div class="tip" v-if="iphone.modem">{{iphone.modem}}</div>
+                           <div class="tip" v-else >-</div>
+                        </div>
+                     </div>
                   </div>
                </div>
+
+               <!--SCREEN-->
                <div class="block screen-block">
                   <div class="block-icon" @click="tagToggle(20)">
                      <img v-if="tags.some(item => item === 20)" src="img/icon/phone-active@2x.png" alt="screen">
@@ -121,8 +136,17 @@
                            <div class="tip">{{iphone.weight}} <sup>g</sup></div>
                         </div>
                      </div>
+                     <div class="ref-item screen" :class="[{'active': tags.some(item => item === 25)}]">
+                        <div @click="tagToggle(25)" class="ref-label">电池</div>
+                        <div class="ref-content">
+                           <div class="tip" v-if="iphone.battery">{{iphone.battery}} <sup>mah</sup></div>
+                           <div class="tip" v-else>-</div>
+                        </div>
+                     </div>
                   </div>
                </div>
+
+               <!--CONNECTION-->
                <div class="block connection-block">
                   <div class="block-icon" @click="tagToggle(30)">
                      <img v-if="tags.some(item => item === 30)" src="img/icon/wifi-active@2x.png" alt="screen">
@@ -131,29 +155,47 @@
                   <div class="block-content">
                      <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 31)}]">
                         <div @click="tagToggle(31)" class="ref-label">连接</div>
-                        <div class="ref-content">
-                           <div class="tip" v-for="(item, index) in iphone.connectivity">{{item}}</div>
+                        <div class="ref-content" v-if="iphone.connectivity.length">
+                           <div class="tip little" v-for="(item, index) in iphone.connectivity">{{item}}</div>
+                        </div>
+                        <div class="ref-content" v-else>
+                           <div class="tip">-</div>
                         </div>
                      </div>
                      <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 32)}]">
-                        <div @click="tagToggle(32)" class="ref-label">型号</div>
-                        <div class="ref-content">
-                           <div class="tip" v-for="(item, index) in iphone.models">{{item.name}} <sup v-if="item.type">{{item.type}}</sup></div>
+                        <div @click="tagToggle(32)" class="ref-label">网络</div>
+                        <div class="ref-content"  v-if="iphone.network.length">
+                           <div class="tip little" v-for="(item, index) in iphone.network">{{item}}</div>
+                        </div>
+                        <div class="ref-content" v-else>
+                           <div class="tip">-</div>
                         </div>
                      </div>
                      <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 33)}]">
-                        <div @click="tagToggle(33)" class="ref-label">系统</div>
+                        <div @click="tagToggle(33)" class="ref-label">型号</div>
+                        <div class="ref-content" v-if="iphone.models.length">
+                           <div class="tip-narrow" v-for="(item, index) in iphone.models">{{item.name}} <sup v-if="item.type">{{item.type}}</sup></div>
+                        </div>
+                        <div class="ref-content" v-else >
+                           <div class="tip">-</div>
+                        </div>
+                     </div>
+                     <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 34)}]">
+                        <div @click="tagToggle(34)" class="ref-label">系统</div>
                         <div class="ref-content">
                            <div class="tip">{{iphone.os.init}} <sup>初始</sup></div>
                            <div class="tip">{{iphone.os.last}} <sup>最后</sup></div>
                         </div>
                      </div>
-                     <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 34)}]">
-                        <div @click="tagToggle(34)" class="ref-label">SIM</div>
+                     <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 35)}]">
+                        <div @click="tagToggle(35)" class="ref-label">其它</div>
                         <div class="ref-content">
-                           <div class="tip">{{iphone.modem}}</div>
+                           <div class="tip">{{iphone.port}}</div>
+                           <div class="tip" v-if="iphone.screen.touch3D">压感屏幕</div>
+                           <div class="tip" v-if="iphone.prove">{{iphone.prove}} <sup>防水级别</sup></div>
                         </div>
                      </div>
+
                   </div>
                </div>
             </div>
@@ -163,7 +205,7 @@
 
 </div>
 
-<script src="iPhone.js?v=20201019173722"></script>
+<script src="iPhone.js?v=20201021113912"></script>
 <script>
    setTimeout(() => {
       if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {
