@@ -56,7 +56,10 @@
                   <img :src="`img/iphone/${iphone.pic}.png`" alt="icon">
                </div>
                <div class="block cpu-block">
-                  <div class="block-icon"><img :src="'img/icon/chip/'+iphone.cpu.model+'@2x.png'" alt="chip"></div>
+                  <div class="block-icon" @click="tagToggle(10)">
+                     <img v-if="tags.some(item => item === 10)" :src="'img/icon/chip/'+iphone.cpu.model+'-active@2x.png'" alt="chip">
+                     <img v-else :src="'img/icon/chip/'+iphone.cpu.model+'@2x.png'" alt="chip">
+                  </div>
                   <div class="block-content">
                      <div class="ref-item cpu" :class="[{'active': tags.some(item => item === 11)}]">
                         <div @click="tagToggle(11)" class="ref-label">CPU</div>
@@ -84,21 +87,25 @@
                   </div>
                </div>
                <div class="block screen-block">
-                  <div class="block-icon"><img src="img/icon/phone@2x.png" alt="screen"></div>
+                  <div class="block-icon" @click="tagToggle(20)">
+                     <img v-if="tags.some(item => item === 20)" src="img/icon/phone-active@2x.png" alt="screen">
+                     <img v-else src="img/icon/phone@2x.png" alt="screen">
+                  </div>
                   <div class="block-content">
                      <div class="ref-item screen" :class="[{'active': tags.some(item => item === 21)}]">
                         <div @click="tagToggle(21)" class="ref-label">屏幕</div>
                         <div class="ref-content">
-                           <div class="tip">{{iphone.screen_size}} <sup>寸</sup></div>
-                           <div class="tip">{{iphone.screen_density}} <sup>dpi</sup></div>
-                           <div class="tip">{{iphone.screen_resolution}} <sup>mm</sup></div>
+                           <div class="tip">{{iphone.screen.type}}</div>
+                           <div class="tip">{{iphone.screen.density}} <sup>dpi</sup></div>
+                           <div class="tip">{{iphone.screen.resolution}} <sup>mm</sup></div>
                         </div>
                      </div>
                      <div class="ref-item screen" :class="[{'active': tags.some(item => item === 22)}]">
                         <div @click="tagToggle(22)" class="ref-label">尺寸</div>
                         <div class="ref-content">
-                           <div class="tip">{{iphone.height}} x {{iphone.width}} x {{iphone.thickness}} <sup>mm</sup>
-                           </div>
+                           <div class="tip">{{iphone.height}} x {{iphone.width}} x {{iphone.thickness}} <sup>mm</sup></div>
+                           <div class="tip">{{iphone.screen.size}} <sup>寸</sup></div>
+
                         </div>
                      </div>
                      <div class="ref-item screen" :class="[{'active': tags.some(item => item === 23)}]">
@@ -117,7 +124,10 @@
                   </div>
                </div>
                <div class="block connection-block">
-                  <div class="block-icon"><img src="img/icon/wifi@2x.png" alt="wifi"></div>
+                  <div class="block-icon" @click="tagToggle(30)">
+                     <img v-if="tags.some(item => item === 30)" src="img/icon/wifi-active@2x.png" alt="screen">
+                     <img v-else src="img/icon/wifi@2x.png" alt="screen">
+                  </div>
                   <div class="block-content">
                      <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 31)}]">
                         <div @click="tagToggle(31)" class="ref-label">连接</div>
