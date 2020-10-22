@@ -1381,7 +1381,8 @@ let app = new Vue({
       iphonesOrigin: iphones,
 
       tags: [],
-      keyword: ''
+      keyword: '',
+      tipShowed: false,
    },
    mounted: function () {
       // 全屏相关
@@ -1407,6 +1408,10 @@ let app = new Vue({
       // 全屏显示
       enterFullScreen: function () {
          document.documentElement.requestFullscreen();
+      },
+
+      toggleTip(show){
+         this.tipShowed = show;
       },
 
       filterIphone() {

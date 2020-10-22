@@ -23,6 +23,44 @@
   }
 }
 
+.hands-up{
+  position: relative;
+  &-trigger{
+    @include unselectable;
+    cursor: pointer;
+    padding: 5px 10px;
+    @include border-radius(2px);
+    border: 1px solid transparentize(white, 0.7);
+    &.active{
+      background-color:transparentize(white, 0.5);
+    }
+    &:hover{
+      border-color: transparentize(white, 0.5);
+    }
+  }
+  &-panel{
+    @include box-shadow(2px 3px 10px rgba(0,0,0,0.2));
+    padding: 20px 25px;
+    color: $text-label;
+    @include border-radius(8px);
+    left: 120%;
+    top: -50%;
+    background-color: white;
+    position: absolute;
+    p{
+      white-space: nowrap;
+    }
+    code{
+      color: $blue;
+      font-weight: bold;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
 
 
 .about-header{

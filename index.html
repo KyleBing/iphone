@@ -26,7 +26,17 @@
             <div class="search-bar">
                <input type="text" v-model="keyword" placeholder="按格式搜索： 7 / 12pro / xs">
             </div>
-            <p>点击参数的标题试试？</p>
+            <div class="hands-up">
+               <div class="hands-up-trigger"
+                    :class="[{active: tipShowed}]"
+                    @mouseenter="toggleTip(true)"
+                    @mouseleave="toggleTip(false)">说明</div>
+               <div class="hands-up-panel" v-show="tipShowed">
+                  <p><code>12 / 11</code> 会搜索出 <code>12、12mini、12pro、12proMax、11、11pro、11proMax</code></p>
+                  <p>在前面加个 <code>#</code> 精确匹配，<code># 12 / 11</code>，只搜索出 <code>12、11</code></p>
+                  <p>点击参数标题，高亮该参数</p>
+               </div>
+            </div>
          </div>
       </div>
 
@@ -74,7 +84,8 @@
                      <div class="ref-item cpu" :class="[{'active': tags.some(item => item === 12)}]">
                         <div @click="tagToggle(12)" class="ref-label">GPU</div>
                         <div class="ref-content">
-                           <div class="tip" v-if="iphone.gpu.model">{{iphone.gpu.model}} <span v-if="iphone.gpu.core"> x {{iphone.gpu.core}}</span></div>
+                           <div class="tip" v-if="iphone.gpu.model">{{iphone.gpu.model}}
+                              <span v-if="iphone.gpu.core"> x {{iphone.gpu.core}}</span></div>
                            <div class="tip" v-else>-</div>
                         </div>
                      </div>
@@ -95,7 +106,7 @@
                         <div @click="tagToggle(15)" class="ref-label">SIM</div>
                         <div class="ref-content">
                            <div class="tip" v-if="iphone.modem">{{iphone.modem}}</div>
-                           <div class="tip" v-else >-</div>
+                           <div class="tip" v-else>-</div>
                         </div>
                      </div>
                   </div>
@@ -119,7 +130,8 @@
                      <div class="ref-item screen" :class="[{'active': tags.some(item => item === 22)}]">
                         <div @click="tagToggle(22)" class="ref-label">尺寸</div>
                         <div class="ref-content">
-                           <div class="tip">{{iphone.height}} x {{iphone.width}} x {{iphone.thickness}} <sup>mm</sup></div>
+                           <div class="tip">{{iphone.height}} x {{iphone.width}} x {{iphone.thickness}} <sup>mm</sup>
+                           </div>
                            <div class="tip">{{iphone.screen.size}} <sup>寸</sup></div>
 
                         </div>
@@ -165,7 +177,7 @@
                      </div>
                      <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 32)}]">
                         <div @click="tagToggle(32)" class="ref-label">网络</div>
-                        <div class="ref-content"  v-if="iphone.network.length">
+                        <div class="ref-content" v-if="iphone.network.length">
                            <div class="tip" v-for="(item, index) in iphone.network">{{item}}</div>
                         </div>
                         <div class="ref-content" v-else>
@@ -175,9 +187,10 @@
                      <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 33)}]">
                         <div @click="tagToggle(33)" class="ref-label">型号</div>
                         <div class="ref-content" v-if="iphone.models.length">
-                           <div class="tip little" v-for="(item, index) in iphone.models">{{item.name}} <sup v-if="item.type">{{item.type}}</sup></div>
+                           <div class="tip little" v-for="(item, index) in iphone.models">{{item.name}}
+                              <sup v-if="item.type">{{item.type}}</sup></div>
                         </div>
-                        <div class="ref-content" v-else >
+                        <div class="ref-content" v-else>
                            <div class="tip">-</div>
                         </div>
                      </div>

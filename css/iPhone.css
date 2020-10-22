@@ -145,6 +145,54 @@ tt {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.hands-up {
+  position: relative;
+}
+.hands-up-trigger {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.hands-up-trigger.active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.hands-up-trigger:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.hands-up-panel {
+  -webkit-box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 25px;
+  color: #555;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  left: 120%;
+  top: -50%;
+  background-color: white;
+  position: absolute;
+}
+.hands-up-panel p {
+  white-space: nowrap;
+}
+.hands-up-panel code {
+  color: #007AFF;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .hands-up {
+    display: none;
+  }
+}
+
 .about-header {
   display: flex;
   justify-content: space-between;
