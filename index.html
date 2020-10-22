@@ -7,7 +7,7 @@
    <title>iPhone 所有机型参数大全</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="img/iPhone.png" type="image/png">
-   <link rel="stylesheet" href="css/iPhone.css?v=20201021113912">
+   <link rel="stylesheet" href="css/iPhone.css?v=20201022110759">
    <link rel="apple-touch-icon" href="img/iPhone.png">
    <script src="../../lib/js/jquery-2.2.4.min.js"></script>
    <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -15,7 +15,7 @@
 <body>
 
 <div class="container" id="app" v-cloak>
-   <!--about-->
+   <!--ABOUT-->
    <div class="about gradient">
       <div class="about-header">
          <div class="icon">
@@ -26,6 +26,7 @@
             <div class="search-bar">
                <input type="text" v-model="keyword" placeholder="按格式搜索： 7 / 12pro / xs">
             </div>
+            <p>点击参数的标题试试？</p>
          </div>
       </div>
 
@@ -43,7 +44,7 @@
       </div>
    </div>
 
-   <!--content-->
+   <!--CONTENT-->
    <div class="iphone-list">
       <div class="iphone" v-for="(iphone, index) in iphones" :key="index">
          <div class="content-frame">
@@ -205,7 +206,7 @@
 
 </div>
 
-<script src="iPhone.js?v=20201021113912"></script>
+<script src="iPhone.js?v=20201022110759"></script>
 <script>
    setTimeout(() => {
       if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {

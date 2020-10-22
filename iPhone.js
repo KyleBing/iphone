@@ -1207,6 +1207,7 @@ const iphones = [
          {size: "4", type: "LPDDR4X"}
       ],
       storage: ["64", "128", "256"],
+      battery: '',
       port: '闪电',
       screen: {
          size: "5.4",
@@ -1251,6 +1252,7 @@ const iphones = [
          {size: "4", type: "LPDDR4X"}
       ],
       storage: ["64", "128", "256"],
+      battery: '2815',
       port: '闪电',
       screen: {
          size: "6.1",
@@ -1300,6 +1302,7 @@ const iphones = [
          {size: "6", type: "LPDDR4X"}
       ],
       storage: ["128", "256", "512"],
+      battery: '',
       port: '闪电',
       screen: {
          size: "6.06",
@@ -1314,7 +1317,7 @@ const iphones = [
    },
    {
       name: "iPhone 12 Pro Max ",
-      name_short: "12",
+      name_short: "12 Pro Max",
       pic: "12pro",
       slogan: "It's a leap year.",
       active: false,
@@ -1349,6 +1352,7 @@ const iphones = [
          {size: "6", type: "LPDDR4X"}
       ],
       storage: ["128", "256", "512"],
+      battery: '3687',
       port: '闪电',
       screen: {
          size: "6.68",
@@ -1404,15 +1408,28 @@ let app = new Vue({
       enterFullScreen: function () {
          document.documentElement.requestFullscreen();
       },
+
       filterIphone() {
          if (this.keyword) {
-            let finalKeyword = this.keyword.replace(/ /ig, '');
+            let finalKeyword;
+            // 以 # 开头为精确查找，匹配整个字符串，少或多都不匹配
+            if(this.keyword.indexOf('#') >= 0){
+               finalKeyword = this.keyword.replace('#', '').replace(/ /ig, '');
+            } else {
+               finalKeyword = this.keyword.replace(/ /ig, '');
+            }
             this.keywordArray = finalKeyword.split('/');
             let tempCollection = [];
             this.keywordArray.forEach(name => {
                this.iphonesOrigin.forEach(iphone => {
+                  let reg = null;
+                  // reg 匹配模式
+                  if(this.keyword.indexOf('#') >= 0){
+                     reg = new RegExp(`^${name}$`, 'ig');
+                  } else {
+                     reg = new RegExp(name, 'ig');
+                  }
                   let nameShort = iphone.name_short.replace(/ /ig, '');
-                  let reg = new RegExp(name, 'ig');
                   if (reg.test(nameShort)) {
                      tempCollection.push(iphone);
                   }

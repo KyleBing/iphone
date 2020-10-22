@@ -122,6 +122,7 @@ tt {
 .search-bar {
   width: 20rem;
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 .search-bar input {
   -webkit-border-radius: 2px;
@@ -163,6 +164,12 @@ tt {
   margin-left: 50px;
   justify-content: center;
   align-items: flex-start;
+}
+.about-header .content p {
+  margin-bottom: 5px;
+}
+.about-header .content p:last-child {
+  margin-bottom: 0;
 }
 @media (max-width: 768px) {
   .about-header {
@@ -351,6 +358,9 @@ body {
   border-radius: 3px;
   color: #555;
   cursor: pointer;
+}
+.ref-item .ref-label:hover {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 .ref-item .ref-content {
   display: flex;
