@@ -628,7 +628,7 @@ const iphones = [
          touch3D: true
       },
       connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-      prove: 'IP67',
+      prove: 'IPX67',
       price: "",
    },
    {
@@ -677,7 +677,7 @@ const iphones = [
          touch3D: true
       },
       connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-      prove: 'IP67',
+      prove: 'IPX67',
       price: "",
    },
    {
@@ -726,7 +726,7 @@ const iphones = [
          touch3D: true
       },
       connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-      prove: 'IP67',
+      prove: 'IPX67',
       price: "",
    },
    {
@@ -775,7 +775,7 @@ const iphones = [
          touch3D: true
       },
       connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-      prove: 'IP67',
+      prove: 'IPX67',
       price: "",
    },
    {
@@ -824,7 +824,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-      prove: 'IP67',
+      prove: 'IPX67',
       price: "",
    },
    {
@@ -873,7 +873,7 @@ const iphones = [
          touch3D: true
       },
       connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-      prove: 'IP67',
+      prove: 'IPX67',
       price: "",
    },
    {
@@ -924,7 +924,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: [],
-      prove: 'IP',
+      prove: 'IPX',
       price: "",
    },
    {
@@ -974,7 +974,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: [],
-      prove: 'IP68',
+      prove: 'IPX68',
       price: "",
    },
    {
@@ -1024,7 +1024,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: [],
-      prove: 'IP68',
+      prove: 'IPX68',
       price: "",
    },
    {
@@ -1073,7 +1073,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-      prove: 'IP68',
+      prove: 'IPX68',
       price: "",
    },
 
@@ -1123,7 +1123,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-      prove: 'IP68',
+      prove: 'IPX68',
       price: "",
    },
    {
@@ -1172,7 +1172,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-      prove: 'IP68',
+      prove: 'IPX68',
       price: "",
    },
    {
@@ -1207,7 +1207,7 @@ const iphones = [
          {size: "4", type: "LPDDR4X"}
       ],
       storage: ["64", "128", "256"],
-      battery: '',
+      battery: '2227',
       port: '闪电',
       screen: {
          size: "5.4",
@@ -1217,7 +1217,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-      prove: 'IP68',
+      prove: 'IPX68',
       price: "",
    },
    {
@@ -1252,7 +1252,7 @@ const iphones = [
          {size: "4", type: "LPDDR4X"}
       ],
       storage: ["64", "128", "256"],
-      battery: '2815',
+      battery: '2851',
       port: '闪电',
       screen: {
          size: "6.1",
@@ -1262,7 +1262,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-      prove: 'IP68',
+      prove: 'IPX68',
       price: "",
    },
    {
@@ -1302,7 +1302,7 @@ const iphones = [
          {size: "6", type: "LPDDR4X"}
       ],
       storage: ["128", "256", "512"],
-      battery: '',
+      battery: '2815',
       port: '闪电',
       screen: {
          size: "6.06",
@@ -1312,7 +1312,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-      prove: 'IP68',
+      prove: 'IPX68',
       price: "",
    },
    {
@@ -1362,7 +1362,7 @@ const iphones = [
          touch3D: false
       },
       connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-      prove: 'IP68',
+      prove: 'IPX68',
       price: "",
    },
 ].reverse();

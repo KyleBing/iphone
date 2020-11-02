@@ -7,7 +7,7 @@
    <title>iPhone 所有机型参数大全</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="img/iPhone.png" type="image/png">
-   <link rel="stylesheet" href="css/iPhone.css?v=20201022110759">
+   <link rel="stylesheet" href="css/iPhone.css?v=20201102132514">
    <link rel="apple-touch-icon" href="img/iPhone.png">
    <script src="../../lib/js/jquery-2.2.4.min.js"></script>
    <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -31,7 +31,7 @@
                     :class="[{active: tipShowed}]"
                     @mouseenter="toggleTip(true)"
                     @mouseleave="toggleTip(false)">说明</div>
-               <div class="hands-up-panel" v-show="tipShowed">
+               <div class="hands-up-panel" v-show="tipShowed" style="display: none">
                   <p><code>12 / 11</code> 会搜索出 <code>12、12mini、12pro、12proMax、11、11pro、11proMax</code></p>
                   <p>在前面加个 <code>#</code> 精确匹配，<code># 12 / 11</code>，只搜索出 <code>12、11</code></p>
                   <p>点击参数标题，高亮该参数</p>
@@ -219,7 +219,7 @@
 
 </div>
 
-<script src="iPhone.js?v=20201022110759"></script>
+<script src="iPhone.js?v=20201102132514"></script>
 <script>
    setTimeout(() => {
       if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {
