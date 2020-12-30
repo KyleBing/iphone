@@ -14,7 +14,7 @@ body{
 }
 .container{
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1920px;
   background-color: white;
 
   @media (min-width: 1200px) and (max-width:1440px){
@@ -22,6 +22,7 @@ body{
   @media (min-width: 768px) and (max-width:1200px){
   }
   @media (max-width: 768px){
+    background-color: transparent;
   }
 }
 .searchbar{}
@@ -30,7 +31,7 @@ body{
   max-width: 1280px;
   padding: 30px 30px 50px 30px;
   @media (max-width: 768px){
-    padding: 10px;
+    padding: 20px 10px;
   }
 }
 // LEVEL 1
@@ -205,14 +206,20 @@ sub, sup{
   color: $text-sup;
 }
 @media (max-width: 768px){
+  body{
+    background-color: $color-border;
+  }
   .iphone{
     overflow: hidden;
-    border: 1px solid $color-border;
-    @include border-radius(10px);
+    @include border-radius(5px);
+    background-color: white;
     margin-bottom: 20px;
     padding: 0;
+    border: 1px solid $color-border;
   }
   .title-content{
+    border-bottom: none;
+    border-bottom: 1px solid $color-border;
     background-color: $bg-highlight;
     padding: 10px 15px;
     justify-content: center;

@@ -223,6 +223,9 @@ tt {
   .about-header {
     margin-bottom: 20px;
   }
+  .about-header .icon {
+    display: none;
+  }
   .about-header .content {
     margin-left: 5px;
   }
@@ -250,7 +253,7 @@ tt {
 @media (max-width: 768px) {
   .about {
     align-items: stretch;
-    padding: 35px 20px;
+    padding: 35px 25px 25px;
     flex-flow: column nowrap;
   }
 }
@@ -283,6 +286,11 @@ tt {
 }
 @media (max-width: 768px) {
   .copyright {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
     margin: 0 0 10px;
   }
 }
@@ -307,9 +315,15 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1920px;
   background-color: white;
 }
+@media (max-width: 768px) {
+  .container {
+    background-color: transparent;
+  }
+}
+
 .iphone-list {
   margin: 0 auto;
   max-width: 1280px;
@@ -317,7 +331,7 @@ body {
 }
 @media (max-width: 768px) {
   .iphone-list {
-    padding: 10px;
+    padding: 20px 10px;
   }
 }
 
@@ -481,17 +495,24 @@ sub, sup {
 }
 
 @media (max-width: 768px) {
+  body {
+    background-color: #dadada;
+  }
+
   .iphone {
     overflow: hidden;
-    border: 1px solid #dadada;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: white;
     margin-bottom: 20px;
     padding: 0;
+    border: 1px solid #dadada;
   }
 
   .title-content {
+    border-bottom: none;
+    border-bottom: 1px solid #dadada;
     background-color: #eeeeee;
     padding: 10px 15px;
     justify-content: center;
