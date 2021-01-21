@@ -129,7 +129,7 @@ tt {
   -moz-border-radius: 2px;
   border-radius: 2px;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   width: 100%;
   padding: 5px 8px;
   color: white;
@@ -139,7 +139,7 @@ tt {
   color: rgba(255, 255, 255, 0.5);
 }
 .search-bar input:focus {
-  border-color: white;
+  border-color: rgba(255, 255, 255, 0.8);
 }
 .search-bar input:focus::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.8);
@@ -158,7 +158,7 @@ tt {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .hands-up-trigger.active {
   background-color: rgba(255, 255, 255, 0.5);
@@ -201,9 +201,10 @@ tt {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 30px;
 }
 .about-header .icon img {
-  width: 80px;
+  width: 50px;
 }
 .about-header .content {
   flex-grow: 1;
@@ -275,8 +276,10 @@ tt {
   line-height: 1.5;
   font-size: 12px;
   letter-spacing: 0.5px;
-  background-color: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .copyright p {
   color: rgba(255, 255, 255, 0.7);
