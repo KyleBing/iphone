@@ -114,6 +114,7 @@ body{
   white-space: nowrap;
   font-size: 0.85rem;
   display: flex;
+  align-items: flex-end;
   justify-content: flex-start;
   margin-bottom: 7px;
   .ref-label{
@@ -129,6 +130,7 @@ body{
   .ref-content{
     display: flex;
     justify-content: flex-start;
+    align-items: flex-end;
     letter-spacing: 0.25px;
     color: $text;
     margin-left: 15px;
@@ -201,7 +203,7 @@ body{
 }
 sub, sup{
   font-size: 0.6rem;
-  margin-left: -2px;
+  padding-left: 2px;
   vertical-align: sup;
   color: $text-sup;
 }
