@@ -80,14 +80,14 @@
                      <img v-else :src="'img/icon/chip/'+iphone.cpu.icon+'@2x.png'" alt="chip">
                   </div>
                   <div class="block-content">
-                     <div class="ref-item cpu" :class="[{'active': tags.some(item => item === 11)}]">
+                     <div class="ref-item cpu" :class="[{active: tags.some(item => item === 11)}]">
                         <div @click="tagToggle(11)" class="ref-label">CPU</div>
                         <div class="ref-content">
                            <div class="tip">{{iphone.cpu.model}}</div>
                            <div class="tip">{{iphone.cpu.rate}}<sup>Ghz</sup> x {{iphone.cpu.core}}</div>
                         </div>
                      </div>
-                     <div class="ref-item cpu" :class="[{'active': tags.some(item => item === 12)}]">
+                     <div class="ref-item cpu" :class="[{active: tags.some(item => item === 12)}]">
                         <div @click="tagToggle(12)" class="ref-label">GPU</div>
                         <div class="ref-content">
                            <div class="tip" v-if="iphone.gpu.model">{{iphone.gpu.model}}
@@ -95,20 +95,20 @@
                            <div class="tip" v-else>-</div>
                         </div>
                      </div>
-                     <div class="ref-item cpu" :class="[{'active': tags.some(item => item === 13)}]">
+                     <div class="ref-item cpu" :class="[{active: tags.some(item => item === 13)}]">
                         <div @click="tagToggle(13)" class="ref-label">内存</div>
                         <div class="ref-content">
                            <div class="tip">{{iphone.memory[0].size}}G<sup class="tip">{{iphone.memory[0].type}}</sup>
                            </div>
                         </div>
                      </div>
-                     <div class="ref-item cpu" :class="[{'active': tags.some(item => item === 14)}]">
+                     <div class="ref-item cpu" :class="[{active: tags.some(item => item === 14)}]">
                         <div @click="tagToggle(14)" class="ref-label">日期</div>
                         <div class="ref-content">
                            <div class="tip">{{iphone.release}}</div>
                         </div>
                      </div>
-                     <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 15)}]">
+                     <div class="ref-item cpu" :class="[{active: tags.some(item => item === 15)}]">
                         <div @click="tagToggle(15)" class="ref-label">SIM</div>
                         <div class="ref-content">
                            <div class="tip" v-if="iphone.modem">{{iphone.modem}}</div>
@@ -125,7 +125,7 @@
                      <img v-else src="img/icon/phone@2x.png" alt="screen">
                   </div>
                   <div class="block-content">
-                     <div class="ref-item screen" :class="[{'active': tags.some(item => item === 21)}]">
+                     <div class="ref-item screen" :class="[{active: tags.some(item => item === 21)}]">
                         <div @click="tagToggle(21)" class="ref-label">屏幕</div>
                         <div class="ref-content">
                            <div class="tip">{{iphone.screen.type}}</div>
@@ -133,7 +133,7 @@
                            <div class="tip">{{iphone.screen.resolution}}<sup>mm</sup></div>
                         </div>
                      </div>
-                     <div class="ref-item screen" :class="[{'active': tags.some(item => item === 22)}]">
+                     <div class="ref-item screen" :class="[{active: tags.some(item => item === 22)}]">
                         <div @click="tagToggle(22)" class="ref-label">尺寸</div>
                         <div class="ref-content">
                            <div class="tip">{{iphone.height}}<sup>高</sup></div>
@@ -143,20 +143,20 @@
 
                         </div>
                      </div>
-                     <div class="ref-item screen" :class="[{'active': tags.some(item => item === 23)}]">
+                     <div class="ref-item screen" :class="[{active: tags.some(item => item === 23)}]">
                         <div @click="tagToggle(23)" class="ref-label">存储</div>
                         <div class="ref-content">
                            <div class="tip" v-for="(item, index) in iphone.storage" :key="index">{{item}}<sup>GB</sup>
                            </div>
                         </div>
                      </div>
-                     <div class="ref-item screen" :class="[{'active': tags.some(item => item === 24)}]">
+                     <div class="ref-item screen" :class="[{active: tags.some(item => item === 24)}]">
                         <div @click="tagToggle(24)" class="ref-label">重量</div>
                         <div class="ref-content">
                            <div class="tip">{{iphone.weight}}<sup>g</sup></div>
                         </div>
                      </div>
-                     <div class="ref-item screen" :class="[{'active': tags.some(item => item === 25)}]">
+                     <div class="ref-item screen" :class="[{active: tags.some(item => item === 25)}]">
                         <div @click="tagToggle(25)" class="ref-label">电池</div>
                         <div class="ref-content">
                            <div class="tip" v-if="iphone.battery">{{iphone.battery}}<sup>mah</sup></div>
@@ -173,7 +173,7 @@
                      <img v-else src="img/icon/wifi@2x.png" alt="screen">
                   </div>
                   <div class="block-content">
-                     <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 31)}]">
+                     <div class="ref-item wifi" :class="[{active: tags.some(item => item === 31)}]">
                         <div @click="tagToggle(31)" class="ref-label">连接</div>
                         <div class="ref-content" v-if="iphone.connectivity.length">
                            <div class="tip" v-for="(item, index) in iphone.connectivity">{{item}}</div>
@@ -182,7 +182,7 @@
                            <div class="tip">-</div>
                         </div>
                      </div>
-                     <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 32)}]">
+                     <div class="ref-item wifi" :class="[{active: tags.some(item => item === 32)}]">
                         <div @click="tagToggle(32)" class="ref-label">网络</div>
                         <div class="ref-content" v-if="iphone.network.length">
                            <div class="tip" v-for="(item, index) in iphone.network">{{item}}</div>
@@ -191,7 +191,7 @@
                            <div class="tip">-</div>
                         </div>
                      </div>
-                     <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 33)}]">
+                     <div class="ref-item wifi" :class="[{active: tags.some(item => item === 33)}]">
                         <div @click="tagToggle(33)" class="ref-label">型号</div>
                         <div class="ref-content" v-if="iphone.models.length">
                            <div class="tip little" v-for="(item, index) in iphone.models">{{item.name}}<sup v-if="item.type">{{item.type}}</sup></div>
@@ -200,14 +200,14 @@
                            <div class="tip">-</div>
                         </div>
                      </div>
-                     <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 34)}]">
+                     <div class="ref-item wifi" :class="[{active: tags.some(item => item === 34)}]">
                         <div @click="tagToggle(34)" class="ref-label">系统</div>
                         <div class="ref-content">
                            <div class="tip">{{iphone.os.init}}<sup>初始</sup></div>
                            <div class="tip">{{iphone.os.last}}<sup>最后</sup></div>
                         </div>
                      </div>
-                     <div class="ref-item wifi" :class="[{'active': tags.some(item => item === 35)}]">
+                     <div class="ref-item wifi" :class="[{active: tags.some(item => item === 35)}]">
                         <div @click="tagToggle(35)" class="ref-label">其它</div>
                         <div class="ref-content">
                            <div class="tip">{{iphone.port}}<sup>接口</sup></div>
