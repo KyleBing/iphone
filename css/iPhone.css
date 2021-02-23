@@ -72,10 +72,6 @@ tt {
 }
 
 @font-face {
-  font-family: "SF Display";
-  src: url("../font/SF-Pro-Display-Light.otf");
-}
-@font-face {
   font-family: "PTSans-Narrow";
   src: url("../font/PTSans-Narrow.ttf");
 }
@@ -95,10 +91,6 @@ tt {
   font-family: "Impact";
 }
 
-@font-face {
-  font-family: "SF Display";
-  src: url("../font/SF-Pro-Display-Light.otf");
-}
 @font-face {
   font-family: "PTSans-Narrow";
   src: url("../font/PTSans-Narrow.ttf");
@@ -361,7 +353,7 @@ body {
   color: #333;
 }
 .title-content .slogan {
-  font-family: "SF Display";
+  font-weight: 200;
   letter-spacing: 0.3px;
   font-size: 0.8rem;
   color: #9e9e9e;
