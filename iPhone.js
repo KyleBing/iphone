@@ -583,6 +583,55 @@ const iphones = [
       price: "",
    },
    {
+      name: "iPhone SE",
+      name_short: "SE",
+      pic: "SE",
+      slogan: "A big step for small.",
+      active: false,
+      release: "2016-03-31",
+      models: [
+         {name: "A1662", type: "美，加"},
+         {name: "A1723", type: "Sprint"},
+         {name: "A1724", type: "国内"},
+      ],
+      network: ["GSM", "EDGE", "EV-DO", "HSPA+"],
+      height: 123.8,
+      width: 58.6,
+      thickness: 7.6,
+      weight: 113,
+      os: {
+         init: "iOS 9.3",
+         last: "iOS 14.4.2"
+      },
+      cpu: {
+         icon: 'A9',
+         model: 'A9',
+         rate: '1.84',
+         core: 2
+      },
+      gpu: {
+         model: "PowerVR GT7600 ",
+         core: 6
+      },
+      modem: '',
+      memory: [
+         {size: "2", type: "LPDDR4"}
+      ],
+      storage: ["16", "32", "64","128"],
+      battery: '1624',
+      port: '闪电',
+      screen: {
+         size: "4.0",
+         type: 'IPS',
+         resolution: "1136 × 640",
+         density: "326",
+         touch3D: false
+      },
+      connectivity: ["2G", "3G", "4G","Wi-Fi", "蓝牙 4.2"],
+      prove: '',
+      price: "",
+   },
+   {
       name: "iPhone 7",
       name_short: "7",
       pic: "7",
@@ -809,7 +858,7 @@ const iphones = [
          model: "Apple",
          core: 4
       },
-      modem: '双卡 eSIM',
+      modem: '',
       memory: [
          {size: "3", type: "LPDDR4X"}
       ],
