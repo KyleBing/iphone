@@ -16,7 +16,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #404040;
 }
 
 table {
@@ -72,43 +72,35 @@ tt {
 }
 
 @font-face {
-  font-family: "PTSans-Narrow";
-  src: url("../font/PTSans-Narrow.ttf");
+  font-family: "Impact";
+  src: url("../font/ImpactPureNumber.ttf");
 }
+@font-face {
+  font-family: "LLPixel";
+  src: url("../font/LLPixel_only_Letter.ttf");
+}
+@font-face {
+  font-family: "Galvji";
+  src: url("../font/Galvji.ttc");
+}
+.impact {
+  font-family: "Impact", sans-serif !important;
+}
+
 @font-face {
   font-family: "Impact";
   src: url("../font/ImpactPureNumber.ttf");
 }
-.code {
-  font-family: "Roboto Mono", sans-serif;
-}
-
-.narrow {
-  font-family: "PTSans-Narrow";
-}
-
-.impact {
-  font-family: "Impact";
-}
-
 @font-face {
-  font-family: "PTSans-Narrow";
-  src: url("../font/PTSans-Narrow.ttf");
+  font-family: "LLPixel";
+  src: url("../font/LLPixel_only_Letter.ttf");
 }
 @font-face {
-  font-family: "Impact";
-  src: url("../font/ImpactPureNumber.ttf");
+  font-family: "Galvji";
+  src: url("../font/Galvji.ttc");
 }
-.code {
-  font-family: "Roboto Mono", sans-serif;
-}
-
-.narrow {
-  font-family: "PTSans-Narrow";
-}
-
 .impact {
-  font-family: "Impact";
+  font-family: "Impact", sans-serif !important;
 }
 
 .search-bar {
@@ -304,7 +296,6 @@ tt {
 }
 body {
   background-color: #eeeeee;
-  font-size: 15px;
   font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
 }
 
@@ -321,7 +312,7 @@ body {
 
 .iphone-list {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1440px;
   padding: 30px 30px 50px 30px;
 }
 @media (max-width: 768px) {
@@ -333,6 +324,7 @@ body {
 .iphone {
   padding: 18px 0;
   display: flex;
+  flex-flow: column nowrap;
   justify-content: space-between;
 }
 .iphone .content-frame {
@@ -345,12 +337,13 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid #ccc;
+  font-family: "Galvji";
 }
 .title-content .title {
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: #333;
+  font-weight: lighter;
+  font-size: 1.3rem;
+  color: #404040;
 }
 .title-content .slogan {
   font-weight: 200;
@@ -359,54 +352,95 @@ body {
   color: #9e9e9e;
 }
 
-.ref-container {
+.ref-content {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  padding: 30px 0;
+}
+.ref-content > * {
+  margin-right: 40px;
+}
+.ref-content > *:last-child {
+  margin-right: 0;
+}
+
+.image {
   display: flex;
   justify-content: flex-start;
+  padding-left: 30px;
 }
 
 .img-frame {
-  margin-right: 50px;
-  padding: 10px 0;
-  width: 120px;
   flex-shrink: 0;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 .img-frame img {
-  width: 65px;
+  height: 130px;
   display: block;
 }
 
-.block {
-  margin-right: 20px;
-  padding: 15px 0;
+.main {
+  padding: 20px 0;
+  flex-shrink: 0;
   display: flex;
   justify-content: space-between;
+  flex-flow: column nowrap;
 }
 
-.block-icon {
-  cursor: pointer;
-  padding-top: 5px;
-  margin-right: 20px;
-  width: 35px;
-  height: 35px;
-}
-.block-icon img {
-  width: 100%;
-  display: block;
-}
-
-.ref-item {
-  white-space: nowrap;
-  font-size: 0.85rem;
+.main-item {
+  flex-grow: 0;
   display: flex;
-  align-items: flex-end;
+  flex-flow: row nowrap;
+  align-items: center;
+  white-space: nowrap;
+}
+.main-item .label {
+  font-size: 0.8rem;
+  color: #404040;
+  margin-right: 15px;
+}
+.main-item .value {
+  color: #FF2D70;
+  font-size: 1.2rem;
+  font-family: "LLPixel";
+}
+.main-item .value span {
+  margin-right: 15px;
+}
+.main-item.cyan .value {
+  color: #00A5FF;
+}
+
+.screen {
+  flex-shrink: 0;
+}
+
+.detail {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Galvji";
+}
+
+.detail-list {
+  margin-right: 30px;
+}
+
+.detail-item {
+  white-space: nowrap;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
   justify-content: flex-start;
   margin-bottom: 7px;
 }
-.ref-item .ref-label {
+.detail-item .detail-item-label {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -414,30 +448,45 @@ body {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  color: #9e9e9e;
+  color: #404040;
   cursor: pointer;
 }
-.ref-item .ref-label:hover {
-  color: #333;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-}
-.ref-item .ref-content {
+.detail-item .detail-item-content {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   letter-spacing: 0.25px;
-  color: #333;
   margin-left: 15px;
+}
+.detail-item:hover .storage, .detail-item:hover .gradient-blue, .detail-item:hover .gradient-purple {
+  border-color: transparent !important;
+}
+.detail-item:hover .tip {
+  border-color: #00A5FF;
+}
+.detail-item:hover .sup {
+  color: #00A5FF;
+  display: block;
 }
 
 .tip {
-  margin-right: 18px;
+  position: relative;
+  cursor: pointer;
+  padding: 1px 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  color: #505257;
+  margin-right: 10px;
 }
 .tip:last-child {
   margin-right: 0;
 }
-.tip.little {
-  font-size: 0.7rem;
+.tip .sup {
+  border-color: #00A5FF;
+  z-index: 100;
+  display: none;
 }
 @media (max-width: 768px) {
   .tip {
@@ -446,6 +495,10 @@ body {
   .tip.little {
     font-size: inherit;
   }
+}
+.tip.storage {
+  background-color: #505257;
+  color: white;
 }
 
 .cpu.active sub, .cpu.active sup {
@@ -484,11 +537,19 @@ body {
   font-weight: bold;
 }
 
-sub, sup {
+.sup {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0 3px;
+  position: absolute;
+  top: 0;
+  right: 0;
   font-size: 0.6rem;
-  padding-left: 2px;
-  vertical-align: sup;
+  transform: translateY(-70%) translateX(70%);
   color: #888;
+  background-color: white;
+  border: 1px solid #dadada;
 }
 
 @media (max-width: 768px) {
@@ -541,6 +602,16 @@ sub, sup {
 }
 .gradient {
   background-image: linear-gradient(to bottom right, #363d40, #6a7282);
+}
+
+.gradient-blue {
+  color: white;
+  background-image: linear-gradient(to bottom right, #618BFA, #1CB2F7);
+}
+
+.gradient-purple {
+  color: white;
+  background-image: linear-gradient(to bottom right, #C621FF, #FE3EBA);
 }
 
 /*# sourceMappingURL=iPhone.css.map */

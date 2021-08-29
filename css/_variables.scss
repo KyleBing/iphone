@@ -1,6 +1,5 @@
 // Colors
 $green          : #00b56b;
-$cyan           : #5AC8FA;
 $blue           : #007AFF;
 $purple         : #5856D6;
 $magenta        : #FF2D70;
@@ -10,16 +9,19 @@ $orange         : #FF9500;
 $yellow         : #FFCC00;
 $gray           : #8E8E93;
 
-
+$color-main: #00A5FF;
 $bg-highlight   : #eeeeee;
 $font-size: 0.9rem;
 
 $color-border: #dadada;
+$color-border-title: #ccc;
 $use-shadow: false;
 
-$text: #333;
-$text-label: #9e9e9e;
+$text-main: #404040;
+$text-second: #9e9e9e;
 $text-sup: #888;
+$text-value: #505257;
+$bg-storage: #505257;
 
 // label
 $label-corner: 15px;

@@ -5,11 +5,9 @@
 @import "font";
 @import "about";
 
-$phone-width: 65px;
 
 body{
   background-color: $bg-highlight;
-  font-size: 15px;
   font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
 }
 .container{
@@ -28,7 +26,7 @@ body{
 .searchbar{}
 .iphone-list{
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1440px;
   padding: 30px 30px 50px 30px;
   @media (max-width: 768px){
     padding: 20px 10px;
@@ -38,11 +36,13 @@ body{
 .iphone{
   padding: 18px 0;
   display: flex;
+  flex-flow: column nowrap;
   justify-content: space-between;
   .content-frame{
     flex-grow: 1;
   }
 }
+
 // LEVEL 2
 .title-content{
   padding-bottom: 5px;
@@ -50,101 +50,157 @@ body{
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  border-bottom: 1px solid $color-border;
+  border-bottom: 1px solid $color-border-title;
+  font-family: 'Galvji';
   .title{
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: $text;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    color: $text-main;
   }
   .slogan{
     font-weight: 200;
     letter-spacing: 0.3px;
     font-size: .8rem;
-    color: $text-label;
+    color: $text-second;
   }
 }
-.ref-container{
+
+.ref-content{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  padding: 30px 0;
+  > * {
+    margin-right: 40px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
 }
 
 
-// LEVEL 3
-// BLOCKS
+// image
+.image{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+
 .img-frame{
-  margin-right: 50px;
-  padding: 10px 0;
-  width: 120px;
   flex-shrink: 0;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   img{
-    width: $phone-width;
+    height: 130px;
     display: block;
   }
 }
-.block{
-  margin-right: 20px;
-  padding: 15px 0;
+
+
+// Main
+.main{
+  padding: 20px 0;
+  flex-shrink: 0;
   display: flex;
   justify-content: space-between;
+  flex-flow: column nowrap;
 }
-.cpu-block{}
-.screen-block{}
-.connection-block{
-}
-// LEVEL 4
-.block-icon{
-  cursor: pointer;
-  padding-top: 5px;
-  margin-right: 20px;
-  width: 35px;
-  height: 35px;
-  img{
-    width: 100%;
-    display: block;
-  }
-}
-.block-content{
-}
-// LEVEL 5
-.ref-item{
-  white-space: nowrap;
-  font-size: 0.85rem;
+
+.main-item{
+  flex-grow: 0;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  margin-bottom: 7px;
-  .ref-label{
-    @include unselectable;
-    @include border-radius(3px);
-    color: $text-label;
-    cursor: pointer;
-    &:hover{
-      color: $text;
-      text-shadow: 1px 1px 1px transparentize(black, 0.7);
+  flex-flow: row nowrap;
+  align-items: center;
+  white-space: nowrap;
+  .label{
+    font-size: 0.8rem;
+    color: $text-main;
+    margin-right: 15px;
+  }
+  .value{
+    color: $magenta;
+    font-size: 1.2rem;
+    font-family: "LLPixel";
+    span{
+      margin-right: 15px;
     }
   }
-  .ref-content{
+  &.cyan{
+    .value{
+      color: $color-main;
+    }
+  }
+}
+
+.screen{
+  flex-shrink: 0;
+}
+
+
+// DETAIL
+.detail{
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Galvji';
+}
+.detail-list{
+  margin-right: 30px;
+}
+
+.detail-item{
+  white-space: nowrap;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 7px;
+  .detail-item-label{
+    @include unselectable;
+    @include border-radius(3px);
+    color: $text-main;
+    cursor: pointer;
+  }
+  .detail-item-content{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     letter-spacing: 0.25px;
-    color: $text;
     margin-left: 15px;
   }
+  &:hover{
+    .storage, .gradient-blue, .gradient-purple{
+      border-color: transparent !important;
+    }
+    .tip{
+      border-color: $color-main;
+    }
+    .sup{
+      color: $color-main;
+      display: block;
+    }
+  }
 }
-// LEVEL 6
+
 .tip{
-  margin-right: 18px;
+  position: relative;
+  cursor: pointer;
+  padding: 1px 5px;
+  @include border-radius(3px);
+  border: 1px solid transparent;
+  color: $text-value;
+  margin-right: 10px;
   &:last-child{
     margin-right: 0;
   }
-  &.little {
-    font-size: 0.7rem;
-
+  .sup{
+    border-color: $color-main;
+    z-index: 100;
+    display: none;
   }
   @media (max-width: 768px){
     margin-right: 10px;
@@ -152,7 +208,10 @@ body{
       font-size: inherit;
     }
   }
-
+  &.storage{
+    background-color: $bg-storage;
+    color: white;
+  }
 }
 
 .cpu{
@@ -163,7 +222,6 @@ body{
     .ref-label {
       color: $magenta;
       font-weight: bold;
-
     }
     .ref-content {
       color: black;
@@ -201,12 +259,21 @@ body{
     }
   }
 }
-sub, sup{
+
+.sup{
+  @include border-radius(3px);
+  padding: 0 3px;
+  position: absolute;
+  top: 0;
+  right: 0;
   font-size: 0.6rem;
-  padding-left: 2px;
-  vertical-align: sup;
+  transform: translateY(-70%) translateX(70%);
   color: $text-sup;
+  background-color: white;
+  border: 1px solid $color-border;
 }
+
+
 @media (max-width: 768px){
   body{
     background-color: $color-border;
@@ -250,7 +317,15 @@ sub, sup{
 }
 
 .gradient{
-  //background-image: linear-gradient(to top left, #F550EC, #0A90FF);
-  //background-image: linear-gradient(to top left, #d03064, #0058a0);
   background-image: linear-gradient(to bottom right, #363d40, #6a7282);
 }
+
+.gradient-blue{
+  color: white;
+  background-image: linear-gradient(to bottom right, #618BFA, #1CB2F7);
+}
+.gradient-purple{
+  color: white;
+  background-image: linear-gradient(to bottom right, #C621FF, #FE3EBA);
+}
+
