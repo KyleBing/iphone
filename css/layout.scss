@@ -2,12 +2,7 @@
   margin: 0 auto;
   max-width: 1920px;
   background-color: white;
-
-  @media (min-width: 1200px) and (max-width:1440px){
-  }
-  @media (min-width: 768px) and (max-width:1200px){
-  }
-  @media (max-width: 768px){
+  @media (max-width: 450px){
     body{
       background-color: $color-border;
     }

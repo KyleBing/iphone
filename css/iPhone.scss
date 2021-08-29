@@ -55,6 +55,8 @@ body{
 }
 
 .ref-content{
+  width: 100%;
+  overflow-x: auto;
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;

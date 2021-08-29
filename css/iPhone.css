@@ -580,7 +580,7 @@ tt {
   max-width: 1920px;
   background-color: white;
 }
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .container {
     background-color: transparent;
   }
@@ -701,6 +701,8 @@ body {
 }
 
 .ref-content {
+  width: 100%;
+  overflow-x: auto;
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
