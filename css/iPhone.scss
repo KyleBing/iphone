@@ -164,6 +164,24 @@ body{
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 7px;
+  &.active{
+    .detail-item-label{
+      font-weight: bold;
+      color: $magenta;
+    }
+    .detail-item-content{
+      .tip{
+        background-color: $magenta;
+        color: white;
+        border-color: $magenta;
+        .sup{
+          border-color: $magenta;
+          color: $magenta;
+          display: block;
+        }
+      }
+    }
+  }
   .detail-item-label{
     @include unselectable;
     @include border-radius(3px);
@@ -178,9 +196,6 @@ body{
     margin-left: 15px;
   }
   &:hover{
-    .storage, .gradient-blue, .gradient-purple{
-      border-color: transparent !important;
-    }
     .tip{
       border-color: $color-main;
     }
@@ -214,6 +229,7 @@ body{
     }
   }
   &.storage{
+    border-color: transparent !important;
     background-color: $bg-storage;
     color: white;
   }
@@ -327,10 +343,12 @@ body{
 
 .gradient-blue{
   color: white;
+  border-color: transparent !important;
   background-image: linear-gradient(to bottom right, #618BFA, #1CB2F7);
 }
 .gradient-purple{
   color: white;
+  border-color: transparent !important;
   background-image: linear-gradient(to bottom right, #C621FF, #FE3EBA);
 }
 

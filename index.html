@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="img/iPhone-black.png" type="image/png">
     <link rel="stylesheet" href="css/iPhone.css">
     <link rel="apple-touch-icon" href="img/iPhone-black.png">
-    <script src="../../lib/js/jquery-2.2.4.min.js"></script>
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
     <style>
         [v-cloak] {
@@ -170,51 +169,51 @@
                 </section>
                 <section class="detail">
                     <div class="detail-list">
-                        <div class="detail-item" :class="[{active: tags.some(item => item === 23)}]">
-                            <div @click="tagToggle(23)" class="detail-item-label">存储</div>
+                        <div class="detail-item" :class="[{active: tags.some(item => item === 'storage')}]">
+                            <div @click="tagToggle('storage')" class="detail-item-label">存储</div>
                             <div class="detail-item-content">
                                 <div class="tip storage" v-for="(item, index) in iphone.storage" :key="index">{{item}}
                                     <span class="sup">GB</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="detail-item" :class="[{active: tags.some(item => item === 34)}]">
-                            <div @click="tagToggle(34)" class="detail-item-label">日期</div>
+                        <div class="detail-item" :class="[{active: tags.some(item => item === 'date')}]">
+                            <div @click="tagToggle('date')" class="detail-item-label">日期</div>
                             <div class="detail-item-content">
                                 <div class="tip">{{iphone.release}}</div>
                             </div>
                         </div>
-                        <div class="detail-item" :class="[{active: tags.some(item => item === 24)}]">
-                            <div @click="tagToggle(24)" class="detail-item-label">重量</div>
+                        <div class="detail-item" :class="[{active: tags.some(item => item === 'weight')}]">
+                            <div @click="tagToggle('weight')" class="detail-item-label">重量</div>
                             <div class="detail-item-content">
                                 <div class="tip">{{iphone.weight}} g</div>
                             </div>
                         </div>
-                        <div class="detail-item" :class="[{active: tags.some(item => item === 25)}]">
-                            <div @click="tagToggle(25)" class="detail-item-label">电池</div>
+                        <div class="detail-item" :class="[{active: tags.some(item => item === 'battery')}]">
+                            <div @click="tagToggle('battery')" class="detail-item-label">电池</div>
                             <div class="detail-item-content">
                                 <div class="tip" v-if="iphone.battery">{{iphone.battery}} mah</div>
                                 <div class="tip" v-else>-</div>
                             </div>
                         </div>
 
-                        <div class="detail-item" :class="[{active: tags.some(item => item === 34)}]">
-                            <div @click="tagToggle(34)" class="detail-item-label">SIM</div>
+                        <div class="detail-item" :class="[{active: tags.some(item => item === 'sim')}]">
+                            <div @click="tagToggle('sim')" class="detail-item-label">SIM</div>
                             <div class="detail-item-content">
                                 <div class="tip">{{iphone.modem || '单卡'}}</div>
                             </div>
                         </div>
                     </div>
                     <div class="detail-list">
-                        <div class="detail-item" :class="[{active: tags.some(item => item === 34)}]">
-                            <div @click="tagToggle(34)" class="detail-item-label">系统</div>
+                        <div class="detail-item" :class="[{active: tags.some(item => item === 'os')}]">
+                            <div @click="tagToggle('os')" class="detail-item-label">系统</div>
                             <div class="detail-item-content">
                                 <div class="tip gradient-purple">{{iphone.os.init}} <span class="sup">初始</span></div>
                                 <div class="tip gradient-blue">{{iphone.os.last}} <span class="sup">最后</span></div>
                             </div>
                         </div>
-                        <div class="detail-item" :class="[{active: tags.some(item => item === 31)}]">
-                            <div @click="tagToggle(31)" class="detail-item-label">连接</div>
+                        <div class="detail-item" :class="[{active: tags.some(item => item === 'connection')}]">
+                            <div @click="tagToggle('connection')" class="detail-item-label">连接</div>
                             <div class="detail-item-content" v-if="iphone.connectivity.length">
                                 <div class="tip" v-for="(item, index) in iphone.connectivity">{{item}}</div>
                             </div>
@@ -222,8 +221,8 @@
                                 <div class="tip">-</div>
                             </div>
                         </div>
-                        <div class="detail-item" :class="[{active: tags.some(item => item === 33)}]">
-                            <div @click="tagToggle(33)" class="detail-item-label">型号</div>
+                        <div class="detail-item" :class="[{active: tags.some(item => item === 'model')}]">
+                            <div @click="tagToggle('model')" class="detail-item-label">型号</div>
                             <div class="detail-item-content" v-if="iphone.models.length">
                                 <div class="tip" v-for="(item, index) in iphone.models">{{item.name}} <span class="sup" v-if="item.type">{{item.type}}</>
                                 </div>
@@ -232,14 +231,14 @@
                                 <div class="tip">-</div>
                             </div>
                         </div>
-                        <div class="detail-item" :class="[{active: tags.some(item => item === 35)}]">
-                            <div @click="tagToggle(35)" class="detail-item-label">接口</div>
+                        <div class="detail-item" :class="[{active: tags.some(item => item === 'port')}]">
+                            <div @click="tagToggle('port')" class="detail-item-label">接口</div>
                             <div class="detail-item-content">
                                 <div class="tip">{{iphone.port}}</div>
                             </div>
                         </div>
-                        <div class="detail-item" :class="[{active: tags.some(item => item === 34)}]">
-                            <div @click="tagToggle(34)" class="detail-item-label">防水</div>
+                        <div class="detail-item" :class="[{active: tags.some(item => item === 'prove')}]">
+                            <div @click="tagToggle('prove')" class="detail-item-label">防水</div>
                             <div class="detail-item-content">
                                 <div class="tip">{{iphone.prove || '-'}}</div>
                             </div>

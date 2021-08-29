@@ -1,8 +1,8 @@
 /*****************************
  Create Date: 20201016172121
- Update Date: 20201016172124
+ Update Date: 20210829173315
  *****************************/
-const lastOS = "最新";
+const lastOS = "最新"
 const iphones = [
     {
         name: "iPhone 1",
@@ -1439,7 +1439,7 @@ const iphones = [
         prove: 'IPX68',
         price: "",
     },
-].reverse();
+].reverse()
 
 let app = new Vue({
     el: "#app",
@@ -1458,17 +1458,17 @@ let app = new Vue({
         keyword: '',
         tipShowed: false,
     },
-    mounted: function () {
+    mounted() {
         // 全屏相关
-        let chromeCore = /Chrome/i.test(navigator.userAgent);
-        let mobileMode = /Mobile/i.test(navigator.userAgent);
-        this.portraitMode = window.innerWidth > window.innerHeight;
-        this.mobileMode = mobileMode;
-        this.showFullScreenBtn = chromeCore && !mobileMode;
+        let chromeCore = /Chrome/i.test(navigator.userAgent)
+        let mobileMode = /Mobile/i.test(navigator.userAgent)
+        this.portraitMode = window.innerWidth > window.innerHeight
+        this.mobileMode = mobileMode
+        this.showFullScreenBtn = chromeCore && !mobileMode
     },
     watch: {
         keyword() {
-            this.filterIphone();
+            this.filterIphone()
         }
     },
     methods: {
@@ -1481,47 +1481,46 @@ let app = new Vue({
         },
         // 全屏显示
         enterFullScreen: function () {
-            document.documentElement.requestFullscreen();
+            document.documentElement.requestFullscreen()
         },
 
         toggleTip(show) {
-            this.tipShowed = show;
+            this.tipShowed = show
         },
 
         filterIphone() {
             if (this.keyword) {
-                let finalKeyword;
+                let finalKeyword
                 // 以 # 开头为精确查找，匹配整个字符串，少或多都不匹配
                 if (this.keyword.indexOf('#') >= 0) {
-                    finalKeyword = this.keyword.replace('#', '').replace(/ /ig, '');
+                    finalKeyword = this.keyword.replace('#', '').replace(/ /ig, '')
                 } else {
-                    finalKeyword = this.keyword.replace(/ /ig, '');
+                    finalKeyword = this.keyword.replace(/ /ig, '')
                 }
-                this.keywordArray = finalKeyword.split('/');
-                let tempCollection = [];
+                this.keywordArray = finalKeyword.split('/')
+                let tempCollection = []
                 this.keywordArray.forEach(name => {
                     this.iphonesOrigin.forEach(iphone => {
-                        let reg = null;
+                        let reg = null
                         // reg 匹配模式
                         if (this.keyword.indexOf('#') >= 0) {
-                            reg = new RegExp(`^${name}$`, 'ig');
+                            reg = new RegExp(`^${name}$`, 'ig')
                         } else {
-                            reg = new RegExp(name, 'ig');
+                            reg = new RegExp(name, 'ig')
                         }
-                        let nameShort = iphone.name_short.replace(/ /ig, '');
+                        let nameShort = iphone.name_short.replace(/ /ig, '')
                         if (reg.test(nameShort)) {
-                            tempCollection.push(iphone);
+                            tempCollection.push(iphone)
                         }
                     })
-                });
+                })
                 this.iphones = tempCollection
             } else {
                 this.iphones = this.iphonesOrigin
             }
-
         }
     }
-});
+})
 // 当全屏模式变化时
 document.documentElement.onfullscreenchange = () => {
     app.didEnteredFullScreen = Boolean(document.fullscreenElement)
