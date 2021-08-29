@@ -589,9 +589,9 @@ tt {
   }
   .container .iphone {
     overflow: hidden;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
     background-color: white;
     margin-bottom: 20px;
     padding: 0;
@@ -600,9 +600,13 @@ tt {
   .container .title-content {
     border-bottom: none;
     border-bottom: 1px solid #dadada;
-    background-color: #eeeeee;
-    padding: 10px 15px;
+    background-color: white;
+    padding: 15px;
     justify-content: center;
+  }
+  .container .title-content .title {
+    font-size: 1.5rem;
+    font-weight: bold;
   }
   .container .title-content .slogan {
     display: none;
@@ -613,15 +617,34 @@ tt {
   }
   .container .ref-content > * {
     margin-right: 0;
+    border-bottom: 1px solid #dadada;
+  }
+  .container .ref-content > *:last-child {
+    border-bottom: none;
   }
   .container .main {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .container .main .image {
+    padding: 0 20px;
+    margin: 0;
+  }
+  .container .main .image .img-frame img {
+    height: 100px;
+  }
+  .container .main .main-ref {
     padding: 0;
   }
-  .container .main-item {
+  .container .main .main-ref-item {
     margin-bottom: 10px;
   }
+  .container .screen {
+    padding: 20px;
+  }
   .container .detail {
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px 0;
     flex-flow: column nowrap;
   }
   .container .detail-list {
