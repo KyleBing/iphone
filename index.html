@@ -79,28 +79,32 @@
                     <div class="main-item cyan">
                         <div class="label">CPU</div>
                         <div class="value">
-                            <span>{{iphone.cpu.model}}</span>
-                        <span>{{iphone.cpu.rate}} x {{iphone.cpu.core}}</span>
+                            <span class="mr-3">{{iphone.cpu.model}}</span>
+                            <span>{{iphone.cpu.rate}} <i class="multiply">×</i> {{iphone.cpu.core}}</span>
                         </div>
                     </div>
                     <div class="main-item">
                         <div class="label">GPU</div>
-                        <div class="value">{{iphone.gpu.model}} x {{iphone.gpu.core}}</div>
+                        <div class="value">
+                            <span>{{iphone.gpu.model || '-'}}</span>
+                            <span v-if="iphone.gpu.core"><i class="multiply">×</i> {{iphone.gpu.core}}</span>
+                        </div>
                     </div>
                     <div class="main-item">
                         <div class="label">内存</div>
                         <div class="value" v-for="memory in iphone.memory">
-                            <span>{{memory.size}}GB</span>
-                            <span>{{memory.type}}</span>
+                            <span class="mr-2">{{memory.size}}GB</span>
+                            <span class="little">{{memory.type}}</span>
                         </div>
                     </div>
                 </section>
                 <section class="screen">
+
                     <svg width="100%" viewBox="0 0 535 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="screen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="screenMesure" transform="translate(0.000000, 46.500000)">
                                 <text id="height" font-family="PingFangSC-Medium, PingFang SC" font-size="20" font-weight="400" fill="#000000">
-                                    <tspan x="0.2" y="94">{{iphone.height}}</tspan>
+                                    <tspan x="0.4" y="94">{{iphone.height}}</tspan>
                                 </text>
                                 <text id="thickness" font-family="PingFangSC-Medium, PingFang SC" font-size="20" font-weight="400" fill="#000000">
                                     <tspan x="209.77" y="176">{{iphone.thickness}}</tspan>
@@ -128,7 +132,7 @@
                             </g>
                             <g id="screenPx" transform="translate(303.194846, 55.065109)">
                                 <text id="heightPX" opacity="0.779999971" font-family="PingFangSC-Medium, PingFang SC" font-size="20" font-weight="400" fill="#000000">
-                                    <tspan x="0.78515405" y="85.434891">{{iphone.screen.height}}</tspan>
+                                    <tspan x="1.26515405" y="85.434891">{{iphone.screen.height}}</tspan>
                                 </text>
                                 <rect id="Rectangle" stroke="#3D3D40" fill="#FFFFFF" x="85.8051541" y="0.434890986" width="77" height="153" rx="11"></rect>
                                 <rect id="Rectangle" fill="#FFFFFF" x="138.805154" y="53.434891" width="92" height="58" rx="5"></rect>
@@ -157,6 +161,9 @@
                             </g>
                             <text id="screenType" font-family="Galvji-Bold, Galvji" font-size="20" font-weight="bold" fill="#404040">
                                 <tspan x="227.212891" y="19">{{iphone.screen.type}}</tspan>
+                            </text>
+                            <text id="touch3D" font-family="PingFangSC-Semibold, PingFang SC" font-size="20" font-weight="500" fill="#404040">
+                                <tspan v-if="iphone.screen.touch3D" x="106" y="141">压感</tspan>
                             </text>
                         </g>
                     </svg>

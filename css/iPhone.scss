@@ -2,6 +2,7 @@
 @import "reset";
 @import "utility";
 @import "mixin";
+@import "gutter";
 @import "font";
 @import "about";
 
@@ -123,8 +124,8 @@ body{
     color: $magenta;
     font-size: 1.2rem;
     font-family: "LLPixel";
-    span{
-      margin-right: 15px;
+    span.little{
+      font-size: 1rem;
     }
   }
   &.cyan{
@@ -132,6 +133,10 @@ body{
       color: $color-main;
     }
   }
+}
+.multiply{
+  font-style: normal;
+  font-family: 'Galvji', SansSerif !important;
 }
 
 .screen{
@@ -328,4 +333,5 @@ body{
   color: white;
   background-image: linear-gradient(to bottom right, #C621FF, #FE3EBA);
 }
+
 
