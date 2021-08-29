@@ -1,0 +1,57 @@
+.container{
+  margin: 0 auto;
+  max-width: 1920px;
+  background-color: white;
+
+  @media (min-width: 1200px) and (max-width:1440px){
+  }
+  @media (min-width: 768px) and (max-width:1200px){
+  }
+  @media (max-width: 768px){
+    body{
+      background-color: $color-border;
+    }
+    .iphone{
+      overflow: hidden;
+      @include border-radius(5px);
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 0;
+      border: 1px solid $color-border;
+    }
+    .title-content{
+      border-bottom: none;
+      border-bottom: 1px solid $color-border;
+      background-color: $bg-highlight;
+      padding: 10px 15px;
+      justify-content: center;
+      .slogan{
+        display: none;
+      }
+    }
+    .ref-content{
+      padding: 15px;
+      flex-flow: column nowrap;
+      > *{
+        margin-right: 0;
+      }
+    }
+    .main{
+      margin-bottom: 20px;
+      padding: 0;
+      &-item{
+        margin-bottom: 10px;
+      }
+    }
+
+    .detail{
+      flex-flow: column nowrap;
+      &-list{
+        margin-right: 0;
+        width: 100%;
+      }
+    }
+
+    background-color: transparent;
+  }
+}

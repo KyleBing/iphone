@@ -501,6 +501,7 @@ tt {
 }
 
 .about {
+  font-family: "Galvji";
   color: white;
   display: flex;
   align-items: center;
@@ -563,7 +564,7 @@ tt {
 }
 
 .link:hover {
-  color: #FF2D70 !important;
+  color: #00A5FF !important;
 }
 .link:active {
   transform: translateY(2px);
@@ -574,11 +575,6 @@ tt {
     display: none;
   }
 }
-body {
-  background-color: #eeeeee;
-  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1920px;
@@ -588,6 +584,55 @@ body {
   .container {
     background-color: transparent;
   }
+  .container body {
+    background-color: #dadada;
+  }
+  .container .iphone {
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 0;
+    border: 1px solid #dadada;
+  }
+  .container .title-content {
+    border-bottom: none;
+    border-bottom: 1px solid #dadada;
+    background-color: #eeeeee;
+    padding: 10px 15px;
+    justify-content: center;
+  }
+  .container .title-content .slogan {
+    display: none;
+  }
+  .container .ref-content {
+    padding: 15px;
+    flex-flow: column nowrap;
+  }
+  .container .ref-content > * {
+    margin-right: 0;
+  }
+  .container .main {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .container .main-item {
+    margin-bottom: 10px;
+  }
+  .container .detail {
+    flex-flow: column nowrap;
+  }
+  .container .detail-list {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+body {
+  background-color: #eeeeee;
+  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
 }
 
 .iphone-list {
@@ -645,10 +690,17 @@ body {
   margin-right: 0;
 }
 
+.main {
+  flex-shrink: 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .image {
   display: flex;
   justify-content: flex-start;
   padding-left: 30px;
+  margin-right: 40px;
 }
 
 .img-frame {
@@ -663,35 +715,34 @@ body {
   display: block;
 }
 
-.main {
+.main-ref {
   padding: 20px 0;
-  flex-shrink: 0;
   display: flex;
   justify-content: space-between;
   flex-flow: column nowrap;
 }
 
-.main-item {
+.main-ref-item {
   flex-grow: 0;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   white-space: nowrap;
 }
-.main-item .label {
+.main-ref-item .label {
   font-size: 0.8rem;
   color: #404040;
   margin-right: 15px;
 }
-.main-item .value {
+.main-ref-item .value {
   color: #FF2D70;
   font-size: 1.2rem;
   font-family: "LLPixel";
 }
-.main-item .value span.little {
+.main-ref-item .value span.little {
   font-size: 1rem;
 }
-.main-item.cyan .value {
+.main-ref-item.cyan .value {
   color: #00A5FF;
 }
 
@@ -784,14 +835,6 @@ body {
   z-index: 100;
   display: none;
 }
-@media (max-width: 768px) {
-  .tip {
-    margin-right: 10px;
-  }
-  .tip.little {
-    font-size: inherit;
-  }
-}
 .tip.storage {
   border-color: transparent !important;
   background-color: #505257;
@@ -849,54 +892,6 @@ body {
   border: 1px solid #dadada;
 }
 
-@media (max-width: 768px) {
-  body {
-    background-color: #dadada;
-  }
-
-  .iphone {
-    overflow: hidden;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 0;
-    border: 1px solid #dadada;
-  }
-
-  .title-content {
-    border-bottom: none;
-    border-bottom: 1px solid #dadada;
-    background-color: #eeeeee;
-    padding: 10px 15px;
-    justify-content: center;
-  }
-  .title-content .slogan {
-    display: none;
-  }
-
-  .img-frame {
-    display: none;
-  }
-
-  .ref-container {
-    padding: 10px 20px;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-  }
-  .ref-container .block-icon {
-    display: none;
-  }
-  .ref-container .ref-content {
-    flex-flow: row wrap;
-  }
-
-  .block {
-    padding: 0;
-    justify-content: flex-start;
-  }
-}
 .gradient {
   background-image: linear-gradient(to bottom right, #363d40, #6a7282);
 }

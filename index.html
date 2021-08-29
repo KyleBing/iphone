@@ -7,7 +7,7 @@
     <title>iPhone 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/iPhone-black.png" type="image/png">
-    <link rel="stylesheet" href="css/iPhone.css">
+    <link rel="stylesheet" href="css/iPhone.css?v=20210829174517">
     <link rel="apple-touch-icon" href="img/iPhone-black.png">
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
     <style>
@@ -55,7 +55,7 @@
             <div class="copyright">
                 <p>芯片参数：<a class="link" target="_blank" href="https://kylebing.cn/tools/apple-chip">苹果处理器参数大全</a></p>
                 <p>iPad参数：<a class="link" target="_blank" href="https://kylebing.cn/tools/ipad">iPad 参数大全</a></p>
-                <p>最后更新：2021/04/21</p>
+                <p>最后更新：2021/08/29</p>
             </div>
         </div>
     </div>
@@ -69,31 +69,33 @@
             </div>
 
             <div class="ref-content">
-                <section class="image">
-                    <div class="img-frame">
-                        <img :src="`img/iphone/${iphone.pic}.png`" alt="icon">
-                    </div>
-                </section>
                 <section class="main">
-                    <div class="main-item cyan">
-                        <div class="label">CPU</div>
-                        <div class="value">
-                            <span class="mr-3">{{iphone.cpu.model}}</span>
-                            <span>{{iphone.cpu.rate}} <i class="multiply">×</i> {{iphone.cpu.core}}</span>
+                    <div class="image">
+                        <div class="img-frame">
+                            <img :src="`img/iphone/${iphone.pic}.png`" alt="icon">
                         </div>
                     </div>
-                    <div class="main-item">
-                        <div class="label">GPU</div>
-                        <div class="value">
-                            <span>{{iphone.gpu.model || '-'}}</span>
-                            <span v-if="iphone.gpu.core"><i class="multiply">×</i> {{iphone.gpu.core}}</span>
+                    <div class="main-ref">
+                        <div class="main-ref-item cyan">
+                            <div class="label">CPU</div>
+                            <div class="value">
+                                <span class="mr-3">{{iphone.cpu.model}}</span>
+                                <span>{{iphone.cpu.rate}} <i class="multiply">×</i> {{iphone.cpu.core}}</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="main-item">
-                        <div class="label">内存</div>
-                        <div class="value" v-for="memory in iphone.memory">
-                            <span class="mr-2">{{memory.size}}GB</span>
-                            <span class="little">{{memory.type}}</span>
+                        <div class="main-ref-item">
+                            <div class="label">GPU</div>
+                            <div class="value">
+                                <span>{{iphone.gpu.model || '-'}}</span>
+                                <span v-if="iphone.gpu.core"><i class="multiply">×</i> {{iphone.gpu.core}}</span>
+                            </div>
+                        </div>
+                        <div class="main-ref-item">
+                            <div class="label">内存</div>
+                            <div class="value" v-for="memory in iphone.memory">
+                                <span class="mr-2">{{memory.size}}GB</span>
+                                <span class="little">{{memory.type}}</span>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -251,7 +253,7 @@
 
 </div>
 
-<script src="iPhone.js"></script>
+<script src="iPhone.js?v=20210829174517"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {

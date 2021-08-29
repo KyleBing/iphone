@@ -1,28 +1,16 @@
 @import "variables";
 @import "reset";
 @import "utility";
-@import "mixin";
+@import "font";
 @import "gutter";
 @import "font";
 @import "about";
+@import "layout";
 
 
 body{
   background-color: $bg-highlight;
   font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
-}
-.container{
-  margin: 0 auto;
-  max-width: 1920px;
-  background-color: white;
-
-  @media (min-width: 1200px) and (max-width:1440px){
-  }
-  @media (min-width: 768px) and (max-width:1200px){
-  }
-  @media (max-width: 768px){
-    background-color: transparent;
-  }
 }
 .searchbar{}
 .iphone-list{
@@ -80,11 +68,17 @@ body{
 }
 
 
-// image
+// Main
+.main{
+  flex-shrink: 0;  display: flex;
+  flex-flow: row nowrap;
+}
+
 .image{
   display: flex;
   justify-content: flex-start;
   padding-left: 30px;
+  margin-right: 40px;
 }
 
 .img-frame{
@@ -100,16 +94,14 @@ body{
 }
 
 
-// Main
-.main{
+.main-ref{
   padding: 20px 0;
-  flex-shrink: 0;
   display: flex;
   justify-content: space-between;
   flex-flow: column nowrap;
 }
 
-.main-item{
+.main-ref-item{
   flex-grow: 0;
   display: flex;
   flex-flow: row nowrap;
@@ -222,12 +214,6 @@ body{
     z-index: 100;
     display: none;
   }
-  @media (max-width: 768px){
-    margin-right: 10px;
-    &.little{
-      font-size: inherit;
-    }
-  }
   &.storage{
     border-color: transparent !important;
     background-color: $bg-storage;
@@ -292,49 +278,6 @@ body{
   color: $text-sup;
   background-color: white;
   border: 1px solid $color-border;
-}
-
-
-@media (max-width: 768px){
-  body{
-    background-color: $color-border;
-  }
-  .iphone{
-    overflow: hidden;
-    @include border-radius(5px);
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 0;
-    border: 1px solid $color-border;
-  }
-  .title-content{
-    border-bottom: none;
-    border-bottom: 1px solid $color-border;
-    background-color: $bg-highlight;
-    padding: 10px 15px;
-    justify-content: center;
-    .slogan{
-      display: none;
-    }
-  }
-  .img-frame{
-    display: none;
-  }
-  .ref-container{
-    .block-icon{
-      display: none;
-    }
-    padding: 10px 20px;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    .ref-content{
-      flex-flow: row wrap;
-    }
-  }
-  .block{
-    padding: 0;
-    justify-content: flex-start;
-  }
 }
 
 .gradient{
