@@ -762,6 +762,7 @@ body {
 .main-ref-item .value {
   color: #FF2D70;
   font-size: 1.2rem;
+  font-weight: bold;
   font-family: "LLPixel";
 }
 .main-ref-item .value span.little {
