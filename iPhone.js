@@ -1439,6 +1439,145 @@ const iphones = [
         prove: 'IPX68',
         price: "",
     },
+    {
+        name: "iPhone 13",
+        name_short: "13",
+        pic: "13pro",
+        slogan: "--",
+        active: false,
+        release: "2021-09-15",
+        models: [],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 0,
+        width: 0,
+        thickness: 0,
+        weight: 0,
+        os: {
+            init: "iOS 15",
+            last: lastOS
+        },
+        cpu: {
+            icon: '-',
+            model: '-',
+            rate: '-',
+            core: 0
+        },
+        gpu: {
+            model: "Apple",
+            core: 0
+        },
+        modem: '双卡双待',
+        memory: [
+            {size: "-", type: "-"}
+        ],
+        storage: ["-"],
+        battery: '-',
+        port: '-',
+        screen: {
+            size: "-",
+            type: 'UNKNOWN',
+            width: 0,
+            height: 0,
+            density: "0",
+            touch3D: false
+        },
+        connectivity: ["-"],
+        prove: '-',
+        price: "",
+    },
+    {
+        name: "iPhone 13 Pro",
+        name_short: "13 Pro",
+        pic: "13pro",
+        slogan: "--",
+        active: false,
+        release: "2021-09-15",
+        models: [],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 0,
+        width: 0,
+        thickness: 0,
+        weight: 0,
+        os: {
+            init: "iOS 15",
+            last: lastOS
+        },
+        cpu: {
+            icon: '-',
+            model: '-',
+            rate: '-',
+            core: 0
+        },
+        gpu: {
+            model: "Apple",
+            core: 0
+        },
+        modem: '双卡双待',
+        memory: [
+            {size: "-", type: "-"}
+        ],
+        storage: ["-"],
+        battery: '-',
+        port: '-',
+        screen: {
+            size: "-",
+            type: 'UNKNOWN',
+            width: 0,
+            height: 0,
+            density: "0",
+            touch3D: false
+        },
+        connectivity: ["-"],
+        prove: '-',
+        price: "",
+    },
+    {
+        name: "iPhone 13 Pro Max ",
+        name_short: "13 Pro Max",
+        pic: "13pro",
+        slogan: "--",
+        active: false,
+        release: "2021-09-15",
+        models: [],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 0,
+        width: 0,
+        thickness: 0,
+        weight: 0,
+        os: {
+            init: "iOS 15",
+            last: lastOS
+        },
+        cpu: {
+            icon: '-',
+            model: '-',
+            rate: '-',
+            core: 0
+        },
+        gpu: {
+            model: "Apple",
+            core: 0
+        },
+        modem: '双卡双待',
+        memory: [
+            {size: "-", type: "-"}
+        ],
+        storage: ["-"],
+        battery: '-',
+        port: '-',
+        screen: {
+            size: "-",
+            type: 'UNKNOWN',
+            width: 0,
+            height: 0,
+            density: "0",
+            touch3D: false
+        },
+        connectivity: ["-"],
+        prove: '-',
+        price: "",
+    },
+
 ].reverse()
 
 let app = new Vue({
