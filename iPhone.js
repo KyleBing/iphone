@@ -1448,10 +1448,10 @@ const iphones = [
         release: "2021-09-15",
         models: [],
         network: ["5G", "4G", "LTE", "3G", "2G"],
-        height: 0,
-        width: 0,
-        thickness: 0,
-        weight: 0,
+        height: 146.7,
+        width: 71.5,
+        thickness: 7.65,
+        weight: 173,
         os: {
             init: "iOS 15",
             last: lastOS
@@ -1472,17 +1472,17 @@ const iphones = [
         ],
         storage: ["128", "256", "512"],
         battery: '-',
-        port: '-',
+        port: '闪电',
         screen: {
-            size: "-",
-            type: 'UNKNOWN',
-            width: 0,
-            height: 0,
-            density: "0",
+            size: "6.1",
+            type: 'XDR OLED',
+            width: 2532,
+            height: 1170,
+            density: "460",
             touch3D: false
         },
         connectivity: ["-"],
-        prove: '-',
+        prove: 'IPX68',
         price: "",
     },
     {
@@ -1494,10 +1494,10 @@ const iphones = [
         release: "2021-09-15",
         models: [],
         network: ["5G", "4G", "LTE", "3G", "2G"],
-        height: 0,
-        width: 0,
-        thickness: 0,
-        weight: 0,
+        height: 131.5,
+        width: 64.2,
+        thickness: 7.65,
+        weight: 140,
         os: {
             init: "iOS 15",
             last: lastOS
@@ -1516,19 +1516,19 @@ const iphones = [
         memory: [
             {size: "-", type: "-"}
         ],
-        storage: ["-"],
+        storage: ["128", "256", "512"],
         battery: '-',
-        port: '-',
+        port: '闪电',
         screen: {
-            size: "-",
-            type: 'UNKNOWN',
-            width: 0,
-            height: 0,
-            density: "0",
+            size: "5.4",
+            type: 'XDR OLED',
+            width: 2340,
+            height: 1080,
+            density: "476",
             touch3D: false
         },
         connectivity: ["-"],
-        prove: '-',
+        prove: 'IPX68',
         price: "",
     },
     {
@@ -1540,10 +1540,10 @@ const iphones = [
         release: "2021-09-15",
         models: [],
         network: ["5G", "4G", "LTE", "3G", "2G"],
-        height: 0,
-        width: 0,
-        thickness: 0,
-        weight: 0,
+        height: 146.7,
+        width: 71.5,
+        thickness: 7.65,
+        weight: 203,
         os: {
             init: "iOS 15",
             last: lastOS
@@ -1562,19 +1562,19 @@ const iphones = [
         memory: [
             {size: "-", type: "-"}
         ],
-        storage: ["-"],
+        storage: ["128", "256", "512", "1024"],
         battery: '-',
-        port: '-',
+        port: '闪电',
         screen: {
-            size: "-",
-            type: 'XDR 120hz',
-            width: 0,
-            height: 0,
-            density: "0",
+            size: "6.1",
+            type: 'XDR OLED 120hz',
+            width: 2532,
+            height: 1170,
+            density: "460",
             touch3D: false
         },
         connectivity: ["-"],
-        prove: '-',
+        prove: 'IPX68',
         price: "",
     },
     {
@@ -1586,10 +1586,10 @@ const iphones = [
         release: "2021-09-15",
         models: [],
         network: ["5G", "4G", "LTE", "3G", "2G"],
-        height: 0,
-        width: 0,
-        thickness: 0,
-        weight: 0,
+        height: 160.8,
+        width: 78.1,
+        thickness: 7.65,
+        weight: 238,
         os: {
             init: "iOS 15",
             last: lastOS
@@ -1608,19 +1608,19 @@ const iphones = [
         memory: [
             {size: "-", type: "-"}
         ],
-        storage: ["-"],
+        storage: ["128", "256", "512", "1024"],
         battery: '-',
-        port: '-',
+        port: '闪电',
         screen: {
-            size: "-",
+            size: "6.7",
             type: 'XDR 120hz',
-            width: 0,
-            height: 0,
-            density: "0",
+            width: 2778,
+            height: 1284,
+            density: "458",
             touch3D: false
         },
         connectivity: ["-"],
-        prove: '-',
+        prove: 'IPX68',
         price: "",
     },
 
