@@ -1613,7 +1613,7 @@ const iphones = [
         port: '闪电',
         screen: {
             size: "6.7",
-            type: 'XDR 120hz',
+            type: 'XDR OLED 120hz',
             width: 2778,
             height: 1284,
             density: "458",
