@@ -1458,9 +1458,55 @@ const iphones = [
         },
         cpu: {
             icon: '-',
-            model: '-',
+            model: 'A15',
             rate: '-',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
             core: 0
+        },
+        modem: '双卡双待',
+        memory: [
+            {size: "-", type: "-"}
+        ],
+        storage: ["-"],
+        battery: '-',
+        port: '-',
+        screen: {
+            size: "-",
+            type: 'UNKNOWN',
+            width: 0,
+            height: 0,
+            density: "0",
+            touch3D: false
+        },
+        connectivity: ["-"],
+        prove: '-',
+        price: "",
+    },
+    {
+        name: "iPhone 13 Mini",
+        name_short: "13 mini",
+        pic: "13pro",
+        slogan: "--",
+        active: false,
+        release: "2021-09-15",
+        models: [],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 0,
+        width: 0,
+        thickness: 0,
+        weight: 0,
+        os: {
+            init: "iOS 15",
+            last: lastOS
+        },
+        cpu: {
+            icon: '-',
+            model: 'A15',
+            rate: '-',
+            core: 6
         },
         gpu: {
             model: "Apple",
