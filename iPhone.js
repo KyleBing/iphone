@@ -1470,7 +1470,7 @@ const iphones = [
         memory: [
             {size: "-", type: "-"}
         ],
-        storage: ["-"],
+        storage: ["128", "256", "512"],
         battery: '-',
         port: '-',
         screen: {
@@ -1550,7 +1550,7 @@ const iphones = [
         },
         cpu: {
             icon: '-',
-            model: '-',
+            model: 'A15',
             rate: '-',
             core: 0
         },
@@ -1567,7 +1567,7 @@ const iphones = [
         port: '-',
         screen: {
             size: "-",
-            type: 'UNKNOWN',
+            type: 'XDR 120hz',
             width: 0,
             height: 0,
             density: "0",
@@ -1596,7 +1596,7 @@ const iphones = [
         },
         cpu: {
             icon: '-',
-            model: '-',
+            model: 'A15',
             rate: '-',
             core: 0
         },
@@ -1613,7 +1613,7 @@ const iphones = [
         port: '-',
         screen: {
             size: "-",
-            type: 'UNKNOWN',
+            type: 'XDR 120hz',
             width: 0,
             height: 0,
             density: "0",
