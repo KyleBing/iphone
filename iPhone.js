@@ -1510,7 +1510,7 @@ const iphones = [
             model: "Apple",
             core: 5
         },
-        modem: '双卡双待',
+        modem: '单卡',
         memory: [],
         storage: ["128", "256", "512"],
         battery: '',
