@@ -1443,7 +1443,7 @@ const iphones = [
         name: "iPhone 13",
         name_short: "13",
         pic: "13pro",
-        slogan: "--",
+        slogan: "Your new superpower.",
         active: false,
         release: "2021-09-15",
         models: [],
@@ -1457,21 +1457,19 @@ const iphones = [
             last: lastOS
         },
         cpu: {
-            icon: '-',
+            icon: '',
             model: 'A15',
-            rate: '-',
+            rate: '',
             core: 6
         },
         gpu: {
             model: "Apple",
-            core: 0
+            core: 5
         },
         modem: '双卡双待',
-        memory: [
-            {size: "-", type: "-"}
-        ],
+        memory: [],
         storage: ["128", "256", "512"],
-        battery: '-',
+        battery: '',
         port: '闪电',
         screen: {
             size: "6.1",
@@ -1489,7 +1487,7 @@ const iphones = [
         name: "iPhone 13 Mini",
         name_short: "13 mini",
         pic: "13pro",
-        slogan: "--",
+        slogan: "Your new superpower.",
         active: false,
         release: "2021-09-15",
         models: [],
@@ -1503,21 +1501,19 @@ const iphones = [
             last: lastOS
         },
         cpu: {
-            icon: '-',
+            icon: '',
             model: 'A15',
-            rate: '-',
+            rate: '',
             core: 6
         },
         gpu: {
             model: "Apple",
-            core: 0
+            core: 5
         },
         modem: '双卡双待',
-        memory: [
-            {size: "-", type: "-"}
-        ],
+        memory: [],
         storage: ["128", "256", "512"],
-        battery: '-',
+        battery: '',
         port: '闪电',
         screen: {
             size: "5.4",
@@ -1535,7 +1531,7 @@ const iphones = [
         name: "iPhone 13 Pro",
         name_short: "13 Pro",
         pic: "13pro",
-        slogan: "--",
+        slogan: "Oh. So. Pro.",
         active: false,
         release: "2021-09-15",
         models: [],
@@ -1549,25 +1545,23 @@ const iphones = [
             last: lastOS
         },
         cpu: {
-            icon: '-',
+            icon: '',
             model: 'A15',
-            rate: '-',
+            rate: '',
             core: 0
         },
         gpu: {
             model: "Apple",
-            core: 0
+            core: 5
         },
         modem: '双卡双待',
-        memory: [
-            {size: "-", type: "-"}
-        ],
+        memory: [],
         storage: ["128", "256", "512", "1024"],
-        battery: '-',
+        battery: '',
         port: '闪电',
         screen: {
             size: "6.1",
-            type: 'XDR OLED 120hz',
+            type: 'XDR OLED 10~120hz',
             width: 2532,
             height: 1170,
             density: "460",
@@ -1581,7 +1575,7 @@ const iphones = [
         name: "iPhone 13 Pro Max ",
         name_short: "13 Pro Max",
         pic: "13pro",
-        slogan: "--",
+        slogan: "Oh. So. Pro.",
         active: false,
         release: "2021-09-15",
         models: [],
@@ -1595,25 +1589,23 @@ const iphones = [
             last: lastOS
         },
         cpu: {
-            icon: '-',
+            icon: '',
             model: 'A15',
-            rate: '-',
+            rate: '',
             core: 0
         },
         gpu: {
             model: "Apple",
-            core: 0
+            core: 5
         },
         modem: '双卡双待',
-        memory: [
-            {size: "-", type: "-"}
-        ],
+        memory: [],
         storage: ["128", "256", "512", "1024"],
-        battery: '-',
+        battery: '',
         port: '闪电',
         screen: {
             size: "6.7",
-            type: 'XDR OLED 120hz',
+            type: 'XDR OLED 10~120hz',
             width: 2778,
             height: 1284,
             density: "458",

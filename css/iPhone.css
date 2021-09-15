@@ -843,6 +843,8 @@ body {
 }
 
 .tip {
+  text-align: center;
+  min-width: 30px;
   position: relative;
   cursor: pointer;
   padding: 1px 5px;
