@@ -1555,7 +1555,9 @@ const iphones = [
             core: 5
         },
         modem: '双卡双待',
-        memory: [],
+        memory: [
+            {size: "6", type: "--"}
+        ],
         storage: ["128", "256", "512", "1024"],
         battery: '',
         port: '闪电',
