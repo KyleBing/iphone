@@ -1144,7 +1144,6 @@ const iphones = [
         prove: 'IPX68',
         price: "",
     },
-
     {
         name: "iPhone 11 Pro",
         name_short: "11 Pro",
@@ -1467,7 +1466,9 @@ const iphones = [
             core: 5
         },
         modem: '双卡双待',
-        memory: [],
+        memory: [
+            {size: "4", type: ""}
+        ],
         storage: ["128", "256", "512"],
         battery: '',
         port: '闪电',
@@ -1503,7 +1504,7 @@ const iphones = [
         cpu: {
             icon: '',
             model: 'A15',
-            rate: '',
+            rate: '-',
             core: 6
         },
         gpu: {
@@ -1511,7 +1512,9 @@ const iphones = [
             core: 5
         },
         modem: '单卡',
-        memory: [],
+        memory: [
+            {size: "4", type: ""}
+        ],
         storage: ["128", "256", "512"],
         battery: '',
         port: '闪电',
@@ -1556,7 +1559,7 @@ const iphones = [
         },
         modem: '双卡双待',
         memory: [
-            {size: "6", type: "--"}
+            {size: "6", type: ""}
         ],
         storage: ["128", "256", "512", "1024"],
         battery: '',
@@ -1601,7 +1604,9 @@ const iphones = [
             core: 5
         },
         modem: '双卡双待',
-        memory: [],
+        memory: [
+            {size: "6", type: ""}
+        ],
         storage: ["128", "256", "512", "1024"],
         battery: '',
         port: '闪电',
