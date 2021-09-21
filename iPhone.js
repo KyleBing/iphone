@@ -1470,7 +1470,7 @@ const iphones = [
             {size: "4", type: ""}
         ],
         storage: ["128", "256", "512"],
-        battery: '',
+        battery: '3240',
         port: '闪电',
         screen: {
             size: "6.1",
@@ -1516,7 +1516,7 @@ const iphones = [
             {size: "4", type: ""}
         ],
         storage: ["128", "256", "512"],
-        battery: '',
+        battery: '2425',
         port: '闪电',
         screen: {
             size: "5.4",
@@ -1562,7 +1562,7 @@ const iphones = [
             {size: "6", type: ""}
         ],
         storage: ["128", "256", "512", "1024"],
-        battery: '',
+        battery: '3125',
         port: '闪电',
         screen: {
             size: "6.1",
@@ -1608,7 +1608,7 @@ const iphones = [
             {size: "6", type: ""}
         ],
         storage: ["128", "256", "512", "1024"],
-        battery: '',
+        battery: '4373',
         port: '闪电',
         screen: {
             size: "6.7",
