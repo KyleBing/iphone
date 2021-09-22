@@ -1458,7 +1458,7 @@ const iphones = [
         cpu: {
             icon: '',
             model: 'A15',
-            rate: '-',
+            rate: '3.2',
             core: 6
         },
         gpu: {
@@ -1480,7 +1480,7 @@ const iphones = [
             density: "476",
             touch3D: false
         },
-        connectivity: ["-"],
+        connectivity: ["5G","4G","2G"],
         prove: 'IPX68',
         price: "",
     },
@@ -1504,7 +1504,7 @@ const iphones = [
         cpu: {
             icon: '',
             model: 'A15',
-            rate: '',
+            rate: '3.2',
             core: 6
         },
         gpu: {
@@ -1526,7 +1526,7 @@ const iphones = [
             density: "460",
             touch3D: false
         },
-        connectivity: ["-"],
+        connectivity: ["5G","4G","2G"],
         prove: 'IPX68',
         price: "",
     },
@@ -1550,8 +1550,8 @@ const iphones = [
         cpu: {
             icon: '',
             model: 'A15',
-            rate: '',
-            core: 0
+            rate: '3.2',
+            core: 6
         },
         gpu: {
             model: "Apple",
@@ -1572,7 +1572,7 @@ const iphones = [
             density: "460",
             touch3D: false
         },
-        connectivity: ["-"],
+        connectivity: ["5G","4G","2G"],
         prove: 'IPX68',
         price: "",
     },
@@ -1596,8 +1596,8 @@ const iphones = [
         cpu: {
             icon: '',
             model: 'A15',
-            rate: '',
-            core: 0
+            rate: '3.2',
+            core: 6
         },
         gpu: {
             model: "Apple",
@@ -1618,7 +1618,7 @@ const iphones = [
             density: "458",
             touch3D: false
         },
-        connectivity: ["-"],
+        connectivity: ["5G","4G","2G"],
         prove: 'IPX68',
         price: "",
     },
