@@ -1439,52 +1439,6 @@ const iphones = [
         price: "",
     },
     {
-        name: "iPhone 13",
-        name_short: "13",
-        pic: "13pro",
-        slogan: "Your new superpower.",
-        active: false,
-        release: "2021-09-15",
-        models: [],
-        network: ["5G", "4G", "LTE", "3G", "2G"],
-        height: 146.7,
-        width: 71.5,
-        thickness: 7.65,
-        weight: 173,
-        os: {
-            init: "iOS 15",
-            last: lastOS
-        },
-        cpu: {
-            icon: '',
-            model: 'A15',
-            rate: '',
-            core: 6
-        },
-        gpu: {
-            model: "Apple",
-            core: 5
-        },
-        modem: '双卡双待',
-        memory: [
-            {size: "4", type: ""}
-        ],
-        storage: ["128", "256", "512"],
-        battery: '3240',
-        port: '闪电',
-        screen: {
-            size: "6.1",
-            type: 'XDR OLED',
-            width: 2532,
-            height: 1170,
-            density: "460",
-            touch3D: false
-        },
-        connectivity: ["-"],
-        prove: 'IPX68',
-        price: "",
-    },
-    {
         name: "iPhone 13 Mini",
         name_short: "13 mini",
         pic: "13pro",
@@ -1524,6 +1478,52 @@ const iphones = [
             width: 2340,
             height: 1080,
             density: "476",
+            touch3D: false
+        },
+        connectivity: ["-"],
+        prove: 'IPX68',
+        price: "",
+    },
+    {
+        name: "iPhone 13",
+        name_short: "13",
+        pic: "13pro",
+        slogan: "Your new superpower.",
+        active: false,
+        release: "2021-09-15",
+        models: [],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 146.7,
+        width: 71.5,
+        thickness: 7.65,
+        weight: 173,
+        os: {
+            init: "iOS 15",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A15',
+            rate: '',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 5
+        },
+        modem: '双卡双待',
+        memory: [
+            {size: "4", type: ""}
+        ],
+        storage: ["128", "256", "512"],
+        battery: '3240',
+        port: '闪电',
+        screen: {
+            size: "6.1",
+            type: 'XDR OLED',
+            width: 2532,
+            height: 1170,
+            density: "460",
             touch3D: false
         },
         connectivity: ["-"],
