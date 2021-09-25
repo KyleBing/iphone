@@ -1653,7 +1653,7 @@ const iphones = [
         screen: {
             brightness: '1000~1200',
             size: "6.1",
-            type: 'XDR OLED',
+            type: 'XDR OLED ProMotion',
             refreshRate: "10~120", // hz
             width: 2532,
             height: 1170,
@@ -1702,7 +1702,7 @@ const iphones = [
         screen: {
             brightness: '1000~1200', // cd/㎡
             size: "6.7",
-            type: 'XDR OLED',
+            type: 'XDR OLED ProMotion',
             refreshRate: "10~120", // hz
             width: 2778,
             height: 1284,
