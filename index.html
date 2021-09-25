@@ -6,9 +6,9 @@
     <meta name='keywords' content="iPhone详细参数汇总,iPhone参数对比,iPhone所有机型参数大全,iPhone大全,iPhone 12">
     <title>iPhone 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/iPhone-black.png" type="image/png">
-    <link rel="stylesheet" href="css/iPhone.css?v=20210922145147">
-    <link rel="apple-touch-icon" href="img/iPhone-black.png">
+    <link rel="shortcut icon" href="img/iphone_favicon256w.png" type="image/png">
+    <link rel="stylesheet" href="css/iPhone.css?v=20210925105505">
+    <link rel="apple-touch-icon" href="img/iphone@3x.png">
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
     <style>
         [v-cloak] {
@@ -23,8 +23,8 @@
     <div class="about gradient">
         <div class="about-header">
             <div class="icon">
-                <img style="display: none" src="img/iPhone-black.png" alt="for 知乎链接图标抓取">
-                <img src="img/iPhone-white.png?v=1" alt="">
+                <img style="display: none" src="img/iphone@3x.png" alt="for 知乎链接图标抓取">
+                <img src="img/iphone_white@3x.png?v=1" alt="">
             </div>
             <div class="content">
                 <h1 class="title">iPhone 参数大全</h1>
@@ -146,7 +146,7 @@
                                     <tspan x="149.305154" y="78.434891">{{iphone.screen.size}} 寸</tspan>
                                 </text>
                                 <text id="density" font-family="PingFangSC-Medium, PingFang SC" font-size="20" font-weight="400" line-spacing="25" fill="#000000">
-                                    <tspan x="147.805154" y="103.434891">{{iphone.screen.density}} ppi</tspan>
+                                    <tspan x="147.805154" y="103.434891">{{iphone.screen.density}} dpi</tspan>
                                 </text>
                                 <g id="ruler-/-vitical-" transform="translate(64.805154, 0.434891)" fill="#00A5FF">
                                     <rect id="Rectangle" x="0" y="0" width="8" height="2"></rect>
@@ -166,13 +166,23 @@
                                 </text>
                             </g>
                             <text id="screenType" font-family="Galvji-Bold, Galvji" font-size="20" font-weight="bold" fill="#404040">
-                                <tspan x="227.212891" y="19">{{iphone.screen.type}}</tspan>
+                                <tspan x="216.020508" y="19">{{iphone.screen.type}}</tspan>
                             </text>
-                            <text id="touch3D" font-family="PingFangSC-Semibold, PingFang SC" font-size="20" font-weight="500" fill="#404040">
-                                <tspan v-if="iphone.screen.touch3D" x="106" y="141">压感</tspan>
+                            <text v-if="iphone.screen.brightness" id="screenLight" font-family="Galvji" font-size="15" font-weight="normal" fill="#404040">
+                                <tspan x="216.020508" y="41">{{iphone.screen.brightness}} cd/㎡</tspan>
+                            </text>
+                            <text v-if="iphone.screen.refreshRate" id="screenRate" font-family="Galvji" font-size="15" font-weight="normal" fill="#404040">
+                                <tspan x="216.020508" y="64">{{iphone.screen.refreshRate}} hz</tspan>
+                            </text>
+                            <text v-if="iphone.screen.touch3D" id="touch3D" font-family="PingFangSC-Semibold, PingFang SC" font-size="15" font-weight="500" fill="#404040">
+                                <tspan x="111" y="155">压感</tspan>
+                            </text>
+                            <text v-if="iphone.screen.hdr" id="HDR" font-family="PingFangSC-Semibold, PingFang SC" font-size="15" font-weight="500" fill="#404040">
+                                <tspan x="109.8525" y="127">HDR</tspan>
                             </text>
                         </g>
                     </svg>
+
                 </section>
                 <section class="detail">
                     <div class="detail-list">
@@ -265,7 +275,7 @@
 
 </div>
 
-<script src="iPhone.js?v=20210922145147"></script>
+<script src="iPhone.js?v=20210925105505"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {
