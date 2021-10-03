@@ -1543,7 +1543,7 @@ const iphones = [
         },
         gpu: {
             model: "Apple",
-            core: 5
+            core: 4
         },
         modem: '单卡',
         memory: [
@@ -1592,7 +1592,7 @@ const iphones = [
         },
         gpu: {
             model: "Apple",
-            core: 5
+            core: 4
         },
         modem: '双卡双待',
         memory: [

@@ -7,7 +7,7 @@
     <title>iPhone 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/iphone_favicon256w.png" type="image/png">
-    <link rel="stylesheet" href="css/iPhone.css?v=20210926165713">
+    <link rel="stylesheet" href="css/iPhone.css?v=20211003222558">
     <link rel="apple-touch-icon" href="img/iphone@3x.png">
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
     <style>
@@ -56,7 +56,7 @@
             <div class="copyright">
                 <p><a class="link" target="_blank" href="https://kylebing.cn/tools/apple-chip">苹果处理器参数大全</a></p>
                 <p><a class="link" target="_blank" href="https://kylebing.cn/tools/ipad">iPad 参数大全</a></p>
-                <p><a target="_blank"  href="https://en.wikipedia.org/wiki/iPhone">2021/09/26</a></p>
+                <p><a target="_blank"  href="https://en.wikipedia.org/wiki/iPhone">2021/09/25</a></p>
             </div>
         </div>
     </div>
@@ -65,10 +65,7 @@
     <div class="iphone-list">
         <div class="iphone" v-for="(iphone, index) in iphones" :key="index">
             <div class="title-content">
-                <div class="title">
-                    <h1>{{iphone.name}}</h1>
-                    <div class="date">{{iphone.release.substr(0, 4)}}</div>
-                </div>
+                <div class="title">{{iphone.name}}</div>
                 <div class="slogan">{{iphone.slogan}}</div>
             </div>
 
@@ -278,7 +275,7 @@
 
 </div>
 
-<script src="iPhone.js?v=20210926165713"></script>
+<script src="iPhone.js?v=20211003222558"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {
