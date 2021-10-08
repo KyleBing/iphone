@@ -1547,7 +1547,7 @@ const iphones = [
         },
         modem: '单卡',
         memory: [
-            {size: "4", type: ""}
+            {size: "4", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512"],
         battery: '2425',
@@ -1596,7 +1596,7 @@ const iphones = [
         },
         modem: '双卡双待',
         memory: [
-            {size: "4", type: ""}
+            {size: "4", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512"],
         battery: '3240',
@@ -1645,7 +1645,7 @@ const iphones = [
         },
         modem: '双卡双待',
         memory: [
-            {size: "6", type: ""}
+            {size: "6", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512", "1024"],
         battery: '3125',
@@ -1694,7 +1694,7 @@ const iphones = [
         },
         modem: '双卡双待',
         memory: [
-            {size: "6", type: ""}
+            {size: "6", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512", "1024"],
         battery: '4373',
