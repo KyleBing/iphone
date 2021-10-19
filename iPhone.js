@@ -211,7 +211,7 @@ const iphones = [
         pic: "4s",
         slogan: "The most amazing iPhone yet.",
         active: false,
-        release: "2012-09-21",
+        release: "2011-10-14",
         models: [],
         network: ["GSM", "CDMA", "3G", "3G+", "HSUPA"],
         height: 115.2,
