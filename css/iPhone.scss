@@ -44,16 +44,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    h1{
-      font-weight: lighter;
-      font-size: 1.3rem;
-      color: $text-main;
-    }
-    .date{
-      font-size: 1rem;
-      color: $text-second;
-      margin-left: 20px;
-    }
+    font-size: 1.3rem;
+    color: $text-main;
   }
   .slogan{
     font-weight: 200;
