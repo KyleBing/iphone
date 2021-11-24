@@ -48,6 +48,60 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ['Wi-Fi', "蓝牙 2.0"],
         prove: '',
         price: "",
@@ -97,6 +151,60 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ['Wi-Fi', "蓝牙 2.0"],
         prove: '',
         price: "",
@@ -149,6 +257,60 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ['Wi-Fi 2.4', "蓝牙 2.1"],
         prove: '',
         price: "",
@@ -201,6 +363,60 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ['Wi-Fi 2.4', "蓝牙 2.1"],
         prove: '',
         price: "",
@@ -250,6 +466,60 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ['Wi-Fi 2.4'],
         prove: '',
         price: "",
@@ -299,6 +569,60 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ['Wi-Fi'],
         prove: '',
         price: "",
@@ -354,6 +678,60 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: [],
         prove: '',
         price: "",
@@ -410,6 +788,60 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "LTE", "Wi-Fi", "蓝牙 4.0", "GPS"],
         prove: '',
         price: "",
@@ -463,6 +895,60 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 4.2", "NFC", "GPS"],
         prove: '',
         price: "",
@@ -516,6 +1002,60 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 4.2", "NFC", "GPS"],
         prove: '',
         price: "",
@@ -568,6 +1108,60 @@ const iphones = [
             density: "326",
             touch3D: true
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 4.2", "NFC", "GPS"],
         prove: '',
         price: "",
@@ -620,6 +1214,60 @@ const iphones = [
             density: "401",
             touch3D: true
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 4.2", "NFC", "GPS"],
         prove: '',
         price: "",
@@ -673,6 +1321,60 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "Wi-Fi", "蓝牙 4.2"],
         prove: '',
         price: "",
@@ -725,6 +1427,60 @@ const iphones = [
             density: "326",
             touch3D: true
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
         prove: 'IPX67',
         price: "",
@@ -777,6 +1533,60 @@ const iphones = [
             density: "401",
             touch3D: true
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
         prove: 'IPX67',
         price: "",
@@ -829,6 +1639,60 @@ const iphones = [
             density: "326",
             touch3D: true
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
         prove: 'IPX67',
         price: "",
@@ -881,6 +1745,60 @@ const iphones = [
             density: "401",
             touch3D: true
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
         prove: 'IPX67',
         price: "",
@@ -934,6 +1852,60 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
         prove: 'IPX67',
         price: "",
@@ -986,6 +1958,60 @@ const iphones = [
             density: "458",
             touch3D: true
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
         prove: 'IPX67',
         price: "",
@@ -1041,6 +2067,60 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: [],
         prove: 'IPX',
         price: "",
@@ -1095,6 +2175,60 @@ const iphones = [
             touch3D: true,
             hdr: true,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: [],
         prove: 'IPX68',
         price: "",
@@ -1149,6 +2283,60 @@ const iphones = [
             touch3D: true,
             hdr: true,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: [],
         prove: 'IPX68',
         price: "",
@@ -1202,6 +2390,60 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
         prove: 'IPX68',
         price: "",
@@ -1255,6 +2497,60 @@ const iphones = [
             touch3D: false,
             hdr: true,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
         prove: 'IPX68',
         price: "",
@@ -1308,6 +2604,60 @@ const iphones = [
             touch3D: false,
             hdr: true,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
         prove: 'IPX68',
         price: "",
@@ -1357,6 +2707,60 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
         prove: 'IPX68',
         price: "",
@@ -1406,6 +2810,60 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
         prove: 'IPX68',
         price: "",
@@ -1460,6 +2918,60 @@ const iphones = [
             touch3D: false,
             hdr: true,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
         prove: 'IPX68',
         price: "",
@@ -1514,6 +3026,60 @@ const iphones = [
             touch3D: false,
             hdr: true,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: '', color: ''}
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
         prove: 'IPX68',
         price: "",
@@ -1563,6 +3129,30 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '',
+                model: '',
+                aperture: '',
+                focal: '',
+                pixelCount: '',
+                zoomRate: '',
+            },
+            back: [
+            ]
+        },
+        colors: [
+            {name: 'Midnight', color: '#232a31'},
+            {name: 'Starlight', color: '#faf6f2'},
+            {name: 'Blue', color: '#276787'},
+            {name: 'Pink', color: '#faddd7'},
+            {name: 'Product Red', color: '#bf0013'},
+        ],
+        charge: [
+            {name: 'Qi无线', power: '7.5w'},
+            {name: '快充', power: '20w'},
+            {name: 'MagSafe', power: '12w'},
+        ],
         connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
         prove: 'IPX68',
         price: "",
@@ -1612,6 +3202,30 @@ const iphones = [
             touch3D: false,
             hdr: false,
         },
+        cameras: {
+            front: {
+                name: '',
+                model: '',
+                aperture: '',
+                focal: '',
+                pixelCount: '',
+                zoomRate: '',
+            },
+            back: [
+            ]
+        },
+        colors: [
+            {name: 'Midnight', color: '#232a31'},
+            {name: 'Starlight', color: '#faf6f2'},
+            {name: 'Blue', color: '#276787'},
+            {name: 'Pink', color: '#faddd7'},
+            {name: 'Product Red', color: '#bf0013'},
+        ],
+        charge: [
+            {name: 'Qi无线', power: '7.5w'},
+            {name: '快充', power: '20w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
         prove: 'IPX68',
         price: "",
@@ -1661,6 +3275,63 @@ const iphones = [
             touch3D: false,
             hdr: true,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: 'Silver', color: '#f1f2ed'},
+            {name: 'Graphite', color: '#54524f'},
+            {name: 'Gold', color: '#fae7cf'},
+            {name: 'Sierra Blue', color: '#a7c1d9'},
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
         prove: 'IPX68',
         price: "",
@@ -1710,6 +3381,63 @@ const iphones = [
             touch3D: false,
             hdr: true,
         },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: 'Silver', color: '#f1f2ed'},
+            {name: 'Graphite', color: '#54524f'},
+            {name: 'Gold', color: '#fae7cf'},
+            {name: 'Sierra Blue', color: '#a7c1d9'},
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-27w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
         connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
         prove: 'IPX68',
         price: "",
