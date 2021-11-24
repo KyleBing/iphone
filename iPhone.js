@@ -54,7 +54,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -63,7 +63,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -80,7 +80,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -157,7 +157,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -166,7 +166,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -183,7 +183,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -263,7 +263,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -272,7 +272,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -289,7 +289,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -369,7 +369,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -378,7 +378,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -395,7 +395,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -472,7 +472,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -481,7 +481,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -498,7 +498,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -575,7 +575,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -584,7 +584,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -601,7 +601,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -684,7 +684,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -693,7 +693,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -710,7 +710,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -794,7 +794,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -803,7 +803,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -820,7 +820,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -901,7 +901,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -910,7 +910,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -927,7 +927,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -1008,7 +1008,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -1017,7 +1017,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -1034,7 +1034,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -1114,7 +1114,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -1123,7 +1123,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -1140,7 +1140,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -1220,7 +1220,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -1229,7 +1229,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -1246,7 +1246,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -1327,7 +1327,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -1336,7 +1336,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -1353,7 +1353,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -1433,7 +1433,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -1442,7 +1442,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -1459,7 +1459,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -1539,7 +1539,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -1548,7 +1548,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -1565,7 +1565,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -1645,7 +1645,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -1654,7 +1654,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -1671,7 +1671,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -1751,7 +1751,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -1760,7 +1760,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -1777,7 +1777,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -1858,7 +1858,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -1867,7 +1867,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -1884,7 +1884,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -1964,7 +1964,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -1973,7 +1973,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -1990,7 +1990,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -2073,7 +2073,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -2082,7 +2082,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -2099,7 +2099,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -2181,7 +2181,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -2190,7 +2190,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -2207,7 +2207,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -2289,7 +2289,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -2298,7 +2298,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -2315,7 +2315,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -2396,7 +2396,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -2405,7 +2405,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -2422,7 +2422,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -2503,7 +2503,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -2512,7 +2512,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -2529,7 +2529,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -2610,7 +2610,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -2619,7 +2619,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -2636,7 +2636,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -2710,56 +2710,53 @@ const iphones = [
         cameras: {
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
-                aperture: 'ƒ/2.2',
+                model: '',
+                aperture: '',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
+                dimension: [
+                    {size: '1080p', fps: [25, 30, 60, 120]},
+                    {size: '720p', fps: [240]},
+                ],
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
+                    model: '',
+                    aperture: '',
                     focal: '26mm',
-                    pixelCount: '1200万',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
+                    pixelCount: '1200万 4000x3000px',
+                    zoomRate: '',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [25, 30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
                 },
                 {
                     name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    model: '',
                     aperture: '',
-                    focal: '',
+                    focal: '13mm',
                     angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
+                    pixelCount: '1200万 4000x3000px',
+                    zoomRate: '0.5'
                 },
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Black', color: '#212125'},
+            {name: 'White', color: '#f5f5f7'},
+            {name: 'Product Red', color: '#d82e2e'},
+            {name: 'Green', color: '#d8efd5'},
+            {name: 'Blue', color: '#023b63'},
+            {name: 'Purple', color: '#b7afe6'},
         ],
         charge: [
-            {name: '充电口', power: '12w'},
-            {name: 'PD', power: '20-23w'},
-            {name: 'MagSafe', power: '15w'},
+            {name: 'Qi', power: '7.5w'},
+            {name: 'Lightning', power: '20w'},
+            {name: 'MagSafe', power: '12w'},
         ],
         connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
         prove: 'IPX68',
@@ -2813,55 +2810,52 @@ const iphones = [
         cameras: {
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
-                aperture: 'ƒ/2.2',
+                model: '',
+                aperture: '',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
+                dimension: [
+                    {size: '1080p', fps: [25, 30, 60, 120]},
+                    {size: '720p', fps: [240]},
+                ],
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
+                    model: '',
+                    aperture: '',
                     focal: '26mm',
-                    pixelCount: '1200万',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
+                    pixelCount: '1200万 4000x3000px',
+                    zoomRate: '',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [25, 30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
                 },
                 {
                     name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    model: '',
                     aperture: '',
-                    focal: '',
+                    focal: '13mm',
                     angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
+                    pixelCount: '1200万 4000x3000px',
+                    zoomRate: '0.5'
                 },
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Black', color: '#212125'},
+            {name: 'White', color: '#f5f5f7'},
+            {name: 'Product Red', color: '#d82e2e'},
+            {name: 'Green', color: '#d8efd5'},
+            {name: 'Blue', color: '#023b63'},
+            {name: 'Purple', color: '#b7afe6'},
         ],
         charge: [
-            {name: '充电口', power: '12w'},
-            {name: 'PD', power: '20-23w'},
+            {name: 'Qi', power: '7.5w'},
+            {name: 'Lightning', power: '20w'},
             {name: 'MagSafe', power: '15w'},
         ],
         connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
@@ -2921,41 +2915,47 @@ const iphones = [
         cameras: {
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
+
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
+                    model: '',
+                    aperture: '',
                     focal: '26mm',
-                    pixelCount: '1200万',
-                    zoomRate: ''
+                    pixelCount: '1200万 4000x3000px',
+                    zoomRate: '',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
                 },
                 {
                     name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
+                    model: '',
+                    aperture: '',
+                    focal: '52mm',
                     pixelCount: '1200万, ',
-                    zoomRate: ''
+                    zoomRate: '2'
                 },
                 {
                     name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
+                    model: '',
+                    aperture: '',
                     focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万',
-                    zoomRate: '3'
+                    angel: '',
+                    pixelCount: '1200万 4000x3000px',
+                    zoomRate: '0.5'
                 },
                 {
                     name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    model: '',
                     aperture: '',
                     focal: '',
                     angel: '',
@@ -2965,11 +2965,14 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Silver', color: '#e3e4df'},
+            {name: 'Graphite', color: '#52514d'},
+            {name: 'Gold', color: '#fcebd3'},
+            {name: 'Pacific Blue', color: '#2d4e5c'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
-            {name: 'PD', power: '20-23w'},
+            {name: 'PD', power: '20w'},
             {name: 'MagSafe', power: '15w'},
         ],
         connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
@@ -3029,41 +3032,47 @@ const iphones = [
         cameras: {
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
+
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
+                    model: '',
+                    aperture: '',
                     focal: '26mm',
-                    pixelCount: '1200万',
-                    zoomRate: ''
+                    pixelCount: '1200万 4000x3000px',
+                    zoomRate: '',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ],
                 },
                 {
                     name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
+                    model: '',
+                    aperture: '',
+                    focal: '52mm',
                     pixelCount: '1200万, ',
-                    zoomRate: ''
+                    zoomRate: '2'
                 },
                 {
                     name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
+                    model: '',
+                    aperture: '',
                     focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万',
-                    zoomRate: '3'
+                    angel: '',
+                    pixelCount: '1200万 4000x3000px',
+                    zoomRate: '0.5'
                 },
                 {
                     name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    model: '',
                     aperture: '',
                     focal: '',
                     angel: '',
@@ -3073,11 +3082,14 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Silver', color: '#e3e4df'},
+            {name: 'Graphite', color: '#52514d'},
+            {name: 'Gold', color: '#fcebd3'},
+            {name: 'Pacific Blue', color: '#2d4e5c'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
-            {name: 'PD', power: '20-23w'},
+            {name: 'PD', power: '20w'},
             {name: 'MagSafe', power: '15w'},
         ],
         connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
@@ -3281,7 +3293,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -3290,7 +3302,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -3307,7 +3319,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
@@ -3387,7 +3399,7 @@ const iphones = [
                 model: 'Sony IMX703 1.9μm',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万',
+                pixelCount: '1200万 4000x3000px',
                 zoomRate: '',
             },
             back: [
@@ -3396,7 +3408,7 @@ const iphones = [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
@@ -3413,7 +3425,7 @@ const iphones = [
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万',
+                    pixelCount: '1200万 4000x3000px',
                     zoomRate: '3'
                 },
                 {
