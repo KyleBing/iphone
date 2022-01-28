@@ -11,6 +11,15 @@ body{
   background-color: $bg-highlight;
   font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
 }
+
+footer{
+  padding: 10px 0 40px;
+  font-size: 12px;
+  text-align: center;
+  color: $gray;
+}
+
+
 .searchbar{}
 .iphone-list{
   margin: 0 auto;
