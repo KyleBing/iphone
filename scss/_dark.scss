@@ -1,0 +1,113 @@
+$dark-bg: lighten(black, 10%);
+$dark-bg-highlight: lighten(black, 25%);
+$dark-bg-light: lighten(black, 18%);
+
+
+$dark-text: lighten(black, 80%);
+$dark-text-title: lighten(black, 95%);
+$dark-text-subtitle: lighten(black, 65%);
+
+$dark-border: lighten(black, 30%);
+$dark-border-light: lighten(black, 60%);
+
+
+@media (prefers-color-scheme: dark) {
+  body{
+    background-color: $dark-bg;
+  }
+
+  .container{
+    background-color: $dark-bg;
+  }
+
+
+
+  // LABEL
+  .rate{
+    background-color: transparent !important;
+  }
+
+  .iphone{
+    .title-content{
+      border-bottom-color: $dark-border;
+      .title{
+        color: $dark-text-title;
+      }
+      .slogan{
+        color: $dark-text-subtitle;
+      }
+    }
+
+    .main-ref{
+      .label{
+        color: $dark-text-title;
+      }
+      .value{
+
+      }
+    }
+
+    .detail-item{
+      &-label{
+        color: $dark-text-subtitle;
+      }
+      &-content{
+        color: $dark-text-title;
+        .tip{
+          color: $dark-text-title;
+        }
+      }
+    }
+  }
+
+  // SVG
+  rect{
+    fill: transparent;
+    &#iphone-outside{
+      stroke: $dark-border-light;
+      fill: $dark-bg
+    }
+    &#iphone-inside{
+      stroke: $dark-border-light;
+      fill: $dark-bg-highlight
+    }
+    &#iphone-inch{
+      stroke: $dark-border-light;
+      fill: $dark-bg-highlight
+    }
+    &#iphone-line{
+      fill: $orange
+    }
+  }
+  text{
+    fill: $dark-text-title
+  }
+
+  // SCROLL BAR
+  ::-webkit-scrollbar {
+    z-index: 50;
+    width: 8px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  :hover::-webkit-scrollbar-thumb {
+    border: 1px solid $dark-border;
+    background-color: $dark-bg-highlight;
+  }
+
+
+
+  // ABOUT
+  .gradient{
+    background-image: linear-gradient(to bottom right, #424242, #1f1f1f);
+  }
+}
