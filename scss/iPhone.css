@@ -962,22 +962,26 @@ footer {
     border-bottom-color: #4d4d4d;
   }
   .iphone .title-content .title {
-    color: #f2f2f2;
+    color: #bfbfbf;
   }
   .iphone .title-content .slogan {
-    color: #a6a6a6;
+    color: #737373;
   }
   .iphone .main-ref .label {
-    color: #f2f2f2;
+    color: #bfbfbf;
   }
   .iphone .detail-item-label {
-    color: #a6a6a6;
+    color: #737373;
   }
   .iphone .detail-item-content {
-    color: #f2f2f2;
+    color: #a6a6a6;
   }
   .iphone .detail-item-content .tip {
-    color: #f2f2f2;
+    color: #a6a6a6;
+  }
+
+  .gradient-blue, .gradient-purple {
+    color: white !important;
   }
 
   rect {
@@ -999,8 +1003,8 @@ footer {
     fill: #FF9500;
   }
 
-  text {
-    fill: #f2f2f2;
+  text, tspan {
+    fill: #bfbfbf;
   }
 
   ::-webkit-scrollbar {
@@ -1024,6 +1028,6 @@ footer {
   }
 
   .gradient {
-    background-image: linear-gradient(to bottom right, #424242, #1f1f1f);
+    background-image: linear-gradient(to bottom right, #2A2A2A, #373737);
   }
 }

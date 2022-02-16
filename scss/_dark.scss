@@ -3,9 +3,9 @@ $dark-bg-highlight: lighten(black, 25%);
 $dark-bg-light: lighten(black, 18%);
 
 
-$dark-text: lighten(black, 80%);
-$dark-text-title: lighten(black, 95%);
-$dark-text-subtitle: lighten(black, 65%);
+$dark-text: lighten(black, 65%);
+$dark-text-title: lighten(black, 75%);
+$dark-text-subtitle: lighten(black, 45%);
 
 $dark-border: lighten(black, 30%);
 $dark-border-light: lighten(black, 60%);
@@ -43,7 +43,6 @@ $dark-border-light: lighten(black, 60%);
         color: $dark-text-title;
       }
       .value{
-
       }
     }
 
@@ -52,13 +51,18 @@ $dark-border-light: lighten(black, 60%);
         color: $dark-text-subtitle;
       }
       &-content{
-        color: $dark-text-title;
+        color: $dark-text;
         .tip{
-          color: $dark-text-title;
+          color: $dark-text;
         }
       }
     }
   }
+
+  .gradient-blue, .gradient-purple{
+    color: white !important;
+  }
+
 
   // SVG
   rect{
@@ -79,7 +83,7 @@ $dark-border-light: lighten(black, 60%);
       fill: $orange
     }
   }
-  text{
+  text, tspan{
     fill: $dark-text-title
   }
 
@@ -108,6 +112,6 @@ $dark-border-light: lighten(black, 60%);
 
   // ABOUT
   .gradient{
-    background-image: linear-gradient(to bottom right, #424242, #1f1f1f);
+    background-image: linear-gradient(to bottom right, #2A2A2A, #373737);
   }
 }
