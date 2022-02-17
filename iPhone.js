@@ -2049,7 +2049,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '',
+        modem: '双卡双待',
         memory: [
             {size: "3", type: "LPDDR4X"}
         ],
@@ -2265,7 +2265,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '',
+        modem: '双卡双待',
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
