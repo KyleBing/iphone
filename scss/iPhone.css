@@ -950,11 +950,11 @@ footer {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #333333;
+    background-color: #262626;
   }
 
   .container {
-    background-color: #333333;
+    background-color: #262626;
   }
 
   .rate {
@@ -992,7 +992,7 @@ footer {
     color: #a6a6a6;
   }
   .iphone .detail-item-content .tip .sup {
-    background-color: #333333;
+    background-color: #262626;
     border-color: #4d4d4d;
   }
 
@@ -1013,7 +1013,7 @@ footer {
   }
   rect#iphone-outside {
     stroke: #999999;
-    fill: #333333;
+    fill: #262626;
   }
   rect#iphone-inside {
     stroke: #999999;
@@ -1057,7 +1057,7 @@ footer {
 }
 @media (prefers-color-scheme: dark) and (max-width: 450px) {
   body {
-    background-color: #333333 !important;
+    background-color: #262626 !important;
   }
 
   .iphone {

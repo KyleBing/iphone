@@ -1,4 +1,4 @@
-$dark-bg: lighten(black, 20%);
+$dark-bg: lighten(black, 15%);
 $dark-bg-highlight: lighten(black, 28%);
 $dark-bg-light: lighten(black, 24%);
 
@@ -133,10 +133,6 @@ $dark-border-light: lighten(black, 60%);
   .gradient{
     background-image: linear-gradient(to bottom right, lighten(black, 20%), lighten(black, 25%));
   }
-
-
-
-
 
   @media (max-width: 450px) {
     body {
