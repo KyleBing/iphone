@@ -124,19 +124,21 @@ footer{
     margin-right: 15px;
   }
   .value{
-    color: $magenta;
     font-size: 1.2rem;
     font-weight: bold;
     font-family: "LLPixel";
+    color: $text-main;
     span.little{
       font-size: 1rem;
     }
-  }
-  &.cyan{
-    .value{
+    &.cyan{
       color: $color-main;
     }
+    &.magenta{
+      color: $magenta;
+    }
   }
+
 }
 .multiply{
   font-style: normal;

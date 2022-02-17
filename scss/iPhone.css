@@ -769,16 +769,19 @@ footer {
   margin-right: 15px;
 }
 .main-ref-item .value {
-  color: #FF2D70;
   font-size: 1.2rem;
   font-weight: bold;
   font-family: "LLPixel";
+  color: #404040;
 }
 .main-ref-item .value span.little {
   font-size: 1rem;
 }
-.main-ref-item.cyan .value {
+.main-ref-item .value.cyan {
   color: #00A5FF;
+}
+.main-ref-item .value.magenta {
+  color: #FF2D70;
 }
 
 .multiply {
@@ -947,11 +950,11 @@ footer {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #1a1a1a;
+    background-color: #333333;
   }
 
   .container {
-    background-color: #1a1a1a;
+    background-color: #333333;
   }
 
   .rate {
@@ -968,7 +971,16 @@ footer {
     color: #737373;
   }
   .iphone .main-ref .label {
-    color: #bfbfbf;
+    color: #a6a6a6;
+  }
+  .iphone .main-ref .value {
+    color: #a6a6a6;
+  }
+  .iphone .main-ref .value.cyan {
+    color: #0583c7;
+  }
+  .iphone .main-ref .value.magenta {
+    color: #d40b4b;
   }
   .iphone .detail-item-label {
     color: #737373;
@@ -979,9 +991,21 @@ footer {
   .iphone .detail-item-content .tip {
     color: #a6a6a6;
   }
+  .iphone .detail-item-content .tip .sup {
+    background-color: #333333;
+    border-color: #4d4d4d;
+  }
 
-  .gradient-blue, .gradient-purple {
-    color: white !important;
+  .gradient-blue {
+    color: #d9d9d9 !important;
+    border-color: transparent !important;
+    background-image: linear-gradient(to bottom right, #073fd5, #05638e);
+  }
+
+  .gradient-purple {
+    color: #d9d9d9 !important;
+    border-color: transparent !important;
+    background-image: linear-gradient(to bottom right, #7700a1, #bc0179);
   }
 
   rect {
@@ -989,15 +1013,15 @@ footer {
   }
   rect#iphone-outside {
     stroke: #999999;
-    fill: #1a1a1a;
+    fill: #333333;
   }
   rect#iphone-inside {
     stroke: #999999;
-    fill: #404040;
+    fill: #474747;
   }
   rect#iphone-inch {
     stroke: #999999;
-    fill: #404040;
+    fill: #474747;
   }
   rect#iphone-line {
     fill: #FF9500;
@@ -1014,6 +1038,7 @@ footer {
   }
 
   ::-webkit-scrollbar-track {
+    border: none;
     background-color: rgba(0, 0, 0, 0);
   }
 
@@ -1023,11 +1048,35 @@ footer {
   }
 
   :hover::-webkit-scrollbar-thumb {
-    border: 1px solid #4d4d4d;
-    background-color: #404040;
+    background-color: #474747;
   }
 
   .gradient {
-    background-image: linear-gradient(to bottom right, #2A2A2A, #373737);
+    background-image: linear-gradient(to bottom right, #333333, #404040);
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 450px) {
+  body {
+    background-color: #333333 !important;
+  }
+
+  .iphone {
+    overflow: hidden;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-color: #3d3d3d !important;
+    margin-bottom: 20px;
+    padding: 0;
+    border: 1px solid #4d4d4d !important;
+  }
+
+  .title-content {
+    border-bottom: 1px solid #dadada;
+    background-color: #474747 !important;
+  }
+
+  .ref-content > * {
+    border-bottom: 1px solid #4d4d4d !important;
   }
 }

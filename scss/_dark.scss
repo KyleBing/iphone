@@ -1,6 +1,6 @@
-$dark-bg: lighten(black, 10%);
-$dark-bg-highlight: lighten(black, 25%);
-$dark-bg-light: lighten(black, 18%);
+$dark-bg: lighten(black, 20%);
+$dark-bg-highlight: lighten(black, 28%);
+$dark-bg-light: lighten(black, 24%);
 
 
 $dark-text: lighten(black, 65%);
@@ -40,9 +40,16 @@ $dark-border-light: lighten(black, 60%);
 
     .main-ref{
       .label{
-        color: $dark-text-title;
+        color: $dark-text;
       }
       .value{
+        color: $dark-text;
+        &.cyan{
+          color: desaturate(darken($color-main, 10%), 5%);
+        }
+        &.magenta{
+          color: desaturate(darken($magenta, 15%), 10%);
+        }
       }
     }
 
@@ -54,13 +61,24 @@ $dark-border-light: lighten(black, 60%);
         color: $dark-text;
         .tip{
           color: $dark-text;
+          .sup{
+            background-color: $dark-bg;
+            border-color: $dark-border;
+          }
         }
       }
     }
   }
 
-  .gradient-blue, .gradient-purple{
-    color: white !important;
+  .gradient-blue{
+    color: darken(white, 15%) !important;
+    border-color: transparent !important;
+    background-image: linear-gradient(to bottom right, darken(#618BFA, 25%), darken(#1CB2F7, 25%));
+  }
+  .gradient-purple{
+    color: darken(white, 15%) !important;
+    border-color: transparent !important;
+    background-image: linear-gradient(to bottom right, darken(#C621FF, 25%), darken(#FE3EBA, 25%));
   }
 
 
@@ -95,6 +113,7 @@ $dark-border-light: lighten(black, 60%);
   }
 
   ::-webkit-scrollbar-track {
+    border: none;
     background-color: rgba(0, 0, 0, 0);
   }
 
@@ -104,7 +123,7 @@ $dark-border-light: lighten(black, 60%);
   }
 
   :hover::-webkit-scrollbar-thumb {
-    border: 1px solid $dark-border;
+    //border: 1px solid $dark-border;
     background-color: $dark-bg-highlight;
   }
 
@@ -112,6 +131,33 @@ $dark-border-light: lighten(black, 60%);
 
   // ABOUT
   .gradient{
-    background-image: linear-gradient(to bottom right, #2A2A2A, #373737);
+    background-image: linear-gradient(to bottom right, lighten(black, 20%), lighten(black, 25%));
+  }
+
+
+
+
+
+  @media (max-width: 450px) {
+    body {
+      background-color: $dark-bg !important;
+    }
+    .iphone {
+      overflow: hidden;
+      @include border-radius(15px);
+      background-color: $dark-bg-light !important;
+      margin-bottom: 20px;
+      padding: 0;
+      border: 1px solid $dark-border !important;
+    }
+    .title-content{
+      border-bottom: 1px solid $color-border;
+      background-color: $dark-bg-highlight !important;
+    }
+    .ref-content{
+      > *{
+        border-bottom: 1px solid $dark-border !important;
+      }
+    }
   }
 }
