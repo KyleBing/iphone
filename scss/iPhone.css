@@ -750,7 +750,7 @@ footer {
 }
 
 .main-ref {
-  padding: 20px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   flex-flow: column nowrap;
@@ -891,6 +891,22 @@ footer {
 .cpu.active .ref-content {
   color: black;
   font-weight: bold;
+}
+
+.colors {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.colors .color {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-right: 3px;
+  margin-bottom: 3px;
+  width: 20px;
+  height: 20px;
+}
+.colors .color:hover {
+  border-color: #00A5FF;
 }
 
 .screen.active sub, .screen.active sup {

@@ -106,7 +106,7 @@ footer{
 }
 
 .main-ref{
-  padding: 20px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   flex-flow: column nowrap;
@@ -252,6 +252,23 @@ footer{
     }
   }
 }
+
+.colors{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .color{
+    border: 1px solid transparentize(black, 0.95);
+    margin-right: 3px;
+    margin-bottom: 3px;
+    width: 20px;
+    height: 20px;
+    &:hover{
+      border-color: $color-main;
+    }
+  }
+}
+
 .screen{
   &.active {
     sub,sup{

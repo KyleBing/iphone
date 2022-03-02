@@ -95,7 +95,7 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'White', color: '#FDFDFD'}
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -198,7 +198,7 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'White', color: '#FDFDFD'}
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -304,7 +304,7 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'White', color: '#FDFDFD'}
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -410,7 +410,7 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'White', color: '#FDFDFD'}
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -513,7 +513,7 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'White', color: '#FDFDFD'}
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -615,8 +615,9 @@ const iphones = [
                 },
             ]
         },
-        colors: [
-            {name: '', color: ''}
+        colors: [ // 用的 iPhone XR 的颜色，具体什么颜色不太清楚，只知道是黑白两色
+            {name: 'Black', color: '#2E3034'},
+            {name: 'White', color: '#F3F3F3'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -725,7 +726,11 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'White', color: '#F3F3F3'},
+            {name: 'Blue', color: '#48AEE6'},
+            {name: 'Green', color: '#A2EB67'},
+            {name: 'Yellow', color: '#F9D045'},
+            {name: 'Pink', color: '#FF6E5A'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -835,7 +840,9 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Space Gray', color: '#A9AAB0'},
+            {name: 'Silver', color: '#E2E3E4'},
+            {name: 'Gold', color: '#E3CCB4'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -942,7 +949,9 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Space Gray', color: '#B1B2B7'},
+            {name: 'Silver', color: '#E2E3E4'},
+            {name: 'Gold', color: '#E3CCB4'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -1049,7 +1058,9 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Space Gray', color: '#B1B2B7'},
+            {name: 'Silver', color: '#E2E3E4'},
+            {name: 'Gold', color: '#E3CCB4'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -1155,7 +1166,10 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Space Gray', color: '#B1B2B7'},
+            {name: 'Silver', color: '#E2E3E4'},
+            {name: 'Gold', color: '#E3CCB4'},
+            {name: 'Rose Gold', color: '#ECC6C1'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -1261,7 +1275,10 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Space Gray', color: '#B1B2B7'},
+            {name: 'Silver', color: '#E2E3E4'},
+            {name: 'Gold', color: '#E3CCB4'},
+            {name: 'Rose Gold', color: '#ECC6C1'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -1368,7 +1385,10 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Space Gray', color: '#B1B2B7'},
+            {name: 'Silver', color: '#E2E3E4'},
+            {name: 'Gold', color: '#E3CCB4'},
+            {name: 'Rose Gold', color: '#ECC6C1'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -1474,7 +1494,12 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Black', color: '#2E3034'},
+            {name: 'Jet Black', color: '#0A0A0A'},
+            {name: 'White', color: '#E2E3E4'},
+            {name: 'Gold', color: '#E3CCB4'},
+            {name: 'Rose Gold', color: '#ECC6C1'},
+            {name: 'Product (Red)', color: '#AF1E2D'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -1580,7 +1605,12 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Black', color: '#2E3034'},
+            {name: 'Jet Black', color: '#0A0A0A'},
+            {name: 'White', color: '#E2E3E4'},
+            {name: 'Gold', color: '#E3CCB4'},
+            {name: 'Rose Gold', color: '#ECC6C1'},
+            {name: 'Product (Red)', color: '#AF1E2D'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -1686,7 +1716,10 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Product (Red)', color: '#b41325'},
+            {name: 'Space Gray', color: '#272729'},
+            {name: 'Silver', color: '#e2e3e4'},
+            {name: 'Gold', color: '#f7e8dd'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -1792,7 +1825,10 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Product (Red)', color: '#b41325'},
+            {name: 'Space Gray', color: '#272729'},
+            {name: 'Silver', color: '#e2e3e4'},
+            {name: 'Gold', color: '#f7e8dd'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -1899,7 +1935,9 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Black', color: '#262529'},
+            {name: 'White', color: '#F3F3F3'},
+            {name: 'Product (Red)', color: '#BA0C2E'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -2005,7 +2043,7 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Black', color: '#2E3034'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -2114,7 +2152,12 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Black', color: '#2E3034'},
+            {name: 'White', color: '#F3F3F3'},
+            {name: 'Blue', color: '#48AEE6'},
+            {name: 'Yellow', color: '#F9D045'},
+            {name: 'Coral', color: '#FF6E5A'},
+            {name: 'Product (Red)', color: '#B41325'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -2222,7 +2265,9 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Silver', color: '#EBEBE3'},
+            {name: 'Space Gray', color: '#262529'},
+            {name: 'Gold', color: '#FADCC2'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -2330,7 +2375,9 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Silver', color: '#EBEBE3'},
+            {name: 'Space Gray', color: '#262529'},
+            {name: 'Gold', color: '#FADCC2'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -2437,7 +2484,12 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Black', color: '#1F2020'},
+            {name: 'White', color: '#F9F6EF'},
+            {name: 'Purple', color: '#D1CDDA'},
+            {name: 'Yellow', color: '#FFE681'},
+            {name: 'Green', color: '#AEE1CD'},
+            {name: 'Product (Red)', color: '#BA0C2E'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -2544,7 +2596,10 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Silver', color: '#EBEBE3'},
+            {name: 'Space Gray', color: '#535150'},
+            {name: 'Gold', color: '#FAD7BD'},
+            {name: 'Midnight Green', color: '#4E5851'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -2651,7 +2706,10 @@ const iphones = [
             ]
         },
         colors: [
-            {name: '', color: ''}
+            {name: 'Silver', color: '#EBEBE3'},
+            {name: 'Space Gray', color: '#535150'},
+            {name: 'Gold', color: '#FAD7BD'},
+            {name: 'Midnight Green', color: '#4E5851'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
