@@ -3290,6 +3290,7 @@ const iphones = [
             {name: 'Blue', color: '#276787'},
             {name: 'Pink', color: '#faddd7'},
             {name: 'Product Red', color: '#bf0013'},
+            {name: 'Alpine Green', color: '#576856'},
         ],
         charge: [
             {name: 'Qi无线', power: '7.5w'},
@@ -3396,6 +3397,7 @@ const iphones = [
             {name: 'Graphite', color: '#54524f'},
             {name: 'Gold', color: '#fae7cf'},
             {name: 'Sierra Blue', color: '#a7c1d9'},
+            {name: 'Alpine Green', color: '#576856'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -3502,6 +3504,7 @@ const iphones = [
             {name: 'Graphite', color: '#54524f'},
             {name: 'Gold', color: '#fae7cf'},
             {name: 'Sierra Blue', color: '#a7c1d9'},
+            {name: 'Alpine Green', color: '#576856'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
