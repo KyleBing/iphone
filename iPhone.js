@@ -3249,7 +3249,9 @@ const iphones = [
         isNew: false,
         active: false,
         release: "2021-09-15",
-        models: [],
+        models: [
+            {name: "A2629", type: "国内"},
+        ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 131.5,
         width: 64.2,
@@ -3325,7 +3327,9 @@ const iphones = [
         isNew: false,
         active: false,
         release: "2021-09-15",
-        models: [],
+        models: [
+            {name: "A2634", type: "国内"},
+        ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 146.7,
         width: 71.5,
@@ -3402,7 +3406,9 @@ const iphones = [
         isNew: false,
         active: false,
         release: "2021-09-15",
-        models: [],
+        models: [
+            {name: "A2639", type: "国内"},
+        ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 146.7,
         width: 71.5,
@@ -3512,7 +3518,9 @@ const iphones = [
         isNew: false,
         active: false,
         release: "2021-09-15",
-        models: [],
+        models: [
+            {name: "A2644", type: "国内"},
+        ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 160.8,
         width: 78.1,
