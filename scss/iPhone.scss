@@ -56,6 +56,9 @@ footer{
     justify-content: flex-start;
     font-size: 1.3rem;
     color: $text-main;
+    &.is-new{
+      color: $green !important;
+    }
   }
   .slogan{
     font-weight: 200;

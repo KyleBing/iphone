@@ -7,7 +7,7 @@
     <title>iPhone 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/iphone_favicon256w.png" type="image/png">
-    <link rel="stylesheet" href="scss/iPhone.css?v=20220309100832">
+    <link rel="stylesheet" href="scss/iPhone.css?v=20220309102652">
     <link rel="apple-touch-icon" href="img/iphone@3x.png">
     <script src="../../lib/js/vue.min.2.6.10.js"></script>
     <style>
@@ -64,7 +64,7 @@
     <div class="iphone-list">
         <div class="iphone" v-for="(iphone, index) in iphones" :key="index">
             <div class="title-content">
-                <div class="title">{{iphone.name}}</div>
+                <div :class="['title', {'is-new': iphone.isNew}]">{{iphone.name}}</div>
                 <div class="slogan">{{iphone.slogan}}</div>
             </div>
 
@@ -289,7 +289,7 @@
 
 </div>
 
-<script src="iPhone.js?v=20220309100832"></script>
+<script src="iPhone.js?v=20220309102652"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {
