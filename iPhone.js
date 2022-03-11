@@ -3656,7 +3656,7 @@ const iphones = [
         },
         modem: '单卡',
         memory: [
-            {size: "3", type: "LPDDR4X"}
+            {size: "4", type: "LPDDR4X"}
         ],
         storage: ["64", "128", "256"],
         battery: '',
