@@ -1345,7 +1345,7 @@ const iphones = [
         weight: 113,
         os: {
             init: "iOS 9.3",
-            last: "iOS 14.4.2"
+            last: lastOS
         },
         cpu: {
             icon: 'A9',
