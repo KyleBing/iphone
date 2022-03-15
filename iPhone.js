@@ -1932,7 +1932,7 @@ const iphones = [
         screen: {
             brightness: '',
             size: "4.7",
-            type: 'IPS',
+            type: 'IPS LCD',
             refreshRate: "",
             width: 750,
             height: 1334,
@@ -3664,7 +3664,7 @@ const iphones = [
         screen: {
             brightness: '625',
             size: "4.7",
-            type: '',
+            type: 'IPS LCD',
             refreshRate: "",
             width: 750,
             height: 1334,
