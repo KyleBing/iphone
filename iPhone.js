@@ -2839,7 +2839,7 @@ const iphones = [
             height: 2340,
             density: "476",
             touch3D: false,
-            hdr: false,
+            hdr: true,
         },
         cameras: {
             front: {
@@ -2942,7 +2942,7 @@ const iphones = [
             height: 2532,
             density: "460",
             touch3D: false,
-            hdr: false,
+            hdr: true,
         },
         cameras: {
             front: {
@@ -3287,7 +3287,7 @@ const iphones = [
             height: 2340,
             density: "476",
             touch3D: false,
-            hdr: false,
+            hdr: true,
         },
         cameras: {
             front: {
@@ -3365,7 +3365,7 @@ const iphones = [
             height: 2532,
             density: "460",
             touch3D: false,
-            hdr: false,
+            hdr: true,
         },
         cameras: {
             front: {
