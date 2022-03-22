@@ -3659,7 +3659,7 @@ const iphones = [
             {size: "4", type: "LPDDR4X"}
         ],
         storage: ["64", "128", "256"],
-        battery: '',
+        battery: '2018',
         port: '闪电',
         screen: {
             brightness: '625',
