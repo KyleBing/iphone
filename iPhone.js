@@ -3276,7 +3276,7 @@ const iphones = [
             {size: "4", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512"],
-        battery: '2425',
+        battery: '2406',
         port: '闪电',
         screen: {
             brightness: '',
@@ -3354,7 +3354,7 @@ const iphones = [
             {size: "4", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512"],
-        battery: '3240',
+        battery: '3227',
         port: '闪电',
         screen: {
             brightness: '',
@@ -3433,7 +3433,7 @@ const iphones = [
             {size: "6", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512", "1024"],
-        battery: '3125',
+        battery: '3095',
         port: '闪电',
         screen: {
             brightness: '1000~1200',
@@ -3545,7 +3545,7 @@ const iphones = [
             {size: "6", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512", "1024"],
-        battery: '4373',
+        battery: '4352',
         port: '闪电',
         screen: {
             brightness: '1000~1200', // cd/㎡
