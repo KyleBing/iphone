@@ -3713,6 +3713,8 @@ const iphones = [
 let app = new Vue({
     el: "#app",
     data: {
+        heartActive: false,
+        thumbsUpCount: 0,
         // full screen 相关
         showFullScreenBtn: false,
         didEnteredFullScreen: false,
@@ -3734,6 +3736,8 @@ let app = new Vue({
         this.portraitMode = window.innerWidth > window.innerHeight
         this.mobileMode = mobileMode
         this.showFullScreenBtn = chromeCore && !mobileMode
+        this.getInitThumbsUpCount()
+        this.websocketInit()
     },
     watch: {
         keyword() {
@@ -3787,7 +3791,54 @@ let app = new Vue({
             } else {
                 this.iphones = this.iphonesOrigin
             }
-        }
+
+        },
+
+        // 点赞功能
+        getInitThumbsUpCount(){
+            axios.get('../../portal/thumbs-up?key=iphone')
+                .then(res => {
+                    if (res.data && res.data.data){
+                        this.thumbsUpCount = res.data.data
+                    }
+                })
+        },
+        websocketInit(){
+            this.websocket = new WebSocket('wss://kylebing.cn/ws')
+            this.websocket.onopen = this.websocketOnOpen
+            this.websocket.onmessage = this.websocketOnMessage
+            this.websocket.onerror = this.websocketOnError
+            this.websocket.onclose = this.websocketClose
+        },
+        websocketOnOpen() {
+            this.portStatus = 'success'
+            console.log('websocket has been opened')
+        },
+        websocketOnMessage(res) {
+            let receivedMessage = JSON.parse(res.data)
+            this.thumbsUpCount = receivedMessage.count
+        },
+        websocketOnError() {
+            this.portStatus = 'error'
+            this.websocket.send('on error')
+        },
+        websocketClose() {
+            this.portStatus = 'closed'
+            console.log('socket has closed')
+        },
+
+        thumbsUp(){
+            this.sendMessage('iphone')
+        },
+
+        sendMessage(key){
+            if (this.websocket){
+                this.heartActive = true
+                this.websocket.send(JSON.stringify({
+                    key: key
+                }))
+            }
+        },
     }
 })
 // 当全屏模式变化时

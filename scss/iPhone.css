@@ -580,7 +580,7 @@ tt {
   height: 40px;
 }
 .links .link-item h3 {
-  margin-top: 3px;
+  margin-top: 8px;
   font-weight: normal;
   font-size: 13px;
   text-align: center;
@@ -596,6 +596,15 @@ tt {
 }
 .link:active {
   transform: translateY(2px);
+}
+
+.thumbs-up {
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
+  transform: translateY(2px);
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
