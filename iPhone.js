@@ -3713,6 +3713,10 @@ const iphones = [
 let app = new Vue({
     el: "#app",
     data: {
+        // date
+        dateEnd: '2022.05.27',
+        // thumb up
+        pingPongInterval: null,
         thumbsUpKey: 'iphone',
         heartActive: false,
         thumbsUpCount: 0,
@@ -3813,11 +3817,22 @@ let app = new Vue({
         },
         websocketOnOpen() {
             this.portStatus = 'success'
-            console.log('websocket has been opened')
+            this.pingPongInterval = setInterval(()=>{
+                let message = new WSMessage(WSMessage.type.heartBeat, 'ping')
+                this.websocket.send(JSON.stringify(message))
+            }, 10000)
         },
         websocketOnMessage(res) {
             let receivedMessage = JSON.parse(res.data)
-            this.thumbsUpCount = receivedMessage.count
+            switch (receivedMessage.type){
+                case WSMessage.type.heartBeat:
+                    break;
+                case WSMessage.type.thumbsUp:
+                    if (receivedMessage.content.key === this.thumbsUpKey){
+                        this.thumbsUpCount = receivedMessage.content.count
+                    }
+                    break;
+            }
         },
         websocketOnError() {
             this.portStatus = 'error'
@@ -3833,15 +3848,32 @@ let app = new Vue({
         },
 
         sendMessage(key){
-            if (this.websocket){
+            if (this.websocket) {
                 this.heartActive = true
-                this.websocket.send(JSON.stringify({
+                let message = new WSMessage(WSMessage.type.thumbsUp, {
                     key: key
-                }))
+                })
+                this.websocket.send(JSON.stringify(message))
             }
         },
     }
 })
+
+class WSMessage{
+    constructor(type, content) {
+        this.type = type
+        this.content = content
+    }
+    static type = {
+        thumbsUp: 'thumbs-up',
+        heartBeat: 'heart-beat',
+    }
+}
+
+
+document.addEventListener('touchstart', () => {
+}, false)
+
 // 当全屏模式变化时
 document.documentElement.onfullscreenchange = () => {
     app.didEnteredFullScreen = Boolean(document.fullscreenElement)
