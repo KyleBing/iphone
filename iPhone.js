@@ -2043,7 +2043,7 @@ const iphones = [
         port: '闪电',
         screen: {
             brightness: '625',
-            size: "6.08",
+            size: "5.85",
             type: 'AMOLED',
             refreshRate: "",
             width: 1125,
