@@ -3627,7 +3627,7 @@ const iphones = [
         name_short: "SE3",
         pic: "SE3",
         slogan: "Love the power. Love the price.",
-        isNew: true,
+        isNew: false,
         active: false,
         release: "2022-03-18",
         models: [
@@ -3708,13 +3708,333 @@ const iphones = [
         price: "",
     },
 
+
+    {
+        name: "iPhone 14",
+        name_short: "14",
+        pic: "unknown",
+        slogan: "?",
+        isNew: true,
+        active: false,
+        release: "2022-09-08",
+        models: [
+            // {name: "A2634", type: "国内"},
+        ],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: '?',
+        width: '?',
+        thickness: '?',
+        weight: '?',
+        os: {
+            init: "iOS 16",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A16',
+            rate: '?',
+            core: '?'
+        },
+        gpu: {
+            model: "Apple",
+            core: '?'
+        },
+        modem: '双卡双待',
+        memory: [
+            // {size: "4", type: "LPDDR4X"}
+        ],
+        storage: ["?", "?", "?"],
+        battery: '?',
+        port: '闪电',
+        screen: {
+            brightness: '',
+            size: "?",
+            type: '?',
+            refreshRate: "",
+            width: '?',
+            height: '?',
+            density: "?",
+            touch3D: false,
+            hdr: true,
+        },
+        cameras: {
+            front: {
+                name: '',
+                model: '',
+                aperture: '',
+                focal: '',
+                pixelCount: '',
+                zoomRate: '',
+            },
+            back: [
+            ]
+        },
+        colors: [
+            // {name: 'Midnight', color: '#232a31'},
+            // {name: 'Starlight', color: '#faf6f2'},
+            // {name: 'Blue', color: '#276787'},
+            // {name: 'Pink', color: '#faddd7'},
+            // {name: 'Product Red', color: '#bf0013'},
+            // {name: 'Alpine Green', color: '#576856'},
+            {name: 'Black', color: '#aaaaaa'},
+            {name: 'White', color: '#cccccc'},
+            {name: 'Black', color: '#aaaaaa'},
+            {name: 'White', color: '#cccccc'},
+            {name: 'Black', color: '#aaaaaa'},
+        ],
+        charge: [
+            // {name: 'Qi无线', power: '7.5w'},
+            // {name: '快充', power: '20w'},
+            // {name: 'MagSafe', power: '15w'},
+        ],
+        unlockMethod: [],
+        applePay: false,
+        connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
+        prove: 'IPX68',
+        price: "",
+    },
+    {
+        name: "iPhone 14 Pro",
+        name_short: "14 Pro",
+        pic: "unknown",
+        slogan: "?",
+        isNew: true,
+        active: false,
+        release: "2022-09-08",
+        models: [
+            // {name: "A2639", type: "国内"},
+        ],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: '?',
+        width: '?',
+        thickness: '?',
+        weight: '?',
+        os: {
+            init: "iOS 15",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A16',
+            rate: '?',
+            core: '?'
+        },
+        gpu: {
+            model: "Apple",
+            core: '?'
+        },
+        modem: '双卡双待',
+        memory: [
+            // {size: "6", type: "LPDDR4X"}
+        ],
+        storage: ["?", "?", "?"],
+        battery: '?',
+        port: '闪电',
+        screen: {
+            brightness: '',
+            size: "?",
+            type: '?',
+            refreshRate: "",
+            width: '?',
+            height: '?',
+            density: "?",
+            touch3D: false,
+            hdr: true,
+        },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万 4000x3000px',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万 4000x3000px',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万 4000x3000px',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            // {name: 'Silver', color: '#f1f2ed'},
+            // {name: 'Graphite', color: '#54524f'},
+            // {name: 'Gold', color: '#fae7cf'},
+            // {name: 'Sierra Blue', color: '#a7c1d9'},
+            // {name: 'Alpine Green', color: '#576856'},
+            {name: 'Black', color: '#aaaaaa'},
+            {name: 'White', color: '#cccccc'},
+            {name: 'Black', color: '#aaaaaa'},
+            {name: 'White', color: '#cccccc'},
+            {name: 'Black', color: '#aaaaaa'},
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
+        unlockMethod: [],
+        applePay: false,
+        connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
+        prove: 'IPX68',
+        price: "",
+    },
+    {
+        name: "iPhone 14 Pro Max ",
+        name_short: "14 Pro Max",
+        pic: "unknown",
+        slogan: "?",
+        isNew: true,
+        active: false,
+        release: "2022-09-08",
+        models: [
+            // {name: "A2644", type: "国内"},
+        ],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: '?',
+        width: '?',
+        thickness: '?',
+        weight: '?',
+        os: {
+            init: "iOS 16",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A16',
+            rate: '?',
+            core: '?'
+        },
+        gpu: {
+            model: "Apple",
+            core: '?'
+        },
+        modem: '双卡双待',
+        memory: [
+            // {size: "6", type: "LPDDR4X"}
+        ],
+        storage: ["?", "?", "?"],
+        battery: '?',
+        port: '闪电',
+        screen: {
+            brightness: '',
+            size: "?",
+            type: '?',
+            refreshRate: "",
+            width: '?',
+            height: '?',
+            density: "?",
+            touch3D: false,
+            hdr: true,
+        },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万 4000x3000px',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万 4000x3000px',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万 4000x3000px',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            // {name: 'Silver', color: '#f1f2ed'},
+            // {name: 'Graphite', color: '#54524f'},
+            // {name: 'Gold', color: '#fae7cf'},
+            // {name: 'Sierra Blue', color: '#a7c1d9'},
+            // {name: 'Alpine Green', color: '#576856'},
+            {name: 'Black', color: '#aaaaaa'},
+            {name: 'White', color: '#cccccc'},
+            {name: 'Black', color: '#aaaaaa'},
+            {name: 'White', color: '#cccccc'},
+            {name: 'Black', color: '#aaaaaa'},
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-27w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
+        unlockMethod: [],
+        applePay: false,
+        connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
+        prove: 'IPX68',
+        price: "",
+    },
+
 ].reverse()
 
 let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateEnd: '2022.08.11',
+        dateLastUpdate: '2022.09.01',
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'iphone',

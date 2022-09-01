@@ -738,6 +738,7 @@ footer {
   justify-content: flex-start;
   font-size: 1.3rem;
   color: #404040;
+  font-weight: bold;
 }
 .title-content .title.is-new {
   color: #00b56b !important;
