@@ -3810,7 +3810,7 @@ const iphones = [
         thickness: '?',
         weight: '?',
         os: {
-            init: "iOS 15",
+            init: "iOS 16",
             last: lastOS
         },
         cpu: {
