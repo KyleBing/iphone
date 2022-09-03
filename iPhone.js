@@ -4050,7 +4050,7 @@ let app = new Vue({
         iphones: iphones,
         iphonesOrigin: iphones,
 
-        iphonesMap: new Map(),
+        deviceMap: new Map(),
 
         // 机型信息筛选
         selectedNames: [], // 已选中的名字
@@ -4069,17 +4069,12 @@ let app = new Vue({
         // this.getInitThumbsUpCount()
         this.websocketInit()
 
-        this.generateIphoneMap() // 生成 iPhone Map
-    },
-    watch: {
-        keyword() {
-            this.filterIphone()
-        }
+        this.generateDeviceMap() // 生成 iPhone Map
     },
     methods: {
-        generateIphoneMap(){
-            this.iphones.forEach(iphone => {
-                this.iphonesMap.set(iphone.name, iphone)
+        generateDeviceMap(){
+            this.iphones.forEach(device => {
+                this.deviceMap.set(device.name, device)
             })
         },
 
@@ -4092,17 +4087,17 @@ let app = new Vue({
         },
 
         // 筛选手机信息
-        filterTagToggle(iphoneName){
-            if (this.selectedNames.includes(iphoneName)){
-                this.selectedNames.splice(this.selectedNames.indexOf(iphoneName), 1)
+        filterTagToggle(deviceName){
+            if (this.selectedNames.includes(deviceName)){
+                this.selectedNames.splice(this.selectedNames.indexOf(deviceName), 1)
             } else {
-                this.selectedNames.push(iphoneName)
+                this.selectedNames.push(deviceName)
             }
-            this.updateShowingIphones()
+            this.updateShowingDevices()
 
         },
-        updateShowingIphones(){
-            this.iphones = this.selectedNames.map(name => this.iphonesMap.get(name))
+        updateShowingDevices(){
+            this.iphones = this.selectedNames.map(name => this.deviceMap.get(name))
             if (this.iphones.length === 0){
                 this.iphones = [...this.iphonesOrigin]
             }
