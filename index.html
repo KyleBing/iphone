@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="img/iphone_favicon256w.png" type="image/png">
     <link rel="stylesheet" href="scss/iPhone.css?v=20220901134805">
     <link rel="apple-touch-icon" href="img/iphone@3x.png">
-    <script src="../../lib/js/vue.min.2.6.10.js"></script>
+    <script src="../../lib/js/vue_2.66.js"></script>
     <script src="../../lib/js/axios.min.js"></script>
     <style>
         [v-cloak] {
@@ -78,6 +78,16 @@
             </div>
 
         </div>
+    </div>
+
+    <div class="filter-list">
+        <div class="iphone-tag-list">
+            <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}]"
+                 v-for="item in iphones" :key="iphones.name_short"
+                 @click="filterTagToggle(item.name)"
+            >{{item.name_short}}</div>
+        </div>
+
     </div>
 
     <!--CONTENT-->

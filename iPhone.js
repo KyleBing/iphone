@@ -4050,6 +4050,11 @@ let app = new Vue({
         iphones: iphones,
         iphonesOrigin: iphones,
 
+        iphonesMap: new Map(),
+
+        // 机型信息筛选
+        selectedNames: [], // 已选中的名字
+
         tags: [],
         keyword: '',
         tipShowed: false,
@@ -4063,6 +4068,8 @@ let app = new Vue({
         this.showFullScreenBtn = chromeCore && !mobileMode
         this.getInitThumbsUpCount()
         this.websocketInit()
+
+        this.generateiPhoneMap() // 生成 iPhone Map
     },
     watch: {
         keyword() {
@@ -4070,6 +4077,21 @@ let app = new Vue({
         }
     },
     methods: {
+        generateiPhoneMap(){
+            this.iphones.forEach(iphone => {
+                this.iphonesMap.set(iphone.name, iphone)
+            })
+        },
+
+        // 筛选手机信息
+        filterTagToggle(iphoneName){
+            if (this.selectedNames.includes(iphoneName)){
+                this.selectedNames.splice(this.selectedNames.indexOf(iphoneName), 1)
+            } else {
+                this.selectedNames.push(iphoneName)
+            }
+        },
+
         tagToggle(tag) {
             if (this.tags.some(item => item === tag)) {
                 this.tags.splice(this.tags.indexOf(tag), 1)
