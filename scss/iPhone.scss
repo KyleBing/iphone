@@ -22,7 +22,6 @@ footer{
 }
 
 
-.searchbar{}
 .iphone-list{
   margin: 0 auto;
   max-width: 1440px;
@@ -317,21 +316,6 @@ footer{
   color: $text-sup;
   background-color: white;
   border: 1px solid $color-border;
-}
-
-.gradient{
-  background-image: linear-gradient(to bottom right, #363d40, #6a7282);
-}
-
-.gradient-blue{
-  color: white;
-  border-color: transparent !important;
-  background-image: linear-gradient(to bottom right, #618BFA, #1CB2F7);
-}
-.gradient-purple{
-  color: white;
-  border-color: transparent !important;
-  background-image: linear-gradient(to bottom right, #C621FF, #FE3EBA);
 }
 
 

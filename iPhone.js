@@ -4066,10 +4066,10 @@ let app = new Vue({
         this.portraitMode = window.innerWidth > window.innerHeight
         this.mobileMode = mobileMode
         this.showFullScreenBtn = chromeCore && !mobileMode
-        this.getInitThumbsUpCount()
+        // this.getInitThumbsUpCount()
         this.websocketInit()
 
-        this.generateiPhoneMap() // 生成 iPhone Map
+        this.generateIphoneMap() // 生成 iPhone Map
     },
     watch: {
         keyword() {
@@ -4077,19 +4077,10 @@ let app = new Vue({
         }
     },
     methods: {
-        generateiPhoneMap(){
+        generateIphoneMap(){
             this.iphones.forEach(iphone => {
                 this.iphonesMap.set(iphone.name, iphone)
             })
-        },
-
-        // 筛选手机信息
-        filterTagToggle(iphoneName){
-            if (this.selectedNames.includes(iphoneName)){
-                this.selectedNames.splice(this.selectedNames.indexOf(iphoneName), 1)
-            } else {
-                this.selectedNames.push(iphoneName)
-            }
         },
 
         tagToggle(tag) {
@@ -4099,45 +4090,33 @@ let app = new Vue({
                 this.tags.push(tag)
             }
         },
+
+        // 筛选手机信息
+        filterTagToggle(iphoneName){
+            if (this.selectedNames.includes(iphoneName)){
+                this.selectedNames.splice(this.selectedNames.indexOf(iphoneName), 1)
+            } else {
+                this.selectedNames.push(iphoneName)
+            }
+            this.updateShowingIphones()
+
+        },
+        updateShowingIphones(){
+            this.iphones = this.selectedNames.map(name => this.iphonesMap.get(name))
+            if (this.iphones.length === 0){
+                this.iphones = [...this.iphonesOrigin]
+            }
+            this.iphones.push(this.iphonesOrigin[0])
+            this.iphones.pop()
+        },
+
         // 全屏显示
         enterFullScreen: function () {
             document.documentElement.requestFullscreen()
         },
 
-        toggleTip(show) {
-            this.tipShowed = show
-        },
 
         filterIphone() {
-            if (this.keyword) {
-                let finalKeyword
-                // 以 # 开头为精确查找，匹配整个字符串，少或多都不匹配
-                if (this.keyword.indexOf('#') >= 0) {
-                    finalKeyword = this.keyword.replace('#', '').replace(/ /ig, '')
-                } else {
-                    finalKeyword = this.keyword.replace(/ /ig, '')
-                }
-                this.keywordArray = finalKeyword.split('/')
-                let tempCollection = []
-                this.keywordArray.forEach(name => {
-                    this.iphonesOrigin.forEach(iphone => {
-                        let reg = null
-                        // reg 匹配模式
-                        if (this.keyword.indexOf('#') >= 0) {
-                            reg = new RegExp(`^${name}$`, 'ig')
-                        } else {
-                            reg = new RegExp(name, 'ig')
-                        }
-                        let nameShort = iphone.name_short.replace(/ /ig, '')
-                        if (reg.test(nameShort)) {
-                            tempCollection.push(iphone)
-                        }
-                    })
-                })
-                this.iphones = tempCollection
-            } else {
-                this.iphones = this.iphonesOrigin
-            }
 
         },
 
@@ -4198,11 +4177,9 @@ let app = new Vue({
             this.portStatus = 'closed'
             console.log('socket has closed')
         },
-
         thumbsUp(){
             this.sendMessage(this.thumbsUpKey)
         },
-
         sendMessage(key){
             if (this.websocket) {
                 this.heartActive = true

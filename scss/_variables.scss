@@ -13,6 +13,7 @@ $color-main: #00A5FF;
 $bg-highlight   : #eeeeee;
 $font-size: 0.9rem;
 
+$color-border-light: #eee;
 $color-border: #dadada;
 $color-border-title: #ccc;
 $use-shadow: false;
@@ -30,3 +31,21 @@ $label-padding: 3px;
 $label-padding-lr: 8px;
 $label-font-size: 0.8rem;
 $label-font-size-sm: 0.7rem;
+
+
+
+.gradient{
+  background-image: linear-gradient(to bottom right, #363d40, #6a7282);
+}
+
+.gradient-blue{
+  color: white !important;
+  border-color: transparent !important;
+  background-image: linear-gradient(to bottom right, #618BFA, #1CB2F7);
+}
+.gradient-purple{
+  color: white !important;
+  border-color: transparent !important;
+  background-image: linear-gradient(to bottom right, #C621FF, #FE3EBA);
+}
+

@@ -25,53 +25,35 @@
         <div class="about-header">
             <div class="icon">
                 <img style="display: none" src="img/iphone@3x.png" alt="for 知乎链接图标抓取">
-                <img src="img/iphone_white@3x.png?v=1" alt="">
+                <img src="img/links/iphone_white@2x.png?v=1" alt="">
             </div>
             <div class="content">
                 <h1 class="title">iPhone 参数大全</h1>
-                <div class="search-bar">
-                    <input type="text" v-model="keyword" placeholder="按格式搜索： 7 / 12pro / xs">
-                </div>
-                <div class="hands-up">
-                    <div class="hands-up-trigger"
-                         :class="[{active: tipShowed}]"
-                         @mouseenter="toggleTip(true)"
-                         @mouseleave="toggleTip(false)">说明
-                    </div>
-                    <div class="hands-up-panel" v-show="tipShowed" style="display: none">
-                        <p><code>12 / 11</code> 会搜索出 <code>12、12mini、12pro、12proMax、11、11pro、11proMax</code></p>
-                        <p>在前面加个 <code>#</code> 精确匹配，<code># 12 / 11</code>，只搜索出 <code>12、11</code></p>
-                        <p>点击参数标题，高亮该参数</p>
-                    </div>
-                </div>
+            </div>
+            <div class="link-item thumbs-up" @click="thumbsUp">
+                <img v-if="heartActive" src="img/links/heart_active@1x.png?v=2022-03-10" alt="heart">
+                <img v-else src="img/links/heart_inactive@1x.png?v=2022-03-10" alt="heart">
+                <p v-show="thumbsUpCount" class="multiply">×</p>
+                <h3 v-show="thumbsUpCount">{{thumbsUpCount}}</h3>
             </div>
         </div>
 
         <div class="copyright-group">
-            <div class="links">
-                <div class="link-item thumbs-up" @click="thumbsUp">
-                    <img v-if="heartActive" src="img/links/heart_active@3x.png?v=2022-03-10" alt="heart">
-                    <img v-else src="img/links/heart_inactive@3x.png?v=2022-03-10" alt="heart">
-                    <h3 v-show="thumbsUpCount">{{thumbsUpCount}}</h3>
-                </div>
+            <div class="share-links">
                 <a class="link-item" target="_blank" href="https://kylebing.cn/tools/apple-chip">
-                    <img src="img/links/chip.png?v=2022-03-10" alt="chip">
-                    <h3>处理器</h3>
+                    <img src="img/links/chip_white@2x.png?v=2022-03-10" alt="chip">
                 </a>
                 <a class="link-item">
-                    <img src="img/links/iphone.png?v=2022-03-10" alt="phone">
-                    <h3>iPhone</h3>
+                    <img src="img/links/iphone_white@2x.png?v=2022-03-10" alt="phone">
                 </a>
                 <a class="link-item" target="_blank" href="https://kylebing.cn/tools/ipad">
-                    <img src="img/links/iapd.png?v=2022-03-10" alt="ipad">
-                    <h3>iPad</h3>
+                    <img src="img/links/ipad_white@2x.png?v=2022-03-10" alt="ipad">
                 </a>
                 <a class="link-item" target="_blank" href="https://kylebing.cn/tools/airpods">
-                    <img src="img/links/AirPods@3x.png?v=2022-03-10" alt="airpods">
-                    <h3>AirPods</h3>
+                    <img src="img/links/airpods_white@2x.png?v=2022-03-10" alt="airpods">
                 </a>
             </div>
-            <div class="copyright">
+            <div class="author-info">
                 <p>主页：<a class="link" target="_blank" href="https://kylebing.cn/">kylebing.cn</a></p>
                 <p>Q群：<a class="link" target="_blank" href="https://jq.qq.com/?_wv=1027&k=Z8E0HrWA">920084833</a></p>
                 <p>更新：<a class="link" target="_blank" href="https://en.wikipedia.org/wiki/IPhone">{{dateLastUpdate}}</a></p>
@@ -83,7 +65,7 @@
     <div class="filter-list">
         <div class="iphone-tag-list">
             <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}]"
-                 v-for="item in iphones" :key="iphones.name_short"
+                 v-for="item in iphonesOrigin" :key="iphones.name_short"
                  @click="filterTagToggle(item.name)"
             >{{item.name_short}}</div>
         </div>
