@@ -9,11 +9,11 @@ $orange         : #FF9500;
 $yellow         : #FFCC00;
 $gray           : #8E8E93;
 
-$color-main: #00A5FF;
+$color-main: $magenta;
 $bg-highlight   : #eeeeee;
 $font-size: 0.9rem;
 
-$color-border-light: #eee;
+$color-border-about: #aaa;
 $color-border: #dadada;
 $color-border-title: #ccc;
 $use-shadow: false;
@@ -31,6 +31,9 @@ $label-padding: 3px;
 $label-padding-lr: 8px;
 $label-font-size: 0.8rem;
 $label-font-size-sm: 0.7rem;
+
+
+$fz-title: 30px;
 
 
 
