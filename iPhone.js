@@ -4066,7 +4066,7 @@ let app = new Vue({
         this.portraitMode = window.innerWidth > window.innerHeight
         this.mobileMode = mobileMode
         this.showFullScreenBtn = chromeCore && !mobileMode
-        // this.getInitThumbsUpCount()
+        this.getInitThumbsUpCount()
         this.websocketInit()
 
         this.generateDeviceMap() // 生成 iPhone Map
