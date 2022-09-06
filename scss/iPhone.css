@@ -1176,6 +1176,14 @@ footer {
     fill: #bfbfbf;
   }
 
+  .filter-list .iphone-tag-list .iphone-tag {
+    border-color: #4d4d4d;
+    color: #a6a6a6;
+    background-color: #262626;
+  }
+  .filter-list .iphone-tag-list .iphone-tag:hover {
+    background-color: #474747;
+  }
   ::-webkit-scrollbar {
     z-index: 50;
     width: 8px;

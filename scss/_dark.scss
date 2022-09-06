@@ -105,6 +105,22 @@ $dark-border-light: lighten(black, 60%);
     fill: $dark-text-title
   }
 
+  .filter-list{
+    .iphone-tag-list{
+      .iphone-tag{
+        border-color: $dark-border;
+        color: $dark-text;
+        background-color: $dark-bg;
+        &:hover{
+          background-color: $dark-bg-highlight;
+        }
+        &.active{
+        }
+      }
+    }
+  }
+
+
   // SCROLL BAR
   ::-webkit-scrollbar {
     z-index: 50;
