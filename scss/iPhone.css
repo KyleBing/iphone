@@ -480,6 +480,7 @@ tt {
 }
 
 .author-info {
+  cursor: pointer;
   font-family: "Galvji";
   margin-left: 30px;
   padding: 10px 15px;
@@ -701,6 +702,62 @@ tt {
     border-radius: 6px;
   }
 }
+.help-container {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  overflow-y: auto;
+  position: fixed;
+  z-index: 10000;
+}
+
+.help {
+  width: 100%;
+  flex-flow: column nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.help-header {
+  border-bottom: 1px solid #dadada;
+}
+.help-header h3 {
+  padding-bottom: 20px;
+  width: 200px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.help-body {
+  padding: 30px;
+}
+.help-body .img-container {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.help-body .img-container img {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+}
+
+.operation-btn {
+  padding: 8px 15px;
+  -webkit-border-radius: 55px;
+  -moz-border-radius: 55px;
+  border-radius: 55px;
+  background-color: #FF2D70;
+  color: white;
+}
+
 body {
   background-color: #eeeeee;
   font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;

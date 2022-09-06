@@ -4058,6 +4058,15 @@ let app = new Vue({
         tags: [],
         keyword: '',
         tipShowed: false,
+
+        // share info
+        showShare: false,
+        insets: {
+            height: innerHeight,
+            width: innerWidth
+        },
+        shareQrCode: null,
+        linkAddress: 'https://kylebing.cn/tools/iphone/',
     },
     mounted() {
         // 全屏相关
@@ -4070,14 +4079,25 @@ let app = new Vue({
         this.websocketInit()
 
         this.generateDeviceMap() // 生成 iPhone Map
+
+        // onresize
+        onresize = () => {
+            this.insets = {
+                height: innerHeight,
+                width: innerWidth
+            }
+        }
+        this.shareQrCode = QRCode.generatePNG(this.linkAddress)
     },
     methods: {
+        toggleShare(){
+            this.showShare = !this.showShare
+        },
         generateDeviceMap(){
             this.iphones.forEach(device => {
                 this.deviceMap.set(device.name, device)
             })
         },
-
         tagToggle(tag) {
             if (this.tags.some(item => item === tag)) {
                 this.tags.splice(this.tags.indexOf(tag), 1)
@@ -4109,8 +4129,6 @@ let app = new Vue({
         enterFullScreen: function () {
             document.documentElement.requestFullscreen()
         },
-
-
         filterIphone() {
 
         },
