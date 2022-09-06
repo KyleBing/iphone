@@ -4066,7 +4066,9 @@ let app = new Vue({
             width: innerWidth
         },
         shareQrCode: null,
+        shareQrCodeQQ: null,
         linkAddress: 'https://kylebing.cn/tools/iphone/',
+        linkQQ: 'https://jq.qq.com/?_wv=1027&k=Z8E0HrWA'
     },
     mounted() {
         // 全屏相关
@@ -4087,7 +4089,8 @@ let app = new Vue({
                 width: innerWidth
             }
         }
-        this.shareQrCode = QRCode.generatePNG(this.linkAddress)
+        this.shareQrCode = QRCode.generatePNG(this.linkAddress, {margin: 1})
+        this.shareQrCodeQQ = QRCode.generatePNG(this.linkQQ, {margin: 1})
     },
     methods: {
         toggleShare(){

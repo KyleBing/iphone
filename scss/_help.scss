@@ -33,25 +33,63 @@
 }
 
 .help-body{
+  display: flex;
+  justify-content: center;
   padding: 30px;
-  .img-container{
-    @include border-radius(10px);
-    overflow: hidden;
-    img {
-      display: block;
-      width: 100%;
-      max-height: 300px;
+  .qr-item{
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-right: 80px;
+    &:last-child{
+      margin-right: 0;
+    }
+    .img-container{
+      margin-bottom: 20px;
+      @include border-radius(10px);
+      overflow: hidden;
+      img {
+        display: block;
+        width: 150px;
+        height: 150px;
+      }
+    }
+    p{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-size: $fz-sm;
+      color: $text-subtitle;
+      text-align: center;
     }
   }
-
 }
 
 .help-footer{
 
 }
 .operation-btn{
+  cursor: pointer;
   padding: 8px 15px;
   @include border-radius(55px);
   background-color: $magenta;
   color: white;
 }
+
+
+@media (max-width: 768px){
+  .help-body{
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    .qr-item{
+      margin-right: 0;
+      margin-bottom: 30px;
+      &:last-child{
+        margin-top: 0;
+      }
+    }
+  }
+}
+

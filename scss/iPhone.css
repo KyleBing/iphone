@@ -32,7 +32,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #404040;
+  color: #333;
 }
 
 table {
@@ -682,7 +682,7 @@ tt {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  color: #404040;
+  color: #333;
 }
 .filter-list .iphone-tag-list .iphone-tag:hover {
   background-color: #eeeeee;
@@ -735,21 +735,43 @@ tt {
 }
 
 .help-body {
+  display: flex;
+  justify-content: center;
   padding: 30px;
 }
-.help-body .img-container {
+.help-body .qr-item {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-right: 80px;
+}
+.help-body .qr-item:last-child {
+  margin-right: 0;
+}
+.help-body .qr-item .img-container {
+  margin-bottom: 20px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   overflow: hidden;
 }
-.help-body .img-container img {
+.help-body .qr-item .img-container img {
   display: block;
-  width: 100%;
-  max-height: 300px;
+  width: 150px;
+  height: 150px;
+}
+.help-body .qr-item p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
 }
 
 .operation-btn {
+  cursor: pointer;
   padding: 8px 15px;
   -webkit-border-radius: 55px;
   -moz-border-radius: 55px;
@@ -758,6 +780,20 @@ tt {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .help-body {
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+  }
+  .help-body .qr-item {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .help-body .qr-item:last-child {
+    margin-top: 0;
+  }
+}
 body {
   background-color: #eeeeee;
   font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
@@ -805,7 +841,7 @@ footer {
   align-items: center;
   justify-content: flex-start;
   font-size: 1.3rem;
-  color: #404040;
+  color: #333;
   font-weight: bold;
 }
 .title-content .title.is-new {
@@ -874,14 +910,14 @@ footer {
 }
 .main-ref-item .label {
   font-size: 0.8rem;
-  color: #404040;
+  color: #333;
   margin-right: 15px;
 }
 .main-ref-item .value {
   font-size: 1.2rem;
   font-weight: bold;
   font-family: "LLPixel";
-  color: #404040;
+  color: #333;
 }
 .main-ref-item .value span.little {
   font-size: 1rem;
@@ -945,7 +981,7 @@ footer {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  color: #404040;
+  color: #333;
   cursor: pointer;
 }
 .detail-item .detail-item-content {
