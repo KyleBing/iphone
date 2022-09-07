@@ -3731,7 +3731,91 @@ const iphones = [
         },
         cpu: {
             icon: '',
-            model: 'A16',
+            model: 'A15',
+            rate: '?',
+            core: '?'
+        },
+        gpu: {
+            model: "Apple",
+            core: '?'
+        },
+        modem: '双卡双待',
+        memory: [
+            // {size: "4", type: "LPDDR4X"}
+        ],
+        storage: ["?", "?", "?"],
+        battery: '?',
+        port: '闪电',
+        screen: {
+            brightness: '',
+            size: "?",
+            type: '?',
+            refreshRate: "",
+            width: '?',
+            height: '?',
+            density: "?",
+            touch3D: false,
+            hdr: true,
+        },
+        cameras: {
+            front: {
+                name: '',
+                model: '',
+                aperture: '',
+                focal: '',
+                pixelCount: '',
+                zoomRate: '',
+            },
+            back: [
+            ]
+        },
+        colors: [
+            // {name: 'Midnight', color: '#232a31'},
+            // {name: 'Starlight', color: '#faf6f2'},
+            // {name: 'Blue', color: '#276787'},
+            // {name: 'Pink', color: '#faddd7'},
+            // {name: 'Product Red', color: '#bf0013'},
+            // {name: 'Alpine Green', color: '#576856'},
+            {name: 'Black', color: '#aaaaaa'},
+            {name: 'White', color: '#cccccc'},
+            {name: 'Black', color: '#aaaaaa'},
+            {name: 'White', color: '#cccccc'},
+            {name: 'Black', color: '#aaaaaa'},
+        ],
+        charge: [
+            // {name: 'Qi无线', power: '7.5w'},
+            // {name: '快充', power: '20w'},
+            // {name: 'MagSafe', power: '15w'},
+        ],
+        unlockMethod: [],
+        applePay: false,
+        connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
+        prove: 'IPX68',
+        price: "",
+    },
+    {
+        name: "iPhone 14 Plus?",
+        name_short: "14",
+        pic: "unknown",
+        slogan: "?",
+        isNew: true,
+        active: false,
+        release: "2022-09-08",
+        models: [
+            // {name: "A2634", type: "国内"},
+        ],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: '?',
+        width: '?',
+        thickness: '?',
+        weight: '?',
+        os: {
+            init: "iOS 16",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A15',
             rate: '?',
             core: '?'
         },
@@ -3911,8 +3995,8 @@ const iphones = [
         price: "",
     },
     {
-        name: "iPhone 14 Pro Max? Plus? ",
-        name_short: "14 Pro Max? Plus?",
+        name: "iPhone 14 Pro Max ",
+        name_short: "14 Pro Max",
         pic: "unknown",
         slogan: "?",
         isNew: true,
