@@ -7,6 +7,7 @@ const iphones = [
     {
         name: "iPhone 1",
         name_short: "1",
+        isTitleOnly: false,
         pic: "1",
         slogan: "This is only the beginning. Apple reinvents the phone.",
         isNew: false,
@@ -112,6 +113,7 @@ const iphones = [
     {
         name: "iPhone 3G",
         name_short: "3G",
+        isTitleOnly: false,
         pic: "3g",
         slogan: "New features, new price.",
         isNew: false,
@@ -218,6 +220,7 @@ const iphones = [
     {
         name: "iPhone 3Gs",
         name_short: "3Gs",
+        isTitleOnly: false,
         pic: "3gs",
         slogan: "The fastest, smartest phone yet. More to love. Less to pay.",
         isNew: false,
@@ -327,6 +330,7 @@ const iphones = [
     {
         name: "iPhone 4",
         name_short: "4",
+        isTitleOnly: false,
         pic: "4",
         slogan: "This changes everything. Again.",
         isNew: false,
@@ -436,6 +440,7 @@ const iphones = [
     {
         name: "iPhone 4s",
         name_short: "4s",
+        isTitleOnly: false,
         pic: "4s",
         slogan: "The most amazing iPhone yet.",
         isNew: false,
@@ -542,6 +547,7 @@ const iphones = [
     {
         name: "iPhone 5",
         name_short: "5",
+        isTitleOnly: false,
         pic: "5",
         slogan: "Loving it is easy. That's why so many people do. The biggest thing to happen to iPhone since iPhone.",
         isNew: false,
@@ -649,6 +655,7 @@ const iphones = [
     {
         name: "iPhone 5c",
         name_short: "5c",
+        isTitleOnly: false,
         pic: "5c",
         slogan: "For the colorful",
         isNew: false,
@@ -765,6 +772,7 @@ const iphones = [
     {
         name: "iPhone 5s",
         name_short: "5s",
+        isTitleOnly: false,
         pic: "5s",
         slogan: "You're more powerful than you think. Forward thinking",
         isNew: false,
@@ -880,6 +888,7 @@ const iphones = [
     {
         name: "iPhone 6",
         name_short: "6",
+        isTitleOnly: false,
         pic: "6",
         slogan: "Bigger than bigger. The two and only",
         isNew: false,
@@ -992,6 +1001,7 @@ const iphones = [
     {
         name: "iPhone 6 plus",
         name_short: "6 plus",
+        isTitleOnly: false,
         pic: "6",
         slogan: "Bigger than bigger. The two and only",
         isNew: false,
@@ -1104,6 +1114,7 @@ const iphones = [
     {
         name: "iPhone 6s",
         name_short: "6s",
+        isTitleOnly: false,
         pic: "6s",
         slogan: "The only thing that’s changed is everything. One powerful phone",
         isNew: false,
@@ -1216,6 +1227,7 @@ const iphones = [
     {
         name: "iPhone 6s plus",
         name_short: "6s plus",
+        isTitleOnly: false,
         pic: "6s",
         slogan: "The only thing that’s changed is everything. One powerful phone",
         isNew: false,
@@ -1328,6 +1340,7 @@ const iphones = [
     {
         name: "iPhone SE",
         name_short: "SE",
+        isTitleOnly: false,
         pic: "SE",
         slogan: "A big step for small.",
         isNew: false,
@@ -1441,6 +1454,7 @@ const iphones = [
     {
         name: "iPhone 7",
         name_short: "7",
+        isTitleOnly: false,
         pic: "7",
         slogan: "This is 7",
         isNew: false,
@@ -1555,6 +1569,7 @@ const iphones = [
     {
         name: "iPhone 7 plus",
         name_short: "7 plus",
+        isTitleOnly: false,
         pic: "7",
         slogan: "This is 7",
         isNew: false,
@@ -1669,6 +1684,7 @@ const iphones = [
     {
         name: "iPhone 8",
         name_short: "8",
+        isTitleOnly: false,
         pic: "8",
         slogan: "A new generation of iPhone",
         isNew: false,
@@ -1781,6 +1797,7 @@ const iphones = [
     {
         name: "iPhone 8 Plus",
         name_short: "8 Plus",
+        isTitleOnly: false,
         pic: "8",
         slogan: "A new generation of iPhone",
         isNew: false,
@@ -1893,6 +1910,7 @@ const iphones = [
     {
         name: "iPhone SE2",
         name_short: "SE2",
+        isTitleOnly: false,
         pic: "SE2",
         slogan: "Lots to love. Less to spend.",
         isNew: false,
@@ -2005,6 +2023,7 @@ const iphones = [
     {
         name: "iPhone X",
         name_short: "X",
+        isTitleOnly: false,
         pic: "X",
         slogan: "Say hello to the future.",
         isNew: false,
@@ -2114,6 +2133,7 @@ const iphones = [
     {
         name: "iPhone XR",
         name_short: "XR",
+        isTitleOnly: false,
         pic: "XR",
         slogan: "Brilliant. In every way. Make room for color.",
         isNew: false,
@@ -2231,6 +2251,7 @@ const iphones = [
     {
         name: "iPhone XS",
         name_short: "XS",
+        isTitleOnly: false,
         pic: "XS",
         slogan: "Welcome to the big screens.",
         isNew: false,
@@ -2344,6 +2365,7 @@ const iphones = [
     {
         name: "iPhone XS Max",
         name_short: "XS Max",
+        isTitleOnly: false,
         pic: "XS",
         slogan: "Welcome to the big screens.",
         isNew: false,
@@ -2457,6 +2479,7 @@ const iphones = [
     {
         name: "iPhone 11",
         name_short: "11",
+        isTitleOnly: false,
         pic: "11",
         slogan: "Just the right amount of everything.",
         isNew: false,
@@ -2572,6 +2595,7 @@ const iphones = [
     {
         name: "iPhone 11 Pro",
         name_short: "11 Pro",
+        isTitleOnly: false,
         pic: "11pro",
         slogan: "And then there was Pro. Pro Cameras. Pro Display. Pro Performance.",
         isNew: false,
@@ -2685,6 +2709,7 @@ const iphones = [
     {
         name: "iPhone 11 Pro Max",
         name_short: "11 Pro Max",
+        isTitleOnly: false,
         pic: "11pro",
         slogan: "And then there was Pro. Pro Cameras. Pro Display. Pro Performance.",
         isNew: false,
@@ -2798,6 +2823,7 @@ const iphones = [
     {
         name: "iPhone 12 Mini",
         name_short: "12 Mini",
+        isTitleOnly: false,
         pic: "12",
         slogan: "Blast past fast.",
         isNew: false,
@@ -2901,6 +2927,7 @@ const iphones = [
     {
         name: "iPhone 12",
         name_short: "12",
+        isTitleOnly: false,
         pic: "12",
         slogan: "Blast past fast.",
         isNew: false,
@@ -3004,6 +3031,7 @@ const iphones = [
     {
         name: "iPhone 12 Pro",
         name_short: "12 Pro",
+        isTitleOnly: false,
         pic: "12pro",
         slogan: "It's a leap year.",
         isNew: false,
@@ -3124,6 +3152,7 @@ const iphones = [
     {
         name: "iPhone 12 Pro Max ",
         name_short: "12 Pro Max",
+        isTitleOnly: false,
         pic: "12pro",
         slogan: "It's a leap year.",
         isNew: false,
@@ -3244,6 +3273,7 @@ const iphones = [
     {
         name: "iPhone 13 Mini",
         name_short: "13 mini",
+        isTitleOnly: false,
         pic: "13pro",
         slogan: "Your new superpower.",
         isNew: false,
@@ -3322,6 +3352,7 @@ const iphones = [
     {
         name: "iPhone 13",
         name_short: "13",
+        isTitleOnly: false,
         pic: "13pro",
         slogan: "Your new superpower.",
         isNew: false,
@@ -3401,6 +3432,7 @@ const iphones = [
     {
         name: "iPhone 13 Pro",
         name_short: "13 Pro",
+        isTitleOnly: false,
         pic: "13pro",
         slogan: "Oh. So. Pro.",
         isNew: false,
@@ -3513,6 +3545,7 @@ const iphones = [
     {
         name: "iPhone 13 Pro Max ",
         name_short: "13 Pro Max",
+        isTitleOnly: false,
         pic: "13pro",
         slogan: "Oh. So. Pro.",
         isNew: false,
@@ -3625,6 +3658,7 @@ const iphones = [
     {
         name: "iPhone SE3",
         name_short: "SE3",
+        isTitleOnly: false,
         pic: "SE3",
         slogan: "Love the power. Love the price.",
         isNew: false,
@@ -3712,404 +3746,34 @@ const iphones = [
     {
         name: "iPhone 14",
         name_short: "14",
+        isTitleOnly: true,
         pic: "unknown",
-        slogan: "?",
-        isNew: true,
-        active: false,
-        release: "2022-09-08",
-        models: [
-            // {name: "A2634", type: "国内"},
-        ],
-        network: ["5G", "4G", "LTE", "3G", "2G"],
-        height: '?',
-        width: '?',
-        thickness: '?',
-        weight: '?',
-        os: {
-            init: "iOS 16",
-            last: lastOS
-        },
-        cpu: {
-            icon: '',
-            model: 'A15',
-            rate: '?',
-            core: '?'
-        },
-        gpu: {
-            model: "Apple",
-            core: '?'
-        },
-        modem: '双卡双待',
-        memory: [
-            // {size: "4", type: "LPDDR4X"}
-        ],
-        storage: ["?", "?", "?"],
-        battery: '?',
-        port: '闪电',
-        screen: {
-            brightness: '',
-            size: "?",
-            type: '?',
-            refreshRate: "",
-            width: '?',
-            height: '?',
-            density: "?",
-            touch3D: false,
-            hdr: true,
-        },
-        cameras: {
-            front: {
-                name: '',
-                model: '',
-                aperture: '',
-                focal: '',
-                pixelCount: '',
-                zoomRate: '',
-            },
-            back: [
-            ]
-        },
-        colors: [
-            // {name: 'Midnight', color: '#232a31'},
-            // {name: 'Starlight', color: '#faf6f2'},
-            // {name: 'Blue', color: '#276787'},
-            // {name: 'Pink', color: '#faddd7'},
-            // {name: 'Product Red', color: '#bf0013'},
-            // {name: 'Alpine Green', color: '#576856'},
-            {name: 'Black', color: '#aaaaaa'},
-            {name: 'White', color: '#cccccc'},
-            {name: 'Black', color: '#aaaaaa'},
-            {name: 'White', color: '#cccccc'},
-            {name: 'Black', color: '#aaaaaa'},
-        ],
-        charge: [
-            // {name: 'Qi无线', power: '7.5w'},
-            // {name: '快充', power: '20w'},
-            // {name: 'MagSafe', power: '15w'},
-        ],
-        unlockMethod: [],
-        applePay: false,
-        connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
-        prove: 'IPX68',
-        price: "",
+        slogan: "Far Out.　　　　2022-09-08 01:00",
+        isNew: true
     },
     {
         name: "iPhone 14 Plus?",
-        name_short: "14",
+        name_short: "14 Plus?",
+        isTitleOnly: true,
         pic: "unknown",
-        slogan: "?",
-        isNew: true,
-        active: false,
-        release: "2022-09-08",
-        models: [
-            // {name: "A2634", type: "国内"},
-        ],
-        network: ["5G", "4G", "LTE", "3G", "2G"],
-        height: '?',
-        width: '?',
-        thickness: '?',
-        weight: '?',
-        os: {
-            init: "iOS 16",
-            last: lastOS
-        },
-        cpu: {
-            icon: '',
-            model: 'A15',
-            rate: '?',
-            core: '?'
-        },
-        gpu: {
-            model: "Apple",
-            core: '?'
-        },
-        modem: '双卡双待',
-        memory: [
-            // {size: "4", type: "LPDDR4X"}
-        ],
-        storage: ["?", "?", "?"],
-        battery: '?',
-        port: '闪电',
-        screen: {
-            brightness: '',
-            size: "?",
-            type: '?',
-            refreshRate: "",
-            width: '?',
-            height: '?',
-            density: "?",
-            touch3D: false,
-            hdr: true,
-        },
-        cameras: {
-            front: {
-                name: '',
-                model: '',
-                aperture: '',
-                focal: '',
-                pixelCount: '',
-                zoomRate: '',
-            },
-            back: [
-            ]
-        },
-        colors: [
-            // {name: 'Midnight', color: '#232a31'},
-            // {name: 'Starlight', color: '#faf6f2'},
-            // {name: 'Blue', color: '#276787'},
-            // {name: 'Pink', color: '#faddd7'},
-            // {name: 'Product Red', color: '#bf0013'},
-            // {name: 'Alpine Green', color: '#576856'},
-            {name: 'Black', color: '#aaaaaa'},
-            {name: 'White', color: '#cccccc'},
-            {name: 'Black', color: '#aaaaaa'},
-            {name: 'White', color: '#cccccc'},
-            {name: 'Black', color: '#aaaaaa'},
-        ],
-        charge: [
-            // {name: 'Qi无线', power: '7.5w'},
-            // {name: '快充', power: '20w'},
-            // {name: 'MagSafe', power: '15w'},
-        ],
-        unlockMethod: [],
-        applePay: false,
-        connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
-        prove: 'IPX68',
-        price: "",
+        slogan: "Far Out.　　　　2022-09-08 01:00",
+        isNew: true
     },
     {
         name: "iPhone 14 Pro",
         name_short: "14 Pro",
+        isTitleOnly: true,
         pic: "unknown",
-        slogan: "?",
-        isNew: true,
-        active: false,
-        release: "2022-09-08",
-        models: [
-            // {name: "A2639", type: "国内"},
-        ],
-        network: ["5G", "4G", "LTE", "3G", "2G"],
-        height: '?',
-        width: '?',
-        thickness: '?',
-        weight: '?',
-        os: {
-            init: "iOS 16",
-            last: lastOS
-        },
-        cpu: {
-            icon: '',
-            model: 'A16',
-            rate: '?',
-            core: '?'
-        },
-        gpu: {
-            model: "Apple",
-            core: '?'
-        },
-        modem: '双卡双待',
-        memory: [
-            // {size: "6", type: "LPDDR4X"}
-        ],
-        storage: ["?", "?", "?"],
-        battery: '?',
-        port: '闪电',
-        screen: {
-            brightness: '',
-            size: "?",
-            type: '?',
-            refreshRate: "",
-            width: '?',
-            height: '?',
-            density: "?",
-            touch3D: false,
-            hdr: true,
-        },
-        cameras: {
-            front: {
-                name: '默认',
-                model: 'Sony IMX703 1.9μm',
-                aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
-                zoomRate: '',
-            },
-            back: [
-                {
-                    name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
-                    focal: '',
-                    angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
-                },
-            ]
-        },
-        colors: [
-            // {name: 'Silver', color: '#f1f2ed'},
-            // {name: 'Graphite', color: '#54524f'},
-            // {name: 'Gold', color: '#fae7cf'},
-            // {name: 'Sierra Blue', color: '#a7c1d9'},
-            // {name: 'Alpine Green', color: '#576856'},
-            {name: 'Black', color: '#aaaaaa'},
-            {name: 'White', color: '#cccccc'},
-            {name: 'Black', color: '#aaaaaa'},
-            {name: 'White', color: '#cccccc'},
-            {name: 'Black', color: '#aaaaaa'},
-        ],
-        charge: [
-            {name: '充电口', power: '12w'},
-            {name: 'PD', power: '20-23w'},
-            {name: 'MagSafe', power: '15w'},
-        ],
-        unlockMethod: [],
-        applePay: false,
-        connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
-        prove: 'IPX68',
-        price: "",
+        slogan: "Far Out.　　　　2022-09-08 01:00",
+        isNew: true
     },
     {
         name: "iPhone 14 Pro Max ",
         name_short: "14 Pro Max",
+        isTitleOnly: true,
         pic: "unknown",
-        slogan: "?",
-        isNew: true,
-        active: false,
-        release: "2022-09-08",
-        models: [
-            // {name: "A2644", type: "国内"},
-        ],
-        network: ["5G", "4G", "LTE", "3G", "2G"],
-        height: '?',
-        width: '?',
-        thickness: '?',
-        weight: '?',
-        os: {
-            init: "iOS 16",
-            last: lastOS
-        },
-        cpu: {
-            icon: '',
-            model: 'A16',
-            rate: '?',
-            core: '?'
-        },
-        gpu: {
-            model: "Apple",
-            core: '?'
-        },
-        modem: '双卡双待',
-        memory: [
-            // {size: "6", type: "LPDDR4X"}
-        ],
-        storage: ["?", "?", "?"],
-        battery: '?',
-        port: '闪电',
-        screen: {
-            brightness: '',
-            size: "?",
-            type: '?',
-            refreshRate: "",
-            width: '?',
-            height: '?',
-            density: "?",
-            touch3D: false,
-            hdr: true,
-        },
-        cameras: {
-            front: {
-                name: '默认',
-                model: 'Sony IMX703 1.9μm',
-                aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
-                zoomRate: '',
-            },
-            back: [
-                {
-                    name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
-                    focal: '',
-                    angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
-                },
-            ]
-        },
-        colors: [
-            // {name: 'Silver', color: '#f1f2ed'},
-            // {name: 'Graphite', color: '#54524f'},
-            // {name: 'Gold', color: '#fae7cf'},
-            // {name: 'Sierra Blue', color: '#a7c1d9'},
-            // {name: 'Alpine Green', color: '#576856'},
-            {name: 'Black', color: '#aaaaaa'},
-            {name: 'White', color: '#cccccc'},
-            {name: 'Black', color: '#aaaaaa'},
-            {name: 'White', color: '#cccccc'},
-            {name: 'Black', color: '#aaaaaa'},
-        ],
-        charge: [
-            {name: '充电口', power: '12w'},
-            {name: 'PD', power: '20-27w'},
-            {name: 'MagSafe', power: '15w'},
-        ],
-        unlockMethod: [],
-        applePay: false,
-        connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
-        prove: 'IPX68',
-        price: "",
+        slogan: "Far Out.　　　　2022-09-08 01:00",
+        isNew: true
     },
 
 ].reverse()
