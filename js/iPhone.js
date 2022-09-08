@@ -3953,8 +3953,8 @@ const iphones = [
         price: "",
     },
     {
-        name: "iPhone 14 Pro",
-        name_short: "14 Pro",
+        name: "iPhone 14 Pro Max",
+        name_short: "14 Pro Max",
         isTitleOnly: false,
         pic: "14pro",
         slogan: "",
