@@ -845,7 +845,10 @@ footer {
   font-weight: bold;
 }
 .title-content .title.is-new {
-  color: #00b56b !important;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to top right, #ff31d1, #0096ba);
 }
 .title-content .slogan {
   font-weight: 200;

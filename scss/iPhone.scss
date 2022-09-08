@@ -59,7 +59,10 @@ footer{
     color: $text-main;
     font-weight: bold;
     &.is-new{
-      color: $green !important;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(to top right, #ff31d1, #0096ba);
     }
   }
   .slogan{
