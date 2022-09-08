@@ -3746,34 +3746,280 @@ const iphones = [
     {
         name: "iPhone 14",
         name_short: "14",
-        isTitleOnly: true,
-        pic: "unknown",
-        slogan: "Far Out.　　　　2022-09-08 01:00",
-        isNew: true
+        isTitleOnly: false,
+        pic: "se3",
+        slogan: "",
+        isNew: true,
+        active: true,
+        release: "2022-09-08",
+        models: [
+            // {name: "A2639", type: "国内"},
+        ],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 146.7,
+        width: 71.5,
+        thickness: 7.80,
+        weight: 172,
+        os: {
+            init: "iOS 16",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A15',
+            rate: '3.2',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 5
+        },
+        modem: '双卡双待',
+        memory: [
+            // {size: "6", type: "LPDDR4X"}
+        ],
+        storage: ["128", "256", "512"],
+        battery: '',
+        port: '闪电',
+        screen: {
+            brightness: '1000~1200',
+            size: "6.1",
+            type: 'XDR OLED',
+            refreshRate: "60", // hz
+            width: 1170,
+            height: 2532,
+            density: "460",
+            touch3D: false,
+            hdr: true,
+        },
+        cameras: {
+
+        },
+        colors: [
+            {name: '午夜色', color: '#1c232b'},
+            {name: '紫色', color: '#e6dbeb'},
+            {name: '星光色', color: '#f9f4f0'},
+            {name: '红色', color: '#e00525'},
+            {name: '蓝色', color: '#98adc0'},
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
+        unlockMethod: ['面容'],
+        applePay: false,
+        connectivity: ["5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
+        prove: 'IPX68',
+        price: "",
     },
     {
-        name: "iPhone 14 Plus?",
-        name_short: "14 Plus?",
-        isTitleOnly: true,
-        pic: "unknown",
-        slogan: "Far Out.　　　　2022-09-08 01:00",
-        isNew: true
+        name: "iPhone 14 Plus",
+        name_short: "14 Plus",
+        isTitleOnly: false,
+        pic: "se3",
+        slogan: "",
+        isNew: true,
+        active: true,
+        release: "2022-09-08",
+        models: [
+            // {name: "A2639", type: "国内"},
+        ],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 160.8,
+        width: 78.1,
+        thickness: 7.80,
+        weight: 203,
+        os: {
+            init: "iOS 16",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A15',
+            rate: '3.2',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 5
+        },
+        modem: '双卡双待',
+        memory: [
+            // {size: "6", type: "LPDDR4X"}
+        ],
+        storage: ["128", "256", "512"],
+        battery: '',
+        port: '闪电',
+        screen: {
+            brightness: '1000~1200',
+            size: "6.7",
+            type: 'XDR OLED',
+            refreshRate: "60", // hz
+            width: 1284,
+            height: 2778,
+            density: "458",
+            touch3D: false,
+            hdr: true,
+        },
+        cameras: {
+
+        },
+        colors: [
+            {name: '午夜色', color: '#1c232b'},
+            {name: '紫色', color: '#e6dbeb'},
+            {name: '星光色', color: '#f9f4f0'},
+            {name: '红色', color: '#e00525'},
+            {name: '蓝色', color: '#98adc0'},
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
+        unlockMethod: ['面容'],
+        applePay: false,
+        connectivity: ["5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
+        prove: 'IPX68',
+        price: "",
     },
     {
         name: "iPhone 14 Pro",
         name_short: "14 Pro",
-        isTitleOnly: true,
-        pic: "unknown",
-        slogan: "Far Out.　　　　2022-09-08 01:00",
-        isNew: true
+        isTitleOnly: false,
+        pic: "se3",
+        slogan: "",
+        isNew: true,
+        active: true,
+        release: "2022-09-08",
+        models: [
+            // {name: "A2639", type: "国内"},
+        ],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 147.5,
+        width: 71.5,
+        thickness: 7.85,
+        weight: 206,
+        os: {
+            init: "iOS 16",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A16',
+            rate: '',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 5
+        },
+        modem: '双卡双待',
+        memory: [
+            // {size: "6", type: "LPDDR4X"}
+        ],
+        storage: ["128", "256", "512", "1024"],
+        battery: '',
+        port: '闪电',
+        screen: {
+            brightness: '1000~2000',
+            size: "6.1",
+            type: 'XDR OLED ProMotion',
+            refreshRate: "1 ~ 120", // hz
+            width: 1179,
+            height: 2556,
+            density: "460",
+            touch3D: false,
+            hdr: true,
+        },
+        cameras: {
+
+        },
+        colors: [
+            {name: '深空黑色', color: '#2e2d2b'},
+            {name: '银色', color: '#e1e3e2'},
+            {name: '金色', color: '#e7d9bf'},
+            {name: '暗紫色', color: '#4f4756'},
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
+        unlockMethod: ['面容'],
+        applePay: false,
+        connectivity: ["5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
+        prove: 'IPX68',
+        price: "",
     },
     {
-        name: "iPhone 14 Pro Max ",
-        name_short: "14 Pro Max",
-        isTitleOnly: true,
-        pic: "unknown",
-        slogan: "Far Out.　　　　2022-09-08 01:00",
-        isNew: true
+        name: "iPhone 14 Pro",
+        name_short: "14 Pro",
+        isTitleOnly: false,
+        pic: "se3",
+        slogan: "",
+        isNew: true,
+        active: true,
+        release: "2022-09-08",
+        models: [
+            // {name: "A2639", type: "国内"},
+        ],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 160.7,
+        width: 77.6,
+        thickness: 7.85,
+        weight: 240,
+        os: {
+            init: "iOS 16",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A16',
+            rate: '',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 5
+        },
+        modem: '双卡双待',
+        memory: [
+            // {size: "6", type: "LPDDR4X"}
+        ],
+        storage: ["128", "256", "512", "1024"],
+        battery: '',
+        port: '闪电',
+        screen: {
+            brightness: '1000~2000',
+            size: "6.7",
+            type: 'XDR OLED ProMotion',
+            refreshRate: "1 ~ 120", // hz
+            width: 1290,
+            height: 2796,
+            density: "460",
+            touch3D: false,
+            hdr: true,
+        },
+        cameras: {
+
+        },
+        colors: [
+            {name: '深空黑色', color: '#2e2d2b'},
+            {name: '银色', color: '#e1e3e2'},
+            {name: '金色', color: '#e7d9bf'},
+            {name: '暗紫色', color: '#4f4756'},
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
+        unlockMethod: ['面容'],
+        applePay: false,
+        connectivity: ["5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
+        prove: 'IPX68',
+        price: "",
     },
 
 ].reverse()
