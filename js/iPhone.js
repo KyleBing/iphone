@@ -3939,7 +3939,7 @@ const iphones = [
             {name: '深空黑色', color: '#2e2d2b'},
             {name: '银色', color: '#e1e3e2'},
             {name: '金色', color: '#e7d9bf'},
-            {name: '暗紫色', color: '#4f4756'},
+            {name: '暗紫色', color: '#8a7493'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -4008,7 +4008,7 @@ const iphones = [
             {name: '深空黑色', color: '#2e2d2b'},
             {name: '银色', color: '#e1e3e2'},
             {name: '金色', color: '#e7d9bf'},
-            {name: '暗紫色', color: '#4f4756'},
+            {name: '暗紫色', color: '#8a7493'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
