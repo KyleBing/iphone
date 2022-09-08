@@ -4028,7 +4028,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateLastUpdate: '2022.09.04',
+        dateLastUpdate: '2022.09.08',
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'iphone',
