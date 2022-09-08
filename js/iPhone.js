@@ -3796,11 +3796,11 @@ const iphones = [
 
         },
         colors: [
-            {name: '午夜色', color: '#1c232b'},
-            {name: '紫色', color: '#e6dbeb'},
-            {name: '星光色', color: '#f9f4f0'},
-            {name: '红色', color: '#e00525'},
-            {name: '蓝色', color: '#98adc0'},
+            {name: '午夜色', color: '#31353b'},
+            {name: '紫色', color: '#e7d6e9'},
+            {name: '星光色', color: '#f0ece6'},
+            {name: '红色', color: '#e11b2b'},
+            {name: '蓝色', color: '#bfcede'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -3866,11 +3866,11 @@ const iphones = [
 
         },
         colors: [
-            {name: '午夜色', color: '#1c232b'},
-            {name: '紫色', color: '#e6dbeb'},
-            {name: '星光色', color: '#f9f4f0'},
-            {name: '红色', color: '#e00525'},
-            {name: '蓝色', color: '#98adc0'},
+            {name: '午夜色', color: '#31353b'},
+            {name: '紫色', color: '#e7d6e9'},
+            {name: '星光色', color: '#f0ece6'},
+            {name: '红色', color: '#e11b2b'},
+            {name: '蓝色', color: '#bfcede'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
