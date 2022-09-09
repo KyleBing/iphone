@@ -3776,7 +3776,7 @@ const iphones = [
         },
         modem: '双卡双待',
         memory: [
-            // {size: "6", type: "LPDDR4X"}
+            {size: "6", type: ""}
         ],
         storage: ["128", "256", "512"],
         battery: '',
@@ -3846,7 +3846,7 @@ const iphones = [
         },
         modem: '双卡双待',
         memory: [
-            // {size: "6", type: "LPDDR4X"}
+            {size: "6", type: ""}
         ],
         storage: ["128", "256", "512"],
         battery: '',
@@ -3916,7 +3916,7 @@ const iphones = [
         },
         modem: '双卡双待',
         memory: [
-            // {size: "6", type: "LPDDR4X"}
+            {size: "6", type: ""}
         ],
         storage: ["128", "256", "512", "1024"],
         battery: '',
@@ -3985,7 +3985,7 @@ const iphones = [
         },
         modem: '双卡双待',
         memory: [
-            // {size: "6", type: "LPDDR4X"}
+            {size: "6", type: ""}
         ],
         storage: ["128", "256", "512", "1024"],
         battery: '',
@@ -4028,7 +4028,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateLastUpdate: '2022.09.08',
+        dateLastUpdate: '2022.09.09',
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'iphone',
