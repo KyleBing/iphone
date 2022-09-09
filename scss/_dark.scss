@@ -63,7 +63,6 @@ $dark-border-light: lighten(black, 60%);
           color: $dark-text;
           .sup{
             background-color: $dark-bg;
-            border-color: $dark-border;
           }
         }
       }
@@ -72,12 +71,10 @@ $dark-border-light: lighten(black, 60%);
 
   .gradient-blue{
     color: darken(white, 15%) !important;
-    border-color: transparent !important;
     background-image: linear-gradient(to bottom right, darken(#618BFA, 25%), darken(#1CB2F7, 25%));
   }
   .gradient-purple{
     color: darken(white, 15%) !important;
-    border-color: transparent !important;
     background-image: linear-gradient(to bottom right, darken(#C621FF, 25%), darken(#FE3EBA, 25%));
   }
 

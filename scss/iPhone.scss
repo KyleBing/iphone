@@ -57,12 +57,13 @@ footer{
     justify-content: flex-start;
     font-size: 1.3rem;
     color: $text-main;
-    font-weight: bold;
     &.is-new{
+      font-weight: bold;
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-image: linear-gradient(to top right, #ff31d1, #00ceff);
+      //background-image: linear-gradient(to top right, #ff31d1, #00ceff);
+      background-image: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
     }
   }
   .slogan{
@@ -186,11 +187,10 @@ footer{
     }
     .detail-item-content{
       .tip{
+        padding: 1px 5px;
         background-color: $magenta;
         color: white;
-        border-color: $magenta;
         .sup{
-          border-color: $magenta;
           color: $magenta;
           display: block;
         }
@@ -212,7 +212,6 @@ footer{
   }
   &:hover{
     .tip{
-      border-color: $color-main;
     }
     .sup{
       color: $color-main;
@@ -228,7 +227,6 @@ footer{
   cursor: pointer;
   padding: 1px 5px;
   @include border-radius(3px);
-  border: 1px solid transparent;
   color: $text-value;
   margin-right: 10px;
   &:last-child{
