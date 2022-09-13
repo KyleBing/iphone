@@ -3,6 +3,7 @@
  Update Date: 20220309101712
  *****************************/
 const lastOS = "最新"
+const lastUpdateDate = '2022.09.13'
 const iphones = [
     {
         name: "iPhone 1",
@@ -3779,7 +3780,7 @@ const iphones = [
             {size: "6", type: ""}
         ],
         storage: ["128", "256", "512"],
-        battery: '',
+        battery: '3279',
         port: '闪电',
         screen: {
             brightness: '1000~1200',
@@ -3849,7 +3850,7 @@ const iphones = [
             {size: "6", type: ""}
         ],
         storage: ["128", "256", "512"],
-        battery: '',
+        battery: '4325',
         port: '闪电',
         screen: {
             brightness: '1000~1200',
@@ -3919,7 +3920,7 @@ const iphones = [
             {size: "6", type: ""}
         ],
         storage: ["128", "256", "512", "1024"],
-        battery: '',
+        battery: '3200',
         port: '闪电',
         screen: {
             brightness: '1000~2000',
@@ -3988,7 +3989,7 @@ const iphones = [
             {size: "6", type: ""}
         ],
         storage: ["128", "256", "512", "1024"],
-        battery: '',
+        battery: '4323',
         port: '闪电',
         screen: {
             brightness: '1000~2000',
@@ -4028,7 +4029,7 @@ let app = new Vue({
     el: "#app",
     data: {
         // date
-        dateLastUpdate: '2022.09.09',
+        dateLastUpdate: lastUpdateDate,
         // thumb up
         pingPongInterval: null,
         thumbsUpKey: 'iphone',
