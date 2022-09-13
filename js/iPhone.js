@@ -3907,7 +3907,7 @@ const iphones = [
         cpu: {
             icon: '',
             model: 'A16',
-            rate: '',
+            rate: '3.46',
             core: 6
         },
         gpu: {
@@ -3976,7 +3976,7 @@ const iphones = [
         cpu: {
             icon: '',
             model: 'A16',
-            rate: '',
+            rate: '3.46',
             core: 6
         },
         gpu: {
