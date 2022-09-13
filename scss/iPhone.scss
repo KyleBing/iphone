@@ -57,8 +57,8 @@ footer{
     justify-content: flex-start;
     font-size: 1.3rem;
     color: $text-main;
+    font-weight: bold;
     &.is-new{
-      font-weight: bold;
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
