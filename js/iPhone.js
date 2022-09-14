@@ -3,7 +3,7 @@
  Update Date: 20220309101712
  *****************************/
 const lastOS = "最新"
-const lastUpdateDate = '2022.09.13'
+const lastUpdateDate = '2022.09.14'
 const iphones = [
     {
         name: "iPhone 1",
