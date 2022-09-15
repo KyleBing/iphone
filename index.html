@@ -255,7 +255,7 @@
                             <div @click="tagToggle('sim')" class="detail-item-label">SIM</div>
                             <div class="detail-item-content">
                                 <div class="sim-item" v-for="(sim, index) in iphone.sim" :key="index">
-                                    <div class="area">{{sim.area}}</div>
+                                    <div class="name">{{sim.name}}</div>
                                     <div class="type">{{sim.type || '单卡'}}</div>
                                 </div>
                             </div>
@@ -278,16 +278,6 @@
                                 <div class="tip">-</div>
                             </div>
                         </div>
-                        <div class="detail-item" :class="[{active: tags.some(item => item === 'model')}]">
-                            <div @click="tagToggle('model')" class="detail-item-label">型号</div>
-                            <div class="detail-item-content" v-if="iphone.models.length">
-                                <div class="tip" v-for="(item, index) in iphone.models">{{item.name}} <span class="sup" v-if="item.type">{{item.type}}</span>
-                                </div>
-                            </div>
-                            <div class="detail-item-content" v-else>
-                                <div class="tip">-</div>
-                            </div>
-                        </div>
                         <div class="detail-item" :class="[{active: tags.some(item => item === 'port')}]">
                             <div @click="tagToggle('port')" class="detail-item-label">接口</div>
                             <div class="detail-item-content">
@@ -298,6 +288,18 @@
                             <div @click="tagToggle('prove')" class="detail-item-label">防水</div>
                             <div class="detail-item-content">
                                 <div class="tip">{{iphone.prove || '-'}}</div>
+                            </div>
+                        </div>
+                        <div class="detail-item" :class="[{active: tags.some(item => item === 'model')}]">
+                            <div @click="tagToggle('model')" class="detail-item-label">型号</div>
+                            <div class="detail-item-content" v-if="iphone.models.length">
+                                <div class="sim-item" v-for="(model, index) in iphone.models" :key="index">
+                                    <div class="name">{{model.name}}</div>
+                                    <div class="type">{{model.type}}</div>
+                                </div>
+                            </div>
+                            <div class="detail-item-content" v-else>
+                                <div class="tip">-</div>
                             </div>
                         </div>
                     </div>

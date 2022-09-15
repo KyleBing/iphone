@@ -15,7 +15,7 @@ const iphones = [
         active: false,
         release: "2007-06-29",
         models: [
-            {name: "A1203", type: ""},
+            {name: "", type: "A1203"},
         ],
         network: ["GSM"],
         height: 115,
@@ -33,7 +33,7 @@ const iphones = [
             core: 1
         },
         gpu: {},
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "0.128", type: "eDRAM"}
         ],
@@ -121,8 +121,8 @@ const iphones = [
         active: false,
         release: "2008-07-11",
         models: [
-            {name: "A1324", type: "国内"},
-            {name: "A1241", type: ""},
+            {name: "国内", type: "A1324"},
+            {name: "", type: "A1241"},
         ],
         network: ["GSM"],
         height: 115.5,
@@ -140,7 +140,7 @@ const iphones = [
             core: 1
         },
         gpu: {},
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "0.128", type: "DRAM"}
         ],
@@ -228,8 +228,8 @@ const iphones = [
         active: false,
         release: "2009-06-19",
         models: [
-            {name: "A1325", type: "国内"},
-            {name: "A1303", type: ""},
+            {name: "国内", type: "A1325"},
+            {name: "", type: "A1303"},
         ],
         network: ["GSM", "GPRS", "EDGE", "UMTS", "HSDPA"],
         height: 115.5,
@@ -250,7 +250,7 @@ const iphones = [
             model: "SGX535",
             core: 0
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "0.256", type: "DRAM"}
         ],
@@ -338,8 +338,8 @@ const iphones = [
         active: false,
         release: "2010-06-24",
         models: [
-            {name: "A1332", type: "GSM"},
-            {name: "A1349", type: "CDMA"},
+            {name: "GSM", type: "A1332"},
+            {name: "CDMA", type: "A1349"},
         ],
         network: ["GSM", "CDMA"],
         height: 115.2,
@@ -360,7 +360,7 @@ const iphones = [
             model: "SGX535",
             core: 0
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "0.512", type: "DRAM"}
         ],
@@ -467,7 +467,7 @@ const iphones = [
             model: "SGX543MP2",
             core: 0
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "0.512", type: "DDR2"}
         ],
@@ -574,7 +574,7 @@ const iphones = [
             model: "SGX543MP3",
             core: 0
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "1", type: "LPDDR2"}
         ],
@@ -663,11 +663,11 @@ const iphones = [
         active: false,
         release: "2013-09-20",
         models: [
-            {name: "A1456", type: ""},
-            {name: "A1507", type: ""},
-            {name: "A1516", type: ""},
-            {name: "A1529", type: ""},
-            {name: "A1532", type: ""},
+            {name: "", type: "A1456"},
+            {name: "", type: "A1507"},
+            {name: "", type: "A1516"},
+            {name: "", type: "A1529"},
+            {name: "", type: "A1532"},
         ],
         network: ["GSM", "CDMA", "3G", "EVDO", "HSPA+", "EDGE", "LTE"],
         height: 124.4,
@@ -688,7 +688,7 @@ const iphones = [
             model: "SGX543MP3",
             core: 3
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "1", type: "LPDDR2"}
         ],
@@ -780,12 +780,12 @@ const iphones = [
         active: false,
         release: "2013-09-20",
         models: [
-            {name: "A1457", type: "中东"},
-            {name: "A1518", type: "国内"},
-            {name: "A1528", type: "国内"},
-            {name: "A1530", type: "东亚"},
-            {name: "A1533", type: "美,国内"},
-            {name: "A1453", type: "美,日本"},
+            {name: "中东", type: "A1457"},
+            {name: "国内", type: "A1518"},
+            {name: "国内", type: "A1528"},
+            {name: "东亚", type: "A1530"},
+            {name: "美,国内", type: "A1533"},
+            {name: "美,日本", type: "A1453"},
         ],
         network: ["GSM", "CDMA", "3G", "EVDO", "HSPA+", "LTE"],
         height: 123.8,
@@ -806,7 +806,7 @@ const iphones = [
             model: "GX6430",
             core: 4
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "1", type: "LPDDR3"}
         ],
@@ -896,9 +896,9 @@ const iphones = [
         active: false,
         release: "2014-09-16",
         models: [
-            {name: "A1549", type: "美"},
-            {name: "A1586", type: ""},
-            {name: "A1589", type: "国内"},
+            {name: "美", type: "A1549"},
+            {name: "", type: "A1586"},
+            {name: "国内", type: "A1589"},
         ],
         network: ["GSM", "CDMA", "3G", "EVDO", "HSPA+", "4G", "LTE"],
         height: 138.1,
@@ -919,7 +919,7 @@ const iphones = [
             model: "GX6450",
             core: 4
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "1", type: "LPDDR3"}
         ],
@@ -1009,9 +1009,9 @@ const iphones = [
         active: false,
         release: "2014-09-16",
         models: [
-            {name: "A1522", type: "美"},
-            {name: "A1524", type: ""},
-            {name: "A1593", type: "国内"},
+            {name: "美", type: "A1522"},
+            {name: "", type: "A1524"},
+            {name: "国内", type: "A1593"},
         ],
         network: ["GSM", "CDMA", "3G", "EVDO", "HSPA+", "4G", "LTE"],
         height: 158.1,
@@ -1032,7 +1032,7 @@ const iphones = [
             model: "GX6450",
             core: 4
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "1", type: "LPDDR3"}
         ],
@@ -1122,9 +1122,9 @@ const iphones = [
         active: false,
         release: "2015-09-25",
         models: [
-            {name: "A1633", type: "美"},
-            {name: "A1688", type: ""},
-            {name: "A1700", type: "国内"},
+            {name: "美", type: "A1633"},
+            {name: "", type: "A1688"},
+            {name: "国内", type: "A1700"},
         ],
         network: ["GSM", "CDMA", "3G", "EVDO", "HSPA+", "LTE/4G", "LTE Advanced/4G+"],
         height: 138.3,
@@ -1145,7 +1145,7 @@ const iphones = [
             model: "GT7600",
             core: 6
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "2", type: "LPDDR4"}
         ],
@@ -1235,9 +1235,9 @@ const iphones = [
         active: false,
         release: "2015-09-25",
         models: [
-            {name: "A1634", type: "美"},
-            {name: "A1687", type: ""},
-            {name: "A1699", type: "国内"},
+            {name: "美", type: "A1634"},
+            {name: "", type: "A1687"},
+            {name: "国内", type: "A1699"},
         ],
         network: ["GSM", "CDMA", "3G", "EVDO", "HSPA+", "LTE/4G", "LTE Advanced/4G+"],
         height: 158.2,
@@ -1258,7 +1258,7 @@ const iphones = [
             model: "GT7600",
             core: 6
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "2", type: "LPDDR4"}
         ],
@@ -1348,9 +1348,9 @@ const iphones = [
         active: false,
         release: "2016-03-31",
         models: [
-            {name: "A1662", type: "美，加"},
-            {name: "A1723", type: "Sprint"},
-            {name: "A1724", type: "国内"},
+            {name: "美，加", type: "A1662"},
+            {name: "Sprint", type: "A1723"},
+            {name: "国内", type: "A1724"},
         ],
         network: ["GSM", "EDGE", "EV-DO", "HSPA+"],
         height: 123.8,
@@ -1371,7 +1371,7 @@ const iphones = [
             model: "PowerVR GT7600 ",
             core: 6
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "2", type: "LPDDR4"}
         ],
@@ -1462,9 +1462,9 @@ const iphones = [
         active: false,
         release: "2016-09-16",
         models: [
-            {name: "A1660", type: "Qualcomm"},
-            {name: "A1778", type: "英特尔"},
-            {name: "A1779", type: "日本"},
+            {name: "Qualcomm", type: "A1660"},
+            {name: "英特尔", type: "A1778"},
+            {name: "日本", type: "A1779"},
         ],
         network: ["GSM", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
         height: 138.3,
@@ -1485,7 +1485,7 @@ const iphones = [
             model: "GT7600 Plus",
             core: 6
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "2", type: "LPDDR4"}
         ],
@@ -1577,9 +1577,9 @@ const iphones = [
         active: false,
         release: "2016-09-16",
         models: [
-            {name: "A1661", type: "Qualcomm"},
-            {name: "A1784", type: "英特尔"},
-            {name: "A1785", type: "日本"},
+            {name: "Qualcomm", type: "A1661"},
+            {name: "英特尔", type: "A1784"},
+            {name: "日本", type: "A1785"},
         ],
         network: ["GSM", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
         height: 158.2,
@@ -1600,7 +1600,7 @@ const iphones = [
             model: "GT7600 Plus",
             core: 6
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "3", type: "LPDDR4"}
         ],
@@ -1692,9 +1692,9 @@ const iphones = [
         active: false,
         release: "2017-09-22",
         models: [
-            {name: "A1863", type: "Qualcomm"},
-            {name: "A1905", type: "英特尔"},
-            {name: "A1906", type: "日本"},
+            {name: "Qualcomm", type: "A1863"},
+            {name: "英特尔", type: "A1905"},
+            {name: "日本", type: "A1906"},
         ],
         network: ["GSM", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
         height: 138.4,
@@ -1715,7 +1715,7 @@ const iphones = [
             model: "",
             core: 0
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "2", type: "LPDDR4X"}
         ],
@@ -1805,9 +1805,9 @@ const iphones = [
         active: false,
         release: "2017-09-22",
         models: [
-            {name: "A1864", type: "Qualcomm"},
-            {name: "A1907", type: "英特尔"},
-            {name: "A1908", type: "日本"},
+            {name: "Qualcomm", type: "A1864"},
+            {name: "英特尔", type: "A1907"},
+            {name: "日本", type: "A1908"},
         ],
         network: ["GSM", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
         height: 158.4,
@@ -1828,7 +1828,7 @@ const iphones = [
             model: "",
             core: 0
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "3", type: "LPDDR4X"}
         ],
@@ -1918,9 +1918,9 @@ const iphones = [
         active: false,
         release: "2020-04-24",
         models: [
-            {name: "A2275", type: "美，加"},
-            {name: "A2296", type: ""},
-            {name: "A2298", type: "国内"},
+            {name: "美，加", type: "A2275"},
+            {name: "", type: "A2296"},
+            {name: "国内", type: "A2298"},
         ],
         network: ["GSM", "EDGE", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
         height: 138.4,
@@ -1941,7 +1941,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "3", type: "LPDDR4X"}
         ],
@@ -2031,9 +2031,9 @@ const iphones = [
         active: false,
         release: "2017-11-03",
         models: [
-            {name: "A1865", type: "Qualcomm"},
-            {name: "A1901", type: "英特尔"},
-            {name: "A1902", type: "日本"},
+            {name: "Qualcomm", type: "A1865"},
+            {name: "英特尔", type: "A1901"},
+            {name: "日本", type: "A1902"},
         ],
         network: ["GSM", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
         height: 143.6,
@@ -2054,7 +2054,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "3", type: "LPDDR4X"}
         ],
@@ -2141,11 +2141,11 @@ const iphones = [
         active: false,
         release: "2018-10-26",
         models: [
-            {name: "A1984", type: ""},
-            {name: "A2105", type: ""},
-            {name: "A2106", type: "日本"},
-            {name: "A2107", type: "国内"},
-            {name: "A2108", type: "国内,香港,墨西哥"},
+            {name: "", type: "A1984"},
+            {name: "", type: "A2105"},
+            {name: "日本", type: "A2106"},
+            {name: "国内", type: "A2107"},
+            {name: "国内,香港,墨西哥", type: "A2108"},
         ],
         network: [],
         height: 150.9,
@@ -2166,7 +2166,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        sim: [{area: '国内', type: '双卡双待'}],
+        sim: [{name: '国内', type: '双卡双待'}],
         memory: [
             {size: "3", type: "LPDDR4X"}
         ],
@@ -2259,10 +2259,10 @@ const iphones = [
         active: false,
         release: "2018-09-21",
         models: [
-            {name: "A1920", type: ""},
-            {name: "A2097", type: ""},
-            {name: "A2098", type: "日本"},
-            {name: "A2100", type: "国内"},
+            {name: "", type: "A1920"},
+            {name: "", type: "A2097"},
+            {name: "日本", type: "A2098"},
+            {name: "国内", type: "A2100"},
         ],
         network: ["GSM", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
         height: 143.6,
@@ -2283,7 +2283,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2373,10 +2373,10 @@ const iphones = [
         active: false,
         release: "2018-09-21",
         models: [
-            {name: "A1921", type: ""},
-            {name: "A2101", type: ""},
-            {name: "A2102", type: "日本"},
-            {name: "A2104", type: "国内"},
+            {name: "", type: "A1921"},
+            {name: "", type: "A2101"},
+            {name: "日本", type: "A2102"},
+            {name: "国内", type: "A2104"},
         ],
         network: ["GSM", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
         height: 157.5,
@@ -2397,7 +2397,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        sim: [{area: '国内', type: '双卡双待'}],
+        sim: [{name: '国内', type: '双卡双待'}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2487,9 +2487,9 @@ const iphones = [
         active: false,
         release: "2019-09-20",
         models: [
-            {name: "A2160", type: ""},
-            {name: "A2217", type: ""},
-            {name: "A2215", type: ""},
+            {name: "", type: "A2160"},
+            {name: "", type: "A2217"},
+            {name: "", type: "A2215"},
         ],
         network: ["4G", "LTE", "3G", "2G"],
         height: 150.9,
@@ -2510,7 +2510,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        sim: [{area: '国内', type: '双卡双待'}],
+        sim: [{name: '国内', type: '双卡双待'}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2603,9 +2603,9 @@ const iphones = [
         active: false,
         release: "2019-09-20",
         models: [
-            {name: "A2160", type: ""},
-            {name: "A2217", type: ""},
-            {name: "A2215", type: ""},
+            {name: "", type: "A2160"},
+            {name: "", type: "A2217"},
+            {name: "", type: "A2215"},
         ],
         network: ["4G", "LTE", "3G", "2G"],
         height: 144,
@@ -2626,7 +2626,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        sim: [{area: '国内', type: '双卡双待'}],
+        sim: [{name: '国内', type: '双卡双待'}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2717,9 +2717,9 @@ const iphones = [
         active: false,
         release: "2019-09-20",
         models: [
-            {name: "A2161", type: ""},
-            {name: "A2220", type: ""},
-            {name: "A2218", type: ""},
+            {name: "", type: "A2161"},
+            {name: "", type: "A2220"},
+            {name: "", type: "A2218"},
         ],
         network: ["4G", "LTE", "3G", "2G"],
         height: 158,
@@ -2740,7 +2740,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        sim: [{area: '国内', type: '双卡双待'}],
+        sim: [{name: '国内', type: '双卡双待'}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2830,7 +2830,12 @@ const iphones = [
         isNew: false,
         active: false,
         release: "2020-10-23",
-        models: [],
+        models: [
+            {name: "美国", type: "A2176"},
+            {name: "加拿大/日本", type: "A2398"},
+            {name: "国内", type: "A2400"},
+            {name: "其它", type: "A2399"},
+        ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 131.5,
         width: 64.2,
@@ -2850,7 +2855,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        sim: [{area: '国内', type: ''}],
+        sim: [{name: '国内', type: ''}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2934,7 +2939,12 @@ const iphones = [
         isNew: false,
         active: false,
         release: "2020-10-23",
-        models: [],
+        models: [
+            {name: "美国", type: "A2172"},
+            {name: "加拿大/日本", type: "A2402"},
+            {name: "国内", type: "A2404"},
+            {name: "其它", type: "A2403"},
+        ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 146.7,
         width: 71.5,
@@ -2954,7 +2964,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        sim: [{area: '国内', type: '双卡双待'}],
+        sim: [{name: '国内', type: '双卡双待'}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -3039,10 +3049,10 @@ const iphones = [
         active: false,
         release: "2020-10-23",
         models: [
-            {name: "A2341", type: "美国"},
-            {name: "A2406", type: ""},
-            {name: "A2407", type: ""},
-            {name: "A2408", type: "国内"},
+            {name: "美国", type: "A2341"},
+            {name: "加拿大/日本", type: "A2406"},
+            {name: "国际", type: "A2407"},
+            {name: "国内", type: "A2408"},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 146.7,
@@ -3063,7 +3073,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        sim: [{area: '国内', type: '双卡双待'}],
+        sim: [{name: '国内', type: '双卡双待'}],
         memory: [
             {size: "6", type: "LPDDR4X"}
         ],
@@ -3160,10 +3170,10 @@ const iphones = [
         active: false,
         release: "2020-10-23",
         models: [
-            {name: "A2342", type: "美国"},
-            {name: "A2410", type: ""},
-            {name: "A2411", type: ""},
-            {name: "A2412", type: "国内"},
+            {name: "美国", type: "A2342"},
+            {name: "加拿大/日本", type: "A2410"},
+            {name: "国际", type: "A2411"},
+            {name: "国内", type: "A2412"},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 160.8,
@@ -3184,7 +3194,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        sim: [{area: '国内', type: '双卡双待'}],
+        sim: [{name: '国内', type: '双卡双待'}],
         memory: [
             {size: "6", type: "LPDDR4X"}
         ],
@@ -3281,7 +3291,7 @@ const iphones = [
         active: false,
         release: "2021-09-15",
         models: [
-            {name: "A2629", type: "国内"},
+            {name: "国内", type: "A2629"},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 131.5,
@@ -3302,7 +3312,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        sim: [{area: '国内', type: '单卡'}],
+        sim: [{name: '国内', type: '单卡'}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -3359,7 +3369,7 @@ const iphones = [
         active: false,
         release: "2021-09-15",
         models: [
-            {name: "A2634", type: "国内"},
+            {name: "国内", type: "A2634"},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 146.7,
@@ -3381,8 +3391,8 @@ const iphones = [
             core: 4
         },
         sim: [
-            {area: '国内', type: '双卡双待'},
-            {area: '其它', type: '实体+eSIM'}
+            {name: '国内', type: '双卡双待'},
+            {name: '其它', type: '实体+eSIM'}
         ],
         memory: [
             {size: "4", type: "LPDDR4X"}
@@ -3441,7 +3451,7 @@ const iphones = [
         active: false,
         release: "2021-09-15",
         models: [
-            {name: "A2639", type: "国内"},
+            {name: "国内", type: "A2639"},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 146.7,
@@ -3463,8 +3473,8 @@ const iphones = [
             core: 5
         },
         sim: [
-            {area: '国内', type: '双卡双待'},
-            {area: '其它', type: '实体+eSIM'}
+            {name: '国内', type: '双卡双待'},
+            {name: '其它', type: '实体+eSIM'}
         ],
         memory: [
             {size: "6", type: "LPDDR4X"}
@@ -3557,7 +3567,7 @@ const iphones = [
         active: false,
         release: "2021-09-15",
         models: [
-            {name: "A2644", type: "国内"},
+            {name: "国内", type: "A2644"},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 160.8,
@@ -3579,8 +3589,8 @@ const iphones = [
             core: 5
         },
         sim: [
-            {area: '国内', type: '双卡双待'},
-            {area: '其它', type: '实体+eSIM'}
+            {name: '国内', type: '双卡双待'},
+            {name: '其它', type: '实体+eSIM'}
         ],
         memory: [
             {size: "6", type: "LPDDR4X"}
@@ -3673,9 +3683,11 @@ const iphones = [
         active: false,
         release: "2022-03-18",
         models: [
-            // {name: "A2785 ", type: "美，加"},
-            // {name: "A2296", type: ""},
-            {name: "A2785", type: "国内"},
+            {name: "国际 ", type: "A2783"},
+            {name: "北美洲", type: "A2595"},
+            {name: "国内", type: "A2785"},
+            {name: "日本", type: "A2782"},
+            {name: "俄罗斯", type: "A2784"},
         ],
         network: ["GSM", "EDGE", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
         height: 138.4,
@@ -3696,7 +3708,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        sim: [{area: '国内', type: '单卡'}],
+        sim: [{name: '国内', type: '单卡'}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -3782,9 +3794,9 @@ const iphones = [
             core: 5
         },
         sim: [
-            {area: '国内', type: '双卡双待'},
-            {area: '美国', type: 'eSIM 2/8'},
-            {area: '其它', type: '实体+eSIM'}
+            {name: '国内', type: '双卡双待'},
+            {name: '美国', type: 'eSIM 2/8'},
+            {name: '其它', type: '实体+eSIM'}
         ],
         memory: [
             {size: "6", type: "LPDDR4X"}
@@ -3854,9 +3866,9 @@ const iphones = [
             core: 5
         },
         sim: [
-            {area: '国内', type: '双卡双待'},
-            {area: '美国', type: 'eSIM 2/8'},
-            {area: '其它', type: '实体+eSIM'}
+            {name: '国内', type: '双卡双待'},
+            {name: '美国', type: 'eSIM 2/8'},
+            {name: '其它', type: '实体+eSIM'}
         ],
         memory: [
             {size: "6", type: "LPDDR4X"}
@@ -3926,9 +3938,9 @@ const iphones = [
             core: 5
         },
         sim: [
-            {area: '国内', type: '双卡双待'},
-            {area: '美国', type: 'eSIM 2/8'},
-            {area: '其它', type: '实体+eSIM'}
+            {name: '国内', type: '双卡双待'},
+            {name: '美国', type: 'eSIM 2/8'},
+            {name: '其它', type: '实体+eSIM'}
         ],
         memory: [
             {size: "6", type: "LPDDR5"}
@@ -3997,9 +4009,9 @@ const iphones = [
             core: 5
         },
         sim: [
-            {area: '国内', type: '双卡双待'},
-            {area: '美国', type: 'eSIM 2/8'},
-            {area: '其它', type: '实体+eSIM'}
+            {name: '国内', type: '双卡双待'},
+            {name: '美国', type: 'eSIM 2/8'},
+            {name: '其它', type: '实体+eSIM'}
         ],
         memory: [
             {size: "6", type: "LPDDR5"}

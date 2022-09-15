@@ -334,7 +334,7 @@ footer{
   position: relative;
   font-size: $fz-tiny;
   text-align: center;
-  .area{
+  .name{
     font-weight: bold;
     margin-bottom: 2px;
     color: $text-subtitle;
@@ -345,7 +345,7 @@ footer{
     font-size: $fz-sm;
   }
   &:hover{
-    .area{
+    .name{
       color: $color-main;
     }
   }

@@ -1106,7 +1106,7 @@ footer {
   font-size: 10px;
   text-align: center;
 }
-.sim-item .area {
+.sim-item .name {
   font-weight: bold;
   margin-bottom: 2px;
   color: #666;
@@ -1116,7 +1116,7 @@ footer {
 .sim-item .type {
   font-size: 12px;
 }
-.sim-item:hover .area {
+.sim-item:hover .name {
   color: #FF2D70;
 }
 
