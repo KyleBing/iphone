@@ -3380,7 +3380,10 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        sim: [{area: '国内', type: '双卡双待'}],
+        sim: [
+            {area: '国内', type: '双卡双待'},
+            {area: '其它', type: '实体+eSIM'}
+        ],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -3459,7 +3462,10 @@ const iphones = [
             model: "Apple",
             core: 5
         },
-        sim: [{area: '国内', type: '双卡双待'}],
+        sim: [
+            {area: '国内', type: '双卡双待'},
+            {area: '其它', type: '实体+eSIM'}
+        ],
         memory: [
             {size: "6", type: "LPDDR4X"}
         ],
@@ -3572,7 +3578,10 @@ const iphones = [
             model: "Apple",
             core: 5
         },
-        sim: [{area: '国内', type: '双卡双待'}],
+        sim: [
+            {area: '国内', type: '双卡双待'},
+            {area: '其它', type: '实体+eSIM'}
+        ],
         memory: [
             {size: "6", type: "LPDDR4X"}
         ],
