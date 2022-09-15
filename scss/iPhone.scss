@@ -142,10 +142,13 @@ footer{
       font-size: 1rem;
     }
     &.cyan{
-      color: $color-main;
+      color: $cyan;
     }
     &.magenta{
       color: $magenta;
+    }
+    &.green{
+      color: $green;
     }
   }
 
@@ -318,6 +321,34 @@ footer{
   color: $text-sup;
   background-color: white;
   border: 1px solid $color-border;
+}
+
+.sim-item{
+  min-width: 50px;
+  margin-right: 5px;
+  @include border-radius(5px);
+  padding: 5px;
+  color: $text-main;
+  background-color: transparentize(black, 0.95);
+  line-height: 1.1;
+  position: relative;
+  font-size: $fz-tiny;
+  text-align: center;
+  .area{
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: $text-subtitle;
+    letter-spacing: 1px;
+    font-size: $fz-tiny;
+  }
+  .type{
+    font-size: $fz-sm;
+  }
+  &:hover{
+    .area{
+      color: $color-main;
+    }
+  }
 }
 
 

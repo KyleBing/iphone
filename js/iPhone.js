@@ -3,7 +3,7 @@
  Update Date: 20220309101712
  *****************************/
 const lastOS = "最新"
-const lastUpdateDate = '2022.09.14'
+const lastUpdateDate = '2022.09.15'
 const iphones = [
     {
         name: "iPhone 1",
@@ -33,7 +33,7 @@ const iphones = [
             core: 1
         },
         gpu: {},
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "0.128", type: "eDRAM"}
         ],
@@ -140,7 +140,7 @@ const iphones = [
             core: 1
         },
         gpu: {},
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "0.128", type: "DRAM"}
         ],
@@ -250,7 +250,7 @@ const iphones = [
             model: "SGX535",
             core: 0
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "0.256", type: "DRAM"}
         ],
@@ -360,7 +360,7 @@ const iphones = [
             model: "SGX535",
             core: 0
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "0.512", type: "DRAM"}
         ],
@@ -467,7 +467,7 @@ const iphones = [
             model: "SGX543MP2",
             core: 0
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "0.512", type: "DDR2"}
         ],
@@ -574,7 +574,7 @@ const iphones = [
             model: "SGX543MP3",
             core: 0
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "1", type: "LPDDR2"}
         ],
@@ -688,7 +688,7 @@ const iphones = [
             model: "SGX543MP3",
             core: 3
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "1", type: "LPDDR2"}
         ],
@@ -806,7 +806,7 @@ const iphones = [
             model: "GX6430",
             core: 4
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "1", type: "LPDDR3"}
         ],
@@ -919,7 +919,7 @@ const iphones = [
             model: "GX6450",
             core: 4
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "1", type: "LPDDR3"}
         ],
@@ -1032,7 +1032,7 @@ const iphones = [
             model: "GX6450",
             core: 4
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "1", type: "LPDDR3"}
         ],
@@ -1145,7 +1145,7 @@ const iphones = [
             model: "GT7600",
             core: 6
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "2", type: "LPDDR4"}
         ],
@@ -1258,7 +1258,7 @@ const iphones = [
             model: "GT7600",
             core: 6
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "2", type: "LPDDR4"}
         ],
@@ -1371,7 +1371,7 @@ const iphones = [
             model: "PowerVR GT7600 ",
             core: 6
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "2", type: "LPDDR4"}
         ],
@@ -1485,7 +1485,7 @@ const iphones = [
             model: "GT7600 Plus",
             core: 6
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "2", type: "LPDDR4"}
         ],
@@ -1600,7 +1600,7 @@ const iphones = [
             model: "GT7600 Plus",
             core: 6
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "3", type: "LPDDR4"}
         ],
@@ -1715,7 +1715,7 @@ const iphones = [
             model: "",
             core: 0
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "2", type: "LPDDR4X"}
         ],
@@ -1828,7 +1828,7 @@ const iphones = [
             model: "",
             core: 0
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "3", type: "LPDDR4X"}
         ],
@@ -1941,7 +1941,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "3", type: "LPDDR4X"}
         ],
@@ -2054,7 +2054,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "3", type: "LPDDR4X"}
         ],
@@ -2166,7 +2166,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '双卡双待',
+        sim: [{area: '国内', type: '双卡双待'}],
         memory: [
             {size: "3", type: "LPDDR4X"}
         ],
@@ -2283,7 +2283,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2397,7 +2397,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '双卡双待',
+        sim: [{area: '国内', type: '双卡双待'}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2510,7 +2510,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '双卡双待',
+        sim: [{area: '国内', type: '双卡双待'}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2626,7 +2626,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '双卡双待',
+        sim: [{area: '国内', type: '双卡双待'}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2740,7 +2740,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '双卡双待',
+        sim: [{area: '国内', type: '双卡双待'}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2850,7 +2850,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '',
+        sim: [{area: '国内', type: ''}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2954,7 +2954,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '双卡双待',
+        sim: [{area: '国内', type: '双卡双待'}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -3063,7 +3063,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '双卡双待',
+        sim: [{area: '国内', type: '双卡双待'}],
         memory: [
             {size: "6", type: "LPDDR4X"}
         ],
@@ -3184,7 +3184,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '双卡双待',
+        sim: [{area: '国内', type: '双卡双待'}],
         memory: [
             {size: "6", type: "LPDDR4X"}
         ],
@@ -3302,7 +3302,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '单卡',
+        sim: [{area: '国内', type: '单卡'}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -3329,8 +3329,7 @@ const iphones = [
                 pixelCount: '',
                 zoomRate: '',
             },
-            back: [
-            ]
+            back: []
         },
         colors: [
             {name: 'Midnight', color: '#232a31'},
@@ -3381,7 +3380,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '双卡双待',
+        sim: [{area: '国内', type: '双卡双待'}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -3408,8 +3407,7 @@ const iphones = [
                 pixelCount: '',
                 zoomRate: '',
             },
-            back: [
-            ]
+            back: []
         },
         colors: [
             {name: 'Midnight', color: '#232a31'},
@@ -3461,7 +3459,7 @@ const iphones = [
             model: "Apple",
             core: 5
         },
-        modem: '双卡双待',
+        sim: [{area: '国内', type: '双卡双待'}],
         memory: [
             {size: "6", type: "LPDDR4X"}
         ],
@@ -3574,7 +3572,7 @@ const iphones = [
             model: "Apple",
             core: 5
         },
-        modem: '双卡双待',
+        sim: [{area: '国内', type: '双卡双待'}],
         memory: [
             {size: "6", type: "LPDDR4X"}
         ],
@@ -3689,7 +3687,7 @@ const iphones = [
             model: "Apple",
             core: 4
         },
-        modem: '单卡',
+        sim: [{area: '国内', type: '单卡'}],
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -3743,7 +3741,6 @@ const iphones = [
         price: "",
     },
 
-
     {
         name: "iPhone 14",
         name_short: "14",
@@ -3775,7 +3772,11 @@ const iphones = [
             model: "Apple",
             core: 5
         },
-        modem: '双卡双待',
+        sim: [
+            {area: '国内', type: '双卡双待'},
+            {area: '美国', type: 'eSIM 2/8'},
+            {area: '其它', type: '实体+eSIM'}
+        ],
         memory: [
             {size: "6", type: "LPDDR4X"}
         ],
@@ -3793,9 +3794,7 @@ const iphones = [
             touch3D: false,
             hdr: true,
         },
-        cameras: {
-
-        },
+        cameras: {},
         colors: [
             {name: '午夜色', color: '#31353b'},
             {name: '紫色', color: '#e7d6e9'},
@@ -3845,7 +3844,11 @@ const iphones = [
             model: "Apple",
             core: 5
         },
-        modem: '双卡双待',
+        sim: [
+            {area: '国内', type: '双卡双待'},
+            {area: '美国', type: 'eSIM 2/8'},
+            {area: '其它', type: '实体+eSIM'}
+        ],
         memory: [
             {size: "6", type: "LPDDR4X"}
         ],
@@ -3863,9 +3866,7 @@ const iphones = [
             touch3D: false,
             hdr: true,
         },
-        cameras: {
-
-        },
+        cameras: {},
         colors: [
             {name: '午夜色', color: '#31353b'},
             {name: '紫色', color: '#e7d6e9'},
@@ -3915,7 +3916,11 @@ const iphones = [
             model: "Apple",
             core: 5
         },
-        modem: '双卡双待',
+        sim: [
+            {area: '国内', type: '双卡双待'},
+            {area: '美国', type: 'eSIM 2/8'},
+            {area: '其它', type: '实体+eSIM'}
+        ],
         memory: [
             {size: "6", type: "LPDDR5"}
         ],
@@ -3933,9 +3938,7 @@ const iphones = [
             touch3D: false,
             hdr: true,
         },
-        cameras: {
-
-        },
+        cameras: {},
         colors: [
             {name: '深空黑色', color: '#403e3d'},
             {name: '银色', color: '#f0f2f2'},
@@ -3984,7 +3987,11 @@ const iphones = [
             model: "Apple",
             core: 5
         },
-        modem: '双卡双待',
+        sim: [
+            {area: '国内', type: '双卡双待'},
+            {area: '美国', type: 'eSIM 2/8'},
+            {area: '其它', type: '实体+eSIM'}
+        ],
         memory: [
             {size: "6", type: "LPDDR5"}
         ],
@@ -4002,9 +4009,7 @@ const iphones = [
             touch3D: false,
             hdr: true,
         },
-        cameras: {
-
-        },
+        cameras: {},
         colors: [
             {name: '深空黑色', color: '#403e3d'},
             {name: '银色', color: '#f0f2f2'},
@@ -4088,10 +4093,10 @@ let app = new Vue({
         this.shareQrCodeQQ = QRCode.generatePNG(this.linkQQ, {margin: 1})
     },
     methods: {
-        toggleShare(){
+        toggleShare() {
             this.showShare = !this.showShare
         },
-        generateDeviceMap(){
+        generateDeviceMap() {
             this.iphones.forEach(device => {
                 this.deviceMap.set(device.name, device)
             })
@@ -4105,8 +4110,8 @@ let app = new Vue({
         },
 
         // 筛选手机信息
-        filterTagToggle(deviceName){
-            if (this.selectedNames.includes(deviceName)){
+        filterTagToggle(deviceName) {
+            if (this.selectedNames.includes(deviceName)) {
                 this.selectedNames.splice(this.selectedNames.indexOf(deviceName), 1)
             } else {
                 this.selectedNames.push(deviceName)
@@ -4114,9 +4119,9 @@ let app = new Vue({
             this.updateShowingDevices()
 
         },
-        updateShowingDevices(){
+        updateShowingDevices() {
             this.iphones = this.selectedNames.map(name => this.deviceMap.get(name))
-            if (this.iphones.length === 0){
+            if (this.iphones.length === 0) {
                 this.iphones = [...this.iphonesOrigin]
             }
             this.iphones.push(this.iphonesOrigin[0])
@@ -4132,15 +4137,15 @@ let app = new Vue({
         },
 
         // 点赞功能
-        getInitThumbsUpCount(){
+        getInitThumbsUpCount() {
             axios.get('../../portal/thumbs-up?key=' + this.thumbsUpKey)
                 .then(res => {
-                    if (res.data && res.data.data){
+                    if (res.data && res.data.data) {
                         this.thumbsUpCount = res.data.data
                     }
                 })
         },
-        websocketInit(){
+        websocketInit() {
             this.websocket = new WebSocket('wss://kylebing.cn/ws')
             this.websocket.onopen = this.websocketOnOpen
             this.websocket.onmessage = this.websocketOnMessage
@@ -4149,9 +4154,9 @@ let app = new Vue({
         },
         websocketOnOpen() {
             this.portStatus = 'success'
-            this.pingPongInterval = setInterval(()=>{
-                if (this.websocket){
-                    switch (this.websocket.readyState){
+            this.pingPongInterval = setInterval(() => {
+                if (this.websocket) {
+                    switch (this.websocket.readyState) {
                         case 0: // connecting
                             break;
                         case 1: // open
@@ -4170,11 +4175,11 @@ let app = new Vue({
         },
         websocketOnMessage(res) {
             let receivedMessage = JSON.parse(res.data)
-            switch (receivedMessage.type){
+            switch (receivedMessage.type) {
                 case WSMessage.type.heartBeat:
                     break;
                 case WSMessage.type.thumbsUp:
-                    if (receivedMessage.content.key === this.thumbsUpKey){
+                    if (receivedMessage.content.key === this.thumbsUpKey) {
                         this.thumbsUpCount = receivedMessage.content.count
                     }
                     break;
@@ -4188,10 +4193,10 @@ let app = new Vue({
             this.portStatus = 'closed'
             console.log('socket has closed')
         },
-        thumbsUp(){
+        thumbsUp() {
             this.sendMessage(this.thumbsUpKey)
         },
-        sendMessage(key){
+        sendMessage(key) {
             if (this.websocket) {
                 this.heartActive = true
                 let message = new WSMessage(WSMessage.type.thumbsUp, {
@@ -4203,11 +4208,12 @@ let app = new Vue({
     }
 })
 
-class WSMessage{
+class WSMessage {
     constructor(type, content) {
         this.type = type
         this.content = content
     }
+
     static type = {
         thumbsUp: 'thumbs-up',
         heartBeat: 'heart-beat',

@@ -924,10 +924,13 @@ footer {
   font-size: 1rem;
 }
 .main-ref-item .value.cyan {
-  color: #FF2D70;
+  color: #04bbdc;
 }
 .main-ref-item .value.magenta {
   color: #FF2D70;
+}
+.main-ref-item .value.green {
+  color: #00b56b;
 }
 
 .multiply {
@@ -1089,6 +1092,34 @@ footer {
   border: 1px solid #dadada;
 }
 
+.sim-item {
+  min-width: 50px;
+  margin-right: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.05);
+  line-height: 1.1;
+  position: relative;
+  font-size: 10px;
+  text-align: center;
+}
+.sim-item .area {
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: #666;
+  letter-spacing: 1px;
+  font-size: 10px;
+}
+.sim-item .type {
+  font-size: 12px;
+}
+.sim-item:hover .area {
+  color: #FF2D70;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #262626;
@@ -1118,7 +1149,7 @@ footer {
     color: #a6a6a6;
   }
   .iphone .main-ref .value.cyan {
-    color: #f30652;
+    color: #078da6;
   }
   .iphone .main-ref .value.magenta {
     color: #d40b4b;

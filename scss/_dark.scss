@@ -45,7 +45,7 @@ $dark-border-light: lighten(black, 60%);
       .value{
         color: $dark-text;
         &.cyan{
-          color: desaturate(darken($color-main, 10%), 5%);
+          color: desaturate(darken($cyan, 10%), 5%);
         }
         &.magenta{
           color: desaturate(darken($magenta, 15%), 10%);
