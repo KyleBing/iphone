@@ -7,7 +7,7 @@
     <title>iPhone 所有机型参数大全</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/iphone_favicon256w.png" type="image/png">
-    <link rel="stylesheet" href="scss/iPhone.css?v=20220915112521">
+    <link rel="stylesheet" href="scss/iPhone.css?v=20220922114533">
     <link rel="apple-touch-icon" href="img/links/iphone_white@2x.png">
 
     <meta name="theme-color"
@@ -81,7 +81,13 @@
     <div class="iphone-list">
         <div class="iphone" v-for="(iphone, index) in iphones" :key="index">
             <div class="title-content">
-                <div :class="['title', {'is-new': iphone.isNew}]">{{iphone.name}}</div>
+                <div>
+                    <div :class="['title', {'is-new': iphone.isNew}]">{{iphone.name}}</div>
+                    <div class="score-bar" v-if="iphone.geekbenchScore.multi">
+                        <div class="bar" :style="`width: ${iphone.geekbenchScore.multi / maxScore * 100}px`"></div>
+                        <div class="score">{{iphone.geekbenchScore.multi}}</div>
+                    </div>
+                </div>
                 <div class="slogan">{{iphone.slogan}}</div>
             </div>
 
@@ -101,6 +107,7 @@
                                 <span v-else>-</span>
                             </div>
                         </div>
+
                         <div class="main-ref-item">
                             <div class="label">GPU</div>
                             <div class="value cyan">
@@ -342,7 +349,7 @@
 
 </div>
 
-<script src="js/iPhone.js?v=20220915112521"></script>
+<script src="js/iPhone.js?v=20220922114533"></script>
 <script>
     setTimeout(() => {
         if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {

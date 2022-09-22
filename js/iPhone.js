@@ -3,7 +3,7 @@
  Update Date: 20220309101712
  *****************************/
 const lastOS = "最新"
-const lastUpdateDate = '2022.09.15'
+const lastUpdateDate = '2022.09.22'
 const iphones = [
     {
         name: "iPhone 1",
@@ -34,6 +34,10 @@ const iphones = [
         },
         gpu: {},
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 0
+        },
         memory: [
             {size: "0.128", type: "eDRAM"}
         ],
@@ -141,6 +145,10 @@ const iphones = [
         },
         gpu: {},
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 0
+        },
         memory: [
             {size: "0.128", type: "DRAM"}
         ],
@@ -251,6 +259,10 @@ const iphones = [
             core: 0
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 0
+        },
         memory: [
             {size: "0.256", type: "DRAM"}
         ],
@@ -361,6 +373,10 @@ const iphones = [
             core: 0
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 0
+        },
         memory: [
             {size: "0.512", type: "DRAM"}
         ],
@@ -468,6 +484,10 @@ const iphones = [
             core: 0
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 0
+        },
         memory: [
             {size: "0.512", type: "DDR2"}
         ],
@@ -575,6 +595,10 @@ const iphones = [
             core: 0
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 0
+        },
         memory: [
             {size: "1", type: "LPDDR2"}
         ],
@@ -689,6 +713,10 @@ const iphones = [
             core: 3
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 0
+        },
         memory: [
             {size: "1", type: "LPDDR2"}
         ],
@@ -807,6 +835,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 475
+        },
         memory: [
             {size: "1", type: "LPDDR3"}
         ],
@@ -920,6 +952,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 566
+        },
         memory: [
             {size: "1", type: "LPDDR3"}
         ],
@@ -1033,6 +1069,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 569
+        },
         memory: [
             {size: "1", type: "LPDDR3"}
         ],
@@ -1146,6 +1186,10 @@ const iphones = [
             core: 6
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 963
+        },
         memory: [
             {size: "2", type: "LPDDR4"}
         ],
@@ -1259,6 +1303,10 @@ const iphones = [
             core: 6
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 975
+        },
         memory: [
             {size: "2", type: "LPDDR4"}
         ],
@@ -1372,6 +1420,10 @@ const iphones = [
             core: 6
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 980
+        },
         memory: [
             {size: "2", type: "LPDDR4"}
         ],
@@ -1486,6 +1538,10 @@ const iphones = [
             core: 6
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 1272
+        },
         memory: [
             {size: "2", type: "LPDDR4"}
         ],
@@ -1601,6 +1657,10 @@ const iphones = [
             core: 6
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 1293
+        },
         memory: [
             {size: "3", type: "LPDDR4"}
         ],
@@ -1716,6 +1776,10 @@ const iphones = [
             core: 0
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 1910
+        },
         memory: [
             {size: "2", type: "LPDDR4X"}
         ],
@@ -1829,6 +1893,10 @@ const iphones = [
             core: 0
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 2046
+        },
         memory: [
             {size: "3", type: "LPDDR4X"}
         ],
@@ -1942,6 +2010,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 2849
+        },
         memory: [
             {size: "3", type: "LPDDR4X"}
         ],
@@ -2055,6 +2127,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 2145
+        },
         memory: [
             {size: "3", type: "LPDDR4X"}
         ],
@@ -2167,6 +2243,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: '双卡双待'}],
+        geekbenchScore: {
+           single: 0,
+           multi: 2263
+        },
         memory: [
             {size: "3", type: "LPDDR4X"}
         ],
@@ -2284,6 +2364,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 2526
+        },
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2398,6 +2482,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: '双卡双待'}],
+        geekbenchScore: {
+           single: 0,
+           multi: 2494
+        },
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2511,6 +2599,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: '双卡双待'}],
+        geekbenchScore: {
+           single: 0,
+           multi: 3095
+        },
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2627,6 +2719,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: '双卡双待'}],
+        geekbenchScore: {
+           single: 0,
+           multi: 3275
+        },
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2741,6 +2837,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: '双卡双待'}],
+        geekbenchScore: {
+           single: 0,
+           multi: 3283
+        },
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2856,6 +2956,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+           single: 0,
+           multi: 3876
+        },
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -2965,6 +3069,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: '双卡双待'}],
+        geekbenchScore: {
+           single: 0,
+           multi: 3863
+        },
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -3074,6 +3182,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: '双卡双待'}],
+        geekbenchScore: {
+           single: 0,
+           multi: 3873
+        },
         memory: [
             {size: "6", type: "LPDDR4X"}
         ],
@@ -3195,6 +3307,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: '双卡双待'}],
+        geekbenchScore: {
+           single: 0,
+           multi: 3987
+        },
         memory: [
             {size: "6", type: "LPDDR4X"}
         ],
@@ -3313,6 +3429,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: '单卡'}],
+        geekbenchScore: {
+           single: 0,
+           multi: 4500
+        },
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -3394,6 +3514,10 @@ const iphones = [
             {name: '国内', type: '双卡双待'},
             {name: '其它', type: '实体+eSIM'}
         ],
+        geekbenchScore: {
+           single: 0,
+           multi: 4499
+        },
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -3476,6 +3600,10 @@ const iphones = [
             {name: '国内', type: '双卡双待'},
             {name: '其它', type: '实体+eSIM'}
         ],
+        geekbenchScore: {
+           single: 693,
+           multi: 4659
+        },
         memory: [
             {size: "6", type: "LPDDR4X"}
         ],
@@ -3592,6 +3720,10 @@ const iphones = [
             {name: '国内', type: '双卡双待'},
             {name: '其它', type: '实体+eSIM'}
         ],
+        geekbenchScore: {
+           single: 0,
+           multi: 4675
+        },
         memory: [
             {size: "6", type: "LPDDR4X"}
         ],
@@ -3709,6 +3841,10 @@ const iphones = [
             core: 4
         },
         sim: [{name: '国内', type: '单卡'}],
+        geekbenchScore: {
+           single: 0,
+           multi: 4546
+        },
         memory: [
             {size: "4", type: "LPDDR4X"}
         ],
@@ -3798,6 +3934,10 @@ const iphones = [
             {name: '美国', type: 'eSIM 2/8'},
             {name: '其它', type: '实体+eSIM'}
         ],
+        geekbenchScore: {
+           single: 0,
+           multi: 0
+        },
         memory: [
             {size: "6", type: "LPDDR4X"}
         ],
@@ -3870,6 +4010,10 @@ const iphones = [
             {name: '美国', type: 'eSIM 2/8'},
             {name: '其它', type: '实体+eSIM'}
         ],
+        geekbenchScore: {
+           single: 0,
+           multi: 0
+        },
         memory: [
             {size: "6", type: "LPDDR4X"}
         ],
@@ -3942,6 +4086,10 @@ const iphones = [
             {name: '美国', type: 'eSIM 2/8'},
             {name: '其它', type: '实体+eSIM'}
         ],
+        geekbenchScore: {
+           single: 0,
+           multi: 4664
+        },
         memory: [
             {size: "6", type: "LPDDR5"}
         ],
@@ -4013,6 +4161,10 @@ const iphones = [
             {name: '美国', type: 'eSIM 2/8'},
             {name: '其它', type: '实体+eSIM'}
         ],
+        geekbenchScore: {
+           single: 0,
+           multi: 0
+        },
         memory: [
             {size: "6", type: "LPDDR5"}
         ],
@@ -4226,6 +4378,17 @@ let app = new Vue({
                 this.websocket.send(JSON.stringify(message))
             }
         },
+    },
+    computed: {
+        maxScore(){
+            let max = 0
+            iphones.forEach(item => {
+                if (max < item.geekbenchScore.multi) {
+                    max = item.geekbenchScore.multi
+                }
+            })
+            return max
+        }
     }
 })
 
