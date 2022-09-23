@@ -95,7 +95,7 @@ tt {
 }
 @font-face {
   font-family: "Galvji";
-  src: url("../font/Galvji.ttc");
+  src: url("../font/Galvji.ttf");
 }
 .impact {
   font-family: "Impact", sans-serif !important;
@@ -391,7 +391,7 @@ tt {
 }
 @font-face {
   font-family: "Galvji";
-  src: url("../font/Galvji.ttc");
+  src: url("../font/Galvji.ttf");
 }
 .impact {
   font-family: "Impact", sans-serif !important;
