@@ -3,7 +3,7 @@
  Update Date: 20220309101712
  *****************************/
 const lastOS = "最新"
-const lastUpdateDate = '2022.09.22'
+const lastUpdateDate = '2022.09.28'
 const iphones = [
     {
         name: "iPhone 1",
@@ -1173,7 +1173,7 @@ const iphones = [
         weight: 143,
         os: {
             init: "iOS 9.0.1",
-            last: lastOS
+            last: "iOS 15.7"
         },
         cpu: {
             icon: 'A9',
@@ -1290,7 +1290,7 @@ const iphones = [
         weight: 192,
         os: {
             init: "iOS 9.0.1",
-            last: lastOS
+            last: "iOS 15.7"
         },
         cpu: {
             icon: 'A9',
@@ -1407,7 +1407,7 @@ const iphones = [
         weight: 113,
         os: {
             init: "iOS 9.3",
-            last: lastOS
+            last: "iOS 15.7"
         },
         cpu: {
             icon: 'A9',
@@ -1525,7 +1525,7 @@ const iphones = [
         weight: 138,
         os: {
             init: "iOS 10.0.1",
-            last: lastOS
+            last: "iOS 15.7"
         },
         cpu: {
             icon: 'A10',
@@ -1644,7 +1644,7 @@ const iphones = [
         weight: 188,
         os: {
             init: "iOS 10.0.1",
-            last: lastOS
+            last: "iOS 15.7"
         },
         cpu: {
             icon: 'A10',
