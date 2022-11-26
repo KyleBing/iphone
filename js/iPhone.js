@@ -4240,7 +4240,7 @@ let app = new Vue({
         },
         shareQrCode: null,
         shareQrCodeQQ: null,
-        linkAddress: 'https://kylebing.cn/tools/iphone/',
+        linkAddress: 'http://kylebing.cn/tools/iphone/',
         linkQQ: 'https://jq.qq.com/?_wv=1027&k=Z8E0HrWA'
     },
     mounted() {
