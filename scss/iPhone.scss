@@ -199,6 +199,12 @@ footer{
         }
       }
     }
+    .sim-item{
+      background-color: $magenta;
+      .name,.type{
+        color: white;
+      }
+    }
   }
   .detail-item-label{
     @include unselectable;
@@ -274,7 +280,7 @@ footer{
     background: $gradient-bg-green
   }
   .score{
-    margin-left: 3px;
+    margin-left: 5px;
     font-size: $fz-tiny;
   }
 }

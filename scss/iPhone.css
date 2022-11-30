@@ -976,6 +976,12 @@ footer {
   color: #FF2D70;
   display: block;
 }
+.detail-item.active .sim-item {
+  background-color: #FF2D70;
+}
+.detail-item.active .sim-item .name, .detail-item.active .sim-item .type {
+  color: white;
+}
 .detail-item .detail-item-label {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1051,7 +1057,7 @@ footer {
   background: linear-gradient(135deg, #049cb7, #3dd9bd);
 }
 .score-bar .score {
-  margin-left: 3px;
+  margin-left: 5px;
   font-size: 10px;
 }
 
@@ -1273,5 +1279,18 @@ footer {
 
   .ref-content > * {
     border-bottom: 1px solid #4d4d4d !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .score-bar .score {
+    color: #737373;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .sim-item .name {
+    color: #a6a6a6;
+  }
+  .sim-item .type {
+    color: #737373;
   }
 }

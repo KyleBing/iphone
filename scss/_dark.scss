@@ -169,4 +169,19 @@ $dark-border-light: lighten(black, 60%);
       }
     }
   }
+
+  .score-bar {
+    .score {
+      color: $dark-text-subtitle;
+    }
+  }
+
+  .sim-item{
+    .name{
+      color: $dark-text;
+    }
+    .type{
+      color: $dark-text-subtitle;
+    }
+  }
 }
