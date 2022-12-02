@@ -3,7 +3,7 @@
  Update Date: 20220309101712
  *****************************/
 const lastOS = "最新"
-const lastUpdateDate = '2022.11.30'
+const lastUpdateDate = '2022.12.02'
 const iphones = [
     {
         name: "iPhone 1",
@@ -3935,8 +3935,8 @@ const iphones = [
             {name: '其它', type: '实体+eSIM'}
         ],
         geekbenchScore: {
-           single: 0,
-           multi: 0
+           single: 1724,
+           multi: 4621
         },
         memory: [
             {size: "6", type: "LPDDR4X"}
@@ -4011,8 +4011,8 @@ const iphones = [
             {name: '其它', type: '实体+eSIM'}
         ],
         geekbenchScore: {
-           single: 0,
-           multi: 0
+           single: 1724,
+           multi: 4638
         },
         memory: [
             {size: "6", type: "LPDDR4X"}
@@ -4087,8 +4087,8 @@ const iphones = [
             {name: '其它', type: '实体+eSIM'}
         ],
         geekbenchScore: {
-           single: 0,
-           multi: 4664
+           single: 1874,
+           multi: 5376
         },
         memory: [
             {size: "6", type: "LPDDR5"}
@@ -4162,8 +4162,8 @@ const iphones = [
             {name: '其它', type: '实体+eSIM'}
         ],
         geekbenchScore: {
-           single: 0,
-           multi: 0
+           single: 1873,
+           multi: 5357
         },
         memory: [
             {size: "6", type: "LPDDR5"}
