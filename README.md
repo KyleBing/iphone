@@ -1,4 +1,4 @@
-<img src="https://github.com/KyleBing/iphone/raw/master/imgs/iphone_white@2x.png" width="100">
+<img src="https://github.com/KyleBing/iphone/raw/master/img/iphone_favicon256w.png" width="100">
 
 # iPhone 信息
 
