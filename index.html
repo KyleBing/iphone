@@ -199,7 +199,7 @@
                                 <tspan x="216.020508" y="19">{{iphone.screen.type}}</tspan>
                             </text>
                             <text v-if="iphone.screen.brightness" id="screenLight" font-family="Galvji" font-size="15" font-weight="normal" fill="#404040">
-                                <tspan x="216.020508" y="41">{{iphone.screen.brightness}} cd/㎡</tspan>
+                                <tspan x="216.020508" y="41">{{iphone.screen.brightness}} nit</tspan>
                             </text>
                             <text v-if="iphone.screen.refreshRate" id="screenRate" font-family="Galvji" font-size="15" font-weight="normal" fill="#404040">
                                 <tspan x="216.020508" y="64">{{iphone.screen.refreshRate}} hz</tspan>
@@ -291,10 +291,12 @@
                                 <div class="tip">{{iphone.port}}</div>
                             </div>
                         </div>
-                        <div class="detail-item" :class="[{active: tags.some(item => item === 'prove')}]">
-                            <div @click="tagToggle('prove')" class="detail-item-label">防水</div>
+                        <div class="detail-item" :class="[{active: tags.some(item => item === 'waterResistant')}]">
+                            <div @click="tagToggle('waterResistant')" class="detail-item-label">防水</div>
                             <div class="detail-item-content">
-                                <div class="tip">{{iphone.prove || '-'}}</div>
+                                <div class="tip">{{iphone.waterResistant.value || '-'}}
+                                    <span v-if="iphone.waterResistant.waterDepth">({{iphone.waterResistant.waterDepth}}米 {{iphone.waterResistant.timeHold}}分钟)</span>
+                                </div>
                             </div>
                         </div>
                         <div class="detail-item" :class="[{active: tags.some(item => item === 'model')}]">

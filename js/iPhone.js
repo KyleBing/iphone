@@ -35,8 +35,8 @@ const iphones = [
         gpu: {},
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 0
+            single: 0,
+            multi: 0
         },
         memory: [
             {size: "0.128", type: "eDRAM"}
@@ -112,7 +112,7 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ['Wi-Fi', "蓝牙 2.0"],
-        prove: '',
+        waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -146,8 +146,8 @@ const iphones = [
         gpu: {},
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 0
+            single: 0,
+            multi: 0
         },
         memory: [
             {size: "0.128", type: "DRAM"}
@@ -223,7 +223,7 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ['Wi-Fi', "蓝牙 2.0"],
-        prove: '',
+        waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -260,8 +260,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 0
+            single: 0,
+            multi: 0
         },
         memory: [
             {size: "0.256", type: "DRAM"}
@@ -337,7 +337,7 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ['Wi-Fi 2.4', "蓝牙 2.1"],
-        prove: '',
+        waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -374,8 +374,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 0
+            single: 0,
+            multi: 0
         },
         memory: [
             {size: "0.512", type: "DRAM"}
@@ -451,7 +451,7 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ['Wi-Fi 2.4', "蓝牙 2.1"],
-        prove: '',
+        waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -485,8 +485,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 0
+            single: 0,
+            multi: 0
         },
         memory: [
             {size: "0.512", type: "DDR2"}
@@ -562,7 +562,7 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ['Wi-Fi 2.4'],
-        prove: '',
+        waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -596,8 +596,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 0
+            single: 0,
+            multi: 0
         },
         memory: [
             {size: "1", type: "LPDDR2"}
@@ -674,7 +674,7 @@ const iphones = [
         unlockMethod: ['指纹解锁'],
         applePay: false,
         connectivity: ['Wi-Fi'],
-        prove: '',
+        waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -714,8 +714,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 0
+            single: 0,
+            multi: 0
         },
         memory: [
             {size: "1", type: "LPDDR2"}
@@ -795,7 +795,7 @@ const iphones = [
         unlockMethod: ['指纹解锁'],
         applePay: false,
         connectivity: [],
-        prove: '',
+        waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -836,8 +836,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 475
+            single: 0,
+            multi: 475
         },
         memory: [
             {size: "1", type: "LPDDR3"}
@@ -915,7 +915,7 @@ const iphones = [
         unlockMethod: ['指纹解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "LTE", "Wi-Fi", "蓝牙 4.0", "GPS"],
-        prove: '',
+        waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -953,8 +953,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 566
+            single: 0,
+            multi: 566
         },
         memory: [
             {size: "1", type: "LPDDR3"}
@@ -1032,7 +1032,7 @@ const iphones = [
         unlockMethod: ['指纹解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 4.2", "NFC", "GPS"],
-        prove: '',
+        waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -1070,8 +1070,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 569
+            single: 0,
+            multi: 569
         },
         memory: [
             {size: "1", type: "LPDDR3"}
@@ -1149,7 +1149,7 @@ const iphones = [
         unlockMethod: ['指纹解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 4.2", "NFC", "GPS"],
-        prove: '',
+        waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -1187,8 +1187,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 963
+            single: 0,
+            multi: 963
         },
         memory: [
             {size: "2", type: "LPDDR4"}
@@ -1266,7 +1266,7 @@ const iphones = [
         unlockMethod: ['指纹解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 4.2", "NFC", "GPS"],
-        prove: '',
+        waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -1304,8 +1304,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 975
+            single: 0,
+            multi: 975
         },
         memory: [
             {size: "2", type: "LPDDR4"}
@@ -1383,7 +1383,7 @@ const iphones = [
         unlockMethod: ['指纹解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 4.2", "NFC", "GPS"],
-        prove: '',
+        waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -1421,8 +1421,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 980
+            single: 0,
+            multi: 980
         },
         memory: [
             {size: "2", type: "LPDDR4"}
@@ -1501,7 +1501,7 @@ const iphones = [
         unlockMethod: ['指纹解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "Wi-Fi", "蓝牙 4.2"],
-        prove: '',
+        waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -1539,8 +1539,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 1272
+            single: 0,
+            multi: 1272
         },
         memory: [
             {size: "2", type: "LPDDR4"}
@@ -1620,7 +1620,7 @@ const iphones = [
         unlockMethod: ['指纹解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-        prove: 'IPX67',
+        waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -1658,8 +1658,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 1293
+            single: 0,
+            multi: 1293
         },
         memory: [
             {size: "3", type: "LPDDR4"}
@@ -1739,7 +1739,7 @@ const iphones = [
         unlockMethod: ['指纹解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-        prove: 'IPX67',
+        waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -1777,8 +1777,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 1910
+            single: 0,
+            multi: 1910
         },
         memory: [
             {size: "2", type: "LPDDR4X"}
@@ -1856,7 +1856,7 @@ const iphones = [
         unlockMethod: ['指纹解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-        prove: 'IPX67',
+        waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -1894,8 +1894,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 2046
+            single: 0,
+            multi: 2046
         },
         memory: [
             {size: "3", type: "LPDDR4X"}
@@ -1973,7 +1973,7 @@ const iphones = [
         unlockMethod: ['指纹解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-        prove: 'IPX67',
+        waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -2011,8 +2011,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 2849
+            single: 0,
+            multi: 2849
         },
         memory: [
             {size: "3", type: "LPDDR4X"}
@@ -2090,7 +2090,7 @@ const iphones = [
         unlockMethod: ['指纹解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-        prove: 'IPX67',
+        waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -2128,8 +2128,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 2145
+            single: 0,
+            multi: 2145
         },
         memory: [
             {size: "3", type: "LPDDR4X"}
@@ -2204,7 +2204,7 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-        prove: 'IPX67',
+        waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -2244,8 +2244,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: '双卡双待'}],
         geekbenchScore: {
-           single: 0,
-           multi: 2263
+            single: 0,
+            multi: 2263
         },
         memory: [
             {size: "3", type: "LPDDR4X"}
@@ -2326,7 +2326,7 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: [],
-        prove: 'IPX',
+        waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
         price: "",
     },
     {
@@ -2365,8 +2365,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 2526
+            single: 0,
+            multi: 2526
         },
         memory: [
             {size: "4", type: "LPDDR4X"}
@@ -2444,7 +2444,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: [],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 2,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -2483,8 +2487,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: '双卡双待'}],
         geekbenchScore: {
-           single: 0,
-           multi: 2494
+            single: 0,
+            multi: 2494
         },
         memory: [
             {size: "4", type: "LPDDR4X"}
@@ -2562,7 +2566,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: [],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 2,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -2600,8 +2608,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: '双卡双待'}],
         geekbenchScore: {
-           single: 0,
-           multi: 3095
+            single: 0,
+            multi: 3095
         },
         memory: [
             {size: "4", type: "LPDDR4X"}
@@ -2682,7 +2690,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi 6", "蓝牙 5.0"],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 2,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -2720,8 +2732,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: '双卡双待'}],
         geekbenchScore: {
-           single: 0,
-           multi: 3275
+            single: 0,
+            multi: 3275
         },
         memory: [
             {size: "4", type: "LPDDR4X"}
@@ -2800,7 +2812,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi 6", "蓝牙 5.0"],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 4,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -2838,8 +2854,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: '双卡双待'}],
         geekbenchScore: {
-           single: 0,
-           multi: 3283
+            single: 0,
+            multi: 3283
         },
         memory: [
             {size: "4", type: "LPDDR4X"}
@@ -2918,7 +2934,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi 6", "蓝牙 5.0"],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 4,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -2957,8 +2977,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: ''}],
         geekbenchScore: {
-           single: 0,
-           multi: 3876
+            single: 0,
+            multi: 3876
         },
         memory: [
             {size: "4", type: "LPDDR4X"}
@@ -3031,7 +3051,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -3070,8 +3094,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: '双卡双待'}],
         geekbenchScore: {
-           single: 0,
-           multi: 3863
+            single: 0,
+            multi: 3863
         },
         memory: [
             {size: "4", type: "LPDDR4X"}
@@ -3144,7 +3168,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -3183,8 +3211,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: '双卡双待'}],
         geekbenchScore: {
-           single: 0,
-           multi: 3873
+            single: 0,
+            multi: 3873
         },
         memory: [
             {size: "6", type: "LPDDR4X"}
@@ -3269,7 +3297,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -3308,8 +3340,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: '双卡双待'}],
         geekbenchScore: {
-           single: 0,
-           multi: 3987
+            single: 0,
+            multi: 3987
         },
         memory: [
             {size: "6", type: "LPDDR4X"}
@@ -3394,7 +3426,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -3430,8 +3466,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
-           single: 0,
-           multi: 4500
+            single: 0,
+            multi: 4500
         },
         memory: [
             {size: "4", type: "LPDDR4X"}
@@ -3476,7 +3512,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -3515,8 +3555,8 @@ const iphones = [
             {name: '其它', type: '实体+eSIM'}
         ],
         geekbenchScore: {
-           single: 0,
-           multi: 4499
+            single: 0,
+            multi: 4499
         },
         memory: [
             {size: "4", type: "LPDDR4X"}
@@ -3562,7 +3602,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -3601,8 +3645,8 @@ const iphones = [
             {name: '其它', type: '实体+eSIM'}
         ],
         geekbenchScore: {
-           single: 693,
-           multi: 4659
+            single: 693,
+            multi: 4659
         },
         memory: [
             {size: "6", type: "LPDDR4X"}
@@ -3682,7 +3726,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -3721,8 +3769,8 @@ const iphones = [
             {name: '其它', type: '实体+eSIM'}
         ],
         geekbenchScore: {
-           single: 0,
-           multi: 4675
+            single: 0,
+            multi: 4675
         },
         memory: [
             {size: "6", type: "LPDDR4X"}
@@ -3802,7 +3850,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -3842,8 +3894,8 @@ const iphones = [
         },
         sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
-           single: 0,
-           multi: 4546
+            single: 0,
+            multi: 4546
         },
         memory: [
             {size: "4", type: "LPDDR4X"}
@@ -3894,7 +3946,11 @@ const iphones = [
         unlockMethod: ['指纹'],
         applePay: false,
         connectivity: ["2G", "3G", "4G", "5G", "Wi-Fi", "蓝牙 5.0"],
-        prove: 'IPX67',
+        waterResistant: {
+            value: 'IP67',
+            waterDepth: 1,
+            timeHold: 30
+        },
         price: "",
     },
 
@@ -3935,8 +3991,8 @@ const iphones = [
             {name: '其它', type: '实体+eSIM'}
         ],
         geekbenchScore: {
-           single: 1724,
-           multi: 4621
+            single: 1724,
+            multi: 4621
         },
         memory: [
             {size: "6", type: "LPDDR4X"}
@@ -3971,7 +4027,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ["5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -4011,8 +4071,8 @@ const iphones = [
             {name: '其它', type: '实体+eSIM'}
         ],
         geekbenchScore: {
-           single: 1724,
-           multi: 4638
+            single: 1724,
+            multi: 4638
         },
         memory: [
             {size: "6", type: "LPDDR4X"}
@@ -4047,7 +4107,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ["5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -4087,8 +4151,8 @@ const iphones = [
             {name: '其它', type: '实体+eSIM'}
         ],
         geekbenchScore: {
-           single: 1874,
-           multi: 5376
+            single: 1874,
+            multi: 5376
         },
         memory: [
             {size: "6", type: "LPDDR5"}
@@ -4122,7 +4186,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ["5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -4162,8 +4230,8 @@ const iphones = [
             {name: '其它', type: '实体+eSIM'}
         ],
         geekbenchScore: {
-           single: 1873,
-           multi: 5357
+            single: 1873,
+            multi: 5357
         },
         memory: [
             {size: "6", type: "LPDDR5"}
@@ -4197,7 +4265,11 @@ const iphones = [
         unlockMethod: ['面容解锁'],
         applePay: false,
         connectivity: ["5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
-        prove: 'IPX68',
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
 
@@ -4380,7 +4452,7 @@ let app = new Vue({
         },
     },
     computed: {
-        maxScore(){
+        maxScore() {
             let max = 0
             iphones.forEach(item => {
                 if (max < item.geekbenchScore.multi) {
