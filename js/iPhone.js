@@ -3,11 +3,12 @@
  Update Date: 20220309101712
  *****************************/
 const lastOS = "最新"
-const lastUpdateDate = '2023-03-15'
+const lastUpdateDate = '2023.03.15' // 2023.03.15
 const iphones = [
     {
         name: "iPhone 1",
         name_short: "1",
+        hardwareName: '',
         isTitleOnly: false,
         pic: "1",
         slogan: "This is only the beginning. Apple reinvents the phone.",
@@ -118,6 +119,7 @@ const iphones = [
     {
         name: "iPhone 3G",
         name_short: "3G",
+        hardwareName: '',
         isTitleOnly: false,
         pic: "3g",
         slogan: "New features, new price.",
@@ -229,6 +231,7 @@ const iphones = [
     {
         name: "iPhone 3Gs",
         name_short: "3Gs",
+        hardwareName: '',
         isTitleOnly: false,
         pic: "3gs",
         slogan: "The fastest, smartest phone yet. More to love. Less to pay.",
@@ -343,6 +346,7 @@ const iphones = [
     {
         name: "iPhone 4",
         name_short: "4",
+        hardwareName: '',
         isTitleOnly: false,
         pic: "4",
         slogan: "This changes everything. Again.",
@@ -457,6 +461,7 @@ const iphones = [
     {
         name: "iPhone 4s",
         name_short: "4s",
+        hardwareName: '',
         isTitleOnly: false,
         pic: "4s",
         slogan: "The most amazing iPhone yet.",
@@ -568,6 +573,7 @@ const iphones = [
     {
         name: "iPhone 5",
         name_short: "5",
+        hardwareName: '',
         isTitleOnly: false,
         pic: "5",
         slogan: "Loving it is easy. That's why so many people do. The biggest thing to happen to iPhone since iPhone.",
@@ -680,6 +686,7 @@ const iphones = [
     {
         name: "iPhone 5c",
         name_short: "5c",
+        hardwareName: '',
         isTitleOnly: false,
         pic: "5c",
         slogan: "For the colorful",
@@ -801,6 +808,7 @@ const iphones = [
     {
         name: "iPhone 5s",
         name_short: "5s",
+        hardwareName: '',
         isTitleOnly: false,
         pic: "5s",
         slogan: "You're more powerful than you think. Forward thinking",
@@ -921,6 +929,7 @@ const iphones = [
     {
         name: "iPhone 6",
         name_short: "6",
+        hardwareName: '',
         isTitleOnly: false,
         pic: "6",
         slogan: "Bigger than bigger. The two and only",
@@ -1038,6 +1047,7 @@ const iphones = [
     {
         name: "iPhone 6 plus",
         name_short: "6 plus",
+        hardwareName: '',
         isTitleOnly: false,
         pic: "6",
         slogan: "Bigger than bigger. The two and only",
@@ -1155,6 +1165,7 @@ const iphones = [
     {
         name: "iPhone 6s",
         name_short: "6s",
+        hardwareName: '',
         isTitleOnly: false,
         pic: "6s",
         slogan: "The only thing that’s changed is everything. One powerful phone",
@@ -1272,6 +1283,7 @@ const iphones = [
     {
         name: "iPhone 6s plus",
         name_short: "6s plus",
+        hardwareName: '',
         isTitleOnly: false,
         pic: "6s",
         slogan: "The only thing that’s changed is everything. One powerful phone",
@@ -1389,6 +1401,7 @@ const iphones = [
     {
         name: "iPhone SE",
         name_short: "SE",
+        hardwareName: '',
         isTitleOnly: false,
         pic: "SE",
         slogan: "A big step for small.",
@@ -1507,6 +1520,7 @@ const iphones = [
     {
         name: "iPhone 7",
         name_short: "7",
+        hardwareName: '',
         isTitleOnly: false,
         pic: "7",
         slogan: "This is 7",
@@ -1626,6 +1640,7 @@ const iphones = [
     {
         name: "iPhone 7 plus",
         name_short: "7 plus",
+        hardwareName: '',
         isTitleOnly: false,
         pic: "7",
         slogan: "This is 7",
@@ -1745,6 +1760,7 @@ const iphones = [
     {
         name: "iPhone 8",
         name_short: "8",
+        hardwareName: 'iPhone10,1 iPhone10,4',
         isTitleOnly: false,
         pic: "8",
         slogan: "A new generation of iPhone",
@@ -1862,6 +1878,7 @@ const iphones = [
     {
         name: "iPhone 8 Plus",
         name_short: "8 Plus",
+        hardwareName: 'iPhone10,2 iPhone10,5',
         isTitleOnly: false,
         pic: "8",
         slogan: "A new generation of iPhone",
@@ -1976,126 +1993,11 @@ const iphones = [
         waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
         price: "",
     },
-    {
-        name: "iPhone SE2",
-        name_short: "SE2",
-        isTitleOnly: false,
-        pic: "SE2",
-        slogan: "Lots to love. Less to spend.",
-        isNew: false,
-        active: false,
-        release: "2020-04-24",
-        models: [
-            {name: "美，加", type: "A2275"},
-            {name: "", type: "A2296"},
-            {name: "国内", type: "A2298"},
-        ],
-        network: ["GSM", "EDGE", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
-        height: 138.4,
-        width: 67.3,
-        thickness: 7.3,
-        weight: 148,
-        os: {
-            init: "iOS 13.4",
-            last: lastOS
-        },
-        cpu: {
-            icon: 'A13',
-            model: 'A13',
-            rate: '2.65',
-            core: 6
-        },
-        gpu: {
-            model: "Apple",
-            core: 4
-        },
-        sim: [{name: '国内', type: ''}],
-        geekbenchScore: {
-            single: 0,
-            multi: 2849
-        },
-        memory: [
-            {size: "3", type: "LPDDR4X"}
-        ],
-        storage: ["64", "256"],
-        battery: '1821',
-        port: '闪电',
-        screen: {
-            brightness: '',
-            size: "4.7",
-            type: 'IPS LCD',
-            refreshRate: "",
-            width: 750,
-            height: 1334,
-            density: "326",
-            touch3D: false,
-            hdr: false,
-        },
-        cameras: {
-            front: {
-                name: '默认',
-                model: 'Sony IMX703 1.9μm',
-                aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
-                zoomRate: '',
-            },
-            back: [
-                {
-                    name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
-                    focal: '',
-                    angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
-                },
-            ]
-        },
-        colors: [
-            {name: 'Black', color: '#262529'},
-            {name: 'White', color: '#F3F3F3'},
-            {name: 'Product (Red)', color: '#BA0C2E'},
-        ],
-        charge: [
-            {name: '充电口', power: '12w'},
-            {name: 'PD', power: '20-23w'},
-            {name: 'MagSafe', power: '15w'},
-        ],
-        unlockMethod: ['指纹解锁'],
-        applePay: false,
-        connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-        waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
-        price: "",
-    },
+
     {
         name: "iPhone X",
         name_short: "X",
+        hardwareName: 'iPhone10,3, iPhone10,6',
         isTitleOnly: false,
         pic: "X",
         slogan: "Say hello to the future.",
@@ -2207,131 +2109,11 @@ const iphones = [
         waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
         price: "",
     },
-    {
-        name: "iPhone XR",
-        name_short: "XR",
-        isTitleOnly: false,
-        pic: "XR",
-        slogan: "Brilliant. In every way. Make room for color.",
-        isNew: false,
-        active: false,
-        release: "2018-10-26",
-        models: [
-            {name: "", type: "A1984"},
-            {name: "", type: "A2105"},
-            {name: "日本", type: "A2106"},
-            {name: "国内", type: "A2107"},
-            {name: "国内,香港,墨西哥", type: "A2108"},
-        ],
-        network: [],
-        height: 150.9,
-        width: 75.7,
-        thickness: 8.3,
-        weight: 194,
-        os: {
-            init: "iOS 12",
-            last: lastOS
-        },
-        cpu: {
-            icon: 'A12',
-            model: 'A12',
-            rate: '2.49',
-            core: 6
-        },
-        gpu: {
-            model: "Apple",
-            core: 4
-        },
-        sim: [{name: '国内', type: '双卡双待'}],
-        geekbenchScore: {
-            single: 0,
-            multi: 2263
-        },
-        memory: [
-            {size: "3", type: "LPDDR4X"}
-        ],
-        storage: ["64", "128", "256"],
-        battery: '2942',
-        port: '闪电',
-        screen: {
-            brightness: '625',
-            size: "6.08",
-            type: 'IPS LCD',
-            refreshRate: "",
-            width: 828,
-            height: 1792,
-            density: "326",
-            touch3D: false,
-            hdr: false,
-        },
-        cameras: {
-            front: {
-                name: '默认',
-                model: 'Sony IMX703 1.9μm',
-                aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
-                zoomRate: '',
-            },
-            back: [
-                {
-                    name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
-                    focal: '',
-                    angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
-                },
-            ]
-        },
-        colors: [
-            {name: 'Black', color: '#2E3034'},
-            {name: 'White', color: '#F3F3F3'},
-            {name: 'Blue', color: '#48AEE6'},
-            {name: 'Yellow', color: '#F9D045'},
-            {name: 'Coral', color: '#FF6E5A'},
-            {name: 'Product (Red)', color: '#B41325'},
-        ],
-        charge: [
-            {name: '充电口', power: '12w'},
-            {name: 'PD', power: '20-23w'},
-            {name: 'MagSafe', power: '15w'},
-        ],
-        unlockMethod: ['面容解锁'],
-        applePay: false,
-        connectivity: [],
-        waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
-        price: "",
-    },
+
     {
         name: "iPhone XS",
         name_short: "XS",
+        hardwareName: 'iPhone11,2',
         isTitleOnly: false,
         pic: "XS",
         slogan: "Welcome to the big screens.",
@@ -2454,6 +2236,7 @@ const iphones = [
     {
         name: "iPhone XS Max",
         name_short: "XS Max",
+        hardwareName: 'iPhone11,4 iPhone11,6',
         isTitleOnly: false,
         pic: "XS",
         slogan: "Welcome to the big screens.",
@@ -2574,8 +2357,132 @@ const iphones = [
         price: "",
     },
     {
+        name: "iPhone XR",
+        name_short: "XR",
+        hardwareName: 'iPhone11,8',
+        isTitleOnly: false,
+        pic: "XR",
+        slogan: "Brilliant. In every way. Make room for color.",
+        isNew: false,
+        active: false,
+        release: "2018-10-26",
+        models: [
+            {name: "", type: "A1984"},
+            {name: "", type: "A2105"},
+            {name: "日本", type: "A2106"},
+            {name: "国内", type: "A2107"},
+            {name: "国内,香港,墨西哥", type: "A2108"},
+        ],
+        network: [],
+        height: 150.9,
+        width: 75.7,
+        thickness: 8.3,
+        weight: 194,
+        os: {
+            init: "iOS 12",
+            last: lastOS
+        },
+        cpu: {
+            icon: 'A12',
+            model: 'A12',
+            rate: '2.49',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 4
+        },
+        sim: [{name: '国内', type: '双卡双待'}],
+        geekbenchScore: {
+            single: 0,
+            multi: 2263
+        },
+        memory: [
+            {size: "3", type: "LPDDR4X"}
+        ],
+        storage: ["64", "128", "256"],
+        battery: '2942',
+        port: '闪电',
+        screen: {
+            brightness: '625',
+            size: "6.08",
+            type: 'IPS LCD',
+            refreshRate: "",
+            width: 828,
+            height: 1792,
+            density: "326",
+            touch3D: false,
+            hdr: false,
+        },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万 4000x3000px',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万 4000x3000px',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万 4000x3000px',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: 'Black', color: '#2E3034'},
+            {name: 'White', color: '#F3F3F3'},
+            {name: 'Blue', color: '#48AEE6'},
+            {name: 'Yellow', color: '#F9D045'},
+            {name: 'Coral', color: '#FF6E5A'},
+            {name: 'Product (Red)', color: '#B41325'},
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
+        unlockMethod: ['面容解锁'],
+        applePay: false,
+        connectivity: [],
+        waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
+        price: "",
+    },
+    {
         name: "iPhone 11",
         name_short: "11",
+        hardwareName: 'iPhone12,1',
         isTitleOnly: false,
         pic: "11",
         slogan: "Just the right amount of everything.",
@@ -2700,6 +2607,7 @@ const iphones = [
     {
         name: "iPhone 11 Pro",
         name_short: "11 Pro",
+        hardwareName: 'iPhone12,3',
         isTitleOnly: false,
         pic: "11pro",
         slogan: "And then there was Pro. Pro Cameras. Pro Display. Pro Performance.",
@@ -2822,6 +2730,7 @@ const iphones = [
     {
         name: "iPhone 11 Pro Max",
         name_short: "11 Pro Max",
+        hardwareName: 'iPhone12,5',
         isTitleOnly: false,
         pic: "11pro",
         slogan: "And then there was Pro. Pro Cameras. Pro Display. Pro Performance.",
@@ -2942,8 +2851,127 @@ const iphones = [
         price: "",
     },
     {
+        name: "iPhone SE2",
+        name_short: "SE2",
+        hardwareName: 'iPhone12,8',
+        isTitleOnly: false,
+        pic: "SE2",
+        slogan: "Lots to love. Less to spend.",
+        isNew: false,
+        active: false,
+        release: "2020-04-24",
+        models: [
+            {name: "美，加", type: "A2275"},
+            {name: "", type: "A2296"},
+            {name: "国内", type: "A2298"},
+        ],
+        network: ["GSM", "EDGE", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
+        height: 138.4,
+        width: 67.3,
+        thickness: 7.3,
+        weight: 148,
+        os: {
+            init: "iOS 13.4",
+            last: lastOS
+        },
+        cpu: {
+            icon: 'A13',
+            model: 'A13',
+            rate: '2.65',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 4
+        },
+        sim: [{name: '国内', type: ''}],
+        geekbenchScore: {
+            single: 0,
+            multi: 2849
+        },
+        memory: [
+            {size: "3", type: "LPDDR4X"}
+        ],
+        storage: ["64", "256"],
+        battery: '1821',
+        port: '闪电',
+        screen: {
+            brightness: '',
+            size: "4.7",
+            type: 'IPS LCD',
+            refreshRate: "",
+            width: 750,
+            height: 1334,
+            density: "326",
+            touch3D: false,
+            hdr: false,
+        },
+        cameras: {
+            front: {
+                name: '默认',
+                model: 'Sony IMX703 1.9μm',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '1200万 4000x3000px',
+                zoomRate: '',
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: 'Sony IMX703 1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万 4000x3000px',
+                    zoomRate: ''
+                },
+                {
+                    name: '远焦',
+                    model: 'Sony IMX713 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    pixelCount: '1200万, ',
+                    zoomRate: ''
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万 4000x3000px',
+                    zoomRate: '3'
+                },
+                {
+                    name: '雷达',
+                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: ''
+                },
+            ]
+        },
+        colors: [
+            {name: 'Black', color: '#262529'},
+            {name: 'White', color: '#F3F3F3'},
+            {name: 'Product (Red)', color: '#BA0C2E'},
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
+        unlockMethod: ['指纹解锁'],
+        applePay: false,
+        connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
+        waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
+        price: "",
+    },
+    {
         name: "iPhone 12 Mini",
         name_short: "12 Mini",
+        hardwareName: 'iPhone13,1',
         isTitleOnly: false,
         pic: "12",
         slogan: "Blast past fast.",
@@ -3061,6 +3089,7 @@ const iphones = [
     {
         name: "iPhone 12",
         name_short: "12",
+        hardwareName: 'iPhone13,2',
         isTitleOnly: false,
         pic: "12",
         slogan: "Blast past fast.",
@@ -3178,6 +3207,7 @@ const iphones = [
     {
         name: "iPhone 12 Pro",
         name_short: "12 Pro",
+        hardwareName: 'iPhone13,3',
         isTitleOnly: false,
         pic: "12pro",
         slogan: "It's a leap year.",
@@ -3307,6 +3337,7 @@ const iphones = [
     {
         name: "iPhone 12 Pro Max ",
         name_short: "12 Pro Max",
+        hardwareName: 'iPhone13,4',
         isTitleOnly: false,
         pic: "12pro",
         slogan: "It's a leap year.",
@@ -3436,6 +3467,7 @@ const iphones = [
     {
         name: "iPhone 13 Mini",
         name_short: "13 mini",
+        hardwareName: 'iPhone14,4',
         isTitleOnly: false,
         pic: "13pro",
         slogan: "Your new superpower.",
@@ -3444,6 +3476,10 @@ const iphones = [
         release: "2021-09-15",
         models: [
             {name: "国内", type: "A2629"},
+            {name: "", type: "A2481"},
+            {name: "", type: "A2626"},
+            {name: "", type: "A2628"},
+            {name: "", type: "A2630"},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 131.5,
@@ -3522,6 +3558,7 @@ const iphones = [
     {
         name: "iPhone 13",
         name_short: "13",
+        hardwareName: 'iPhone14,5',
         isTitleOnly: false,
         pic: "13pro",
         slogan: "Your new superpower.",
@@ -3530,6 +3567,10 @@ const iphones = [
         release: "2021-09-15",
         models: [
             {name: "国内", type: "A2634"},
+            {name: "", type: "A2482"},
+            {name: "", type: "A2631"},
+            {name: "", type: "A2633"},
+            {name: "", type: "A2635"},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 146.7,
@@ -3612,6 +3653,7 @@ const iphones = [
     {
         name: "iPhone 13 Pro",
         name_short: "13 Pro",
+        hardwareName: 'iPhone14,2',
         isTitleOnly: false,
         pic: "13pro",
         slogan: "Oh. So. Pro.",
@@ -3620,6 +3662,10 @@ const iphones = [
         release: "2021-09-15",
         models: [
             {name: "国内", type: "A2639"},
+            {name: "", type: "A2483"},
+            {name: "", type: "A2636"},
+            {name: "", type: "A2638"},
+            {name: "", type: "A2640"},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 146.7,
@@ -3736,6 +3782,7 @@ const iphones = [
     {
         name: "iPhone 13 Pro Max ",
         name_short: "13 Pro Max",
+        hardwareName: 'iPhone14,3',
         isTitleOnly: false,
         pic: "13pro",
         slogan: "Oh. So. Pro.",
@@ -3744,6 +3791,10 @@ const iphones = [
         release: "2021-09-15",
         models: [
             {name: "国内", type: "A2644"},
+            {name: "", type: "A2484"},
+            {name: "", type: "A2641"},
+            {name: "", type: "A2645"},
+            {name: "", type: "A2643"},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 160.8,
@@ -3860,6 +3911,7 @@ const iphones = [
     {
         name: "iPhone SE3",
         name_short: "SE3",
+        hardwareName: 'iPhone14,6',
         isTitleOnly: false,
         pic: "SE3",
         slogan: "Love the power. Love the price.",
@@ -3957,6 +4009,7 @@ const iphones = [
     {
         name: "iPhone 14",
         name_short: "14",
+        hardwareName: 'iPhone14,7',
         isTitleOnly: false,
         pic: "13pro",
         slogan: "Big and bigger.",
@@ -3964,7 +4017,11 @@ const iphones = [
         active: true,
         release: "2022-09-08",
         models: [
-            // {name: "A2639", type: "国内"},
+            {name: "A2649", type: ""},
+            {name: "A2881", type: ""},
+            {name: "A2882", type: ""},
+            {name: "A2883", type: ""},
+            {name: "A2884", type: ""},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 146.7,
@@ -4038,6 +4095,7 @@ const iphones = [
     {
         name: "iPhone 14 Plus",
         name_short: "14 Plus",
+        hardwareName: 'iPhone14,8',
         isTitleOnly: false,
         pic: "13pro",
         slogan: "Big and bigger.",
@@ -4045,7 +4103,11 @@ const iphones = [
         active: true,
         release: "2022-09-08",
         models: [
-            // {name: "A2639", type: "国内"},
+            {name: "A2632", type: ""},
+            {name: "A2885", type: ""},
+            {name: "A2886", type: ""},
+            {name: "A2887", type: ""},
+            {name: "A2888", type: ""},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 160.8,
@@ -4119,6 +4181,7 @@ const iphones = [
     {
         name: "iPhone 14 Pro",
         name_short: "14 Pro",
+        hardwareName: 'iPhone15,2',
         isTitleOnly: false,
         pic: "14pro",
         slogan: "Pro. Beyond.",
@@ -4126,7 +4189,11 @@ const iphones = [
         active: true,
         release: "2022-09-08",
         models: [
-            // {name: "A2639", type: "国内"},
+            {name: "A2650", type: ""},
+            {name: "A2889", type: ""},
+            {name: "A2890", type: ""},
+            {name: "A2891", type: ""},
+            {name: "A2892", type: ""},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 147.5,
@@ -4198,6 +4265,7 @@ const iphones = [
     {
         name: "iPhone 14 Pro Max",
         name_short: "14 Pro Max",
+        hardwareName: 'iPhone15,3',
         isTitleOnly: false,
         pic: "14pro",
         slogan: "Pro. Beyond.",
@@ -4205,7 +4273,11 @@ const iphones = [
         active: true,
         release: "2022-09-08",
         models: [
-            // {name: "A2639", type: "国内"},
+            {name: "A2651", type: ""},
+            {name: "A2893", type: ""},
+            {name: "A2894", type: ""},
+            {name: "A2895", type: ""},
+            {name: "A2896", type: ""},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 160.7,
