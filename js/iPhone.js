@@ -3,7 +3,7 @@
  Update Date: 20220309101712
  *****************************/
 const lastOS = "最新"
-const lastUpdateDate = '2022.12.27'
+const lastUpdateDate = '2023-03-15'
 const iphones = [
     {
         name: "iPhone 1",
@@ -4018,6 +4018,7 @@ const iphones = [
             {name: '星光色', color: '#f0ece6'},
             {name: '红色', color: '#e11b2b'},
             {name: '蓝色', color: '#bfcede'},
+            {name: '黄色', color: '#F9E479'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
@@ -4098,6 +4099,7 @@ const iphones = [
             {name: '星光色', color: '#f0ece6'},
             {name: '红色', color: '#e11b2b'},
             {name: '蓝色', color: '#bfcede'},
+            {name: '黄色', color: '#F9E479'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
