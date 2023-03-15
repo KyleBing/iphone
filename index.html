@@ -295,7 +295,7 @@
                             <div @click="tagToggle('waterResistant')" class="detail-item-label">防水</div>
                             <div class="detail-item-content">
                                 <div class="tip">{{iphone.waterResistant.value || '-'}}
-                                    <span v-if="iphone.waterResistant.waterDepth">({{iphone.waterResistant.waterDepth}}米 {{iphone.waterResistant.timeHold}}分钟)</span>
+                                    <span v-if="iphone.waterResistant.waterDepth">(水下{{iphone.waterResistant.waterDepth}}米 {{iphone.waterResistant.timeHold}}分钟)</span>
                                 </div>
                             </div>
                         </div>
