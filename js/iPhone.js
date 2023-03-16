@@ -3,7 +3,7 @@
  Update Date: 20220309101712
  *****************************/
 const lastOS = "最新"
-const lastUpdateDate = '2023.03.15' // 2023.03.15
+const lastUpdateDate = '2023.03.16' // 2023.03.15
 const iphones = [
     {
         name: "iPhone 1",
@@ -14,7 +14,7 @@ const iphones = [
         slogan: "This is only the beginning. Apple reinvents the phone.",
         isNew: false,
         active: false,
-        release: "2007-06-29",
+        release: "2007_06_29",
         models: [
             {name: "", type: "A1203"},
         ],
@@ -125,7 +125,7 @@ const iphones = [
         slogan: "New features, new price.",
         isNew: false,
         active: false,
-        release: "2008-07-11",
+        release: "2008_07_11",
         models: [
             {name: "国内", type: "A1324"},
             {name: "", type: "A1241"},
@@ -237,7 +237,7 @@ const iphones = [
         slogan: "The fastest, smartest phone yet. More to love. Less to pay.",
         isNew: false,
         active: false,
-        release: "2009-06-19",
+        release: "2009_06_19",
         models: [
             {name: "国内", type: "A1325"},
             {name: "", type: "A1303"},
@@ -352,7 +352,7 @@ const iphones = [
         slogan: "This changes everything. Again.",
         isNew: false,
         active: false,
-        release: "2010-06-24",
+        release: "2010_06_24",
         models: [
             {name: "GSM", type: "A1332"},
             {name: "CDMA", type: "A1349"},
@@ -467,7 +467,7 @@ const iphones = [
         slogan: "The most amazing iPhone yet.",
         isNew: false,
         active: false,
-        release: "2011-10-14",
+        release: "2011_10_14",
         models: [],
         network: ["GSM", "CDMA", "3G", "3G+", "HSUPA"],
         height: 115.2,
@@ -579,7 +579,7 @@ const iphones = [
         slogan: "Loving it is easy. That's why so many people do. The biggest thing to happen to iPhone since iPhone.",
         isNew: false,
         active: false,
-        release: "2012-09-21",
+        release: "2012_09_21",
         models: [],
         network: ["GSM", "CDMA", "3G", "EVDO", "HSPA+", "LTE"],
         height: 123.8,
@@ -692,7 +692,7 @@ const iphones = [
         slogan: "For the colorful",
         isNew: false,
         active: false,
-        release: "2013-09-20",
+        release: "2013_09_20",
         models: [
             {name: "", type: "A1456"},
             {name: "", type: "A1507"},
@@ -814,7 +814,7 @@ const iphones = [
         slogan: "You're more powerful than you think. Forward thinking",
         isNew: false,
         active: false,
-        release: "2013-09-20",
+        release: "2013_09_20",
         models: [
             {name: "中东", type: "A1457"},
             {name: "国内", type: "A1518"},
@@ -935,7 +935,7 @@ const iphones = [
         slogan: "Bigger than bigger. The two and only",
         isNew: false,
         active: false,
-        release: "2014-09-16",
+        release: "2014_09_16",
         models: [
             {name: "美", type: "A1549"},
             {name: "", type: "A1586"},
@@ -1053,7 +1053,7 @@ const iphones = [
         slogan: "Bigger than bigger. The two and only",
         isNew: false,
         active: false,
-        release: "2014-09-16",
+        release: "2014_09_16",
         models: [
             {name: "美", type: "A1522"},
             {name: "", type: "A1524"},
@@ -1171,7 +1171,7 @@ const iphones = [
         slogan: "The only thing that’s changed is everything. One powerful phone",
         isNew: false,
         active: false,
-        release: "2015-09-25",
+        release: "2015_09_25",
         models: [
             {name: "美", type: "A1633"},
             {name: "", type: "A1688"},
@@ -1289,7 +1289,7 @@ const iphones = [
         slogan: "The only thing that’s changed is everything. One powerful phone",
         isNew: false,
         active: false,
-        release: "2015-09-25",
+        release: "2015_09_25",
         models: [
             {name: "美", type: "A1634"},
             {name: "", type: "A1687"},
@@ -1407,7 +1407,7 @@ const iphones = [
         slogan: "A big step for small.",
         isNew: false,
         active: false,
-        release: "2016-03-31",
+        release: "2016_03_31",
         models: [
             {name: "美，加", type: "A1662"},
             {name: "Sprint", type: "A1723"},
@@ -1526,7 +1526,7 @@ const iphones = [
         slogan: "This is 7",
         isNew: false,
         active: false,
-        release: "2016-09-16",
+        release: "2016_09_16",
         models: [
             {name: "Qualcomm", type: "A1660"},
             {name: "英特尔", type: "A1778"},
@@ -1646,7 +1646,7 @@ const iphones = [
         slogan: "This is 7",
         isNew: false,
         active: false,
-        release: "2016-09-16",
+        release: "2016_09_16",
         models: [
             {name: "Qualcomm", type: "A1661"},
             {name: "英特尔", type: "A1784"},
@@ -1766,7 +1766,7 @@ const iphones = [
         slogan: "A new generation of iPhone",
         isNew: false,
         active: false,
-        release: "2017-09-22",
+        release: "2017_09_22",
         models: [
             {name: "Qualcomm", type: "A1863"},
             {name: "英特尔", type: "A1905"},
@@ -1884,7 +1884,7 @@ const iphones = [
         slogan: "A new generation of iPhone",
         isNew: false,
         active: false,
-        release: "2017-09-22",
+        release: "2017_09_22",
         models: [
             {name: "Qualcomm", type: "A1864"},
             {name: "英特尔", type: "A1907"},
@@ -2003,7 +2003,7 @@ const iphones = [
         slogan: "Say hello to the future.",
         isNew: false,
         active: false,
-        release: "2017-11-03",
+        release: "2017_11_03",
         models: [
             {name: "Qualcomm", type: "A1865"},
             {name: "英特尔", type: "A1901"},
@@ -2119,7 +2119,7 @@ const iphones = [
         slogan: "Welcome to the big screens.",
         isNew: false,
         active: false,
-        release: "2018-09-21",
+        release: "2018_09_21",
         models: [
             {name: "", type: "A1920"},
             {name: "", type: "A2097"},
@@ -2242,7 +2242,7 @@ const iphones = [
         slogan: "Welcome to the big screens.",
         isNew: false,
         active: false,
-        release: "2018-09-21",
+        release: "2018_09_21",
         models: [
             {name: "", type: "A1921"},
             {name: "", type: "A2101"},
@@ -2365,7 +2365,7 @@ const iphones = [
         slogan: "Brilliant. In every way. Make room for color.",
         isNew: false,
         active: false,
-        release: "2018-10-26",
+        release: "2018_10_26",
         models: [
             {name: "", type: "A1984"},
             {name: "", type: "A2105"},
@@ -2488,7 +2488,7 @@ const iphones = [
         slogan: "Just the right amount of everything.",
         isNew: false,
         active: false,
-        release: "2019-09-20",
+        release: "2019_09_20",
         models: [
             {name: "", type: "A2160"},
             {name: "", type: "A2217"},
@@ -2613,7 +2613,7 @@ const iphones = [
         slogan: "And then there was Pro. Pro Cameras. Pro Display. Pro Performance.",
         isNew: false,
         active: false,
-        release: "2019-09-20",
+        release: "2019_09_20",
         models: [
             {name: "", type: "A2160"},
             {name: "", type: "A2217"},
@@ -2736,7 +2736,7 @@ const iphones = [
         slogan: "And then there was Pro. Pro Cameras. Pro Display. Pro Performance.",
         isNew: false,
         active: false,
-        release: "2019-09-20",
+        release: "2019_09_20",
         models: [
             {name: "", type: "A2161"},
             {name: "", type: "A2220"},
@@ -2859,7 +2859,7 @@ const iphones = [
         slogan: "Lots to love. Less to spend.",
         isNew: false,
         active: false,
-        release: "2020-04-24",
+        release: "2020_04_24",
         models: [
             {name: "美，加", type: "A2275"},
             {name: "", type: "A2296"},
@@ -2977,7 +2977,7 @@ const iphones = [
         slogan: "Blast past fast.",
         isNew: false,
         active: false,
-        release: "2020-10-23",
+        release: "2020_10_23",
         models: [
             {name: "美国", type: "A2176"},
             {name: "加拿大/日本", type: "A2398"},
@@ -3095,7 +3095,7 @@ const iphones = [
         slogan: "Blast past fast.",
         isNew: false,
         active: false,
-        release: "2020-10-23",
+        release: "2020_10_23",
         models: [
             {name: "美国", type: "A2172"},
             {name: "加拿大/日本", type: "A2402"},
@@ -3213,7 +3213,7 @@ const iphones = [
         slogan: "It's a leap year.",
         isNew: false,
         active: false,
-        release: "2020-10-23",
+        release: "2020_10_23",
         models: [
             {name: "美国", type: "A2341"},
             {name: "加拿大/日本", type: "A2406"},
@@ -3343,7 +3343,7 @@ const iphones = [
         slogan: "It's a leap year.",
         isNew: false,
         active: false,
-        release: "2020-10-23",
+        release: "2020_10_23",
         models: [
             {name: "美国", type: "A2342"},
             {name: "加拿大/日本", type: "A2410"},
@@ -3473,7 +3473,7 @@ const iphones = [
         slogan: "Your new superpower.",
         isNew: false,
         active: false,
-        release: "2021-09-15",
+        release: "2021_09_15",
         models: [
             {name: "国内", type: "A2629"},
             {name: "", type: "A2481"},
@@ -3564,7 +3564,7 @@ const iphones = [
         slogan: "Your new superpower.",
         isNew: false,
         active: false,
-        release: "2021-09-15",
+        release: "2021_09_15",
         models: [
             {name: "国内", type: "A2634"},
             {name: "", type: "A2482"},
@@ -3659,7 +3659,7 @@ const iphones = [
         slogan: "Oh. So. Pro.",
         isNew: false,
         active: false,
-        release: "2021-09-15",
+        release: "2021_09_15",
         models: [
             {name: "国内", type: "A2639"},
             {name: "", type: "A2483"},
@@ -3788,7 +3788,7 @@ const iphones = [
         slogan: "Oh. So. Pro.",
         isNew: false,
         active: false,
-        release: "2021-09-15",
+        release: "2021_09_15",
         models: [
             {name: "国内", type: "A2644"},
             {name: "", type: "A2484"},
@@ -3917,7 +3917,7 @@ const iphones = [
         slogan: "Love the power. Love the price.",
         isNew: false,
         active: false,
-        release: "2022-03-18",
+        release: "2022_03_18",
         models: [
             {name: "国际 ", type: "A2783"},
             {name: "北美洲", type: "A2595"},
@@ -4015,7 +4015,7 @@ const iphones = [
         slogan: "Big and bigger.",
         isNew: true,
         active: true,
-        release: "2022-09-08",
+        release: "2022_09_08",
         models: [
             {name: "A2649", type: ""},
             {name: "A2881", type: ""},
@@ -4101,7 +4101,7 @@ const iphones = [
         slogan: "Big and bigger.",
         isNew: true,
         active: true,
-        release: "2022-09-08",
+        release: "2022_09_08",
         models: [
             {name: "A2632", type: ""},
             {name: "A2885", type: ""},
@@ -4187,7 +4187,7 @@ const iphones = [
         slogan: "Pro. Beyond.",
         isNew: true,
         active: true,
-        release: "2022-09-08",
+        release: "2022_09_08",
         models: [
             {name: "A2650", type: ""},
             {name: "A2889", type: ""},
@@ -4271,7 +4271,7 @@ const iphones = [
         slogan: "Pro. Beyond.",
         isNew: true,
         active: true,
-        release: "2022-09-08",
+        release: "2022_09_08",
         models: [
             {name: "A2651", type: ""},
             {name: "A2893", type: ""},

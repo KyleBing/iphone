@@ -902,7 +902,7 @@ footer a:hover {
 }
 
 .main-ref {
-  padding: 10px 0;
+  padding: 5px 0;
   display: flex;
   justify-content: space-between;
   flex-flow: column nowrap;
@@ -945,6 +945,9 @@ footer a:hover {
 }
 
 .screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-shrink: 0;
 }
 
@@ -1074,7 +1077,7 @@ footer a:hover {
 }
 .colors .color {
   border: 1px solid rgba(0, 0, 0, 0.05);
-  margin-right: 3px;
+  margin-right: 5px;
   margin-bottom: 3px;
   width: 20px;
   height: 20px;
