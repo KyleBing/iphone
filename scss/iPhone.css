@@ -623,7 +623,7 @@ tt {
     padding-bottom: 20px;
   }
   .container .main .image {
-    padding: 0 20px;
+    padding: 0 10px;
     margin: 0;
   }
   .container .main .image .img-frame img {
@@ -812,7 +812,7 @@ footer a:hover {
 
 .iphone-list {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1500px;
   padding: 30px 30px 50px 30px;
 }
 @media (max-width: 768px) {
@@ -897,7 +897,7 @@ footer a:hover {
   align-items: center;
 }
 .img-frame img {
-  height: 130px;
+  height: 150px;
   display: block;
 }
 
