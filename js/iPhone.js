@@ -1999,7 +1999,7 @@ const iphones = [
         name_short: "X",
         hardwareName: 'iPhone10,3, iPhone10,6',
         isTitleOnly: false,
-        pic: "X",
+        pic: "x",
         slogan: "Say hello to the future.",
         isNew: false,
         active: false,
