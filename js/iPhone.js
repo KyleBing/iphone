@@ -3,7 +3,7 @@
  Update Date: 20220309101712
  *****************************/
 const lastOS = "最新"
-const lastUpdateDate = '2023.05.31' // 2023.03.15
+const lastUpdateDate = '2023-06-05' // 2023.03.15
 const iphones = [
     {
         name: "iPhone 1",
@@ -4183,7 +4183,7 @@ const iphones = [
         name_short: "14 Pro",
         hardwareName: 'iPhone15,2',
         isTitleOnly: false,
-        pic: "https://diary-container.kylebing.cn/FpZNenwa7MlTI4ytGQzPZ1BHc2EB",
+        pic: "https://diary-container.kylebing.cn/Fma1VhVCS_cAJHIK5dvVPA8-9R__",
         slogan: "Pro. Beyond.",
         isNew: true,
         active: true,
