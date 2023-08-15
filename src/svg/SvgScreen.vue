@@ -1,0 +1,94 @@
+<template>
+    <svg width="100%" viewBox="0 0 535 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="screen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="screenMesure" transform="translate(0.000000, 46.500000)">
+                <text id="height" font-family="PingFangSC-Medium, PingFang SC" font-size="20" font-weight="400" fill="#000000">
+                    <tspan x="0.4" y="94">{{iphone.height}}</tspan>
+                </text>
+                <text id="thickness" font-family="PingFangSC-Medium, PingFang SC" font-size="20" font-weight="400" fill="#000000">
+                    <tspan x="209.77" y="176">{{iphone.thickness}}</tspan>
+                </text>
+                <rect id="iphone-outside" stroke="#B1B1B1" fill="#D8D8D8" x="96" y="0" width="77" height="153" rx="11"></rect>
+                <rect id="iphone-inside" stroke="#3D3D40" fill="#FFFFFF" x="87" y="9" width="77" height="153" rx="11"></rect>
+                <g id="ruler-/-vitical-" transform="translate(66.000000, 9.000000)" fill="#00A5FF">
+                    <rect id="iphone-line" x="0" y="0" width="8" height="2"></rect>
+                    <rect id="iphone-line" x="3" y="2" width="2" height="149"></rect>
+                    <rect id="iphone-line" x="0" y="151" width="8" height="2"></rect>
+                </g>
+                <g id="ruler-/-vitical--copy" transform="translate(87.000000, 172.000000)" fill="#00A5FF">
+                    <rect id="Rectangle" x="0" y="0" width="2" height="8"></rect>
+                    <rect id="iphone-line" x="75" y="0" width="2" height="8"></rect>
+                    <rect id="iphone-line" x="2" y="3" width="73" height="2"></rect>
+                </g>
+                <g id="Group-3" transform="translate(177.500000, 162.000000) rotate(-45.000000) translate(-177.500000, -162.000000) translate(169.000000, 158.000000)" fill="#00A5FF">
+                    <rect id="Rectangle" x="0" y="0" width="2" height="8"></rect>
+                    <rect id="iphone-line" x="15" y="0" width="2" height="8"></rect>
+                    <rect id="iphone-line" x="2" y="3" width="13" height="2"></rect>
+                </g>
+                <text id="width" font-family="PingFangSC-Medium, PingFang SC" font-size="20" font-weight="400" fill="#000000">
+                    <tspan x="107.19" y="215">{{iphone.width}}</tspan>
+                </text>
+            </g>
+            <g id="screenPx" transform="translate(303.194846, 55.065109)">
+                <text id="heightPX" opacity="0.779999971" font-family="PingFangSC-Medium, PingFang SC" font-size="20" font-weight="400" fill="#000000">
+                    <tspan x="1.26515405" y="85.434891">{{iphone.screen.height}}</tspan>
+                </text>
+                <rect id="iphone-inch" stroke="#3D3D40" fill="#FFFFFF" x="85.8051541" y="0.434890986" width="77" height="153" rx="11"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="138.805154" y="53.434891" width="92" height="58" rx="5"></rect>
+                <text id="inch" font-family="PingFangSC-Medium, PingFang SC" font-size="20" font-weight="400" line-spacing="25" fill="#000000">
+                    <tspan x="149.305154" y="78.434891">{{iphone.screen.size}} 寸</tspan>
+                </text>
+                <text id="density" font-family="PingFangSC-Medium, PingFang SC" font-size="20" font-weight="400" line-spacing="25" fill="#000000">
+                    <tspan x="147.805154" y="103.434891">{{iphone.screen.density}} dpi</tspan>
+                </text>
+                <g id="ruler-/-vitical-" transform="translate(64.805154, 0.434891)" fill="#00A5FF">
+                    <rect id="iphone-line" x="0" y="0" width="8" height="2"></rect>
+                    <rect id="iphone-line" x="3" y="2" width="2" height="149"></rect>
+                    <rect id="iphone-line" x="0" y="151" width="8" height="2"></rect>
+                </g>
+                <g id="ruler-/-vitical--copy" transform="translate(85.805154, 163.434891)" fill="#00A5FF">
+                    <rect id="iphone-line" x="0" y="0" width="2" height="8"></rect>
+                    <rect id="iphone-line" x="75" y="0" width="2" height="8"></rect>
+                    <rect id="iphone-line" x="2" y="3" width="73" height="2"></rect>
+                </g>
+                <rect id="Rectangle" fill="#00A5FF" transform="translate(90.805154, 152.434891) rotate(-66.000000) translate(-90.805154, -152.434891) " x="89.8051541" y="148.434891" width="2" height="8"></rect>
+                <rect id="iphone-line" fill="#00A5FF" transform="translate(157.805154, 3.434891) rotate(-66.000000) translate(-157.805154, -3.434891) " x="156.805154" y="-0.565109014" width="2" height="8"></rect>
+                <rect id="iphone-line" fill="#00A5FF" transform="translate(124.805154, 77.434891) rotate(-66.000000) translate(-124.805154, -77.434891) " x="43.8051541" y="76.434891" width="162" height="2"></rect>
+                <text id="widthPX" font-family="PingFangSC-Medium, PingFang SC" font-size="20" font-weight="400" fill="#000000">
+                    <tspan x="102.225154" y="206.434891">{{iphone.screen.width}}</tspan>
+                </text>
+            </g>
+            <text id="screenType" font-family="Galvji-Bold, Galvji" font-size="20" font-weight="bold" fill="#404040">
+                <tspan x="216.020508" y="19">{{iphone.screen.type}}</tspan>
+            </text>
+            <text v-if="iphone.screen.brightness" id="screenLight" font-family="Galvji" font-size="15" font-weight="normal" fill="#404040">
+                <tspan x="216.020508" y="41">{{iphone.screen.brightness}} nit</tspan>
+            </text>
+            <text v-if="iphone.screen.refreshRate" id="screenRate" font-family="Galvji" font-size="15" font-weight="normal" fill="#404040">
+                <tspan x="216.020508" y="64">{{iphone.screen.refreshRate}} hz</tspan>
+            </text>
+            <text v-if="iphone.screen.touch3D" id="touch3D" font-family="PingFangSC-Semibold, PingFang SC" font-size="15" font-weight="500" fill="#404040">
+                <tspan x="111" y="155">压感</tspan>
+            </text>
+            <text v-if="iphone.screen.hdr" id="HDR" font-family="PingFangSC-Semibold, PingFang SC" font-size="15" font-weight="500" fill="#404040">
+                <tspan x="109.8525" y="127">HDR</tspan>
+            </text>
+        </g>
+    </svg>
+</template>
+
+<script>
+export default {
+    name: "SvgScreen",
+    props: {
+        iphone: {
+            type: Object,
+            default: {}
+        }
+    },
+}
+</script>
+
+<style scoped lang="scss">
+
+</style>

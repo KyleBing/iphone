@@ -3,7 +3,6 @@
 @import "font";
 @import "layout";
 @import "changelog";
-@import "filter-list";
 @import "help";
 
 body{
@@ -100,6 +99,8 @@ body{
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  width: 200px;
+
   img{
     height: 150px;
     display: block;
@@ -177,6 +178,9 @@ body{
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 7px;
+  &:last-child{
+    margin-bottom: 0;
+  }
   &.active{
     .detail-item-label{
       font-weight: bold;
@@ -202,7 +206,7 @@ body{
   }
   .detail-item-label{
     @include unselectable;
-    @include border-radius(3px);
+    @include border-radius($radius);
     color: $text-main;
     cursor: pointer;
   }
@@ -225,13 +229,18 @@ body{
 
 .tip{
   text-align: center;
+  font-family: sans-serif;
   min-width: 30px;
   position: relative;
   cursor: pointer;
   padding: 1px 5px;
-  @include border-radius(3px);
+  @include border-radius($radius);
   color: $text-value;
-  margin-right: 10px;
+  margin-right: 5px;
+  &:hover{
+    color: $color-main;
+    background-color: transparentize($color-main, 0.95);
+  }
   &:last-child{
     margin-right: 0;
   }
@@ -329,7 +338,7 @@ body{
 }
 
 .sup{
-  @include border-radius(3px);
+  @include border-radius($radius);
   padding: 0 3px;
   position: absolute;
   top: 0;
@@ -341,33 +350,6 @@ body{
   border: 1px solid $color-border;
 }
 
-.sim-item{
-  min-width: 50px;
-  margin-right: 5px;
-  @include border-radius(5px);
-  padding: 5px;
-  color: $text-main;
-  background-color: transparentize(black, 0.95);
-  line-height: 1.1;
-  position: relative;
-  font-size: $fz-tiny;
-  text-align: center;
-  .name{
-    font-weight: bold;
-    margin-bottom: 2px;
-    color: $text-subtitle;
-    letter-spacing: 1px;
-    font-size: $fz-tiny;
-  }
-  .type{
-    font-size: $fz-sm;
-  }
-  &:hover{
-    .name{
-      color: $color-main;
-    }
-  }
-}
 
 
 .camera {

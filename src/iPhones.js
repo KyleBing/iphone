@@ -30,7 +30,7 @@ export default [
             core: 1
         },
         gpu: {},
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 0
@@ -142,7 +142,7 @@ export default [
             core: 1
         },
         gpu: {},
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 0
@@ -257,7 +257,7 @@ export default [
             model: "SGX535",
             core: 0
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 0
@@ -372,7 +372,7 @@ export default [
             model: "SGX535",
             core: 0
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 0
@@ -484,7 +484,7 @@ export default [
             model: "SGX543MP2",
             core: 0
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 0
@@ -596,7 +596,7 @@ export default [
             model: "SGX543MP3",
             core: 0
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 0
@@ -715,7 +715,7 @@ export default [
             model: "SGX543MP3",
             core: 3
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 0
@@ -838,7 +838,7 @@ export default [
             model: "GX6430",
             core: 4
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 475
@@ -956,7 +956,7 @@ export default [
             model: "GX6450",
             core: 4
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 566
@@ -1074,7 +1074,7 @@ export default [
             model: "GX6450",
             core: 4
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 569
@@ -1192,7 +1192,7 @@ export default [
             model: "GT7600",
             core: 6
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 963
@@ -1310,7 +1310,7 @@ export default [
             model: "GT7600",
             core: 6
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 975
@@ -1428,7 +1428,7 @@ export default [
             model: "PowerVR GT7600 ",
             core: 6
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 980
@@ -1547,7 +1547,7 @@ export default [
             model: "GT7600 Plus",
             core: 6
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 1272
@@ -1667,7 +1667,7 @@ export default [
             model: "GT7600 Plus",
             core: 6
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 1293
@@ -1787,7 +1787,7 @@ export default [
             model: "",
             core: 0
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 1910
@@ -1905,7 +1905,7 @@ export default [
             model: "",
             core: 0
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 2046
@@ -2024,7 +2024,7 @@ export default [
             model: "Apple",
             core: 4
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 2145
@@ -2141,7 +2141,7 @@ export default [
             model: "Apple",
             core: 4
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 2526
@@ -2880,7 +2880,7 @@ export default [
             model: "Apple",
             core: 4
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 2849
@@ -2999,7 +2999,7 @@ export default [
             model: "Apple",
             core: 4
         },
-        sim: [{name: '国内', type: ''}],
+        sim: [{name: '国内', type: '单卡'}],
         geekbenchScore: {
             single: 0,
             multi: 3876

@@ -34,13 +34,15 @@ export  default {
     data(){
         return {
             shareQrCode: '',
-            shareQrCodeQQ: ''
+            shareQrCodeQQ: '',
+
+            linkAddress: 'http://kylebing.cn/tools/iphone/',
+            linkQQ: 'https://jq.qq.com/?_wv=1027&k=Z8E0HrWA'
         }
     },
     mounted(){
-        this.qrImg = QRCode.generatePNG(window.location.href)
-
-
+        this.shareQrCodeQQ = QRCode.generatePNG(this.linkQQ)
+        this.shareQrCode = QRCode.generatePNG(this.linkAddress)
     },
     computed: {
         ...mapState(['insets', 'isShareShowed'])

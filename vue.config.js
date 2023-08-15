@@ -4,8 +4,8 @@ const Moment = require('moment')
 module.exports = {
     publicPath: './',
     productionSourceMap: false, // 不产出 .map 文件
+    outputDir: '../iphone',
 
-    outputDir: '../diary',
     devServer: {
         proxy: {
             '': {
