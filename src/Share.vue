@@ -27,6 +27,7 @@
 </template>
 <script>
 import {mapMutations, mapState} from "vuex";
+import QRCode from "@/qr.js"
 
 export  default {
     name: 'Share',
@@ -37,6 +38,8 @@ export  default {
         }
     },
     mounted(){
+        this.qrImg = QRCode.generatePNG(window.location.href)
+
 
     },
     computed: {
