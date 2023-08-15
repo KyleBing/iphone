@@ -1,4 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 313.14 168.83">
+  <defs>
+    <style>
+      .cls-1{fill:#e6e6e6;}.cls-2{fill:gray;}.cls-3{fill:#4d4d4d;}.cls-4{fill:none;stroke:#f7931e;stroke-miterlimit:10;}.cls-5{font-size:12px;font-family:MicrosoftYaHeiUI-Bold,
+      Microsoft YaHei UI;font-weight:700;}.cls-6{font-size:10px;font-family:MicrosoftYaHeiUILight, Microsoft YaHei UI;}
+    </style>
+  </defs>
   <title>camera</title>
   <g id="图层_2" data-name="图层 2">
     <g id="图层_1-2" data-name="图层 1">
