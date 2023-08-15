@@ -10,7 +10,7 @@
       overflow: hidden;
       @include border-radius(15px);
       background-color: white;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       padding: 0;
       border: 1px solid $color-border;
     }
@@ -41,16 +41,22 @@
     }
     .main{
       padding-bottom: 20px;
+      display: flex;
+      flex-flow: column nowrap;
       .image{
         padding: 0 10px;
         margin: 0;
         .img-frame{
+          width: 100%;
+          padding: 0 40px;
           img{
-            height: 100px;
+            width: 80%;
+            height: 100%;
           }
         }
       }
       .main-ref{
+        margin-top: 20px;
         padding: 0;
         &-item{
           margin-bottom: 10px;
@@ -68,6 +74,14 @@
       flex-flow: column nowrap;
       &-list{
         margin-right: 0;
+        width: 100%;
+      }
+    }
+
+    .camera{
+      width: 100%;
+      padding: 20px 0;
+      svg{
         width: 100%;
       }
     }

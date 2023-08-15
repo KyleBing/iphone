@@ -1,7 +1,6 @@
 @import "plugin";
 @import "gutter";
 @import "font";
-@import "layout";
 @import "changelog";
 @import "help";
 
@@ -9,7 +8,6 @@ body{
   background-color: $bg-highlight;
   font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
 }
-
 
 
 .iphone-list{
@@ -23,7 +21,7 @@ body{
 }
 // LEVEL 1
 .iphone{
-  padding: 18px 0;
+  padding: 20px 0;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -40,7 +38,7 @@ body{
   align-items: flex-end;
   justify-content: space-between;
   border-bottom: 1px solid $color-border-title;
-  font-family: 'Galvji';
+  font-family: 'Galvji', sans-serif;
   .title{
     display: flex;
     align-items: center;
@@ -128,7 +126,7 @@ body{
   .value{
     font-size: 1.2rem;
     font-weight: bold;
-    font-family: "LLPixel";
+    font-family: "LLPixel", sans-serif;
     color: $text-main;
     span.little{
       font-size: 1rem;
@@ -147,7 +145,7 @@ body{
 }
 .multiply{
   font-style: normal;
-  font-family: 'Galvji', SansSerif !important;
+  font-family: 'Galvji', sans-serif !important;
 }
 
 .screen{
@@ -164,7 +162,7 @@ body{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-family: 'Galvji';
+  font-family: 'Galvji', sans-serif;
 }
 .detail-list{
   margin-right: 30px;
@@ -350,8 +348,6 @@ body{
   border: 1px solid $color-border;
 }
 
-
-
 .camera {
   flex-grow: 2;
   svg{
@@ -360,5 +356,6 @@ body{
 }
 
 
+@import "layout";
 @import "svg";
 @import "dark";
