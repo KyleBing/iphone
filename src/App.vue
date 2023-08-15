@@ -165,57 +165,18 @@
                     </section>
 
                     <section class="camera">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 313.14 168.83">
-                            <title>camera</title>
-                            <g id="图层_2" data-name="图层 2">
-                                <g id="图层_1-2" data-name="图层 1">
-                                    <g id="camera">
-                                        <rect class="cls-1" x="1" y="29.83" width="102" height="102" rx="26"/>
-                                        <path class="cls-2"
-                                              d="M77,30.83a25,25,0,0,1,25,25v50a25,25,0,0,1-25,25H27a25,25,0,0,1-25-25v-50a25,25,0,0,1,25-25H77m0-2H27a27,27,0,0,0-27,27v50a27,27,0,0,0,27,27H77a27,27,0,0,0,27-27v-50a27,27,0,0,0-27-27Z"/>
-                                        <circle class="cls-3" cx="76" cy="81.08" r="18.5"/>
-                                        <path d="M76,64.08a17,17,0,1,1-17,17,17,17,0,0,1,17-17m0-3a20,20,0,1,0,20,20,20,20,0,0,0-20-20Z"/>
-                                        <circle class="cls-3" cx="28.5" cy="57.58" r="18.5"/>
-                                        <path d="M28.5,40.58a17,17,0,1,1-17,17,17,17,0,0,1,17-17m0-3a20,20,0,1,0,20,20,20,20,0,0,0-20-20Z"/>
-                                        <circle class="cls-3" cx="28.5" cy="104.58" r="18.5"/>
-                                        <path d="M28.5,87.58a17,17,0,1,1-17,17,17,17,0,0,1,17-17m0-3a20,20,0,1,0,20,20,20,20,0,0,0-20-20Z"/>
-                                        <polyline class="cls-4" points="42.5 40.33 63.5 19.33 149.5 19.33"/>
-                                        <polyline class="cls-4" points="94.5 70.33 108.5 63.33 147.5 63.33"/>
-                                        <line class="cls-4" x1="50" y1="106.33" x2="150" y2="106.33"/>
-                                        <text class="cls-5" transform="translate(166.38 24.96)">默认</text>
-                                        <text class="cls-5" transform="translate(166.38 66.96)">远焦</text>
-                                        <text class="cls-5" transform="translate(166.38 110.96)">广角</text>
-                                        <text class="cls-5" transform="translate(166.38 152.96)">雷达</text>
-                                        <circle cx="73.5" cy="117.33" r="7.5"/>
-                                        <polyline class="cls-4" points="76.75 124.58 88 150.33 149 150.33"/>
-                                        <text
-                                            v-if="iphone.cameras.back && iphone.cameras.back.length > 0"
-                                            class="cls-6"
-                                            transform="translate(207.67 8.56)">
-                                            {{iphone.cameras.back[0].model}}
-                                            <tspan x="0" y="12">{{iphone.cameras.back[0].focal}}</tspan>
-                                            <tspan x="0" y="24">{{iphone.cameras.back[0].pixelCount}}</tspan>
-                                        </text>
-                                        <text class="cls-6"
-                                              transform="translate(207.67 52.56)">
-                                            234567890-234123461
-                                            <tspan x="0" y="12">9287364981726394876</tspan>
-                                            <tspan x="0" y="24">1298374619287363</tspan>
-                                        </text>
-                                        <text class="cls-6" transform="translate(207.67 95.56)">
-                                            234567890-234123461
-                                            <tspan x="0" y="12">9287364981726394876</tspan>
-                                            <tspan x="0" y="24">1298374619287363</tspan>
-                                        </text>
-                                        <text class="cls-6" transform="translate(207.67 138.56)">
-                                            234567890-234123461
-                                            <tspan x="0" y="12">9287364981726394876</tspan>
-                                            <tspan x="0" y="24">1298374619287363</tspan>
-                                        </text>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
+                        <SvgCamera3
+                            v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.back.length === 4"
+                            :iphone="iphone"
+                        />
+                        <SvgCamera2Cross
+                            v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.back.length === 2"
+                            :iphone="iphone"
+                        />
+                        <SvgCamera1
+                            v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.back.length === 1"
+                            :iphone="iphone"
+                        />
                     </section>
                 </div>
             </div>
@@ -238,9 +199,15 @@ import SvgScreen from "@/svg/SvgScreen.vue";
 import Port from "@/parts/Port.vue";
 import StorageItem from "@/parts/StorageItem.vue";
 import SimItem from "@/parts/SimItem.vue";
+import SvgCamera3 from "@/svg/SvgCamera3";
+import SvgCamera2Cross from "@/svg/SvgCamera2Cross";
+import SvgCamera1 from "@/svg/SvgCamera1";
 
 export default {
-    components: {SimItem, StorageItem, Port, SvgScreen, FilterList, Share, About, iPhoneFooter},
+    components: {
+        SvgCamera1,
+        SvgCamera2Cross,
+        SvgCamera3, SimItem, StorageItem, Port, SvgScreen, FilterList, Share, About, iPhoneFooter},
     el: "#app",
     data(){
         return {
