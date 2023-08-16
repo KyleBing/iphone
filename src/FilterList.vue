@@ -51,6 +51,7 @@ export default {
 
 @import "src/scss/plugin";
 .filter-list{
+    background-color: $bg-highlight;
     padding: 10px 30px 5px;
     display: flex;
     justify-content: center;

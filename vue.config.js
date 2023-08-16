@@ -10,7 +10,7 @@ module.exports = {
         proxy: {
             '': {
                 // target: 'http://localhost:3000',
-                target: 'http://kylebing.cn:3000',
+                target: 'http://kylebing.cn:3000/portal/thumbs-up',
                 changeOrigin: true
             },
         }

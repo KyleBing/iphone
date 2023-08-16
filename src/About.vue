@@ -62,8 +62,8 @@ export  default {
         ...mapState(['isShareShowed'])
     },
     mounted(){
-        // this.getInitThumbsUpCount()
-        // this.websocketInit()
+        this.getInitThumbsUpCount()
+        this.websocketInit()
     },
     methods: {
         ...mapMutations(["SET_SHOW_SHARE"]),
@@ -73,7 +73,7 @@ export  default {
         // 点赞功能
         getInitThumbsUpCount() {
             axios
-                .get('../../portal/thumbs-up?key=' + this.thumbsUpKey)
+                .get('https://kylebing.cn/portal/thumbs-up?key=' + this.thumbsUpKey)
                 .then(res => {
                     if (res.data && res.data.data) {
                         this.thumbsUpCount = res.data.data
