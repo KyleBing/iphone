@@ -62,7 +62,9 @@ export default [
                     aperture: '',
                     focal: '',
                     pixelCount: '200万',
-                    zoomRate: ''
+                    zoomRate: '',
+                    hdr: '',
+                    dimension: [],
                 }
             ]
         },
@@ -142,7 +144,9 @@ export default [
                     aperture: '',
                     focal: '',
                     pixelCount: '200万',
-                    zoomRate: ''
+                    zoomRate: '',
+                    hdr: '',
+                    dimension: [ ],
                 }
             ]
         },
@@ -225,7 +229,9 @@ export default [
                     aperture: '',
                     focal: '',
                     pixelCount: '300万 VGA 30fps',
-                    zoomRate: ''
+                    zoomRate: '',
+                    hdr: '',
+                    dimension: [],
                 },
             ]
         },
@@ -314,8 +320,12 @@ export default [
                     model: '',
                     aperture: '',
                     focal: '',
-                    pixelCount: '500万 720@30fps',
-                    zoomRate: '5'
+                    pixelCount: '500万',
+                    zoomRate: 'x5',
+                    hdr: '',
+                    dimension: [
+                        {size: '720p', fps: [30]},
+                    ],
                 },
             ]
         },
@@ -392,8 +402,12 @@ export default [
                 model: '',
                 aperture: '',
                 focal: '',
-                pixelCount: '30万 VGA@30fps 480p',
+                pixelCount: '30万',
                 zoomRate: '',
+                hdr: '',
+                dimension: [
+                    {size: '480p', fps: []},
+                ],
             },
             back: [
                 {
@@ -401,8 +415,13 @@ export default [
                     model: 'Sony Exmor R IMX145',
                     aperture: '',
                     focal: 'ƒ/2.4',
-                    pixelCount: '800万 1080p@30 720@30fps',
-                    zoomRate: '5'
+                    pixelCount: '800万',
+                    zoomRate: 'x5',
+                    hdr: '',
+                    dimension: [
+                        {size: '720p', fps: [30]},
+                        {size: '1080p', fps: [30]},
+                    ],
                 },
             ]
         },
@@ -479,8 +498,12 @@ export default [
                 model: '',
                 aperture: '',
                 focal: '',
-                pixelCount: '120万 720p',
+                pixelCount: '120万',
                 zoomRate: '',
+                hdr: '',
+                dimension: [
+                    {size: '720', fps: []},
+                ],
             },
             back: [
                 {
@@ -488,8 +511,12 @@ export default [
                     model: 'Sony Exmor R IMX145',
                     aperture: 'ƒ/2.4',
                     focal: '',
-                    pixelCount: '800万 1080p@30',
-                    zoomRate: ''
+                    pixelCount: '800万',
+                    zoomRate: '',
+                    hdr: '',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
                 },
             ]
         },
@@ -573,8 +600,12 @@ export default [
                 model: '',
                 aperture: '',
                 focal: '',
-                pixelCount: '120万 720p',
+                pixelCount: '120万',
                 zoomRate: '',
+                hdr: '',
+                dimension: [
+                    {size: '720p', fps: []},
+                ],
             },
             back: [
                 {
@@ -582,8 +613,12 @@ export default [
                     model: 'Sony Exmor R IMX145',
                     aperture: 'ƒ/2.4',
                     focal: '',
-                    pixelCount: '800万 1080p@30',
-                    zoomRate: ''
+                    pixelCount: '800万',
+                    zoomRate: '',
+                    hdr: '',
+                    dimension: [
+                        {size: '1080p', fps: [30]},
+                    ],
                 },
             ]
         },
@@ -671,8 +706,12 @@ export default [
                 model: '1.9μm',
                 aperture: 'ƒ/2.4',
                 focal: '',
-                pixelCount: '120万 720p HDR',
+                pixelCount: '120万 ',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '720p', fps: []},
+                ],
             },
             back: [
                 {
@@ -680,8 +719,13 @@ export default [
                     model: 'Custom Sony Exmor RS',
                     aperture: 'ƒ/2.2',
                     focal: '30mm',
-                    pixelCount: '800万 1080p@30,720p@120',
-                    zoomRate: ''
+                    pixelCount: '800万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '720p', fps: [120]},
+                        {size: '1080p', fps: [30]},
+                    ],
                 }
             ]
         },
@@ -764,17 +808,26 @@ export default [
                 model: '',
                 aperture: 'ƒ/2.2',
                 focal: '',
-                pixelCount: '120万 1280x960px 720@30 HDR',
+                pixelCount: '120万',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '720p', fps: [30]},
+                ],
             },
             back: [
                 {
                     name: '默认',
-                    model: '800万 3264×2448px ',
+                    model: '',
                     aperture: 'ƒ/2.2',
                     focal: '',
-                    pixelCount: '1080p@60 720p@240 HDR',
-                    zoomRate: ''
+                    pixelCount: '800万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '720p', fps: [240]},
+                        {size: '1080p', fps: [60]},
+                    ],
                 },
             ]
         },
@@ -857,17 +910,26 @@ export default [
                 model: '',
                 aperture: 'ƒ/2.2',
                 focal: '',
-                pixelCount: '120万 1280x960px 720@30 HDR',
+                pixelCount: '120万',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '720p', fps: [30]},
+                ],
             },
             back: [
                 {
                     name: '默认',
-                    model: '800万 3264×2448px ',
+                    model: '',
                     aperture: 'ƒ/2.2',
                     focal: '',
-                    pixelCount: '1080p@60 720p@240 HDR',
-                    zoomRate: ''
+                    pixelCount: '800万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '720p', fps: [240]},
+                        {size: '1080p', fps: [60]},
+                    ],
                 },
             ]
         },
@@ -949,8 +1011,12 @@ export default [
                 model: '',
                 aperture: 'ƒ/2.2',
                 focal: '',
-                pixelCount: '500万 720p HDR',
+                pixelCount: '500万 720p',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '720p', fps: []},
+                ],
             },
             back: [
                 {
@@ -958,8 +1024,14 @@ export default [
                     model: 'Sony Exmor RS IMX315 1.22μm',
                     aperture: 'ƒ/2.2',
                     focal: '',
-                    pixelCount: '1200万 4K@30 1080@60 720@240',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: '',
+                    dimension: [
+                        {size: '4K', fps: [30]},
+                        {size: '1080p', fps: [60]},
+                        {size: '720p', fps: [240]},
+                    ],
                 }
             ]
         },
@@ -1042,8 +1114,12 @@ export default [
                 model: '',
                 aperture: 'ƒ/2.2',
                 focal: '',
-                pixelCount: '500万 720p HDR',
+                pixelCount: '500万 720p',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '720p', fps: []},
+                ],
             },
             back: [
                 {
@@ -1051,8 +1127,14 @@ export default [
                     model: 'Sony Exmor RS IMX315 1.22μm',
                     aperture: 'ƒ/2.2',
                     focal: '',
-                    pixelCount: '1200万 4K@30 1080@60 720@240',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: '',
+                    dimension: [
+                        {size: '4K', fps: [30]},
+                        {size: '1080p', fps: [60]},
+                        {size: '720p', fps: [240]},
+                    ],
                 }
             ]
         },
@@ -1130,48 +1212,33 @@ export default [
             hdr: false,
         },
         cameras: {
+            type: '1',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
-                aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                model: '',
+                aperture: 'ƒ/2.4',
+                focal: '',
+                pixelCount: '120万',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '720p', fps: []},
+                ],
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
+                    model: 'Backlit Sony Exmor RS 1.22μm',
+                    aperture: 'ƒ/2.2',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [30]},
+                        {size: '1080p', fps: [30,60,120]},
+                        {size: '720p', fps: [240]},
+                    ],
                 },
             ]
         },
@@ -1254,8 +1321,12 @@ export default [
                 model: '',
                 aperture: 'ƒ/2.2',
                 focal: '',
-                pixelCount: '700万 1080p HDR',
+                pixelCount: '700万',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
             },
             back: [
                 {
@@ -1263,8 +1334,14 @@ export default [
                     model: '2nd Sony Exmor RS',
                     aperture: 'ƒ/1.8',
                     focal: '',
-                    pixelCount: '1200万 4k@30 1080p@60 720@240',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [30]},
+                        {size: '1080p', fps: [60]},
+                        {size: '720p', fps: [240]},
+                    ],
                 },
             ]
         },
@@ -1349,8 +1426,12 @@ export default [
                 model: '',
                 aperture: 'ƒ/2.2',
                 focal: '',
-                pixelCount: '700万 1080p HDR',
+                pixelCount: '700万',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
             },
             back: [
                 {
@@ -1358,16 +1439,28 @@ export default [
                     model: '2nd Sony Exmor RS',
                     aperture: 'ƒ/1.8',
                     focal: '',
-                    pixelCount: '1200万 4k@30 1080p@60 720@240',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [30]},
+                        {size: '1080p', fps: [60]},
+                        {size: '720p', fps: [240]},
+                    ],
                 },
                 {
                     name: '远焦',
                     model: '2nd Sony Exmor RS',
                     aperture: 'ƒ/2.8',
                     focal: '',
-                    pixelCount: '1200万, ',
-                    zoomRate: 'x2物理变焦 x10数码变焦'
+                    pixelCount: '1200万',
+                    zoomRate: 'x2物理变焦 x10数码变焦',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [30]},
+                        {size: '1080p', fps: [60]},
+                        {size: '720p', fps: [240]},
+                    ],
                 },
             ]
         },
@@ -1452,8 +1545,12 @@ export default [
                 model: '',
                 aperture: 'ƒ/2.2',
                 focal: '',
-                pixelCount: '700万 1080p HDR',
+                pixelCount: '700万',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
             },
             back: [
                 {
@@ -1461,8 +1558,14 @@ export default [
                     model: '',
                     aperture: 'ƒ/1.8',
                     focal: '26mm',
-                    pixelCount: '1200万 4k@30 1080p@120 720p@240',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [30]},
+                        {size: '1080p', fps: [120]},
+                        {size: '720p', fps: [240]},
+                    ],
                 },
             ]
         },
@@ -1545,8 +1648,12 @@ export default [
                 model: '',
                 aperture: 'ƒ/2.2',
                 focal: '',
-                pixelCount: '700万 1080p HDR',
+                pixelCount: '700万',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
             },
             back: [
                 {
@@ -1554,16 +1661,28 @@ export default [
                     model: '',
                     aperture: 'ƒ/1.8',
                     focal: '26mm',
-                    pixelCount: '1200万 4k@30 1080p@120 720p@240',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [30]},
+                        {size: '1080p', fps: [120]},
+                        {size: '720p', fps: [240]},
+                    ],
                 },
                 {
                     name: '远焦',
                     model: '',
                     aperture: 'ƒ/2.8',
                     focal: '',
-                    pixelCount: '1200万, ',
-                    zoomRate: 'x2物理变焦，x10数码变焦'
+                    pixelCount: '1200万',
+                    zoomRate: 'x2物理变焦，x10数码变焦',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [30]},
+                        {size: '1080p', fps: [120]},
+                        {size: '720p', fps: [240]},
+                    ],
                 },
             ]
         },
@@ -1647,8 +1766,12 @@ export default [
                 model: '',
                 aperture: 'ƒ/2.2',
                 focal: '',
-                pixelCount: '700万 1080p HDR',
+                pixelCount: '700万',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
             },
             back: [
                 {
@@ -1656,16 +1779,26 @@ export default [
                     model: '',
                     aperture: 'ƒ/1.8',
                     focal: '',
-                    pixelCount: '1200万 4K@60 1080p@240',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [60]},
+                        {size: '1080p', fps: [240]},
+                    ],
                 },
                 {
                     name: '远焦',
                     model: '',
                     aperture: 'ƒ/2.4',
                     focal: '',
-                    pixelCount: '1200万 4K@60 1080p@240',
-                    zoomRate: 'x2物理变焦，x10数码变焦'
+                    pixelCount: '1200万',
+                    zoomRate: 'x2物理变焦，x10数码变焦',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [60]},
+                        {size: '1080p', fps: [240]},
+                    ],
                 }
             ]
         },
@@ -1739,7 +1872,7 @@ export default [
             height: 2436,
             density: "458",
             touch3D: true,
-            hdr: true,
+            hdr:  'HDR',
         },
         cameras: {
             type: '2-vertical-simple',
@@ -1748,8 +1881,12 @@ export default [
                 model: '',
                 aperture: 'ƒ/2.2',
                 focal: '',
-                pixelCount: '700万 1080p HDR',
+                pixelCount: '700万',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
             },
             back: [
                 {
@@ -1757,16 +1894,26 @@ export default [
                     model: 'Sony Exmor IMX333-Inspired 1.4μm',
                     aperture: 'ƒ/1.8',
                     focal: '',
-                    pixelCount: '1200万 4K@60 1080p@240',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [60]},
+                        {size: '1080p', fps: [240]},
+                    ],
                 },
                 {
                     name: '远焦',
                     model: '',
                     aperture: '',
                     focal: '',
-                    pixelCount: '1200万 4K@60 1080p@240',
-                    zoomRate: 'x2物理变焦，x10数码变焦'
+                    pixelCount: '1200万',
+                    zoomRate: 'x2物理变焦，x10数码变焦',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [60]},
+                        {size: '1080p', fps: [240]},
+                    ],
                 }
             ]
         },
@@ -1845,7 +1992,7 @@ export default [
             height: 2688,
             density: "458",
             touch3D: true,
-            hdr: true,
+            hdr:  'HDR',
         },
         cameras: {
             type: '2-vertical-simple',
@@ -1854,8 +2001,12 @@ export default [
                 model: '',
                 aperture: 'ƒ/2.2',
                 focal: '',
-                pixelCount: '700万 1080p HDR',
+                pixelCount: '700万',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
             },
             back: [
                 {
@@ -1863,16 +2014,26 @@ export default [
                     model: 'Sony Exmor IMX333-Inspired 1.4μm',
                     aperture: 'ƒ/1.8',
                     focal: '',
-                    pixelCount: '1200万 4K@60 1080p@240',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [60]},
+                        {size: '1080p', fps: [240]},
+                    ],
                 },
                 {
                     name: '远焦',
                     model: '',
                     aperture: '',
                     focal: '',
-                    pixelCount: '1200万 4K@60 1080p@240',
-                    zoomRate: 'x2物理变焦，x10数码变焦'
+                    pixelCount: '1200万',
+                    zoomRate: 'x2物理变焦，x10数码变焦',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [60]},
+                        {size: '1080p', fps: [240]},
+                    ],
                 }
             ]
         },
@@ -1961,8 +2122,12 @@ export default [
                 model: '',
                 aperture: 'ƒ/2.2',
                 focal: '',
-                pixelCount: '700万 1080p HDR',
+                pixelCount: '700万',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
             },
             back: [
                 {
@@ -1970,8 +2135,13 @@ export default [
                     model: 'Sony Exmor IMX333-Inspired 1.4μm',
                     aperture: 'ƒ/1.8',
                     focal: '',
-                    pixelCount: '1200万 4K@60 1080p@240',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [60]},
+                        {size: '1080p', fps: [240]},
+                    ],
                 },
             ]
         },
@@ -2057,8 +2227,12 @@ export default [
                 model: '',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万 1080p@60 HDR',
+                pixelCount: '1200万',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '1080p', fps: [60]},
+                ],
             },
             back: [
                 {
@@ -2066,16 +2240,26 @@ export default [
                     model: '1.4μm',
                     aperture: 'ƒ/1.8',
                     focal: '',
-                    pixelCount: '1200万 4K@60 1080p@240',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [60]},
+                        {size: '1080p', fps: [240]},
+                    ],
                 },
                 {
                     name: '远焦',
                     model: '',
                     aperture: '',
                     focal: '',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [60]},
+                        {size: '1080p', fps: [240]},
+                    ],
                 },
             ]
         },
@@ -2156,7 +2340,7 @@ export default [
             height: 2436,
             density: "458",
             touch3D: false,
-            hdr: true,
+            hdr:  'HDR',
         },
         cameras: {
             type: '3',
@@ -2167,6 +2351,9 @@ export default [
                 focal: '23mm',
                 pixelCount: '1200万',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                ],
             },
             back: [
                 {
@@ -2174,8 +2361,10 @@ export default [
                     model: '1.4μm',
                     aperture: 'ƒ/1.8',
                     focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [],
                 },
                 {
                     name: '远焦',
@@ -2183,7 +2372,9 @@ export default [
                     aperture: 'ƒ/2.0',
                     focal: '52mm',
                     pixelCount: '1200万',
-                    zoomRate: 'x2 物理变焦'
+                    zoomRate: 'x2 物理变焦',
+                    hdr: 'HDR',
+                    dimension: [],
                 },
                 {
                     name: '广角',
@@ -2192,16 +2383,9 @@ export default [
                     focal: '13mm',
                     angel: '120',
                     pixelCount: '1200万',
-                    zoomRate: ''
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
-                    focal: '',
-                    angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [],
                 },
             ]
         },
@@ -2280,51 +2464,51 @@ export default [
             height: 2688,
             density: "458",
             touch3D: false,
-            hdr: true,
+            hdr:  'HDR',
         },
         cameras: {
+            type: '3',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '23mm',
+                pixelCount: '1200万',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [],
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
+                    model: '1.4μm HDR',
+                    aperture: 'ƒ/1.8',
                     focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [],
                 },
                 {
                     name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
+                    model: '1μm',
+                    aperture: 'ƒ/2.0',
+                    focal: '52mm',
+                    pixelCount: '1200万',
+                    zoomRate: 'x2 物理变焦',
+                    hdr: 'HDR',
+                    dimension: [],
                 },
                 {
                     name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
+                    model: '1μm',
+                    aperture: 'ƒ/2.4',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
-                    focal: '',
-                    angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [],
                 },
             ]
         },
@@ -2406,48 +2590,33 @@ export default [
             hdr: false,
         },
         cameras: {
+            type: '1',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '',
+                pixelCount: '700万',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '720p', fps: []},
+                    {size: '1080p', fps: []},
+                ],
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
+                    model: '',
+                    aperture: 'ƒ/1.8',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [25, 30, 60, 120, 240]},
+                    ],
                 },
             ]
         },
@@ -2522,43 +2691,48 @@ export default [
             height: 2340,
             density: "476",
             touch3D: false,
-            hdr: true,
+            hdr:  'HDR',
         },
         cameras: {
+            type: '2-vertical',
             front: {
                 name: '默认',
                 model: '',
-                aperture: '',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                aperture: 'ƒ/2.2',
+                focal: '23mm',
+                pixelCount: '1200万',
                 zoomRate: '',
+                hdr:  'HDR',
                 dimension: [
-                    {size: '1080p', fps: [25, 30, 60, 120]},
-                    {size: '720p', fps: [240]},
+                    {size: '4K', fps: [24, 30, 60]},
+                    {size: '1080p', fps: [30,60,120]},
                 ],
             },
             back: [
                 {
                     name: '默认',
-                    model: '',
-                    aperture: '',
+                    model: '1.4μm',
+                    aperture: 'ƒ/1.6',
                     focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
+                    pixelCount: '1200万',
                     zoomRate: '',
+                    hdr:  'HDR',
                     dimension: [
                         {size: '4k', fps: [24, 25, 30, 60]},
-                        {size: '1080p', fps: [25, 30, 60, 120]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
                         {size: '720p', fps: [240]},
                     ],
                 },
                 {
                     name: '广角',
                     model: '',
-                    aperture: '',
+                    aperture: 'ƒ/2.4',
                     focal: '13mm',
-                    angel: '',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '0.5'
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr:  'HDR',
+                    dimension: [],
                 },
             ]
         },
@@ -2640,43 +2814,48 @@ export default [
             height: 2532,
             density: "460",
             touch3D: false,
-            hdr: true,
+            hdr:  'HDR',
         },
         cameras: {
+            type: '2-vertical',
             front: {
                 name: '默认',
                 model: '',
-                aperture: '',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                aperture: 'ƒ/2.2',
+                focal: '23mm',
+                pixelCount: '1200万',
                 zoomRate: '',
+                hdr:  'HDR',
                 dimension: [
-                    {size: '1080p', fps: [25, 30, 60, 120]},
-                    {size: '720p', fps: [240]},
+                    {size: '4K', fps: [24, 30, 60]},
+                    {size: '1080p', fps: [30,60,120]},
                 ],
             },
             back: [
                 {
                     name: '默认',
-                    model: '',
-                    aperture: '',
+                    model: '1.4μm',
+                    aperture: 'ƒ/1.6',
                     focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
+                    pixelCount: '1200万',
                     zoomRate: '',
+                    hdr:  'HDR',
                     dimension: [
                         {size: '4k', fps: [24, 25, 30, 60]},
-                        {size: '1080p', fps: [25, 30, 60, 120]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
                         {size: '720p', fps: [240]},
                     ],
                 },
                 {
                     name: '广角',
                     model: '',
-                    aperture: '',
+                    aperture: 'ƒ/2.4',
                     focal: '13mm',
-                    angel: '',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '0.5'
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr:  'HDR',
+                    dimension: [],
                 },
             ]
         },
@@ -2758,57 +2937,81 @@ export default [
             height: 2532,
             density: "460",
             touch3D: false,
-            hdr: true,
+            hdr:  'HDR',
         },
         cameras: {
+            type: '3-rader',
             front: {
                 name: '默认',
                 model: '',
-                aperture: 'ƒ/2.2',
+                aperture: '',
                 focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
-
+                hdr: '',
+                pixelCount: '1200万',
                 zoomRate: '',
+                dimension: [
+                    {size: '4k', fps: [24, 30, 60]},
+                    {size: '1080p', fps: [30, 60, 120]},
+                    {size: '720p', fps: [240]},
+                ]
             },
             back: [
                 {
                     name: '默认',
-                    model: '',
-                    aperture: '',
+                    model: '1.7μm',
+                    aperture: 'ƒ/1.6',
                     focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
+                    hdr: 'HDR',
+                    angle: '',
+                    pixelCount: '1200万',
                     zoomRate: '',
                     dimension: [
                         {size: '4k', fps: [24, 30, 60]},
                         {size: '1080p', fps: [30, 60, 120]},
                         {size: '720p', fps: [240]},
-                    ],
+                    ]
                 },
                 {
                     name: '远焦',
                     model: '',
                     aperture: '',
                     focal: '52mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: '2'
+                    hdr: 'HDR',
+                    angle: '',
+                    pixelCount: '1200万',
+                    zoomRate: 'x2',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ]
                 },
                 {
                     name: '广角',
                     model: '',
                     aperture: '',
                     focal: '13mm',
-                    angel: '',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '0.5'
+                    hdr: 'HDR',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: 'x0.5',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ]
                 },
                 {
                     name: '雷达',
-                    model: '',
+                    model: 'LiDAR',
                     aperture: '',
                     focal: '',
+                    hdr: '',
                     angel: '',
                     pixelCount: '',
-                    zoomRate: ''
+                    zoomRate: '',
+                    dimension: []
+
                 },
             ]
         },
@@ -2888,57 +3091,81 @@ export default [
             height: 2778,
             density: "458",
             touch3D: false,
-            hdr: true,
+            hdr:  'HDR',
         },
         cameras: {
+            type: '3-rader',
             front: {
                 name: '默认',
                 model: '',
-                aperture: 'ƒ/2.2',
+                aperture: '',
                 focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
-
+                hdr: '',
+                pixelCount: '1200万',
                 zoomRate: '',
+                dimension: [
+                    {size: '4k', fps: [24, 30, 60]},
+                    {size: '1080p', fps: [30, 60, 120]},
+                    {size: '720p', fps: [240]},
+                ]
             },
             back: [
                 {
                     name: '默认',
-                    model: '',
-                    aperture: '',
+                    model: '1.7μm',
+                    aperture: 'ƒ/1.6',
                     focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
+                    hdr: 'HDR',
+                    angle: '',
+                    pixelCount: '1200万',
                     zoomRate: '',
                     dimension: [
                         {size: '4k', fps: [24, 30, 60]},
                         {size: '1080p', fps: [30, 60, 120]},
                         {size: '720p', fps: [240]},
-                    ],
+                    ]
                 },
                 {
                     name: '远焦',
                     model: '',
                     aperture: '',
                     focal: '52mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: '2'
+                    hdr: 'HDR',
+                    angle: '',
+                    pixelCount: '1200万',
+                    zoomRate: 'x2',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ]
                 },
                 {
                     name: '广角',
                     model: '',
                     aperture: '',
                     focal: '13mm',
-                    angel: '',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '0.5'
+                    hdr: 'HDR',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: 'x0.5',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                        {size: '720p', fps: [240]},
+                    ]
                 },
                 {
                     name: '雷达',
-                    model: '',
+                    model: 'LiDAR',
                     aperture: '',
                     focal: '',
+                    hdr: '',
                     angel: '',
                     pixelCount: '',
-                    zoomRate: ''
+                    zoomRate: '',
+                    dimension: []
+
                 },
             ]
         },
@@ -3019,18 +3246,53 @@ export default [
             height: 2340,
             density: "476",
             touch3D: false,
-            hdr: true,
+            hdr:  'HDR',
         },
         cameras: {
+            type: '2-cross',
             front: {
-                name: '',
+                name: '默认',
                 model: '',
-                aperture: '',
-                focal: '',
-                pixelCount: '',
+                aperture: 'ƒ/2.2',
+                focal: '23mm',
+                hdr: 'HDR',
+                pixelCount: '1200万',
                 zoomRate: '',
+                dimension: [
+                    {size: '4k', fps: [24, 25, 30, 60]},
+                    {size: '1080p', fps: [30, 60, 120]},
+                ]
             },
-            back: []
+            back: [
+                {
+                    name: '默认',
+                    model: '1.7μm',
+                    aperture: 'ƒ/1.6',
+                    focal: '26mm',
+                    hdr: 'HDR',
+                    angle: '',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.4',
+                    focal: '13mm',
+                    hdr: 'HDR',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                    ]
+                },
+            ]
         },
         colors: [
             {name: 'Midnight', color: '#232a31'},
@@ -3113,18 +3375,53 @@ export default [
             height: 2532,
             density: "460",
             touch3D: false,
-            hdr: true,
+            hdr:  'HDR',
         },
         cameras: {
+            type: '2-cross',
             front: {
-                name: '',
+                name: '默认',
                 model: '',
-                aperture: '',
-                focal: '',
-                pixelCount: '',
+                aperture: 'ƒ/2.2',
+                focal: '23mm',
+                hdr: 'HDR',
+                pixelCount: '1200万',
                 zoomRate: '',
+                dimension: [
+                    {size: '4k', fps: [24, 25, 30, 60]},
+                    {size: '1080p', fps: [30, 60, 120]},
+                ]
             },
-            back: []
+            back: [
+                {
+                    name: '默认',
+                    model: '1.7μm',
+                    aperture: 'ƒ/1.6',
+                    focal: '26mm',
+                    hdr: 'HDR',
+                    angle: '',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.4',
+                    focal: '13mm',
+                    hdr: 'HDR',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                    ]
+                },
+            ]
         },
         colors: [
             {name: 'Midnight', color: '#232a31'},
@@ -3208,16 +3505,19 @@ export default [
             height: 2532,
             density: "460",
             touch3D: false,
-            hdr: true,
+            hdr:  'HDR',
         },
         cameras: {
+            type: '3-rader',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: 'Sony IMX514 1μm',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '',
+                hdr: 'HDR',
+                pixelCount: '1200万',
                 zoomRate: '',
+                dimension: []
             },
             back: [
                 {
@@ -3225,34 +3525,54 @@ export default [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
+                    hdr: 'HDR',
+                    angle: '',
+                    pixelCount: '1200万',
+                    zoomRate: 'x3物理变焦',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                    ]
                 },
                 {
                     name: '远焦',
                     model: 'Sony IMX713 1μm',
                     aperture: 'ƒ/2.8',
                     focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
+                    hdr: 'HDR',
+                    angle: '',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                    ]
                 },
                 {
                     name: '广角',
                     model: 'Sony IMX772 1μm',
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
+                    hdr: 'HDR',
                     angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                    ]
                 },
                 {
                     name: '雷达',
                     model: 'Sony IMX590 TOF 3D LiDAR',
                     aperture: '',
                     focal: '',
+                    hdr: '',
                     angel: '',
                     pixelCount: '',
-                    zoomRate: ''
+                    zoomRate: '',
+                    dimension: []
+
                 },
             ]
         },
@@ -3337,16 +3657,19 @@ export default [
             height: 2778,
             density: "458",
             touch3D: false,
-            hdr: true,
+            hdr:  'HDR',
         },
         cameras: {
+            type: '3-rader',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: 'Sony IMX514 1μm',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '',
+                hdr: 'HDR',
+                pixelCount: '1200万',
                 zoomRate: '',
+                dimension: []
             },
             back: [
                 {
@@ -3354,34 +3677,54 @@ export default [
                     model: 'Sony IMX703 1.9μm',
                     aperture: 'ƒ/1.5',
                     focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
+                    hdr: 'HDR',
+                    angle: '',
+                    pixelCount: '1200万',
+                    zoomRate: 'x3物理变焦',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                    ]
                 },
                 {
                     name: '远焦',
                     model: 'Sony IMX713 1μm',
                     aperture: 'ƒ/2.8',
                     focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
+                    hdr: 'HDR',
+                    angle: '',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                    ]
                 },
                 {
                     name: '广角',
                     model: 'Sony IMX772 1μm',
                     aperture: 'ƒ/2.8',
                     focal: '13mm',
+                    hdr: 'HDR',
                     angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                    ]
                 },
                 {
                     name: '雷达',
                     model: 'Sony IMX590 TOF 3D LiDAR',
                     aperture: '',
                     focal: '',
+                    hdr: '',
                     angel: '',
                     pixelCount: '',
-                    zoomRate: ''
+                    zoomRate: '',
+                    dimension: []
+
                 },
             ]
         },
@@ -3466,13 +3809,18 @@ export default [
             hdr: false,
         },
         cameras: {
+            type: '1',
             front: {
                 name: '默认',
                 model: '',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '700万 4000x3000px',
+                pixelCount: '700万',
                 zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
             },
             back: [
                 {
@@ -3480,8 +3828,13 @@ export default [
                     model: '',
                     aperture: 'ƒ/1.8',
                     focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [25, 30, 60, 120, 240]},
+                    ],
                 },
             ]
         },
@@ -3565,9 +3918,53 @@ export default [
             height: 2532,
             density: "460",
             touch3D: false,
-            hdr: true,
+            hdr:  'HDR',
         },
-        cameras: {},
+        cameras: {
+            type: '2-cross',
+            front: {
+                name: '默认',
+                model: '',
+                aperture: 'ƒ/1.9',
+                focal: '23mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+                hdr:  'HDR',
+                dimension: [
+                    {size: '4k', fps: [24, 25, 30, 60]},
+                    {size: '1080p', fps: [25, 30, 60, 120]},
+                ]
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: '1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [25, 30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '广角',
+                    model: '',
+                    aperture: 'ƒ/2.4',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+            ]
+        },
         colors: [
             {name: '午夜色', color: '#31353b'},
             {name: '紫色', color: '#e7d6e9'},
@@ -3651,9 +4048,53 @@ export default [
             height: 2778,
             density: "458",
             touch3D: false,
-            hdr: true,
+            hdr:  'HDR',
         },
-        cameras: {},
+        cameras: {
+            type: '2-cross',
+            front: {
+                name: '默认',
+                model: '',
+                aperture: 'ƒ/1.9',
+                focal: '23mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+                hdr:  'HDR',
+                dimension: [
+                    {size: '4k', fps: [24, 25, 30, 60]},
+                    {size: '1080p', fps: [25, 30, 60, 120]},
+                ]
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: '1.9μm',
+                    aperture: 'ƒ/1.5',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [25, 30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '广角',
+                    model: '',
+                    aperture: 'ƒ/2.4',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+            ]
+        },
         colors: [
             {name: '午夜色', color: '#31353b'},
             {name: '紫色', color: '#e7d6e9'},
@@ -3737,9 +4178,78 @@ export default [
             height: 2556,
             density: "460",
             touch3D: false,
-            hdr: true,
+            hdr:  'HDR',
         },
-        cameras: {},
+        cameras: {
+            type: '3-rader',
+            front: {
+                name: '默认',
+                model: '',
+                aperture: 'ƒ/1.9',
+                focal: '23mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+                hdr:  'HDR',
+                dimension: [
+                    {size: '4k', fps: [24, 30, 60]},
+                    {size: '1080p', fps: [30, 60, 120]},
+                ]
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: '1.22μm - 2.44μm',
+                    aperture: 'ƒ/1.78',
+                    focal: '24mm',
+                    pixelCount: '4800万',
+                    zoomRate: '',
+                    hdr:  'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                    ]
+                },
+                {
+                    name: '远焦',
+                    model: '1.0μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    angel: '',
+                    pixelCount: '4800万',
+                    zoomRate: 'x3 物理变焦',
+                    hdr: '10 bit HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '广角',
+                    model: '1.4μm',
+                    aperture: 'ƒ/2.2',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '4800万',
+                    zoomRate: '',
+                    hdr: '10 bit HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '雷达',
+                    model: 'TOF 3D LiDAR scanner',
+                    aperture: 'ƒ/2.2',
+                    focal: '13mm',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: '',
+                    hdr: false,
+                    dimension: []
+                },
+            ]
+        },
         colors: [
             {name: '深空黑色', color: '#403e3d'},
             {name: '银色', color: '#f0f2f2'},
@@ -3821,9 +4331,78 @@ export default [
             height: 2796,
             density: "460",
             touch3D: false,
-            hdr: true,
+            hdr:  'HDR',
         },
-        cameras: {},
+        cameras: {
+            type: '3-rader',
+            front: {
+                name: '默认',
+                model: '',
+                aperture: 'ƒ/1.9',
+                focal: '23mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+                hdr:  'HDR',
+                dimension: [
+                    {size: '4k', fps: [24, 30, 60]},
+                    {size: '1080p', fps: [30, 60, 120]},
+                ]
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: '1.22μm - 2.44μm',
+                    aperture: 'ƒ/1.78',
+                    focal: '24mm',
+                    pixelCount: '4800万',
+                    zoomRate: '',
+                    hdr:  'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                    ]
+                },
+                {
+                    name: '远焦',
+                    model: '1.0μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    angel: '',
+                    pixelCount: '4800万',
+                    zoomRate: 'x3 物理变焦',
+                    hdr: '10 bit HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '广角',
+                    model: '1.4μm',
+                    aperture: 'ƒ/2.2',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '4800万',
+                    zoomRate: '',
+                    hdr: '10 bit HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '雷达',
+                    model: 'TOF 3D LiDAR scanner',
+                    aperture: 'ƒ/2.2',
+                    focal: '13mm',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: '',
+                    hdr: false,
+                    dimension: []
+                },
+            ]
+        },
         colors: [
             {name: '深空黑色', color: '#403e3d'},
             {name: '银色', color: '#f0f2f2'},

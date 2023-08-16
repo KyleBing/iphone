@@ -24,22 +24,37 @@
                     <text class="cls-6" transform="translate(183.38 122.12)">默认</text>
                     <text class="cls-6" transform="translate(183.38 158.12)">雷达</text>
                     <text class="cls-7" transform="translate(224.67 21.73)">
-                        {{iphone.cameras.back[1].model}}
-                        <tspan x="0" y="12">{{iphone.cameras.back[1].focal}}</tspan>
-                        <tspan x="0" y="24">{{iphone.cameras.back[1].pixelCount}}</tspan>
+                        {{iphone.cameras.back[1].model}} {{iphone.cameras.back[1].focal}} {{iphone.cameras.back[1].hdr}}
+                        <tspan x="0" y="12">
+                            <tspan
+                                v-for="(dimension, index) in iphone.cameras.back[1].dimension"
+                                :key="index"
+                            >{{dimension.size}} {{dimension.fps.join(',')}}，</tspan>
+                        </tspan>
+                        <tspan x="0" y="24">{{iphone.cameras.back[1].pixelCount}} {{iphone.cameras.back[1].aperture}} {{iphone.cameras.back[1].zoomRate}}</tspan>
                     </text>
                     <text class="cls-7" transform="translate(224.67 64.73)">
-                        {{iphone.cameras.back[2].model}}
-                        <tspan x="0" y="12">{{iphone.cameras.back[2].focal}}</tspan>
-                        <tspan x="0" y="24">{{iphone.cameras.back[2].pixelCount}}</tspan>
+                        {{iphone.cameras.back[2].model}} {{iphone.cameras.back[2].focal}} {{iphone.cameras.back[2].hdr}}
+                        <tspan x="0" y="12">
+                            <tspan
+                                v-for="(dimension, index) in iphone.cameras.back[2].dimension"
+                                :key="index"
+                            >{{dimension.size}} {{dimension.fps.join(',')}}，</tspan>
+                        </tspan>
+                        <tspan x="0" y="24">{{iphone.cameras.back[2].pixelCount}} {{iphone.cameras.back[2].aperture}} {{iphone.cameras.back[2].zoomRate}}</tspan>
                     </text>
                     <text class="cls-7" transform="translate(224.67 157.73)">
                         {{iphone.cameras.back[3].model}}
                     </text>
                     <text class="cls-7" transform="translate(224.67 107.73)">
-                        {{iphone.cameras.back[0].model}}
-                        <tspan x="0" y="12">{{iphone.cameras.back[0].focal}}</tspan>
-                        <tspan x="0" y="24">{{iphone.cameras.back[0].pixelCount}}</tspan>
+                        {{iphone.cameras.back[0].model}} {{iphone.cameras.back[0].focal}} {{iphone.cameras.back[0].hdr}}
+                        <tspan x="0" y="12">
+                            <tspan
+                                v-for="(dimension, index) in iphone.cameras.back[0].dimension"
+                                :key="index"
+                            >{{dimension.size}} {{dimension.fps.join(',')}}，</tspan>
+                        </tspan>
+                        <tspan x="0" y="24">{{iphone.cameras.back[0].pixelCount}} {{iphone.cameras.back[0].aperture}} {{iphone.cameras.back[0].zoomRate}}</tspan>
                     </text>
                 </g>
             </g>
@@ -91,6 +106,6 @@ export default {
 
 .cls-7 {
     font-size: 10px;
-    font-family: MicrosoftYaHeiUILight, Microsoft YaHei UI;
+    font-family: "Arial Narrow";
 }
 </style>
