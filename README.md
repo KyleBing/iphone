@@ -1,4 +1,4 @@
-<img src="https://github.com/KyleBing/iphone/raw/master/img/iphone_favicon256w.png" width="100">
+<img src="https://github.com/KyleBing/iphone/raw/master/src/img/iphone_favicon256w.png" width="100">
 
 # iPhone 信息
 
@@ -21,7 +21,7 @@
 
 ## 预览
 
-<img width="1920" alt="Screenshot 2023-03-30 at 20 07 59" src="https://user-images.githubusercontent.com/12215982/228831696-02b24084-1548-446f-a091-c0a56a002572.png">
+![2023-08-16 16 26 51](https://github.com/KyleBing/iphone/assets/12215982/8df40497-47db-456b-8560-b910c125281f)
 
 
 ## 修改说明
