@@ -33,7 +33,8 @@ export default {
 @import "scss/plugin";
 
 footer{
-    padding: 10px 0 40px;
+    background-color: $bg-highlight;
+    padding: 30px 0 40px;
     font-size: 12px;
     text-align: center;
     color: $gray;

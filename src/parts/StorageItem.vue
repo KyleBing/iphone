@@ -23,7 +23,7 @@ export default {
     name: "StorageItem",
     props: {
         storage: {
-            type: Number,
+            type: String,
             default: 0
         }
     }

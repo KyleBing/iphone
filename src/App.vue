@@ -11,10 +11,11 @@
                 <div class="title-content">
                     <div>
                         <div :class="['title', {'is-new': iphone.isNew}]">{{iphone.name}}</div>
-                        <div class="score-bar" v-if="iphone.geekbenchScore.multi">
+                        <div class="score-bar" v-if="iphone.geekbenchScore.multi && !iphone.isTitleOnly">
                             <div class="bar" :style="`width: ${iphone.geekbenchScore.multi / maxScore * 100}px`"></div>
                             <div class="score">{{iphone.geekbenchScore.multi}}</div>
                         </div>
+
                     </div>
                     <div class="slogan">{{iphone.slogan}}</div>
                 </div>
@@ -306,20 +307,13 @@ export default {
 
 
         updateShowingDevices(selectedNames) {
-            this.selectedNames = selectedNames
-            this.iPhones = this.selectedNames.map(name => this.deviceMap.get(name))
-            if (this.iPhones.length === 0) {
+            if (selectedNames.length > 0){
+                this.selectedNames = selectedNames
+                this.iPhones = this.selectedNames.map(name => this.deviceMap.get(name))
+            } else {
                 this.iPhones = [...this.iPhonesOrigin]
             }
-            this.iPhones.push(this.iPhonesOrigin[0])
-            this.iPhones.pop()
         },
-
-        filterIphone() {
-
-        },
-
-
     },
     computed: {
         maxScore() {

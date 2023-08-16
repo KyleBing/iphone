@@ -10,7 +10,7 @@ export default [
         slogan: "This is only the beginning. Apple reinvents the phone.",
         isNew: false,
         active: false,
-        release: "2007_06_29",
+        release: "2007 . 06 . 29",
         models: [
             {name: "", type: "A1203"},
         ],
@@ -91,7 +91,7 @@ export default [
         slogan: "New features, new price.",
         isNew: false,
         active: false,
-        release: "2008_07_11",
+        release: "2008 . 07 . 11",
         models: [
             {name: "国内", type: "A1324"},
             {name: "", type: "A1241"},
@@ -173,7 +173,7 @@ export default [
         slogan: "The fastest, smartest phone yet. More to love. Less to pay.",
         isNew: false,
         active: false,
-        release: "2009_06_19",
+        release: "2009 . 06 . 19",
         models: [
             {name: "国内", type: "A1325"},
             {name: "", type: "A1303"},
@@ -258,7 +258,7 @@ export default [
         slogan: "This changes everything. Again.",
         isNew: false,
         active: false,
-        release: "2010_06_24",
+        release: "2010 . 06 . 24",
         models: [
             {name: "GSM", type: "A1332"},
             {name: "CDMA", type: "A1349"},
@@ -352,7 +352,7 @@ export default [
         slogan: "The most amazing iPhone yet.",
         isNew: false,
         active: false,
-        release: "2011_10_14",
+        release: "2011 . 10 . 14",
         models: [],
         network: ["GSM", "CDMA", "3G", "3G+", "HSUPA"],
         height: 115.2,
@@ -448,7 +448,7 @@ export default [
         slogan: "Loving it is easy. That's why so many people do. The biggest thing to happen to iPhone since iPhone.",
         isNew: false,
         active: false,
-        release: "2012_09_21",
+        release: "2012 . 09 . 21",
         models: [],
         network: ["GSM", "CDMA", "3G", "EVDO", "HSPA+", "LTE"],
         height: 123.8,
@@ -544,7 +544,7 @@ export default [
         slogan: "For the colorful",
         isNew: false,
         active: false,
-        release: "2013_09_20",
+        release: "2013 . 09 . 20",
         models: [
             {name: "", type: "A1456"},
             {name: "", type: "A1507"},
@@ -649,7 +649,7 @@ export default [
         slogan: "You're more powerful than you think. Forward thinking",
         isNew: false,
         active: false,
-        release: "2013_09_20",
+        release: "2013 . 09 . 20",
         models: [
             {name: "中东", type: "A1457"},
             {name: "国内", type: "A1518"},
@@ -754,7 +754,7 @@ export default [
         slogan: "Bigger than bigger. The two and only",
         isNew: false,
         active: false,
-        release: "2014_09_16",
+        release: "2014 . 09 . 16",
         models: [
             {name: "美", type: "A1549"},
             {name: "", type: "A1586"},
@@ -856,7 +856,7 @@ export default [
         slogan: "Bigger than bigger. The two and only",
         isNew: false,
         active: false,
-        release: "2014_09_16",
+        release: "2014 . 09 . 16",
         models: [
             {name: "美", type: "A1522"},
             {name: "", type: "A1524"},
@@ -958,7 +958,7 @@ export default [
         slogan: "The only thing that’s changed is everything. One powerful phone",
         isNew: false,
         active: false,
-        release: "2015_09_25",
+        release: "2015 . 09 . 25",
         models: [
             {name: "美", type: "A1633"},
             {name: "", type: "A1688"},
@@ -1061,7 +1061,7 @@ export default [
         slogan: "The only thing that’s changed is everything. One powerful phone",
         isNew: false,
         active: false,
-        release: "2015_09_25",
+        release: "2015 . 09 . 25",
         models: [
             {name: "美", type: "A1634"},
             {name: "", type: "A1687"},
@@ -1164,7 +1164,7 @@ export default [
         slogan: "A big step for small.",
         isNew: false,
         active: false,
-        release: "2016_03_31",
+        release: "2016 . 03 . 31",
         models: [
             {name: "美，加", type: "A1662"},
             {name: "Sprint", type: "A1723"},
@@ -1268,7 +1268,7 @@ export default [
         slogan: "This is 7",
         isNew: false,
         active: false,
-        release: "2016_09_16",
+        release: "2016 . 09 . 16",
         models: [
             {name: "Qualcomm", type: "A1660"},
             {name: "英特尔", type: "A1778"},
@@ -1373,7 +1373,7 @@ export default [
         slogan: "This is 7",
         isNew: false,
         active: false,
-        release: "2016_09_16",
+        release: "2016 . 09 . 16",
         models: [
             {name: "Qualcomm", type: "A1661"},
             {name: "英特尔", type: "A1784"},
@@ -1492,7 +1492,7 @@ export default [
         slogan: "A new generation of iPhone",
         isNew: false,
         active: false,
-        release: "2017_09_22",
+        release: "2017 . 09 . 22",
         models: [
             {name: "Qualcomm", type: "A1863"},
             {name: "英特尔", type: "A1905"},
@@ -1595,7 +1595,7 @@ export default [
         slogan: "A new generation of iPhone",
         isNew: false,
         active: false,
-        release: "2017_09_22",
+        release: "2017 . 09 . 22",
         models: [
             {name: "Qualcomm", type: "A1864"},
             {name: "英特尔", type: "A1907"},
@@ -1713,7 +1713,7 @@ export default [
         slogan: "Say hello to the future.",
         isNew: false,
         active: false,
-        release: "2017_11_03",
+        release: "2017 . 11 . 03",
         models: [
             {name: "Qualcomm", type: "A1865"},
             {name: "英特尔", type: "A1901"},
@@ -1826,7 +1826,7 @@ export default [
         slogan: "Welcome to the big screens.",
         isNew: false,
         active: false,
-        release: "2018_09_21",
+        release: "2018 . 09 . 21",
         models: [
             {name: "", type: "A1920"},
             {name: "", type: "A2097"},
@@ -1946,7 +1946,7 @@ export default [
         slogan: "Welcome to the big screens.",
         isNew: false,
         active: false,
-        release: "2018_09_21",
+        release: "2018 . 09 . 21",
         models: [
             {name: "", type: "A1921"},
             {name: "", type: "A2101"},
@@ -2066,7 +2066,7 @@ export default [
         slogan: "Brilliant. In every way. Make room for color.",
         isNew: false,
         active: false,
-        release: "2018_10_26",
+        release: "2018 . 10 . 26",
         models: [
             {name: "", type: "A1984"},
             {name: "", type: "A2105"},
@@ -2173,7 +2173,7 @@ export default [
         slogan: "Just the right amount of everything.",
         isNew: false,
         active: false,
-        release: "2019_09_20",
+        release: "2019 . 09 . 20",
         models: [
             {name: "", type: "A2160"},
             {name: "", type: "A2217"},
@@ -2295,7 +2295,7 @@ export default [
         slogan: "And then there was Pro. Pro Cameras. Pro Display. Pro Performance.",
         isNew: false,
         active: false,
-        release: "2019_09_20",
+        release: "2019 . 09 . 20",
         models: [
             {name: "", type: "A2160"},
             {name: "", type: "A2217"},
@@ -2419,7 +2419,7 @@ export default [
         slogan: "And then there was Pro. Pro Cameras. Pro Display. Pro Performance.",
         isNew: false,
         active: false,
-        release: "2019_09_20",
+        release: "2019 . 09 . 20",
         models: [
             {name: "", type: "A2161"},
             {name: "", type: "A2220"},
@@ -2542,7 +2542,7 @@ export default [
         slogan: "Lots to love. Less to spend.",
         isNew: false,
         active: false,
-        release: "2020_04_24",
+        release: "2020 . 04 . 24",
         models: [
             {name: "美，加", type: "A2275"},
             {name: "", type: "A2296"},
@@ -2645,7 +2645,7 @@ export default [
         slogan: "Blast past fast.",
         isNew: false,
         active: false,
-        release: "2020_10_23",
+        release: "2020 . 10 . 23",
         models: [
             {name: "美国", type: "A2176"},
             {name: "加拿大/日本", type: "A2398"},
@@ -2768,7 +2768,7 @@ export default [
         slogan: "Blast past fast.",
         isNew: false,
         active: false,
-        release: "2020_10_23",
+        release: "2020 . 10 . 23",
         models: [
             {name: "美国", type: "A2172"},
             {name: "加拿大/日本", type: "A2402"},
@@ -2891,7 +2891,7 @@ export default [
         slogan: "It's a leap year.",
         isNew: false,
         active: false,
-        release: "2020_10_23",
+        release: "2020 . 10 . 23",
         models: [
             {name: "美国", type: "A2341"},
             {name: "加拿大/日本", type: "A2406"},
@@ -3045,7 +3045,7 @@ export default [
         slogan: "It's a leap year.",
         isNew: false,
         active: false,
-        release: "2020_10_23",
+        release: "2020 . 10 . 23",
         models: [
             {name: "美国", type: "A2342"},
             {name: "加拿大/日本", type: "A2410"},
@@ -3199,7 +3199,7 @@ export default [
         slogan: "Your new superpower.",
         isNew: false,
         active: false,
-        release: "2021_09_15",
+        release: "2021 . 09 . 15",
         models: [
             {name: "国内", type: "A2629"},
             {name: "", type: "A2481"},
@@ -3325,7 +3325,7 @@ export default [
         slogan: "Your new superpower.",
         isNew: false,
         active: false,
-        release: "2021_09_15",
+        release: "2021 . 09 . 15",
         models: [
             {name: "国内", type: "A2634"},
             {name: "", type: "A2482"},
@@ -3455,7 +3455,7 @@ export default [
         slogan: "Oh. So. Pro.",
         isNew: false,
         active: false,
-        release: "2021_09_15",
+        release: "2021 . 09 . 15",
         models: [
             {name: "国内", type: "A2639"},
             {name: "", type: "A2483"},
@@ -3607,7 +3607,7 @@ export default [
         slogan: "Oh. So. Pro.",
         isNew: false,
         active: false,
-        release: "2021_09_15",
+        release: "2021 . 09 . 15",
         models: [
             {name: "国内", type: "A2644"},
             {name: "", type: "A2484"},
@@ -3759,7 +3759,7 @@ export default [
         slogan: "Love the power. Love the price.",
         isNew: false,
         active: false,
-        release: "2022_03_18",
+        release: "2022 . 03 . 18",
         models: [
             {name: "国际 ", type: "A2783"},
             {name: "北美洲", type: "A2595"},
@@ -3865,9 +3865,9 @@ export default [
         isTitleOnly: false,
         pic: "https://diary-container.kylebing.cn/Fp7SAUS5RU_RFLpe5zeWEA4eAcOP",
         slogan: "Big and bigger.",
-        isNew: true,
+        isNew: false,
         active: true,
-        release: "2022_09_08",
+        release: "2022 . 09 . 08",
         models: [
             {name: "A2649", type: ""},
             {name: "A2881", type: ""},
@@ -3995,9 +3995,9 @@ export default [
         isTitleOnly: false,
         pic: "https://diary-container.kylebing.cn/FpZNenwa7MlTI4ytGQzPZ1BHc2EB",
         slogan: "Big and bigger.",
-        isNew: true,
+        isNew: false,
         active: true,
-        release: "2022_09_08",
+        release: "2022 . 09 . 08",
         models: [
             {name: "A2632", type: ""},
             {name: "A2885", type: ""},
@@ -4125,9 +4125,9 @@ export default [
         isTitleOnly: false,
         pic: "https://diary-container.kylebing.cn/Fma1VhVCS_cAJHIK5dvVPA8-9R__",
         slogan: "Pro. Beyond.",
-        isNew: true,
+        isNew: false,
         active: true,
-        release: "2022_09_08",
+        release: "2022 . 09 . 08",
         models: [
             {name: "A2650", type: ""},
             {name: "A2889", type: ""},
@@ -4278,9 +4278,9 @@ export default [
         isTitleOnly: false,
         pic: "https://diary-container.kylebing.cn/Fma1VhVCS_cAJHIK5dvVPA8-9R__",
         slogan: "Pro. Beyond.",
-        isNew: true,
+        isNew: false,
         active: true,
-        release: "2022_09_08",
+        release: "2022 . 09 . 08",
         models: [
             {name: "A2651", type: ""},
             {name: "A2893", type: ""},
@@ -4424,5 +4424,63 @@ export default [
         },
         price: "",
     },
+
+    {
+        name: "iPhone 15",
+        name_short: "15",
+        hardwareName: 'iPhone16,2',
+        isTitleOnly: true,
+        slogan: "2023-09",
+        isNew: true,
+        active: true,
+        release: "2022/09/08",
+        geekbenchScore: {
+            single: 1874,
+            multi: 5376
+        },
+    },
+    {
+        name: "iPhone 15 Plus",
+        name_short: "15 Plus",
+        hardwareName: 'iPhone16,2',
+        isTitleOnly: true,
+        slogan: "2023-09",
+        isNew: true,
+        active: true,
+        release: "2022/09/08",
+        geekbenchScore: {
+            single: 1874,
+            multi: 5376
+        },
+    },
+    {
+        name: "iPhone 15 Pro",
+        name_short: "15 Pro",
+        hardwareName: 'iPhone16,2',
+        isTitleOnly: true,
+        slogan: "2023-09",
+        isNew: true,
+        active: true,
+        release: "2022/09/08",
+        geekbenchScore: {
+            single: 1874,
+            multi: 5376
+        },
+    },
+    {
+        name: "iPhone 15 Pro Max",
+        name_short: "15 Pro Max",
+        hardwareName: 'iPhone16,2',
+        isTitleOnly: true,
+        slogan: "2023-09",
+        isNew: true,
+        active: true,
+        release: "2022/09/08",
+        geekbenchScore: {
+            single: 1874,
+            multi: 5376
+        },
+    },
+
 
 ].reverse()
