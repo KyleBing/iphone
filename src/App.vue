@@ -165,16 +165,32 @@
                     </section>
 
                     <section class="camera">
-                        <SvgCamera3
-                            v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.back.length === 4"
+                        <SvgCamera1
+                            v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.type === '1'"
+                            :iphone="iphone"
+                        />
+                        <SvgCamera2VerticalSimple
+                            v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.type === '2-vertical-simple'"
+                            :iphone="iphone"
+                        />
+                        <SvgCamera2PortraitSimple
+                            v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.type === '2-portrait-simple'"
+                            :iphone="iphone"
+                        />
+                        <SvgCamera2Vertical
+                            v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.type === '2-vertical'"
                             :iphone="iphone"
                         />
                         <SvgCamera2Cross
-                            v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.back.length === 2"
+                            v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.type === '2-cross'"
                             :iphone="iphone"
                         />
-                        <SvgCamera1
-                            v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.back.length === 1"
+                        <SvgCamera3
+                            v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.type === '3'"
+                            :iphone="iphone"
+                        />
+                        <SvgCamera3Rader
+                            v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.type === '3-rader'"
                             :iphone="iphone"
                         />
                     </section>
@@ -202,9 +218,17 @@ import SimItem from "@/parts/SimItem.vue";
 import SvgCamera3 from "@/svg/SvgCamera3";
 import SvgCamera2Cross from "@/svg/SvgCamera2Cross";
 import SvgCamera1 from "@/svg/SvgCamera1";
+import SvgCamera2Vertical from "@/svg/SvgCamera2Vertical";
+import SvgCamera2PortraitSimple from "@/svg/SvgCamera2PortraitSimple";
+import SvgCamera2VerticalSimple from "@/svg/SvgCamera2VerticalSimple";
+import SvgCamera3Rader from "@/svg/SvgCamera3Rader";
 
 export default {
     components: {
+        SvgCamera3Rader,
+        SvgCamera2VerticalSimple,
+        SvgCamera2PortraitSimple,
+        SvgCamera2Vertical,
         SvgCamera1,
         SvgCamera2Cross,
         SvgCamera3, SimItem, StorageItem, Port, SvgScreen, FilterList, Share, About, iPhoneFooter},

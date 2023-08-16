@@ -1,5 +1,4 @@
 <template>
-
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 180">
         <title>svg-camera-2-vertical-simple</title>
         <g id="图层_2" data-name="图层 2">

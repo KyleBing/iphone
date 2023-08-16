@@ -53,49 +53,17 @@ export default [
             hdr: false,
         },
         cameras: {
-            front: {
-                name: '默认',
-                model: 'Sony IMX703 1.9μm',
-                aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
-                zoomRate: '',
-            },
+            type: '1',
+            front: null,
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    model: '',
                     aperture: '',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
+                    pixelCount: '200万',
                     zoomRate: ''
-                },
+                }
             ]
         },
         colors: [
@@ -165,49 +133,17 @@ export default [
             hdr: false,
         },
         cameras: {
-            front: {
-                name: '默认',
-                model: 'Sony IMX703 1.9μm',
-                aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
-                zoomRate: '',
-            },
+            type: '1',
+            front: null,
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    model: '',
                     aperture: '',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
+                    pixelCount: '200万',
                     zoomRate: ''
-                },
+                }
             ]
         },
         colors: [
@@ -280,47 +216,15 @@ export default [
             hdr: false,
         },
         cameras: {
-            front: {
-                name: '默认',
-                model: 'Sony IMX703 1.9μm',
-                aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
-                zoomRate: '',
-            },
+            type: '1',
+            front: null,
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    model: '',
                     aperture: '',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
+                    pixelCount: '300万 VGA 30fps',
                     zoomRate: ''
                 },
             ]
@@ -395,48 +299,23 @@ export default [
             hdr: false,
         },
         cameras: {
+            type: '1',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
-                aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                model: '',
+                aperture: '',
+                focal: '',
+                pixelCount: '30万 VGA@30fps',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    model: '',
                     aperture: '',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
+                    pixelCount: '500万 720@30fps',
+                    zoomRate: '5'
                 },
             ]
         },
@@ -507,48 +386,23 @@ export default [
             hdr: false,
         },
         cameras: {
+            type: '1',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
-                aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                model: '',
+                aperture: '',
+                focal: '',
+                pixelCount: '30万 VGA@30fps 480p',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    model: 'Sony Exmor R IMX145',
                     aperture: '',
-                    focal: '',
-                    angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
+                    focal: 'ƒ/2.4',
+                    pixelCount: '800万 1080p@30 720@30fps',
+                    zoomRate: '5'
                 },
             ]
         },
@@ -619,47 +473,22 @@ export default [
             hdr: false,
         },
         cameras: {
+            type: '1',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
-                aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                model: '',
+                aperture: '',
+                focal: '',
+                pixelCount: '120万 720p',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
+                    model: 'Sony Exmor R IMX145',
+                    aperture: 'ƒ/2.4',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
+                    pixelCount: '800万 1080p@30',
                     zoomRate: ''
                 },
             ]
@@ -738,47 +567,22 @@ export default [
             hdr: false,
         },
         cameras: {
+            type: '1',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
-                aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                model: '',
+                aperture: '',
+                focal: '',
+                pixelCount: '120万 720p',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
+                    model: 'Sony Exmor R IMX145',
+                    aperture: 'ƒ/2.4',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
+                    pixelCount: '800万 1080p@30',
                     zoomRate: ''
                 },
             ]
@@ -861,49 +665,24 @@ export default [
             hdr: false,
         },
         cameras: {
+            type: '1',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
-                aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                model: '1.9μm',
+                aperture: 'ƒ/2.4',
+                focal: '',
+                pixelCount: '120万 720p HDR',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
+                    model: 'Custom Sony Exmor RS',
+                    aperture: 'ƒ/2.2',
+                    focal: '30mm',
+                    pixelCount: '800万 1080p@30,720p@120',
                     zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
-                    focal: '',
-                    angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
-                },
+                }
             ]
         },
         colors: [
@@ -979,47 +758,22 @@ export default [
             hdr: false,
         },
         cameras: {
+            type: '1',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '',
+                pixelCount: '120万 1280x960px 720@30 HDR',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
+                    model: '800万 3264×2448px ',
+                    aperture: 'ƒ/2.2',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
+                    pixelCount: '1080p@60 720p@240 HDR',
                     zoomRate: ''
                 },
             ]
@@ -1097,47 +851,22 @@ export default [
             hdr: false,
         },
         cameras: {
+            type: '1',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '',
+                pixelCount: '120万 1280x960px 720@30 HDR',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
+                    model: '800万 3264×2448px ',
+                    aperture: 'ƒ/2.2',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
+                    pixelCount: '1080p@60 720p@240 HDR',
                     zoomRate: ''
                 },
             ]
@@ -1214,49 +943,24 @@ export default [
             touch3D: true
         },
         cameras: {
+            type: '1',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '',
+                pixelCount: '500万 720p HDR',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
+                    model: 'Sony Exmor RS IMX315 1.22μm',
+                    aperture: 'ƒ/2.2',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
+                    pixelCount: '1200万 4K@30 1080@60 720@240',
                     zoomRate: ''
-                },
+                }
             ]
         },
         colors: [
@@ -1332,49 +1036,24 @@ export default [
             touch3D: true
         },
         cameras: {
+            type: '1',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '',
+                pixelCount: '500万 720p HDR',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
+                    model: 'Sony Exmor RS IMX315 1.22μm',
+                    aperture: 'ƒ/2.2',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
+                    pixelCount: '1200万 4K@30 1080@60 720@240',
                     zoomRate: ''
-                },
+                }
             ]
         },
         colors: [
@@ -1569,47 +1248,22 @@ export default [
             touch3D: true
         },
         cameras: {
+            type: '1',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '',
+                pixelCount: '700万 1080p HDR',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
+                    model: '2nd Sony Exmor RS',
+                    aperture: 'ƒ/1.8',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
+                    pixelCount: '1200万 4k@30 1080p@60 720@240',
                     zoomRate: ''
                 },
             ]
@@ -1689,48 +1343,31 @@ export default [
             touch3D: true
         },
         cameras: {
+            type: '2-portrait-simple',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '',
+                pixelCount: '700万 1080p HDR',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
+                    model: '2nd Sony Exmor RS',
+                    aperture: 'ƒ/1.8',
+                    focal: '',
+                    pixelCount: '1200万 4k@30 1080p@60 720@240',
                     zoomRate: ''
                 },
                 {
                     name: '远焦',
-                    model: 'Sony IMX713 1μm',
+                    model: '2nd Sony Exmor RS',
                     aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
+                    pixelCount: '1200万, ',
+                    zoomRate: 'x2物理变焦 x10数码变焦'
                 },
             ]
         },
@@ -1809,47 +1446,22 @@ export default [
             touch3D: true
         },
         cameras: {
+            type: '1',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '',
+                pixelCount: '700万 1080p HDR',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
+                    model: '',
+                    aperture: 'ƒ/1.8',
                     focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
-                    focal: '',
-                    angel: '',
-                    pixelCount: '',
+                    pixelCount: '1200万 4k@30 1080p@120 720p@240',
                     zoomRate: ''
                 },
             ]
@@ -1927,48 +1539,31 @@ export default [
             touch3D: true
         },
         cameras: {
+            type: '2-portrait-simple',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '',
+                pixelCount: '700万 1080p HDR',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
+                    model: '',
+                    aperture: 'ƒ/1.8',
                     focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
+                    pixelCount: '1200万 4k@30 1080p@120 720p@240',
                     zoomRate: ''
                 },
                 {
                     name: '远焦',
-                    model: 'Sony IMX713 1μm',
+                    model: '',
                     aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
+                    pixelCount: '1200万, ',
+                    zoomRate: 'x2物理变焦，x10数码变焦'
                 },
             ]
         },
@@ -2046,49 +1641,32 @@ export default [
             touch3D: true
         },
         cameras: {
+            type: '2-vertical-simple',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '',
+                pixelCount: '700万 1080p HDR',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
+                    model: '',
+                    aperture: 'ƒ/1.8',
+                    focal: '',
+                    pixelCount: '1200万 4K@60 1080p@240',
                     zoomRate: ''
                 },
                 {
                     name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
+                    model: '',
+                    aperture: 'ƒ/2.4',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
-                },
+                    pixelCount: '1200万 4K@60 1080p@240',
+                    zoomRate: 'x2物理变焦，x10数码变焦'
+                }
             ]
         },
         colors: [
@@ -2164,49 +1742,32 @@ export default [
             hdr: true,
         },
         cameras: {
+            type: '2-vertical-simple',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '',
+                pixelCount: '700万 1080p HDR',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
+                    model: 'Sony Exmor IMX333-Inspired 1.4μm',
+                    aperture: 'ƒ/1.8',
+                    focal: '',
+                    pixelCount: '1200万 4K@60 1080p@240',
                     zoomRate: ''
                 },
                 {
                     name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    model: '',
                     aperture: '',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
-                },
+                    pixelCount: '1200万 4K@60 1080p@240',
+                    zoomRate: 'x2物理变焦，x10数码变焦'
+                }
             ]
         },
         colors: [
@@ -2287,49 +1848,32 @@ export default [
             hdr: true,
         },
         cameras: {
+            type: '2-vertical-simple',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '',
+                pixelCount: '700万 1080p HDR',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
+                    model: 'Sony Exmor IMX333-Inspired 1.4μm',
+                    aperture: 'ƒ/1.8',
+                    focal: '',
+                    pixelCount: '1200万 4K@60 1080p@240',
                     zoomRate: ''
                 },
                 {
                     name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    model: '',
                     aperture: '',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
-                    zoomRate: ''
-                },
+                    pixelCount: '1200万 4K@60 1080p@240',
+                    zoomRate: 'x2物理变焦，x10数码变焦'
+                }
             ]
         },
         colors: [
@@ -2411,47 +1955,22 @@ export default [
             hdr: false,
         },
         cameras: {
+            type: '1',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '',
+                pixelCount: '700万 1080p HDR',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: ''
-                },
-                {
-                    name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
-                    aperture: '',
+                    model: 'Sony Exmor IMX333-Inspired 1.4μm',
+                    aperture: 'ƒ/1.8',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
+                    pixelCount: '1200万 4K@60 1080p@240',
                     zoomRate: ''
                 },
             ]
@@ -2532,47 +2051,30 @@ export default [
             hdr: false,
         },
         cameras: {
+            type: '2-vertical',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
                 focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                pixelCount: '1200万 1080p@60 HDR',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
-                    focal: '26mm',
-                    pixelCount: '1200万 4000x3000px',
+                    model: '1.4μm',
+                    aperture: 'ƒ/1.8',
+                    focal: '',
+                    pixelCount: '1200万 4K@60 1080p@240',
                     zoomRate: ''
                 },
                 {
                     name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
-                },
-                {
-                    name: '雷达',
-                    model: 'Sony IMX590 TOF 3D LiDAR',
+                    model: '',
                     aperture: '',
                     focal: '',
-                    angel: '',
-                    pixelCount: '',
+                    pixelCount: '1200万, ',
                     zoomRate: ''
                 },
             ]
@@ -2657,39 +2159,40 @@ export default [
             hdr: true,
         },
         cameras: {
+            type: '3',
             front: {
                 name: '默认',
-                model: 'Sony IMX703 1.9μm',
+                model: '',
                 aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '1200万 4000x3000px',
+                focal: '23mm',
+                pixelCount: '1200万',
                 zoomRate: '',
             },
             back: [
                 {
                     name: '默认',
-                    model: 'Sony IMX703 1.9μm',
-                    aperture: 'ƒ/1.5',
+                    model: '1.4μm',
+                    aperture: 'ƒ/1.8',
                     focal: '26mm',
                     pixelCount: '1200万 4000x3000px',
                     zoomRate: ''
                 },
                 {
                     name: '远焦',
-                    model: 'Sony IMX713 1μm',
-                    aperture: 'ƒ/2.8',
-                    focal: '77mm',
-                    pixelCount: '1200万, ',
-                    zoomRate: ''
+                    model: '1μm',
+                    aperture: 'ƒ/2.0',
+                    focal: '52mm',
+                    pixelCount: '1200万',
+                    zoomRate: 'x2 物理变焦'
                 },
                 {
                     name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.8',
+                    model: '1μm',
+                    aperture: 'ƒ/2.4',
                     focal: '13mm',
                     angel: '120',
-                    pixelCount: '1200万 4000x3000px',
-                    zoomRate: '3'
+                    pixelCount: '1200万',
+                    zoomRate: ''
                 },
                 {
                     name: '雷达',

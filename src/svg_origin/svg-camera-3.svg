@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 180">
+  <title>svg-camera-3</title>
+  <g id="图层_2" data-name="图层 2">
+    <g id="图层_1-2" data-name="图层 1">
+      <g id="svg-camera-3">
+        <rect id="frame" class="cls-1" width="370" height="180"/>
+        <rect class="cls-2" x="18" y="44" width="102" height="102" rx="26"/>
+        <path class="cls-3"
+              d="M94,45a25,25,0,0,1,25,25v50a25,25,0,0,1-25,25H44a25,25,0,0,1-25-25V70A25,25,0,0,1,44,45H94m0-2H44A27,27,0,0,0,17,70v50a27,27,0,0,0,27,27H94a27,27,0,0,0,27-27V70A27,27,0,0,0,94,43Z"/>
+        <circle class="cls-4" cx="93" cy="95.25" r="18.5"/>
+        <path d="M93,78.25a17,17,0,1,1-17,17,17,17,0,0,1,17-17m0-3a20,20,0,1,0,20,20,20,20,0,0,0-20-20Z"/>
+        <circle class="cls-4" cx="45.5" cy="71.75" r="18.5"/>
+        <path d="M45.5,54.75a17,17,0,1,1-17,17,17,17,0,0,1,17-17m0-3a20,20,0,1,0,20,20,20,20,0,0,0-20-20Z"/>
+        <circle class="cls-4" cx="45.5" cy="118.75" r="18.5"/>
+        <path d="M45.5,101.75a17,17,0,1,1-17,17,17,17,0,0,1,17-17m0-3a20,20,0,1,0,20,20,20,20,0,0,0-20-20Z"/>
+        <polyline id="标线" class="cls-5" points="165.75 50.5 71.5 50.5 61.5 58.5"/>
+        <line id="标线-2" data-name="标线" class="cls-5" x1="115" y1="92.5" x2="165.75" y2="92.5"/>
+        <line id="标线-3" data-name="标线" class="cls-5" x1="165.75" y1="133.5" x2="62" y2="133.5"/>
+        <text class="cls-6" transform="translate(183.38 52.12)">远焦</text>
+        <text class="cls-6" transform="translate(183.38 94.12)">广角</text>
+        <text class="cls-6" transform="translate(183.38 138.12)">默认</text>
+        <text class="cls-7" transform="translate(224.67 35.73)">
+          {{iphone.cameras.back[0].model}}
+          <tspan x="0" y="12">{{iphone.cameras.back[0].focal}}</tspan>
+          <tspan x="0" y="24">{{iphone.cameras.back[0].pixelCount}}</tspan>
+        </text>
+        <text class="cls-7" transform="translate(224.67 79.73)">
+          {{iphone.cameras.back[1].model}}
+          <tspan x="0" y="12">{{iphone.cameras.back[1].focal}}</tspan>
+          <tspan x="0" y="24">{{iphone.cameras.back[1].pixelCount}}</tspan>
+        </text>
+        <text class="cls-7" transform="translate(224.67 123.73)">
+          {{iphone.cameras.back[2].model}}
+          <tspan x="0" y="12">{{iphone.cameras.back[2].focal}}</tspan>
+          <tspan x="0" y="24">{{iphone.cameras.back[2].pixelCount}}</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

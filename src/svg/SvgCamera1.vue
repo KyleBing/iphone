@@ -11,7 +11,7 @@
                     <circle class="cls-4" cx="76" cy="63" r="18.5"/>
                     <path d="M76,46A17,17,0,1,1,59,63,17,17,0,0,1,76,46m0-3A20,20,0,1,0,96,63,20,20,0,0,0,76,43Z"/>
                     <line id="标线" class="cls-5" x1="166.75" y1="63.5" x2="99" y2="63.5"/>
-                    <text class="cls-6" transform="translate(183.38 66.12)">远焦</text>
+                    <text class="cls-6" transform="translate(183.38 66.12)">默认</text>
                     <text class="cls-7" transform="translate(224.67 49.73)">
                         {{iphone.cameras.back[0].model}}
                         <tspan x="0" y="12">{{iphone.cameras.back[0].focal}}</tspan>
