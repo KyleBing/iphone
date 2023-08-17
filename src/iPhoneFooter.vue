@@ -2,6 +2,7 @@
     <footer>
         <p>2020-10-20 ~ {{dateLastUpdate}}</p>
         <p><a class="link" target="_blank" href="https://github.com/KyleBing/iphone">https://github.com/KyleBing/iphone</a></p>
+        <p>官方机型对比：<a href="https://www.apple.com.cn/iphone/compare/">https://www.apple.com.cn/iphone/compare/</a></p>
     </footer>
 </template>
 <script>
