@@ -14,51 +14,19 @@ body{
   background-color: white;
   margin: 0 auto;
   //max-width: 1500px;
-  padding: 30px 30px 50px 30px;
+  padding: 0 30px 0 30px;
   @media (max-width: 768px){
     padding: 20px 10px;
   }
 }
 // LEVEL 1
 .iphone{
-  padding: 20px 0;
+  border-bottom: 1px solid $color-border;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   .content-frame{
     flex-grow: 1;
-  }
-}
-
-// LEVEL 2
-.title-content{
-  padding-bottom: 5px;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  border-bottom: 1px solid $color-border-title;
-  font-family: 'Galvji', sans-serif;
-  .title{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 1.3rem;
-    color: $text-main;
-    font-weight: bold;
-    &.is-new{
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      //background-image: linear-gradient(to top right, #ff31d1, #00ceff);
-      background-image: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
-    }
-  }
-  .slogan{
-    font-weight: 200;
-    letter-spacing: 0.3px;
-    font-size: .8rem;
-    color: $text-second;
   }
 }
 
@@ -68,7 +36,7 @@ body{
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
-  padding: 30px 0;
+  padding: 80px 0;
   > * {
     margin-right: 40px;
     &:last-child{
@@ -84,42 +52,24 @@ body{
   flex-flow: row nowrap;
 }
 
-.image{
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 30px;
-  margin-right: 40px;
-}
 
-.img-frame{
-  flex-shrink: 0;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-
-  img{
-    height: 150px;
-    display: block;
-  }
-}
 
 .main-ref{
   padding: 5px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-flow: column nowrap;
 }
 
 .main-ref-item{
+  padding: 6px 0;
   flex-grow: 0;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   white-space: nowrap;
   .label{
-    font-size: 0.8rem;
+    font-size: $fz-m;
     color: $text-main;
     margin-right: 15px;
   }
@@ -149,6 +99,7 @@ body{
 }
 
 .screen{
+  width: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,6 +176,8 @@ body{
   }
 }
 
+
+
 .tip{
   text-align: center;
   font-family: sans-serif;
@@ -270,22 +223,6 @@ body{
   }
 }
 
-.score-bar{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 20px;
-  .bar{
-    @include border-radius(2px);
-    height: 5px;
-    background: $gradient-bg-green
-  }
-  .score{
-    font-family: "sans-serif";
-    margin-left: 5px;
-    font-size: $fz-tiny;
-  }
-}
 
 
 .colors{
@@ -350,6 +287,8 @@ body{
 
 .camera {
   flex-grow: 2;
+  display: flex;
+  align-items: center;
   svg{
     height: 190px;
   }

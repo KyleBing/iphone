@@ -28,15 +28,6 @@ $dark-border-light: lighten(black, 60%);
   }
 
   .iphone{
-    .title-content{
-      border-bottom-color: $dark-border;
-      .title{
-        color: $dark-text-title;
-      }
-      .slogan{
-        color: $dark-text-subtitle;
-      }
-    }
 
     .main-ref{
       .label{
@@ -158,10 +149,6 @@ $dark-border-light: lighten(black, 60%);
       margin-bottom: 20px;
       padding: 0;
       border: 1px solid $dark-border !important;
-    }
-    .title-content{
-      border-bottom: 1px solid $color-border;
-      background-color: $dark-bg-highlight !important;
     }
     .ref-content{
       > *{

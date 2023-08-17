@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p>2020.10.20 ~ {{dateLastUpdate}}</p>
+        <p>2020-10-20 ~ {{dateLastUpdate}}</p>
         <p><a class="link" target="_blank" href="https://github.com/KyleBing/iphone">https://github.com/KyleBing/iphone</a></p>
     </footer>
 </template>

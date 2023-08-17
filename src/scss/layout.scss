@@ -14,20 +14,6 @@
       padding: 0;
       border: 1px solid $color-border;
     }
-    .title-content{
-      border-bottom: none;
-      border-bottom: 1px solid $color-border;
-      background-color: white;
-      padding: 15px;
-      justify-content: center;
-      .title{
-        font-size: 1.5rem;
-        font-weight: bold;
-      }
-      .slogan{
-        display: none;
-      }
-    }
     .ref-content{
       padding: 15px;
       flex-flow: column nowrap;
@@ -43,23 +29,13 @@
       padding-bottom: 20px;
       display: flex;
       flex-flow: column nowrap;
-      .image{
-        padding: 0 10px;
-        margin: 0;
-        .img-frame{
-          width: 100%;
-          padding: 0 40px;
-          img{
-            width: 80%;
-            height: 100%;
-          }
-        }
-      }
+
       .main-ref{
         margin-top: 20px;
         padding: 0;
         &-item{
-          margin-bottom: 10px;
+          padding: 5px 0;
+          margin-bottom: 5px;
         }
       }
     }

@@ -1,32 +1,13 @@
 <template>
     <div class="container">
         <About @toggleShare="toggleShare"/>
-        <FilterList
-            :iPhonesOrigin="iPhonesOrigin"
-            @updateShowingDevices="updateShowingDevices"
-        />
+        <FilterList :iPhonesOrigin="iPhonesOrigin" @updateShowingDevices="updateShowingDevices"/>
         <div class="iphone-list">
 
             <div class="iphone" v-for="(iphone, index) in iPhones" :key="index">
-                <div class="title-content">
-                    <div>
-                        <div :class="['title', {'is-new': iphone.isNew}]">{{iphone.name}}</div>
-                        <div class="score-bar" v-if="iphone.geekbenchScore.multi && !iphone.isTitleOnly">
-                            <div class="bar" :style="`width: ${iphone.geekbenchScore.multi / maxScore * 100}px`"></div>
-                            <div class="score">{{iphone.geekbenchScore.multi}}</div>
-                        </div>
-
-                    </div>
-                    <div class="slogan">{{iphone.slogan}}</div>
-                </div>
-
                 <div class="ref-content" v-if="!iphone.isTitleOnly">
                     <section class="main">
-                        <div class="image">
-                            <div class="img-frame">
-                                <img :src="iphone.pic" alt="icon">
-                            </div>
-                        </div>
+                        <iPhoneImage :maxScore="maxScore" :iphone="iphone"/>
                         <div class="main-ref">
                             <div class="main-ref-item">
                                 <div class="label">CPU</div>
@@ -44,6 +25,9 @@
                                     <span v-if="iphone.gpu.core"><i class="multiply">×</i> {{iphone.gpu.core}}</span>
                                 </div>
                             </div>
+
+
+
                             <div class="main-ref-item">
                                 <div class="label">内存</div>
                                 <div class="value" v-if="iphone.memory.length > 0" v-for="memory in iphone.memory">
@@ -68,11 +52,12 @@
                                 </div>
                             </div>
                             <div class="main-ref-item">
-                                <div class="label">日期</div>
+                                <div class="label">重量</div>
                                 <div class="value cyan">
-                                    <span>{{iphone.release}}</span>
+                                    <span>{{iphone.weight}} g</span>
                                 </div>
                             </div>
+
                         </div>
                     </section>
                     <section class="screen">
@@ -90,24 +75,12 @@
                                     />
                                 </div>
                             </div>
-                            <div class="detail-item" :class="[{active: tags.some(item => item === 'weight')}]">
-                                <div @click="tagToggle('weight')" class="detail-item-label">重量</div>
-                                <div class="detail-item-content">
-                                    <div class="tip">{{iphone.weight}} g</div>
-                                </div>
-                            </div>
+
                             <div class="detail-item" :class="[{active: tags.some(item => item === 'battery')}]">
                                 <div @click="tagToggle('battery')" class="detail-item-label">电池</div>
                                 <div class="detail-item-content">
                                     <div class="tip" v-if="iphone.battery">{{iphone.battery}} mah</div>
                                     <div class="tip" v-else>-</div>
-                                </div>
-                            </div>
-
-                            <div class="detail-item" :class="[{active: tags.some(item => item === 'sim')}]">
-                                <div @click="tagToggle('sim')" class="detail-item-label">SIM</div>
-                                <div class="detail-item-content">
-                                    <SimItem :itemInfo="sim" v-for="(sim, index) in iphone.sim" :key="index"/>
                                 </div>
                             </div>
                             <div class="detail-item" :class="[{active: tags.some(item => item === 'hardwareName')}]">
@@ -116,8 +89,6 @@
                                     <div class="tip">{{iphone.hardwareName}}</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="detail-list">
                             <div class="detail-item" :class="[{active: tags.some(item => item === 'os')}]">
                                 <div @click="tagToggle('os')" class="detail-item-label">系统</div>
                                 <div class="detail-item-content">
@@ -148,6 +119,12 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="detail-item" :class="[{active: tags.some(item => item === 'sim')}]">
+                                <div @click="tagToggle('sim')" class="detail-item-label">SIM</div>
+                                <div class="detail-item-content">
+                                    <SimItem :itemInfo="sim" v-for="(sim, index) in iphone.sim" :key="index"/>
+                                </div>
+                            </div>
                             <div class="detail-item" :class="[{active: tags.some(item => item === 'model')}]">
                                 <div @click="tagToggle('model')" class="detail-item-label">型号</div>
                                 <div class="detail-item-content" v-if="iphone.models.length">
@@ -164,7 +141,6 @@
 
                         </div>
                     </section>
-
                     <section class="camera">
                         <SvgCamera1
                             v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.type === '1'"
@@ -223,9 +199,11 @@ import SvgCamera2Vertical from "@/svg/SvgCamera2Vertical";
 import SvgCamera2PortraitSimple from "@/svg/SvgCamera2PortraitSimple";
 import SvgCamera2VerticalSimple from "@/svg/SvgCamera2VerticalSimple";
 import SvgCamera3Rader from "@/svg/SvgCamera3Rader";
+import iPhoneImage from "@/parts/iPhoneImage"
 
 export default {
     components: {
+        iPhoneImage,
         SvgCamera3Rader,
         SvgCamera2VerticalSimple,
         SvgCamera2PortraitSimple,

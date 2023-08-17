@@ -24,6 +24,7 @@ export default {
 <style scoped lang="scss">
 @import "src/scss/plugin";
 .sim-item{
+    font-family: sans-serif;
     min-width: 50px;
     margin-right: 5px;
     @include border-radius(3px);
