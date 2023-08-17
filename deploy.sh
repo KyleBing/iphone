@@ -1,8 +1,8 @@
 #!/bin/bash
-cd /usr/share/nginx/html/tools/ &&
+cd /var/www/html/tools/ &&
 rm -Rf iphone/* &&
-mv iphone-* iphone &&
+mv iphone-*.zip iphone &&
 cd iphone &&
 unzip iphone-* &&
-rm -f iphone-*
+rm -f iphone-*.zip
 echo 'iPhone deploy finished.'
