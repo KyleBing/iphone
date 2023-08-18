@@ -39,8 +39,10 @@ export default {
     cursor: pointer;
     padding: 1px 5px;
     @include border-radius(3px);
-    color: $text-value;
     margin-right: 10px;
+    border-color: transparent !important;
+    background-color: $bg-storage;
+    color: white;
     &:last-child{
         margin-right: 0;
     }
@@ -48,11 +50,6 @@ export default {
         border-color: $color-main;
         z-index: 100;
         display: none;
-    }
-    &.storage{
-        border-color: transparent !important;
-        background-color: $bg-storage;
-        color: white;
     }
 }
 
