@@ -14,14 +14,12 @@ if (process.env.NODE_ENV === 'production') {
       console.log('Service worker has been registered.')
     },
     cached () {
-      location.reload()
       console.log('Content has been cached for offline use.')
     },
     updatefound () {
       console.log('New content is downloading.')
     },
     updated () {
-      location.reload()
       console.log('New content is available; please refresh.')
     },
     offline () {
