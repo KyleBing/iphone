@@ -88,15 +88,16 @@ $gradient-bg-body: linear-gradient(180deg,#e2e2e2,#e5e5e5);
 
 
 // DARK
-$dark-bg: lighten(black, 15%);
-$dark-bg-highlight: lighten(black, 28%);
-$dark-bg-light: lighten(black, 24%);
+$dark-main-color: #070809;
+$dark-bg: lighten($dark-main-color, 15%);
+$dark-bg-highlight: lighten($dark-main-color, 28%);
+$dark-bg-light: lighten($dark-main-color, 24%);
 
 
 $dark-text: lighten(black, 65%);
-$dark-text-title: lighten(black, 85%);
+$dark-text-title: lighten(black, 90%);
 $dark-text-subtitle: lighten(black, 45%);
 
-$dark-border: lighten(black, 30%);
-$dark-border-light: lighten(black, 60%);
+$dark-border: lighten($dark-main-color, 30%);
+$dark-border-light: lighten($dark-main-color, 60%);
 

@@ -52,7 +52,7 @@ export default {
 @import "src/scss/plugin";
 .filter-list{
     background-color: $bg-highlight;
-    padding: 10px 30px 5px;
+    padding: 20px 30px 20px;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid $color-border;
@@ -65,7 +65,7 @@ export default {
         padding: 10px;
         .iphone-tag{
             border: 1px solid $color-border;
-            font-family: "Galvji";
+            font-family: "Galvji", sans-serif;
             background-color: white;
             white-space: nowrap;
             margin-bottom: 5px;

@@ -39,7 +39,7 @@ export default {
     align-items: center;
     padding-left: 30px;
     margin-right: 40px;
-    font-family: "Galvji";
+    font-family: "Galvji", sans-serif;
 }
 
 .img-frame {

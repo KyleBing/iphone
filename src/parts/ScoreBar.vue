@@ -1,9 +1,12 @@
 <template>
     <div class="score-bar" v-if="iphone.geekbenchScore.multi">
         <div class="bar-item" :style="`width: ${150}px`">
-            <div class="bar-current" :style="`width: ${iphone.geekbenchScore.multi / maxScore * 150}px`"></div>
+            <div class="bar-current" :style="`width: ${percentage * 150}px`"></div>
         </div>
-        <div class="score">{{iphone.geekbenchScore.multi}}</div>
+        <div class="score">
+            <span>{{ iphone.geekbenchScore.multi }}</span>
+            <span class="ml-2 percentage">{{ Math.floor((percentage * 100)).toFixed(0) }}%</span>
+        </div>
     </div>
 </template>
 
@@ -18,6 +21,11 @@ export default {
         maxScore: {
             type: Number,
             default: 0
+        }
+    },
+    computed: {
+        percentage(){
+            return this.iphone.geekbenchScore.multi / this.maxScore
         }
     }
 }
@@ -50,7 +58,11 @@ export default {
         font-family: "sans-serif";
         margin-left: 5px;
         font-size: $fz-sm;
+        .percentage{
+            color: $text-main;
+        }
     }
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -64,6 +76,9 @@ export default {
         .score{
             color: $dark-text;
             font-size: $fz-sm;
+            .percentage{
+                color: $dark-text;
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 <template>
-    <div class="about gradient">
+    <div class="about">
         <div class="about-header">
             <div class="icon">
                 <img style="display: none" src="./img/links/iphone_white@2x.png" alt="for 知乎链接图标抓取">
@@ -165,14 +165,14 @@ class WSMessage {
 @import "scss/plugin";
 // 关于
 .about{
-    font-family: 'Galvji';
+    font-family: 'Galvji', sans-serif;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 0.8rem;
     padding: 15px 35px;
-    background-color: white;
+    background-image: linear-gradient(to bottom right, lighten($dark-main-color, 20%), lighten($dark-main-color, 25%));
     a{
         &:hover{
             text-decoration: underline;
@@ -239,7 +239,7 @@ class WSMessage {
 }
 .author-info{
     cursor: pointer;
-    font-family: "Galvji";
+    font-family: "Galvji", sans-serif;
     margin-left: 30px;
     padding: 10px 15px;
     justify-content: space-between;
@@ -324,5 +324,12 @@ class WSMessage {
         display: none;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .about{
+        background-image: linear-gradient(to bottom right, lighten($dark-main-color, 20%), lighten($dark-main-color, 25%));
+    }
+}
+
 
 </style>
