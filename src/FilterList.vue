@@ -55,7 +55,7 @@ export default {
     padding: 10px 30px 5px;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid $dark-border;
+    border-bottom: 1px solid $color-border;
     .iphone-tag-list{
         @include border-radius(10px);
         max-width: 1440px;
