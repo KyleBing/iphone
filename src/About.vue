@@ -16,6 +16,8 @@
             </div>
         </div>
 
+<!--        <Ad3D/>-->
+
         <div class="copyright-group">
             <div class="share-links">
                 <a class="link-item" target="_blank" href="https://kylebing.cn/tools/ipad">
@@ -46,7 +48,9 @@
 import projInfo from '../package.json'
 import axios from "axios";
 import {mapMutations, mapState} from "vuex";
+import Ad3D from "@/ad/Ad3D";
 export  default {
+    components: {Ad3D},
     emits: ['toggleShare'],
     data(){
         return {
