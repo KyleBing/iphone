@@ -42,10 +42,9 @@ export default {
             top: 0;
             bottom: 0;
         }
-        background-color: white;
-        border: 1px solid $color-border;
+        background-color: $bg-highlight;
         @include border-radius(2px);
-        height: 5px;
+        height: 6px;
     }
     .score{
         font-family: "sans-serif";
@@ -58,7 +57,6 @@ export default {
     .score-bar{
         .bar-item{
             background-color: $dark-bg-highlight;
-            border: 1px solid $dark-border;
             .bar-current{
                 background: $gradient-bg-green;
             }
