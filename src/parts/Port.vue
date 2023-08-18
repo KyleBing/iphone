@@ -44,7 +44,22 @@ export default {
         height: 30px;
     }
     .label{
-        margin-left: 3px;
+        margin-left: 5px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .port-item{
+        img{
+            background-color: $dark-bg-highlight;
+            border-color: $dark-border;
+        }
+        &:hover{
+            img{
+                border-color: transparent;
+                background-color: white;
+            }
+        }
     }
 }
 

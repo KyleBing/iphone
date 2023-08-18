@@ -85,3 +85,18 @@ $gradient-bg-green: linear-gradient(135deg, $gradient-teal,#3dd9bd);
 $gradient-bg-purple: linear-gradient(135deg,#0D1387,#867AF6);
 $gradient-bg-red: linear-gradient(135deg,$gradient-tomato,$gradient-tangelo);
 $gradient-bg-body: linear-gradient(180deg,#e2e2e2,#e5e5e5);
+
+
+// DARK
+$dark-bg: lighten(black, 15%);
+$dark-bg-highlight: lighten(black, 28%);
+$dark-bg-light: lighten(black, 24%);
+
+
+$dark-text: lighten(black, 65%);
+$dark-text-title: lighten(black, 85%);
+$dark-text-subtitle: lighten(black, 45%);
+
+$dark-border: lighten(black, 30%);
+$dark-border-light: lighten(black, 60%);
+

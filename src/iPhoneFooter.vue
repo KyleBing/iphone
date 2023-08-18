@@ -47,5 +47,13 @@ footer{
     }
 }
 
+
+@media (prefers-color-scheme: dark) {
+    footer{
+        background-color: $dark-bg-light;
+    }
+}
+
+
 </style>
 

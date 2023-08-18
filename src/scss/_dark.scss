@@ -1,14 +1,3 @@
-$dark-bg: lighten(black, 15%);
-$dark-bg-highlight: lighten(black, 28%);
-$dark-bg-light: lighten(black, 24%);
-
-
-$dark-text: lighten(black, 65%);
-$dark-text-title: lighten(black, 75%);
-$dark-text-subtitle: lighten(black, 45%);
-
-$dark-border: lighten(black, 30%);
-$dark-border-light: lighten(black, 60%);
 
 
 @media (prefers-color-scheme: dark) {
@@ -20,6 +9,9 @@ $dark-border-light: lighten(black, 60%);
     background-color: $dark-bg;
   }
 
+  .iphone-list{
+    background-color: $dark-bg;
+  }
 
 
   // LABEL
@@ -28,7 +20,7 @@ $dark-border-light: lighten(black, 60%);
   }
 
   .iphone{
-
+    border-bottom-color: $dark-border;
     .main-ref{
       .label{
         color: $dark-text;
@@ -91,21 +83,6 @@ $dark-border-light: lighten(black, 60%);
   }
   text, tspan{
     fill: $dark-text-title
-  }
-
-  .filter-list{
-    .iphone-tag-list{
-      .iphone-tag{
-        border-color: $dark-border;
-        color: $dark-text;
-        background-color: $dark-bg;
-        &:hover{
-          background-color: $dark-bg-highlight;
-        }
-        &.active{
-        }
-      }
-    }
   }
 
 

@@ -7,7 +7,7 @@
             <div class="iphone" v-for="(iphone, index) in iPhones" :key="index">
                 <div class="ref-content" v-if="!iphone.isTitleOnly">
                     <section class="main">
-                        <iPhoneImage :maxScore="maxScore" :iphone="iphone"/>
+                        <iPhoneMainInfo :maxScore="maxScore" :iphone="iphone"/>
                         <div class="main-ref">
                             <div class="main-ref-item">
                                 <div class="label">CPU</div>
@@ -199,11 +199,11 @@ import SvgCamera2Vertical from "@/svg/SvgCamera2Vertical";
 import SvgCamera2PortraitSimple from "@/svg/SvgCamera2PortraitSimple";
 import SvgCamera2VerticalSimple from "@/svg/SvgCamera2VerticalSimple";
 import SvgCamera3Rader from "@/svg/SvgCamera3Rader";
-import iPhoneImage from "@/parts/iPhoneImage"
+import iPhoneMainInfo from "@/parts/iPhoneMainInfo"
 
 export default {
     components: {
-        iPhoneImage,
+        iPhoneMainInfo,
         SvgCamera3Rader,
         SvgCamera2VerticalSimple,
         SvgCamera2PortraitSimple,

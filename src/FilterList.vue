@@ -55,6 +55,7 @@ export default {
     padding: 10px 30px 5px;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid $dark-border;
     .iphone-tag-list{
         @include border-radius(10px);
         max-width: 1440px;
@@ -98,6 +99,26 @@ export default {
         }
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .filter-list{
+        border-bottom-color: $dark-border;
+        background-color: $dark-bg;
+        .iphone-tag-list{
+            .iphone-tag{
+                border-color: $dark-border;
+                color: $dark-text;
+                background-color: $dark-bg;
+                &:hover{
+                    background-color: $dark-bg-highlight;
+                }
+                &.active{
+                }
+            }
+        }
+    }
+}
+
 
 </style>
 

@@ -1,22 +1,21 @@
 <template>
-    <div class="image-container">
+    <div class="iphone-main-info">
         <div class="img-frame">
             <img :src="iphone.pic" alt="icon">
         </div>
-        <div class="score-bar" v-if="iphone.geekbenchScore.multi && !iphone.isTitleOnly">
-            <div class="bar" :style="`width: ${iphone.geekbenchScore.multi / maxScore * 100}px`"></div>
-            <div class="score">{{iphone.geekbenchScore.multi}}</div>
-        </div>
+
+        <ScoreBar :iphone="iphone" :max-score="maxScore"/>
         <div :class="['title', {'is-new': iphone.isNew}]">{{iphone.name}}</div>
         <div class="date">{{iphone.release}}</div>
         <div class="slogan">{{iphone.slogan}}</div>
-
     </div>
 </template>
 
 <script>
+import ScoreBar from "@/parts/ScoreBar";
 export default {
-    name: "iPhoneImage",
+    name: "iPhoneMainInfo",
+    components: {ScoreBar},
     props: {
         iphone: {
             type: Object,
@@ -32,7 +31,7 @@ export default {
 
 <style scoped lang="scss">
 @import "src/scss/plugin";
-.image-container{
+.iphone-main-info{
     width: 400px;
     display: flex;
     flex-flow: column nowrap;
@@ -44,6 +43,8 @@ export default {
 }
 
 .img-frame {
+    padding: 10px 20px;
+    @include border-radius(10px);
     flex-shrink: 0;
     display: flex;
     flex-flow: column nowrap;
@@ -54,7 +55,6 @@ export default {
         display: block;
     }
 }
-
 
 .title{
     font-weight: bold;
@@ -70,24 +70,6 @@ export default {
     }
 }
 
-
-.score-bar{
-    margin-top: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 20px;
-    .bar{
-        @include border-radius(2px);
-        height: 5px;
-        background: $gradient-bg-green
-    }
-    .score{
-        font-family: "sans-serif";
-        margin-left: 5px;
-        font-size: $fz-sm;
-    }
-}
 
 .date{
     margin-top: 5px;
@@ -110,9 +92,29 @@ export default {
 }
 
 @media (max-width: 450px) {
-    .image-container{
+    .iphone-main-info{
         padding-top: 40px;
         width: auto;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .title{
+        color: $dark-text-title;
+    }
+    .date{
+        color: $dark-text;
+    }
+    .img-frame{
+        background-color: white;
+    }
+    .slogan{
+        background-color: transparent;
+        border: 1px solid $dark-border;
+        color: $dark-text-subtitle;
+    }
+    .score-bar{
+
     }
 }
 

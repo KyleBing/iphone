@@ -52,4 +52,21 @@ export default {
         }
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .sim-item{
+        .name{
+            color: $dark-text;
+        }
+        .type{
+            color: $dark-text;
+        }
+        border: 1px solid $dark-border;
+        &:hover{
+            background-color: $dark-bg-highlight;
+        }
+    }
+
+}
+
 </style>
