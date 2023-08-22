@@ -101,3 +101,36 @@ $dark-text-subtitle: lighten(black, 45%);
 $dark-border: lighten($dark-main-color, 30%);
 $dark-border-light: lighten($dark-main-color, 60%);
 
+// DARK VALUES
+$dark-color: black;
+$dark-bg               : lighten($dark-color, 20%) ;
+$dark-bg-dark          : lighten($dark-color, 15%) ;
+$dark-bg-selector      : lighten($dark-color, 20%) ;
+$dark-bg-page-header   : lighten($dark-color, 35%) ;
+
+$dark-bg-nav           : lighten($dark-color, 10%) ;
+$dark-border-nav       : lighten($dark-color, 2%) ;
+
+$dark-bg-td            : lighten($dark-color, 23%);
+$dark-bg-td-even       : lighten($dark-color, 20%);
+$dark-bg-td-active     : lighten($dark-color, 30%);
+$dark-bg-bill-brief    : lighten($dark-color, 18%);
+
+$dark-border           : lighten($dark-color, 26%) ;
+$dark-border-active    : lighten($dark-color, 35%) ;
+
+$dark-menu-border      : lighten($dark-color, 28%)  ;
+$dark-list-header-bg   : lighten($dark-color, 14%) ;
+$dark-list-bg          : lighten($dark-color, 20%) ;
+$dark-list-bg-active   : lighten($dark-color, 23%) ;
+$dark-text-title       : lighten($dark-color, 85%) ;
+$dark-text             : lighten($dark-color, 70%) ;
+$dark-text-subtitle    : lighten($dark-color, 60%) ;
+
+$dark-text-header-date: lighten($dark-color, 80%) ;
+$dark-text-header-lunar: lighten($dark-color, 60%) ;
+
+$dark-text-bill-price  : lighten($dark-color, 80%) ;
+
+$dark-scroll-thumb     : lighten($dark-color, 30%) ;
+

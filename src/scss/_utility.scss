@@ -65,15 +65,31 @@
   -webkit-backdrop-filter: $value;
 }
 
-// 1像素
-@mixin divider-1px(){
-  content:'';
-  height: 1px;
-  display: block;
-  width: 100%;
-  position: absolute;
-  background-color: $color-border;
-  @include transform(scaleY(.5))
+
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
+.btn-like{
+  cursor: pointer;
+  @extend .unselectable;
+  &:active{
+    @include transform(translateY(2px))
+  }
+}
 
+.link{
+  &:hover{
+
+  }
+}
+
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}

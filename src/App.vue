@@ -1,9 +1,23 @@
 <template>
     <div class="container">
         <About @toggleShare="toggleShare"/>
-        <FilterList :iPhonesOrigin="iPhonesOrigin" @updateShowingDevices="updateShowingDevices"/>
-        <div class="iphone-list">
 
+        <transition
+            enter-active-class="animate__animated animate__slideInLeft"
+            leave-active-class="animate__animated animate__slideOutRight animate__fast"
+        >
+            <Donation @FlipPenal="flipPanel" v-if="isDocationShowed"/>
+        </transition>
+
+        <transition
+            enter-active-class="animate__animated animate__slideInLeft"
+            leave-active-class="animate__animated animate__slideOutRight animate__fast"
+        >
+            <FilterList @FlipPenal="flipPanel" v-if="!isDocationShowed"  :iPhonesOrigin="iPhonesOrigin" @updateShowingDevices="updateShowingDevices"/>
+        </transition>
+
+
+        <div class="iphone-list">
             <div class="iphone" v-for="(iphone, index) in iPhones" :key="index">
                 <div class="ref-content" v-if="!iphone.isTitleOnly">
                     <section class="main">
@@ -200,9 +214,11 @@ import SvgCamera2PortraitSimple from "@/svg/SvgCamera2PortraitSimple";
 import SvgCamera2VerticalSimple from "@/svg/SvgCamera2VerticalSimple";
 import SvgCamera3Rader from "@/svg/SvgCamera3Rader";
 import iPhoneMainInfo from "@/parts/iPhoneMainInfo"
+import Donation from "@/ad/Donation";
 
 export default {
     components: {
+        Donation,
         iPhoneMainInfo,
         SvgCamera3Rader,
         SvgCamera2VerticalSimple,
@@ -239,7 +255,9 @@ export default {
             shareQrCode: null,
             shareQrCodeQQ: null,
             linkAddress: 'http://kylebing.cn/tools/iphone/',
-            linkQQ: 'https://jq.qq.com/?_wv=1027&k=Z8E0HrWA'
+            linkQQ: 'https://jq.qq.com/?_wv=1027&k=Z8E0HrWA',
+
+            isDocationShowed: false,
         }
     },
     mounted() {
@@ -267,6 +285,10 @@ export default {
     },
     methods: {
         ...mapMutations(['SET_INSETS']),
+        flipPanel(){
+            console.log('FlipPenal')
+            this.isDocationShowed = !this.isDocationShowed
+        },
         toggleShare() {
             this.isShareShowed = !this.isShareShowed
         },

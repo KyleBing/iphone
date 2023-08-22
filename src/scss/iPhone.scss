@@ -3,6 +3,7 @@
 @import "font";
 @import "changelog";
 @import "help";
+@import "animate";
 
 body{
   background-color: $bg-highlight;
@@ -298,3 +299,4 @@ body{
 @import "layout";
 @import "svg";
 @import "dark";
+//@import "markdown";
