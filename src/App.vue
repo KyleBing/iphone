@@ -2,20 +2,13 @@
     <div class="container">
         <About @toggleShare="toggleShare"/>
 
-        <transition
-            enter-active-class="animate__animated animate__fadeIn"
-            leave-active-class="animate__animated animate__fadeOut animate__fast"
-        >
-            <Donation @FlipPenal="flipPanel" v-if="isDocationShowed"/>
-        </transition>
+        <FilterList @FlipPenal="flipPanel" :iPhonesOrigin="iPhonesOrigin" @updateShowingDevices="updateShowingDevices"/>
 
-        <transition
-            enter-active-class="animate__animated animate__fadeIn"
-            leave-active-class="animate__animated animate__fadeOut animate__fast"
-        >
-            <FilterList @FlipPenal="flipPanel" v-if="!isDocationShowed"  :iPhonesOrigin="iPhonesOrigin" @updateShowingDevices="updateShowingDevices"/>
-        </transition>
+        <SwitchButton @click="flipPanel" v-if="!isDocationShowed"/>
 
+        <Donation @FlipPenal="flipPanel" v-if="isDocationShowed"/>
+
+        <SwitchButton  @click="flipPanel" v-if="isDocationShowed"/>
 
         <div class="iphone-list">
             <div class="iphone" v-for="(iphone, index) in iPhones" :key="index">
@@ -215,9 +208,11 @@ import SvgCamera2VerticalSimple from "@/svg/SvgCamera2VerticalSimple";
 import SvgCamera3Rader from "@/svg/SvgCamera3Rader";
 import iPhoneMainInfo from "@/parts/iPhoneMainInfo"
 import Donation from "@/ad/Donation";
+import SwitchButton from "@/parts/SwitchButton";
 
 export default {
     components: {
+        SwitchButton,
         Donation,
         iPhoneMainInfo,
         SvgCamera3Rader,

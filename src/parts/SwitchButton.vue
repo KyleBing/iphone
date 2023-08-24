@@ -1,12 +1,11 @@
 <template>
-    <div class="switch-button">Flip</div>
+    <div class="switch-button"/>
 </template>
 
 <script>
 export default {
     name: "SwitchButton",
-    props: {
-    },
+    props: {},
 }
 </script>
 
@@ -14,19 +13,31 @@ export default {
 @import "src/scss/plugin";
 
 .switch-button{
-    margin: 30px auto;
-    width: 100px;
-    border: 1px solid $color-border;
-    padding: 10px;
-    @include border-radius($radius);
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    margin: 0 auto;
+    transform: translateY(-15px);
+    @include border-radius(100px);
     text-align: center;
-    font-weight: bold;
-    line-height: 1.5;
+    line-height: 1;
+    border: 1px solid $color-border;
     @extend .btn-like;
+    @include transition(all 0.3s);
+    animation: move-around 3s infinite ease-in-out;
     &:hover{
-        background-color: $bg-highlight;
+        border-color: black;
+        @include box-shadow(2px 2px 5px rgba(0,0,0,0.2));
+        @include transition(all 0.3s);
     }
 }
+
+@keyframes move-around {
+    0%  {transform: translateY(-10px) scale(1);}
+    50% {transform: translateY(-10px) scale(1.2);}
+    100%{transform: translateY(-10px) scale(1);}
+}
+
 
 @media (prefers-color-scheme: dark) {
 

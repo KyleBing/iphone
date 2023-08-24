@@ -1,18 +1,13 @@
 <template>
     <!-- FILTER LIST-->
-    <div>
-        <SwitchButton @click="$emit('FlipPenal')"/>
-
-        <div class="filter-list">
-            <div class="iphone-tag-list">
-                <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}]"
-                     v-for="item in iPhonesOrigin" :key="item.name_short"
-                     @click="filterTagToggle(item.name)"
-                >{{item.name_short}}</div>
-            </div>
+    <div class="filter-list">
+        <div class="iphone-tag-list">
+            <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}]"
+                 v-for="item in iPhonesOrigin" :key="item.name_short"
+                 @click="filterTagToggle(item.name)"
+            >{{item.name_short}}</div>
         </div>
     </div>
-
 </template>
 <script>
 
@@ -20,7 +15,7 @@ import SwitchButton from "@/parts/SwitchButton";
 export default {
     name: "FilterList",
     components: {SwitchButton},
-    emits: ['updateShowingDevices', 'FlipPenal'],
+    emits: ['updateShowingDevices'],
     props: {
         iPhonesOrigin: {
             type: Array,
