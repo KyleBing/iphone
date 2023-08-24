@@ -40,6 +40,13 @@ export default {
 
 
 @media (prefers-color-scheme: dark) {
+    .switch-button{
+        background-color: $dark-bg;
+        border-color: $green;
+        &:hover{
+            border-color: white;
+        }
+    }
 
 }
 

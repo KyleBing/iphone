@@ -140,7 +140,21 @@ export default {
     }
 }
 
+@media (max-width: 450px) {
+    .qr-list {
+        align-items: center;
+        flex-flow: column nowrap;
+        .qr-code{
+            margin-bottom: 30px;
+        }
+    }
+}
+
 @media (prefers-color-scheme: dark) {
+    .donation-container{
+        background-color: $dark-bg;
+        border-bottom-color: $dark-border;
+    }
 
 }
 
