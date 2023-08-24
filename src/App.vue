@@ -3,15 +3,15 @@
         <About @toggleShare="toggleShare"/>
 
         <transition
-            enter-active-class="animate__animated animate__slideInLeft"
-            leave-active-class="animate__animated animate__slideOutRight animate__fast"
+            enter-active-class="animate__animated animate__fadeIn"
+            leave-active-class="animate__animated animate__fadeOut animate__fast"
         >
             <Donation @FlipPenal="flipPanel" v-if="isDocationShowed"/>
         </transition>
 
         <transition
-            enter-active-class="animate__animated animate__slideInLeft"
-            leave-active-class="animate__animated animate__slideOutRight animate__fast"
+            enter-active-class="animate__animated animate__fadeIn"
+            leave-active-class="animate__animated animate__fadeOut animate__fast"
         >
             <FilterList @FlipPenal="flipPanel" v-if="!isDocationShowed"  :iPhonesOrigin="iPhonesOrigin" @updateShowingDevices="updateShowingDevices"/>
         </transition>

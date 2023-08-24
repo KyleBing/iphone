@@ -87,6 +87,8 @@ $gradient-bg-red: linear-gradient(135deg,$gradient-tomato,$gradient-tangelo);
 $gradient-bg-body: linear-gradient(180deg,#e2e2e2,#e5e5e5);
 
 
+$bg-light: #fefefe;
+
 // DARK
 $dark-main-color: #070809;
 $dark-bg: lighten($dark-main-color, 15%);
