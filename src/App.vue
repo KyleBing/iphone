@@ -4,11 +4,13 @@
 
         <FilterList @FlipPenal="flipPanel" :iPhonesOrigin="iPhonesOrigin" @updateShowingDevices="updateShowingDevices"/>
 
-        <SwitchButton @click="flipPanel" v-if="!isDocationShowed"/>
+<!--        <SwitchButton @click="flipPanel" v-if="!isDocationShowed"/>-->
 
-        <Donation @FlipPenal="flipPanel" v-if="isDocationShowed"/>
+<!--        <Donation @FlipPenal="flipPanel" v-if="isDocationShowed"/>-->
 
-        <SwitchButton  @click="flipPanel" v-if="isDocationShowed"/>
+<!--        <SwitchButton  @click="flipPanel" v-if="isDocationShowed"/>-->
+
+        <Opening/>
 
         <div class="iphone-list">
             <div class="iphone" v-for="(iphone, index) in iPhones" :key="index">
@@ -209,9 +211,11 @@ import SvgCamera3Rader from "@/svg/SvgCamera3Rader";
 import iPhoneMainInfo from "@/parts/iPhoneMainInfo"
 import Donation from "@/ad/Donation";
 import SwitchButton from "@/parts/SwitchButton";
+import Opening from "@/parts/Opening.vue";
 
 export default {
     components: {
+        Opening,
         SwitchButton,
         Donation,
         iPhoneMainInfo,
