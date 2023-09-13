@@ -20,7 +20,8 @@ if (process.env.NODE_ENV === 'production') {
       console.log('New content is downloading.')
     },
     updated () {
-      alert('新内容已加载，请关闭当前标签页，重新打开查看')
+      // alert('新内容已加载，请关闭当前标签页，重新打开查看')
+      location.reload()
       console.log('New content is available; please refresh.')
     },
     offline () {

@@ -4945,10 +4945,10 @@ export default [
             ]
         },
         colors: [
-            {name: '深空黑色', color: '#403e3d'},
-            {name: '银色', color: '#f0f2f2'},
-            {name: '金色', color: '#f4e8ce'},
-            {name: '暗紫色', color: '#594f63'},
+            {name: '黑色钛金属', color: '#3c3c3c'},
+            {name: '白色钛金属', color: '#e1ded7'},
+            {name: '蓝色钛金属', color: '#3b3f48'},
+            {name: '原色钛金属', color: '#a39c92'},
         ],
         charge: [
             {name: '充电口', power: '12w'},
