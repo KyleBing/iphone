@@ -4465,7 +4465,7 @@ export default [
             multi: 0
         },
         memory: [
-            // {size: "", type: ""}
+            {size: "6", type: ""}
         ],
         storage: ["128", "256", "512"],
         battery: '',
@@ -4588,7 +4588,7 @@ export default [
             multi: 0
         },
         memory: [
-            // {size: "", type: ""}
+            {size: "6", type: ""}
         ],
         storage: ["128", "256", "512"],
         battery: '',
@@ -4711,7 +4711,7 @@ export default [
             multi: 0
         },
         memory: [
-            // {size: "", type: ""}
+            {size: "8", type: ""}
         ],
         storage: ["128", "256", "512", "1024"],
         battery: '',
@@ -4858,7 +4858,7 @@ export default [
             multi: 0
         },
         memory: [
-            // {size: "", type: ""}
+            {size: "8", type: ""}
         ],
         storage: ["256", "512", "1024"],
         battery: '',
