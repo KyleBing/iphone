@@ -4837,7 +4837,7 @@ export default [
         thickness: 8.25,
         weight: 221,
         os: {
-            init: "iOS 16",
+            init: "iOS 17",
             last: lastOS
         },
         cpu: {
