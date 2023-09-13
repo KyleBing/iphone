@@ -1,6 +1,6 @@
 <template>
     <div class="port-item">
-        <img alt="USBC" v-if="port === 'USB-C'" src="../img/icon/port_usbc.png"/>
+        <img alt="USBC" v-if="port.indexOf('USB-C') > -1" src="../img/icon/port_usbc.png"/>
         <img alt="USBC Thunder" v-if="port === 'USB-C Thunder'" src="../img/icon/port_usbc.png"/>
         <img alt="闪电" v-if="port === '闪电'" src="../img/icon/port_lightning.png"/>
         <div class="label">{{port}}</div>

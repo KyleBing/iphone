@@ -4,13 +4,13 @@
 
         <FilterList @FlipPenal="flipPanel" :iPhonesOrigin="iPhonesOrigin" @updateShowingDevices="updateShowingDevices"/>
 
-<!--        <SwitchButton @click="flipPanel" v-if="!isDocationShowed"/>-->
+        <SwitchButton @click="flipPanel" v-if="!isDocationShowed"/>
 
-<!--        <Donation @FlipPenal="flipPanel" v-if="isDocationShowed"/>-->
+        <Donation @FlipPenal="flipPanel" v-if="isDocationShowed"/>
 
-<!--        <SwitchButton  @click="flipPanel" v-if="isDocationShowed"/>-->
+        <SwitchButton  @click="flipPanel" v-if="isDocationShowed"/>
 
-        <Opening/>
+<!--        <Opening/>-->
 
         <div class="iphone-list">
             <div class="iphone" v-for="(iphone, index) in iPhones" :key="index">

@@ -7,7 +7,7 @@
         <ScoreBar :iphone="iphone" :max-score="maxScore"/>
         <div :class="['title', {'is-new': iphone.isNew}]">{{iphone.name}}</div>
         <div class="date">{{iphone.release}}</div>
-        <div class="slogan">{{iphone.slogan}}</div>
+        <div class="slogan" v-if="iphone.slogan">{{iphone.slogan}}</div>
     </div>
 </template>
 
@@ -51,6 +51,7 @@ export default {
     justify-content: center;
     align-items: center;
     img {
+        @include border-radius(16px);
         height: 200px;
         display: block;
     }

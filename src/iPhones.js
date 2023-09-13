@@ -4425,5 +4425,546 @@ export default [
         price: "",
     },
 
+    {
+        name: "iPhone 15",
+        name_short: "15",
+        hardwareName: '',
+        isTitleOnly: false,
+        pic: "https://diary-container.kylebing.cn/FhMbefkLQZWGAVhOBGVQtGCWlfr2",
+        slogan: "",
+        isNew: false,
+        active: true,
+        release: "2023-09-13",
+        models: [
+            {name: "-", type: ""},
+        ],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 147.6,
+        width: 71.6,
+        thickness: 7.80,
+        weight: 171,
+        os: {
+            init: "iOS 17",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A16',
+            rate: '3.46',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 6
+        },
+        sim: [
+            {name: '国内', type: '双卡双待'},
+        ],
+        geekbenchScore: {
+            single: 0,
+            multi: 0
+        },
+        memory: [
+            // {size: "", type: ""}
+        ],
+        storage: ["128", "256", "512"],
+        battery: '',
+        port: 'USB-C 2.0 480Mb/s',
+        screen: {
+            brightness: '1000~2000',
+            size: "6.1",
+            type: 'XDR OLED',
+            refreshRate: "60", // hz
+            width: 1179,
+            height: 2556,
+            density: "460",
+            touch3D: false,
+            hdr:  'HDR',
+        },
+        cameras: {
+            type: '2-cross',
+            front: {
+                name: '默认',
+                model: '',
+                aperture: 'ƒ/1.9',
+                focal: '23mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+                hdr:  'HDR',
+                dimension: [
+                    {size: '4k', fps: [24, 25, 30, 60]},
+                    {size: '1080p', fps: [25, 30, 60]},
+                ]
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: '',
+                    aperture: 'ƒ/1.6',
+                    focal: '26mm',
+                    pixelCount: '4800万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [25, 30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '广角',
+                    model: '',
+                    aperture: 'ƒ/2.4',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+            ]
+        },
+        colors: [
+            {name: '黑色', color: '#4c4d4f'},
+            {name: '蓝色', color: '#f4f8f9'},
+            {name: '绿色', color: '#f4f8e9'},
+            {name: '黄色', color: '#fff9e1'},
+            {name: '粉色', color: '#ffe5e6'},
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
+        unlockMethod: ['面容解锁'],
+        applePay: false,
+        connectivity: ["5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
+        price: "",
+    },
+    {
+        name: "iPhone 15 Plus",
+        name_short: "15 Plus",
+        hardwareName: '',
+        isTitleOnly: false,
+        pic: "https://diary-container.kylebing.cn/Fipw4PWx72ys9GXzxOZHGanSBqu2",
+        slogan: "",
+        isNew: false,
+        active: true,
+        release: "2023-09-13",
+        models: [
+            {name: "-", type: ""},
+        ],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 160.9,
+        width: 77.8,
+        thickness: 7.80,
+        weight: 201,
+        os: {
+            init: "iOS 17",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A16',
+            rate: '3.46',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 6
+        },
+        sim: [
+            {name: '国内', type: '双卡双待'},
+        ],
+        geekbenchScore: {
+            single: 0,
+            multi: 0
+        },
+        memory: [
+            // {size: "", type: ""}
+        ],
+        storage: ["128", "256", "512"],
+        battery: '',
+        port: 'USB-C 2.0 480Mb/s',
+        screen: {
+            brightness: '1000~2000',
+            size: "6.7",
+            type: 'XDR OLED',
+            refreshRate: "60", // hz
+            width: 1290,
+            height: 2796,
+            density: "460",
+            touch3D: false,
+            hdr:  'HDR',
+        },
+        cameras: {
+            type: '2-cross',
+            front: {
+                name: '默认',
+                model: '',
+                aperture: 'ƒ/1.9',
+                focal: '23mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+                hdr:  'HDR',
+                dimension: [
+                    {size: '4k', fps: [24, 25, 30, 60]},
+                    {size: '1080p', fps: [25, 30, 60]},
+                ]
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: '',
+                    aperture: 'ƒ/1.6',
+                    focal: '26mm',
+                    pixelCount: '4800万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [25, 30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '广角',
+                    model: '',
+                    aperture: 'ƒ/2.4',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+            ]
+        },
+        colors: [
+            {name: '黑色', color: '#4c4d4f'},
+            {name: '蓝色', color: '#f4f8f9'},
+            {name: '绿色', color: '#f4f8e9'},
+            {name: '黄色', color: '#fff9e1'},
+            {name: '粉色', color: '#ffe5e6'},
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
+        unlockMethod: ['面容解锁'],
+        applePay: false,
+        connectivity: ["5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
+        price: "",
+    },
+    {
+        name: "iPhone 15 Pro",
+        name_short: "15 Pro",
+        hardwareName: '',
+        isTitleOnly: false,
+        pic: "https://diary-container.kylebing.cn/Fupt6lIfMr8rjz00pnTt8jB2uMJN",
+        slogan: "",
+        isNew: false,
+        active: true,
+        release: "2023-09-13",
+        models: [
+            {name: "-", type: ""},
+        ],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 146.6,
+        width: 70.6,
+        thickness: 8.25,
+        weight: 187,
+        os: {
+            init: "iOS 17",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A17 Pro',
+            rate: '',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 6
+        },
+        sim: [
+            {name: '国内', type: '双卡双待'},
+        ],
+        geekbenchScore: {
+            single: 0,
+            multi: 0
+        },
+        memory: [
+            // {size: "", type: ""}
+        ],
+        storage: ["128", "256", "512", "1024"],
+        battery: '',
+        port: 'USB-C 3.0 10Gb/s',
+        screen: {
+            brightness: '1000~2000',
+            size: "6.1",
+            type: 'XDR OLED ProMotion',
+            refreshRate: "1 ~ 120", // hz
+            width: 1179,
+            height: 2556,
+            density: "460",
+            touch3D: false,
+            hdr:  'HDR',
+        },
+        cameras: {
+            type: '3-rader',
+            front: {
+                name: '默认',
+                model: '',
+                aperture: 'ƒ/1.9',
+                focal: '23mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+                hdr:  'HDR',
+                dimension: [
+                    {size: '4k', fps: [24, 30, 60]},
+                    {size: '1080p', fps: [30, 60, 120]},
+                ]
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: '1.22μm - 2.44μm',
+                    aperture: 'ƒ/1.78',
+                    focal: '24mm',
+                    pixelCount: '4800万',
+                    zoomRate: '',
+                    hdr:  'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                    ]
+                },
+                {
+                    name: '远焦',
+                    model: '1.0μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    angel: '',
+                    pixelCount: '4800万',
+                    zoomRate: 'x3 物理变焦',
+                    hdr: '10 bit HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '广角',
+                    model: '1.4μm',
+                    aperture: 'ƒ/2.2',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '4800万',
+                    zoomRate: '',
+                    hdr: '10 bit HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '雷达',
+                    model: 'TOF 3D LiDAR scanner',
+                    aperture: 'ƒ/2.2',
+                    focal: '13mm',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: '',
+                    hdr: false,
+                    dimension: []
+                },
+            ]
+        },
+        colors: [
+            {name: '黑色钛金属', color: '#3c3c3c'},
+            {name: '白色钛金属', color: '#e1ded7'},
+            {name: '蓝色钛金属', color: '#3b3f48'},
+            {name: '原色钛金属', color: '#a39c92'},
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
+        unlockMethod: ['面容解锁'],
+        applePay: false,
+        connectivity: ["5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
+        price: "",
+    },
+    {
+        name: "iPhone 15 Pro Max",
+        name_short: "15 Pro Max",
+        hardwareName: '',
+        isTitleOnly: false,
+        pic: "https://diary-container.kylebing.cn/Fljk6Vb_dKNwSSCe_0-4a-PMobIY",
+        slogan: "",
+        isNew: false,
+        active: true,
+        release: "2023-09-13",
+        models: [
+            {name: "-", type: ""},
+        ],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 159.9,
+        width: 76.7,
+        thickness: 8.25,
+        weight: 221,
+        os: {
+            init: "iOS 16",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A17 Pro',
+            rate: '',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 6
+        },
+        sim: [
+            {name: '国内', type: '双卡双待'},
+        ],
+        geekbenchScore: {
+            single: 0,
+            multi: 0
+        },
+        memory: [
+            // {size: "", type: ""}
+        ],
+        storage: ["256", "512", "1024"],
+        battery: '',
+        port: 'USB-C 3.0 10Gb/s',
+        screen: {
+            brightness: '1000~2000',
+            size: "6.7",
+            type: 'XDR OLED ProMotion',
+            refreshRate: "1 ~ 120", // hz
+            width: 1290,
+            height: 2796,
+            density: "460",
+            touch3D: false,
+            hdr:  'HDR',
+        },
+        cameras: {
+            type: '3-rader',
+            front: {
+                name: '默认',
+                model: '',
+                aperture: 'ƒ/1.9',
+                focal: '23mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+                hdr:  'HDR',
+                dimension: [
+                    {size: '4k', fps: [24, 30, 60]},
+                    {size: '1080p', fps: [30, 60, 120]},
+                ]
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: '1.22μm - 2.44μm',
+                    aperture: 'ƒ/1.78',
+                    focal: '24mm',
+                    pixelCount: '4800万',
+                    zoomRate: '',
+                    hdr:  'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                    ]
+                },
+                {
+                    name: '远焦',
+                    model: '1.0μm',
+                    aperture: 'ƒ/2.8',
+                    focal: '77mm',
+                    angel: '',
+                    pixelCount: '4800万',
+                    zoomRate: 'x5 物理变焦',
+                    hdr: '10 bit HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '广角',
+                    model: '1.4μm',
+                    aperture: 'ƒ/2.2',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '4800万',
+                    zoomRate: '',
+                    hdr: '10 bit HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '雷达',
+                    model: 'TOF 3D LiDAR scanner',
+                    aperture: 'ƒ/2.2',
+                    focal: '13mm',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: '',
+                    hdr: false,
+                    dimension: []
+                },
+            ]
+        },
+        colors: [
+            {name: '深空黑色', color: '#403e3d'},
+            {name: '银色', color: '#f0f2f2'},
+            {name: '金色', color: '#f4e8ce'},
+            {name: '暗紫色', color: '#594f63'},
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
+        unlockMethod: ['面容解锁'],
+        applePay: false,
+        connectivity: ["5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
+        price: "",
+    },
+
 
 ].reverse()
