@@ -175,8 +175,12 @@
                             v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.type === '3'"
                             :iphone="iphone"
                         />
-                        <SvgCamera3Rader
-                            v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.type === '3-rader'"
+                        <SvgCamera3Radar
+                            v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.type === '3-radar'"
+                            :iphone="iphone"
+                        />
+                        <SvgCamera3Radar15
+                            v-if="iphone.cameras && iphone.cameras.back && iphone.cameras.type === '3-radar-15'"
                             :iphone="iphone"
                         />
                     </section>
@@ -207,19 +211,21 @@ import SvgCamera1 from "@/svg/SvgCamera1";
 import SvgCamera2Vertical from "@/svg/SvgCamera2Vertical";
 import SvgCamera2PortraitSimple from "@/svg/SvgCamera2PortraitSimple";
 import SvgCamera2VerticalSimple from "@/svg/SvgCamera2VerticalSimple";
-import SvgCamera3Rader from "@/svg/SvgCamera3Rader";
+import SvgCamera3Radar from "@/svg/SvgCamera3Radar";
 import iPhoneMainInfo from "@/parts/iPhoneMainInfo"
 import Donation from "@/ad/Donation";
 import SwitchButton from "@/parts/SwitchButton";
 import Opening from "@/parts/Opening.vue";
+import SvgCamera3Radar15 from "@/svg/SvgCamera3Radar15";
 
 export default {
     components: {
+        SvgCamera3Radar15,
         Opening,
         SwitchButton,
         Donation,
         iPhoneMainInfo,
-        SvgCamera3Rader,
+        SvgCamera3Radar,
         SvgCamera2VerticalSimple,
         SvgCamera2PortraitSimple,
         SvgCamera2Vertical,

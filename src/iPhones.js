@@ -1454,7 +1454,7 @@ export default [
                     aperture: 'ƒ/2.8',
                     focal: '',
                     pixelCount: '1200万',
-                    zoomRate: 'x2物理变焦 x10数码变焦',
+                    zoomRate: 'x2光学变焦 x10数码变焦',
                     hdr: 'HDR',
                     dimension: [
                         {size: '4K', fps: [30]},
@@ -1676,7 +1676,7 @@ export default [
                     aperture: 'ƒ/2.8',
                     focal: '',
                     pixelCount: '1200万',
-                    zoomRate: 'x2物理变焦，x10数码变焦',
+                    zoomRate: 'x2光学变焦，x10数码变焦',
                     hdr: 'HDR',
                     dimension: [
                         {size: '4K', fps: [30]},
@@ -1793,7 +1793,7 @@ export default [
                     aperture: 'ƒ/2.4',
                     focal: '',
                     pixelCount: '1200万',
-                    zoomRate: 'x2物理变焦，x10数码变焦',
+                    zoomRate: 'x2光学变焦，x10数码变焦',
                     hdr: 'HDR',
                     dimension: [
                         {size: '4K', fps: [60]},
@@ -1908,7 +1908,7 @@ export default [
                     aperture: '',
                     focal: '',
                     pixelCount: '1200万',
-                    zoomRate: 'x2物理变焦，x10数码变焦',
+                    zoomRate: 'x2光学变焦，x10数码变焦',
                     hdr: 'HDR',
                     dimension: [
                         {size: '4K', fps: [60]},
@@ -2028,7 +2028,7 @@ export default [
                     aperture: '',
                     focal: '',
                     pixelCount: '1200万',
-                    zoomRate: 'x2物理变焦，x10数码变焦',
+                    zoomRate: 'x2光学变焦，x10数码变焦',
                     hdr: 'HDR',
                     dimension: [
                         {size: '4K', fps: [60]},
@@ -2372,7 +2372,7 @@ export default [
                     aperture: 'ƒ/2.0',
                     focal: '52mm',
                     pixelCount: '1200万',
-                    zoomRate: 'x2 物理变焦',
+                    zoomRate: 'x2 光学变焦',
                     hdr: 'HDR',
                     dimension: [],
                 },
@@ -2495,7 +2495,7 @@ export default [
                     aperture: 'ƒ/2.0',
                     focal: '52mm',
                     pixelCount: '1200万',
-                    zoomRate: 'x2 物理变焦',
+                    zoomRate: 'x2 光学变焦',
                     hdr: 'HDR',
                     dimension: [],
                 },
@@ -2940,7 +2940,7 @@ export default [
             hdr:  'HDR',
         },
         cameras: {
-            type: '3-rader',
+            type: '3-radar',
             front: {
                 name: '默认',
                 model: '',
@@ -3094,7 +3094,7 @@ export default [
             hdr:  'HDR',
         },
         cameras: {
-            type: '3-rader',
+            type: '3-radar',
             front: {
                 name: '默认',
                 model: '',
@@ -3508,7 +3508,7 @@ export default [
             hdr:  'HDR',
         },
         cameras: {
-            type: '3-rader',
+            type: '3-radar',
             front: {
                 name: '默认',
                 model: 'Sony IMX514 1μm',
@@ -3528,7 +3528,7 @@ export default [
                     hdr: 'HDR',
                     angle: '',
                     pixelCount: '1200万',
-                    zoomRate: 'x3物理变焦',
+                    zoomRate: 'x3光学变焦',
                     dimension: [
                         {size: '4k', fps: [24, 30, 60]},
                         {size: '1080p', fps: [30, 60, 120]},
@@ -3660,7 +3660,7 @@ export default [
             hdr:  'HDR',
         },
         cameras: {
-            type: '3-rader',
+            type: '3-radar',
             front: {
                 name: '默认',
                 model: 'Sony IMX514 1μm',
@@ -3680,7 +3680,7 @@ export default [
                     hdr: 'HDR',
                     angle: '',
                     pixelCount: '1200万',
-                    zoomRate: 'x3物理变焦',
+                    zoomRate: 'x3光学变焦',
                     dimension: [
                         {size: '4k', fps: [24, 30, 60]},
                         {size: '1080p', fps: [30, 60, 120]},
@@ -4181,7 +4181,7 @@ export default [
             hdr:  'HDR',
         },
         cameras: {
-            type: '3-rader',
+            type: '3-radar',
             front: {
                 name: '默认',
                 model: '',
@@ -4216,7 +4216,7 @@ export default [
                     focal: '77mm',
                     angel: '',
                     pixelCount: '4800万',
-                    zoomRate: 'x3 物理变焦',
+                    zoomRate: 'x3 光学变焦',
                     hdr: '10 bit HDR',
                     dimension: [
                         {size: '4k', fps: [24, 25, 30, 60]},
@@ -4334,7 +4334,7 @@ export default [
             hdr:  'HDR',
         },
         cameras: {
-            type: '3-rader',
+            type: '3-radar',
             front: {
                 name: '默认',
                 model: '',
@@ -4369,7 +4369,7 @@ export default [
                     focal: '77mm',
                     angel: '',
                     pixelCount: '4800万',
-                    zoomRate: 'x3 物理变焦',
+                    zoomRate: 'x3 光学变焦',
                     hdr: '10 bit HDR',
                     dimension: [
                         {size: '4k', fps: [24, 25, 30, 60]},
@@ -4728,7 +4728,7 @@ export default [
             hdr:  'HDR',
         },
         cameras: {
-            type: '3-rader',
+            type: '3-radar-15',
             front: {
                 name: '默认',
                 model: '',
@@ -4742,7 +4742,7 @@ export default [
                     {size: '1080p', fps: [30, 60, 120]},
                 ]
             },
-            back: [
+            back: [ // 次序位置特定，会影响镜头布局
                 {
                     name: '默认',
                     model: '1.22μm - 2.44μm',
@@ -4763,7 +4763,7 @@ export default [
                     focal: '77mm',
                     angel: '',
                     pixelCount: '4800万',
-                    zoomRate: 'x3 物理变焦',
+                    zoomRate: 'x3 光学变焦',
                     hdr: '10 bit HDR',
                     dimension: [
                         {size: '4k', fps: [24, 25, 30, 60]},
@@ -4786,7 +4786,7 @@ export default [
                 },
                 {
                     name: '雷达',
-                    model: 'TOF 3D LiDAR scanner',
+                    model: '3D LiDAR scanner',
                     aperture: 'ƒ/2.2',
                     focal: '13mm',
                     angel: '',
@@ -4875,7 +4875,7 @@ export default [
             hdr:  'HDR',
         },
         cameras: {
-            type: '3-rader',
+            type: '3-radar-15',
             front: {
                 name: '默认',
                 model: '',
@@ -4905,12 +4905,12 @@ export default [
                 },
                 {
                     name: '远焦',
-                    model: '1.0μm',
+                    model: '1.12μm',
                     aperture: 'ƒ/2.8',
-                    focal: '77mm',
+                    focal: '120mm',
                     angel: '',
-                    pixelCount: '4800万',
-                    zoomRate: 'x5 物理变焦',
+                    pixelCount: '1200万',
+                    zoomRate: 'x5 光学变焦',
                     hdr: '10 bit HDR',
                     dimension: [
                         {size: '4k', fps: [24, 25, 30, 60]},
@@ -4933,7 +4933,7 @@ export default [
                 },
                 {
                     name: '雷达',
-                    model: 'TOF 3D LiDAR scanner',
+                    model: '3D LiDAR scanner',
                     aperture: 'ƒ/2.2',
                     focal: '13mm',
                     angel: '',

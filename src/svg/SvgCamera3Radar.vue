@@ -64,7 +64,7 @@
 
 <script>
 export default {
-    name: "SvgCamera3Rader",
+    name: "SvgCamera3Radar",
     props: {
         iphone: {
             type: Object,
