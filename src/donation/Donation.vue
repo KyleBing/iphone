@@ -3,10 +3,10 @@
         <div class="announcement markdown" v-html="articleHtml"></div>
         <div class="qr-list">
             <div class="qr-code alipay">
-                <img src="../img/alipay.jpg" alt="支付宝">
+                <img src="./alipay.jpg" alt="支付宝">
             </div>
             <div class="qr-code wechat">
-                <img src="../img/wechat.jpg" alt="微信">
+                <img src="./wechat.png" alt="微信">
             </div>
         </div>
         <div class="donation-list">
@@ -56,7 +56,7 @@ Hi 我是该网站的作者。
 
 ### 1. 开放打赏入口
 
-如果你感觉这些页面对你有所帮助，并且想助网站一臂之力，可以随意打赏，请备注好自己的用户名 ^^
+如果你感觉这些页面对你有所帮助，并且想助网站一臂之力，可以随意打赏，请在留言中备注好自己的用户名  ^^
 
 所有打赏朋友的用户名都将在一个赞助页面呈现，按打赏力度排序。
 
@@ -94,7 +94,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "src/scss/plugin";
+@import "../scss/plugin";
 
 .donation-container{
     background-color: #f1ffef;
