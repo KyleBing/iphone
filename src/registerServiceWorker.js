@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 
 import { register } from 'register-service-worker'
-
   register(`${process.env.BASE_URL}service-worker.js`, {
     ready () {
       console.log(
@@ -19,7 +18,7 @@ import { register } from 'register-service-worker'
       console.log('New content is downloading.')
     },
     updated () {
-      alert('新内容已加载，请关闭当前标签页，重新打开查看，或者 ctrl + shift + R 刷新页面内容')
+      alert('新内容已加载：移动端，请关闭当前标签页，重新打开查看；PC 端：Ctrl + Shift + R 刷新页面内容')
       console.log('New content is available; please refresh.')
     },
     offline () {
