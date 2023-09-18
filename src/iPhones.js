@@ -1505,7 +1505,7 @@ export default [
         weight: 148,
         os: {
             init: "iOS 11.0",
-            last: lastOS
+            last: "iOS 16.6.1"
         },
         cpu: {
             icon: 'A11',
@@ -1608,7 +1608,7 @@ export default [
         weight: 202,
         os: {
             init: "iOS 11.0",
-            last: lastOS
+            last: "iOS 16.6.1"
         },
         cpu: {
             icon: 'A11',
@@ -1726,7 +1726,7 @@ export default [
         weight: 174,
         os: {
             init: "iOS 11.0.1",
-            last: lastOS
+            last: "iOS 16.6.1"
         },
         cpu: {
             icon: 'A11',
@@ -4468,7 +4468,7 @@ export default [
             {size: "6", type: ""}
         ],
         storage: ["128", "256", "512"],
-        battery: '',
+        battery: '3349',
         port: 'USB-C 2.0 480Mb/s',
         screen: {
             brightness: '1000~2000',
@@ -4591,7 +4591,7 @@ export default [
             {size: "6", type: ""}
         ],
         storage: ["128", "256", "512"],
-        battery: '',
+        battery: '4383',
         port: 'USB-C 2.0 480Mb/s',
         screen: {
             brightness: '1000~2000',
@@ -4714,7 +4714,7 @@ export default [
             {size: "8", type: ""}
         ],
         storage: ["128", "256", "512", "1024"],
-        battery: '',
+        battery: '3274',
         port: 'USB-C 3.0 10Gb/s',
         screen: {
             brightness: '1000~2000',
@@ -4861,7 +4861,7 @@ export default [
             {size: "8", type: ""}
         ],
         storage: ["256", "512", "1024"],
-        battery: '',
+        battery: '4422',
         port: 'USB-C 3.0 10Gb/s',
         screen: {
             brightness: '1000~2000',
