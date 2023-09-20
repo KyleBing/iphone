@@ -4455,7 +4455,7 @@ export default [
         },
         gpu: {
             model: "Apple",
-            core: 6
+            core: 5
         },
         sim: [
             {name: '国内', type: '双卡双待'},
@@ -4578,7 +4578,7 @@ export default [
         },
         gpu: {
             model: "Apple",
-            core: 6
+            core: 5
         },
         sim: [
             {name: '国内', type: '双卡双待'},
@@ -4696,7 +4696,7 @@ export default [
         cpu: {
             icon: '',
             model: 'A17 Pro',
-            rate: '',
+            rate: '3.78',
             core: 6
         },
         gpu: {
@@ -4843,7 +4843,7 @@ export default [
         cpu: {
             icon: '',
             model: 'A17 Pro',
-            rate: '',
+            rate: '3.78',
             core: 6
         },
         gpu: {
