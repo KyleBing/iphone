@@ -7,6 +7,20 @@
              transform: rotateY(${x<adBoardWidth/2 ? '-': ''}${Math.abs(x-adBoardWidth/2)/adBoardWidth*rotateAngleY}deg) rotateX(-${y/adBoardHeight*rotateAngleX}deg)
              `"
         >
+            <div class="ad-qr">
+                <div class="alipay-qr">
+                    <img src="./qr.png" alt="">
+                </div>
+                <div class="alipay-desc">
+                    <div class="title">
+                        <img src="./alipay.svg" alt="alipaylogo">
+                        <h1>支付宝红包</h1>
+                    </div>
+                    <p class="desc">可用于在实体店消费使用</p>
+                    <p class="desc">每天可领取一次</p>
+                </div>
+            </div>
+
 <!--            <h1>广告</h1>-->
 <!--            <div class="controller">
                 <div class="btn"></div>
@@ -23,7 +37,7 @@ export default {
         return {
             x: 0,
             y: 0,
-            adBoardWidth: 260,
+            adBoardWidth: 240,
             adBoardHeight: 80,
             rotateAngleY: 45,
             rotateAngleX: 15,
@@ -47,41 +61,72 @@ export default {
     align-items: center;
     perspective: 600px;
     .ad{
-        background: $gradient-bg-blue;
+        background-color: white;
+        //background: $gradient-bg-blue;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 3px solid white;
+        //border: 2px solid $aliblue;
+        border: 2px solid white;
         box-sizing: content-box;
         @include border-radius(10px);
         transform: rotateY(45deg) rotateX(-15deg);
-        h1{
-            position: absolute;
-            bottom: 2px;
-            left: 2px;
-            font-weight: normal;
-            font-size: 10px;
-            color: white;
+
+    }
+}
+
+.ad-qr{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    .alipay-qr{
+        flex-shrink: 0;
+        width: 60px;
+        height: 60px;
+        img{
+            display: block;
+            width: 100%;
         }
-        .controller{
-            position: absolute;
-            left: 5px;
-            bottom: -15px;
+    }
+    .alipay-desc{
+        margin-left: 10px;
+        color: $text-main;
+        font-size: $fz-sm;
+        .title{
             display: flex;
             justify-content: flex-start;
-            .btn{
-                margin-right: 3px;
-                width: 10px;
-                height: 10px;
-                background: $gradient-bg-blue;
-                @include border-radius(10px);
+            align-items: center;
+            img{
+                display: flex;
+                flex-shrink: 0;
+                width: 20px;
             }
+            h1{
+                margin-left: 5px;
+                font-size: $fz-sm + 3;
+                font-weight: bold;
+            }
+        }
+        .desc{
+
+            color: $text-subtitle;
         }
     }
 }
 
+
+
 @media (prefers-color-scheme: dark) {
 
+}
+
+@media (max-width: 768px){
+    .ad-container{
+        margin-bottom: 20px;
+    }
 }
 
 

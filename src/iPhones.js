@@ -4431,7 +4431,7 @@ export default [
         hardwareName: '',
         isTitleOnly: false,
         pic: "https://diary-container.kylebing.cn/FhMbefkLQZWGAVhOBGVQtGCWlfr2",
-        slogan: "",
+        slogan: "New camera. New design. Newphoria.",
         isNew: false,
         active: true,
         release: "2023-09-13",
@@ -4465,7 +4465,7 @@ export default [
             multi: 0
         },
         memory: [
-            {size: "6", type: ""}
+            {size: "6", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512"],
         battery: '3349',
@@ -4554,7 +4554,7 @@ export default [
         hardwareName: '',
         isTitleOnly: false,
         pic: "https://diary-container.kylebing.cn/Fipw4PWx72ys9GXzxOZHGanSBqu2",
-        slogan: "",
+        slogan: "New camera. New design. Newphoria.",
         isNew: false,
         active: true,
         release: "2023-09-13",
@@ -4588,7 +4588,7 @@ export default [
             multi: 0
         },
         memory: [
-            {size: "6", type: ""}
+            {size: "6", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512"],
         battery: '4383',
@@ -4677,7 +4677,7 @@ export default [
         hardwareName: '',
         isTitleOnly: false,
         pic: "https://diary-container.kylebing.cn/Fupt6lIfMr8rjz00pnTt8jB2uMJN",
-        slogan: "",
+        slogan: "Titanium. So strong. So light. So Pro.",
         isNew: false,
         active: true,
         release: "2023-09-13",
@@ -4711,7 +4711,7 @@ export default [
             multi: 0
         },
         memory: [
-            {size: "8", type: ""}
+            {size: "8", type: "LPDDR5"}
         ],
         storage: ["128", "256", "512", "1024"],
         battery: '3274',
@@ -4762,7 +4762,7 @@ export default [
                     aperture: 'ƒ/2.8',
                     focal: '77mm',
                     angel: '',
-                    pixelCount: '4800万',
+                    pixelCount: '1200万',
                     zoomRate: 'x3 光学变焦',
                     hdr: '10 bit HDR',
                     dimension: [
@@ -4824,7 +4824,7 @@ export default [
         hardwareName: '',
         isTitleOnly: false,
         pic: "https://diary-container.kylebing.cn/Fljk6Vb_dKNwSSCe_0-4a-PMobIY",
-        slogan: "",
+        slogan: "Titanium. So strong. So light. So Pro.",
         isNew: false,
         active: true,
         release: "2023-09-13",
@@ -4858,7 +4858,7 @@ export default [
             multi: 0
         },
         memory: [
-            {size: "8", type: ""}
+            {size: "8", type: "LPDDR5"}
         ],
         storage: ["256", "512", "1024"],
         battery: '4422',
