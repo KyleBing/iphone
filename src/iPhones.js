@@ -4428,7 +4428,7 @@ export default [
     {
         name: "iPhone 15",
         name_short: "15",
-        hardwareName: '',
+        hardwareName: 'iPhone15,4',
         isTitleOnly: false,
         pic: "https://diary-container.kylebing.cn/FhMbefkLQZWGAVhOBGVQtGCWlfr2",
         slogan: "New camera. New design. Newphoria.",
@@ -4436,7 +4436,10 @@ export default [
         active: true,
         release: "2023-09-13",
         models: [
-            {name: "-", type: ""},
+            {name: "A2846", type: ""},
+            {name: "A3089", type: ""},
+            {name: "A3090", type: ""},
+            {name: "A3092", type: ""},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 147.6,
@@ -4551,7 +4554,7 @@ export default [
     {
         name: "iPhone 15 Plus",
         name_short: "15 Plus",
-        hardwareName: '',
+        hardwareName: 'iPhone15,5',
         isTitleOnly: false,
         pic: "https://diary-container.kylebing.cn/Fipw4PWx72ys9GXzxOZHGanSBqu2",
         slogan: "New camera. New design. Newphoria.",
@@ -4559,7 +4562,10 @@ export default [
         active: true,
         release: "2023-09-13",
         models: [
-            {name: "-", type: ""},
+            {name: "A2847", type: ""},
+            {name: "A3093", type: ""},
+            {name: "A3094", type: ""},
+            {name: "A3096", type: ""},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 160.9,
@@ -4674,7 +4680,7 @@ export default [
     {
         name: "iPhone 15 Pro",
         name_short: "15 Pro",
-        hardwareName: '',
+        hardwareName: 'iPhone16,1',
         isTitleOnly: false,
         pic: "https://diary-container.kylebing.cn/Fupt6lIfMr8rjz00pnTt8jB2uMJN",
         slogan: "Titanium. So strong. So light. So Pro.",
@@ -4682,7 +4688,10 @@ export default [
         active: true,
         release: "2023-09-13",
         models: [
-            {name: "-", type: ""},
+            {name: "A2848", type: ""},
+            {name: "A3101", type: ""},
+            {name: "A3102", type: ""},
+            {name: "A3104", type: ""},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 146.6,
@@ -4821,7 +4830,7 @@ export default [
     {
         name: "iPhone 15 Pro Max",
         name_short: "15 Pro Max",
-        hardwareName: '',
+        hardwareName: 'iPhone16,2',
         isTitleOnly: false,
         pic: "https://diary-container.kylebing.cn/Fljk6Vb_dKNwSSCe_0-4a-PMobIY",
         slogan: "Titanium. So strong. So light. So Pro.",
@@ -4829,7 +4838,10 @@ export default [
         active: true,
         release: "2023-09-13",
         models: [
-            {name: "-", type: ""},
+            {name: "A2849", type: ""},
+            {name: "A3105", type: ""},
+            {name: "A3106", type: ""},
+            {name: "A3108", type: ""},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 159.9,

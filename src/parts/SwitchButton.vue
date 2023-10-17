@@ -15,7 +15,7 @@ export default {
 .switch-button{
     width: 20px;
     height: 20px;
-    background-color: white;
+    background: linear-gradient(130deg, white, lighten(black, 90%));
     margin: 0 auto;
     transform: translateY(-15px);
     @include border-radius(100px);
@@ -26,16 +26,29 @@ export default {
     @include transition(all 0.3s);
     animation: move-around 3s infinite ease-in-out;
     &:hover{
-        border-color: black;
+        background: $blue !important;
+        border-color: white !important;
         @include box-shadow(2px 2px 5px rgba(0,0,0,0.2));
         @include transition(all 0.3s);
     }
 }
 
 @keyframes move-around {
-    0%  {transform: translateY(-10px) scale(1);}
-    50% {transform: translateY(-10px) scale(1.2);}
-    100%{transform: translateY(-10px) scale(1);}
+    0% {
+        border-color: $blue;
+        @include box-shadow(0 0 5px transparentize($blue, 0.2));
+        transform: translateY(-10px) scale(1);
+    }
+    50% {
+        border-color: $color-border;
+        @include box-shadow(0 0 25px transparentize($blue, 1));
+        transform: translateY(-10px) scale(1.2);
+    }
+    100% {
+        border-color: $blue;
+        @include box-shadow(0 0 5px transparentize($blue, 0.2));
+        transform: translateY(-10px) scale(1);
+    }
 }
 
 

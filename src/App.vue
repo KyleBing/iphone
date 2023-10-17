@@ -262,7 +262,7 @@ export default {
             linkAddress: 'http://kylebing.cn/tools/iphone/',
             linkQQ: 'https://jq.qq.com/?_wv=1027&k=Z8E0HrWA',
 
-            isDocationShowed: false,
+            isDocationShowed: true,
         }
     },
     mounted() {

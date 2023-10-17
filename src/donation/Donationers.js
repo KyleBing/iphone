@@ -12,5 +12,4 @@ export default [
     {date: '2023-09-15', method: '微信', name: '留天', amount: 10},
     {date: '2023-09-15', method: '微信', name: '*鱼', amount: 0.5},
     {date: '2023-09-13', method: '微信', name: '*脚', amount: 10},
-    {date: '2023-09-13', method: '微信', name: '*脚', amount: 10},
 ]

@@ -16,9 +16,7 @@
             </div>
         </div>
 
-
-
-        <Ad3D/>
+<!--        <Ad3D/>-->
 
         <div class="copyright-group">
             <div class="share-links">
