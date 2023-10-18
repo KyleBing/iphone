@@ -6,7 +6,7 @@
 
         <SwitchButton @click="flipPanel" v-if="!isDocationShowed"/>
 
-        <Donation @FlipPenal="flipPanel" v-if="isDocationShowed"/>
+        <Donor @FlipPenal="flipPanel" v-if="isDocationShowed"/>
 
         <SwitchButton  @click="flipPanel" v-if="isDocationShowed"/>
 
@@ -213,7 +213,7 @@ import SvgCamera2PortraitSimple from "@/svg/SvgCamera2PortraitSimple";
 import SvgCamera2VerticalSimple from "@/svg/SvgCamera2VerticalSimple";
 import SvgCamera3Radar from "@/svg/SvgCamera3Radar";
 import iPhoneMainInfo from "@/parts/iPhoneMainInfo"
-import Donation from "@/donation/Donation";
+import Donor from "@/donor/Donor";
 import SwitchButton from "@/parts/SwitchButton";
 import Opening from "@/parts/Opening.vue";
 import SvgCamera3Radar15 from "@/svg/SvgCamera3Radar15";
@@ -223,7 +223,7 @@ export default {
         SvgCamera3Radar15,
         Opening,
         SwitchButton,
-        Donation,
+        Donor,
         iPhoneMainInfo,
         SvgCamera3Radar,
         SvgCamera2VerticalSimple,

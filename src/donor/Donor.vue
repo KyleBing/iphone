@@ -1,6 +1,6 @@
 <template>
-    <div class="donation-container">
-        <DonationerList/>
+    <div class="donor-container">
+        <DonorList/>
         <div class="announcement markdown" v-html="articleHtml"></div>
         <div class="qr-list">
             <div class="qr-code alipay">
@@ -10,8 +10,8 @@
                 <img src="./wechat.png" alt="微信">
             </div>
         </div>
-        <div class="donation-list">
-            <div class="donation-person"></div>
+        <div class="donor-list">
+            <div class="donor-person"></div>
         </div>
     </div>
 </template>
@@ -45,11 +45,11 @@ Hi 我是该网站的作者。
 
 import SwitchButton from "@/parts/SwitchButton";
 import {marked} from "marked";
-import DonationerList from "@/donation/DonationerList";
+import DonorList from "@/donor/DonorList";
 export default {
-    name: "Donation",
+    name: "Donor",
     emits: ['FlipPenal'],
-    components: {DonationerList, Ad3D, SwitchButton},
+    components: {DonorList, Ad3D, SwitchButton},
     data(){
         return {
             article,
@@ -72,7 +72,7 @@ export default {
 <style scoped lang="scss">
 @import "../scss/plugin";
 
-.donation-container{
+.donor-container{
     background-color: #f1ffef;
     padding: 50px 10px;
     border-bottom: 1px solid $color-border;
@@ -127,7 +127,7 @@ export default {
 }
 
 @media (prefers-color-scheme: dark) {
-    .donation-container{
+    .donor-container{
         background-color: $dark-bg;
         border-bottom-color: $dark-border;
     }

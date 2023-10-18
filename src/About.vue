@@ -76,8 +76,9 @@ export  default {
         },
         // 点赞功能
         getInitThumbsUpCount() {
-            axios
-                .get('https://kylebing.cn/portal/thumbs-up?key=' + this.thumbsUpKey)
+            axios({
+                url: 'https://kylebing.cn/portal/thumbs-up?key=' + this.thumbsUpKey,
+            })
                 .then(res => {
                     if (res.data && res.data.data) {
                         this.thumbsUpCount = res.data.data

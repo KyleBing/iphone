@@ -1,6 +1,6 @@
 <template>
-    <view class="donation-list">
-        <view class="donation-item" v-for="item in donationers">
+    <view class="donor-list">
+        <view class="donor-item" v-for="item in donors">
             <view class="name">{{item.name}}</view>
             <view class="amount"><span class="flag">￥</span>{{item.amount}}</view>
 <!--            <view class="method">{{item.method}}</view>-->
@@ -10,22 +10,53 @@
 </template>
 
 <script>
-import donationers from "@/donation/Donationers";
+import axios from "axios";
 export default {
-    name: "DonationerList",
+    name: "DonorList",
     data(){
         return {
-            donationers: donationers.sort((a,b) => b.amount - a.amount)
+            donors: []
         }
     },
+    mounted() {
+        this.getDonors()
+    },
     methods: {
+        getDonors(){
+            axios({
+                url: 'https://kylebing.cn/portal/diary/get-latest-public-diary-with-keyword',
+                params: {
+                    keyword: 'DonorList'
+                }
+            })
+                .then(res => {
+                    if (res.status === 200){
+                        this.donors = []
+                        let donorListStr = res.data.data.content
+                        donorListStr && donorListStr.split('\n').forEach(str => {
+                            let tempArray = str.split(',')
+                            this.donors.push({
+                                date: tempArray[0],
+                                method: tempArray[1],
+                                name: tempArray[2],
+                                amount: Number(tempArray[3]),
+                            })
+                        })
+                        this.donors.sort((a,b) => b.amount - a.amount)
+                    }
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+
+        }
     }
 }
 </script>
 
 <style scoped lang="scss">
 @import "src/scss/plugin";
-.donation-list{
+.donor-list{
     margin: 0 auto;
     width: 80%;
     padding: 50px;
@@ -33,7 +64,7 @@ export default {
     justify-content: center;
     flex-flow: row wrap;
 }
-.donation-item{
+.donor-item{
     background-color: white;
     margin-left: 30px;
     margin-bottom: 30px;

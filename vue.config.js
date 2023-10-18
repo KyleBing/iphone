@@ -8,10 +8,10 @@ module.exports = {
 
     devServer: {
         proxy: {
-            '': {
-                // target: 'http://localhost:3000',
-                target: 'http://kylebing.cn:3000/portal/thumbs-up',
-                changeOrigin: true
+            '/portal': {
+                target: 'http://kylebing.cn/portal',
+                changeOrigin: true,
+                pathRewrite: {'': ''},
             },
         }
     },
