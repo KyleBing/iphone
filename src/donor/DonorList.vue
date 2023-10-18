@@ -66,7 +66,7 @@ export default {
 }
 .donor-item{
     background-color: white;
-    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 30px;
     border: 1px solid $color-border;
     padding: 5px 15px;
@@ -107,7 +107,13 @@ export default {
 }
 
 @media (max-width: 768px){
-    .ad-container{
+    .donor-list{
+        width: 100%;
+        padding: 20px;
+        justify-content: space-between;
+    }
+    .donor-item {
+        background-color: white;
         margin-bottom: 20px;
     }
 }

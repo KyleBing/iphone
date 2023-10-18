@@ -6,7 +6,13 @@
 
         <SwitchButton @click="flipPanel" v-if="!isDocationShowed"/>
 
-        <Donor @FlipPenal="flipPanel" v-if="isDocationShowed"/>
+        <transition
+            enter-active-class="animate__animated animate__slideInLeft"
+            leave-active-class="animate__animated animate__slideOutRight animate__fast"
+            appear-active-class=""
+        >
+            <Donor @FlipPenal="flipPanel" v-if="isDocationShowed"/>
+        </transition>
 
         <SwitchButton  @click="flipPanel" v-if="isDocationShowed"/>
 
