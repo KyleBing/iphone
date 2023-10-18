@@ -88,7 +88,6 @@ export default {
         right: -20px;
         border: 1px solid $color-border;
         background-color: white;
-        //background: linear-gradient(-45deg, $orange, $red);
         color: $text-main;
         padding: 3px 10px;
         @include border-radius(30px)
@@ -103,6 +102,22 @@ export default {
 
 
 @media (prefers-color-scheme: dark) {
+    .donor-item {
+        color: $dark-text;
+        background-color: $dark-bg;
+        margin-bottom: 20px;
+        border-color: $dark-border;
+        .amount{
+            .flag{
+                font-size: $fz-tiny;
+            }
+            @include box-shadow(1px 1px 3px transparentize(black, 0.8));
+            border: 1px solid $dark-border;
+            background-color: $dark-bg;
+            color: $dark-text;
+            color: $yellow;
+        }
+    }
 
 }
 
@@ -113,7 +128,6 @@ export default {
         justify-content: space-between;
     }
     .donor-item {
-        background-color: white;
         margin-bottom: 20px;
     }
 }
