@@ -1,10 +1,15 @@
 <template>
-    <view class="donor-list">
-        <view class="donor-item" v-for="item in donors">
-            <view class="name">{{item.name}}</view>
-            <view class="amount"><span class="flag">￥</span>{{item.amount}}</view>
-<!--            <view class="method">{{item.method}}</view>-->
-<!--            <view class="date">{{item.date}}</view>-->
+    <view class="donor-container">
+        <view class="donor-header">
+            <view class="title">赞赏列表</view>
+        </view>
+        <view class="donor-list">
+            <view class="donor-item" v-for="item in donors">
+                <view class="name">{{ item.name }}</view>
+                <view class="amount"><span class="flag">￥</span>{{ item.amount }}</view>
+                <!--            <view class="method">{{item.method}}</view>-->
+                <!--            <view class="date">{{item.date}}</view>-->
+            </view>
         </view>
     </view>
 </template>
@@ -15,7 +20,7 @@ export default {
     name: "DonorList",
     data(){
         return {
-            donors: []
+            donors: []  // 2023-10-19,微信,无名,6
         }
     },
     mounted() {
@@ -26,7 +31,7 @@ export default {
             axios({
                 url: 'https://kylebing.cn/portal/diary/get-latest-public-diary-with-keyword',
                 params: {
-                    keyword: 'DonorList'
+                    keyword: 'iphone-donor-list'
                 }
             })
                 .then(res => {
@@ -56,6 +61,28 @@ export default {
 
 <style scoped lang="scss">
 @import "src/scss/plugin";
+
+.donor-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.donor-header{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin-bottom: 10px;
+    .title{
+        font-weight: bold;
+        font-size: $fz-title;
+        color: $text-main;
+    }
+    .subtitle{
+        font-size: $fz-m;
+        color: $text-subtitle;
+    }
+}
 .donor-list{
     margin: 0 auto;
     width: 80%;
@@ -116,6 +143,14 @@ export default {
             background-color: $dark-bg;
             color: $dark-text;
             color: $yellow;
+        }
+    }
+    .donor-header{
+        .title{
+            color: $dark-text-title;
+        }
+        .subtitle{
+            color: $dark-text-subtitle;
         }
     }
 

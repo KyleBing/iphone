@@ -54,8 +54,8 @@ export default {
 
 @media (prefers-color-scheme: dark) {
     .switch-button{
-        background-color: $dark-bg;
-        border-color: $green;
+        background: linear-gradient(130deg,  lighten($dark-bg, 35%), $dark-bg);
+        border-color: black;
         &:hover{
             border-color: white;
         }

@@ -1,6 +1,7 @@
 <template>
-    <div class="donor-container">
+    <div class="donor-panel">
         <DonorList/>
+        <HelperList/>
         <div class="announcement markdown" v-html="articleHtml"></div>
         <div class="qr-list">
             <div class="qr-code alipay">
@@ -24,10 +25,11 @@ import SwitchButton from "@/parts/SwitchButton";
 import {marked} from "marked";
 import DonorList from "@/donor/DonorList";
 import axios from "axios";
+import HelperList from "@/donor/HelperList";
 export default {
     name: "Donor",
     emits: ['FlipPenal'],
-    components: {DonorList, Ad3D, SwitchButton},
+    components: {HelperList, DonorList, Ad3D, SwitchButton},
     data(){
         return {
             article: '',
@@ -69,7 +71,7 @@ export default {
 <style scoped lang="scss">
 @import "../scss/plugin";
 
-.donor-container{
+.donor-panel{
     background-color: #f1ffef;
     padding: 50px 10px;
     border-bottom: 1px solid $color-border;
@@ -124,7 +126,7 @@ export default {
 }
 
 @media (prefers-color-scheme: dark) {
-    .donor-container{
+    .donor-panel{
         background-color: $dark-bg;
         border-bottom-color: $dark-border;
     }
