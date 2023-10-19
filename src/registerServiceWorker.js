@@ -19,10 +19,11 @@ import { register } from 'register-service-worker'
     },
     updated (registration) {
       if (registration.waiting) {
-        registration.waiting.postMessage('SKIP_WAITING')
+        registration.waiting.postMessage({
+          type: 'SKIP_WAITING'
+        })
       }
-      // alert('新内容已加载：移动端，请关闭当前标签页，重新打开查看；PC 端：Ctrl + Shift + R 刷新页面内容')
-      console.log('New content is available; please refresh.')
+      console.log('新的 ServiceWorker.js 已经下载并安装')
     },
     offline () {
       console.log('No internet connection found. App is running in offline mode.')
