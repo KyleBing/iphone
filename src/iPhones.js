@@ -4464,8 +4464,8 @@ export default [
             {name: '国内', type: '双卡双待'},
         ],
         geekbenchScore: {
-            single: 0,
-            multi: 0
+            single: 2544,
+            multi: 6301
         },
         memory: [
             {size: "6", type: "LPDDR4X"}
@@ -4590,8 +4590,8 @@ export default [
             {name: '国内', type: '双卡双待'},
         ],
         geekbenchScore: {
-            single: 0,
-            multi: 0
+            single: 2557,
+            multi: 6366
         },
         memory: [
             {size: "6", type: "LPDDR4X"}
@@ -4716,8 +4716,8 @@ export default [
             {name: '国内', type: '双卡双待'},
         ],
         geekbenchScore: {
-            single: 0,
-            multi: 0
+            single: 2896,
+            multi: 7202
         },
         memory: [
             {size: "8", type: "LPDDR5"}
@@ -4866,8 +4866,8 @@ export default [
             {name: '国内', type: '双卡双待'},
         ],
         geekbenchScore: {
-            single: 0,
-            multi: 0
+            single: 2888,
+            multi: 7171
         },
         memory: [
             {size: "8", type: "LPDDR5"}
