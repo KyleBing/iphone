@@ -20,24 +20,24 @@
 
         <div class="copyright-group">
             <div class="share-links">
-                <a class="link-item" target="_blank" href="https://kylebing.cn/tools/ipad">
+                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/ipad">
                     <img src="./img/links/ipad_white@2x.png" alt="ipad">
                 </a>
                 <a class="link-item">
                     <img src="./img/links/iphone_white@2x.png" alt="phone">
                 </a>
-                <a class="link-item" target="_blank" href="https://kylebing.cn/tools/airpods">
+                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/airpods">
                     <img src="./img/links/airpods_white@2x.png" alt="airpods">
                 </a>
-                <a class="link-item" target="_blank" href="https://kylebing.cn/tools/apple-chip">
+                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/apple-chip">
                     <img src="./img/links/chip_white@2x.png" alt="chip">
                 </a>
-                <a class="link-item" target="_blank" href="https://kylebing.cn/tools/apple-watch">
+                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/apple-watch">
                     <img src="./img/links/apple-watch@2x.png" alt="watch">
                 </a>
             </div>
             <div class="author-info">
-                <p>主页：<a class="link" target="_blank" href="https://kylebing.cn/">kylebing.cn</a></p>
+                <p>主页：<a class="link" target="_blank" href="http://kylebing.cn/">kylebing.cn</a></p>
                 <p>更新：<a class="link" target="_blank" href="https://en.wikipedia.org/wiki/IPhone">{{dateLastUpdate}}</a></p>
                 <p>分享：<span @click="toggleShare">点击扫一扫</span></p>
             </div>
@@ -77,7 +77,7 @@ export  default {
         // 点赞功能
         getInitThumbsUpCount() {
             axios({
-                url: 'https://kylebing.cn/portal/thumbs-up?key=' + this.thumbsUpKey,
+                url: 'http://kylebing.cn/portal/thumbs-up?key=' + this.thumbsUpKey,
             })
                 .then(res => {
                     if (res.data && res.data.data) {
