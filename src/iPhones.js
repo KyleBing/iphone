@@ -1,7 +1,6 @@
 const lastOS = '最新';
 
-// const BASE_URL = 'http://apple-image.kylebing.cn/'
-const BASE_URL = 'https://diary-container.kylebing.cn/'
+const BASE_URL = 'http://apple-image.kylebing.cn/'
 export default [
     {
         name: "iPhone 1",
