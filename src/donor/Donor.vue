@@ -45,7 +45,7 @@ export default {
         },
         getDonationDesc(){
             axios({
-                url: 'https://kylebing.cn/portal/diary/get-latest-public-diary-with-keyword',
+                url: 'http://kylebing.cn/portal/diary/get-latest-public-diary-with-keyword',
                 params: {
                     keyword: 'iPhone赞赏说明'
                 }

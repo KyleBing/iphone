@@ -27,7 +27,7 @@ export default {
     methods: {
         getDonors(){
             axios({
-                url: 'https://kylebing.cn/portal/diary/get-latest-public-diary-with-keyword',
+                url: 'http://kylebing.cn/portal/diary/get-latest-public-diary-with-keyword',
                 params: {
                     keyword: 'iphone-helper-list'
                 }
