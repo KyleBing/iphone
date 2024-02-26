@@ -37,7 +37,7 @@ body{
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
-  padding: 80px 0;
+  padding: 40px 0;
   > * {
     margin-right: 40px;
     &:last-child{
@@ -127,7 +127,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
   &:last-child{
     margin-bottom: 0;
   }

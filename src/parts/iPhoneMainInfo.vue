@@ -4,10 +4,9 @@
             <img :src="iphone.pic" alt="icon">
         </div>
 
-        <ScoreBar :iphone="iphone" :max-score="maxScore"/>
         <div :class="['title', {'is-new': iphone.isNew}]">{{iphone.name}}</div>
         <div class="date">{{iphone.release}}</div>
-        <div class="slogan" v-if="iphone.slogan">{{iphone.slogan}}</div>
+<!--        <div class="slogan" v-if="iphone.slogan">{{iphone.slogan}}</div>-->
     </div>
 </template>
 
@@ -32,7 +31,7 @@ export default {
 <style scoped lang="scss">
 @import "src/scss/plugin";
 .iphone-main-info{
-    width: 400px;
+    width: 300px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -43,7 +42,7 @@ export default {
 }
 
 .img-frame {
-    padding: 10px 20px;
+    padding: 10px 30px;
     @include border-radius(10px);
     flex-shrink: 0;
     display: flex;
@@ -52,7 +51,8 @@ export default {
     align-items: center;
     img {
         @include border-radius(16px);
-        height: 200px;
+        max-height: 200px;
+        width: 100%;
         display: block;
     }
 }

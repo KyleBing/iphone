@@ -32,7 +32,6 @@
                                     <span v-else>-</span>
                                 </div>
                             </div>
-
                             <div class="main-ref-item">
                                 <div class="label">GPU</div>
                                 <div class="value cyan">
@@ -40,9 +39,6 @@
                                     <span v-if="iphone.gpu.core"><i class="multiply">×</i> {{iphone.gpu.core}}</span>
                                 </div>
                             </div>
-
-
-
                             <div class="main-ref-item">
                                 <div class="label">内存</div>
                                 <div class="value" v-if="iphone.memory.length > 0" v-for="memory in iphone.memory">
@@ -72,7 +68,7 @@
                                     <span>{{iphone.weight}} g</span>
                                 </div>
                             </div>
-
+                            <ScoreBar :iphone="iphone" :max-score="maxScore"/>
                         </div>
                     </section>
                     <section class="screen">
@@ -108,7 +104,8 @@
                                 <div @click="tagToggle('os')" class="detail-item-label">系统</div>
                                 <div class="detail-item-content">
                                     <div class="tip gradient-purple">{{iphone.os.init}} <span class="sup">初始</span></div>
-                                    <div class="tip gradient-blue">{{iphone.os.last}} <span class="sup">最后</span></div>
+                                    <div class="tip">→</div>
+                                    <div class="tip gradient-purple">{{iphone.os.last}} <span class="sup">最后</span></div>
                                 </div>
                             </div>
                             <div class="detail-item" :class="[{active: tags.some(item => item === 'connection')}]">
@@ -223,9 +220,11 @@ import Donor from "@/donor/Donor";
 import SwitchButton from "@/parts/SwitchButton";
 import Opening from "@/parts/Opening.vue";
 import SvgCamera3Radar15 from "@/svg/SvgCamera3Radar15";
+import ScoreBar from "@/parts/ScoreBar.vue";
 
 export default {
     components: {
+        ScoreBar,
         SvgCamera3Radar15,
         Opening,
         SwitchButton,
