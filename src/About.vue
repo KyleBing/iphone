@@ -32,9 +32,9 @@
                 <a class="link-item" target="_blank" href="http://kylebing.cn/tools/apple-chip">
                     <img src="./img/links/chip_white@2x.png" alt="chip">
                 </a>
-                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/apple-watch">
-                    <img src="./img/links/apple-watch@2x.png" alt="watch">
-                </a>
+<!--                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/apple-watch">-->
+<!--                    <img src="./img/links/apple-watch@2x.png" alt="watch">-->
+<!--                </a>-->
             </div>
             <div class="author-info">
                 <p>主页：<a class="link" target="_blank" href="http://kylebing.cn/">kylebing.cn</a></p>
