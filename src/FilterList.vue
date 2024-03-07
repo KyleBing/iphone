@@ -40,9 +40,6 @@ export default {
     computed: {
     },
     methods: {
-        iPhoneSeries() {
-            return iPhoneSeries
-        },
         // 筛选手机信息
         filterTagToggle(deviceName) {
             if (this.selectedNames.includes(deviceName)) {

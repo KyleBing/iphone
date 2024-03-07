@@ -5039,7 +5039,9 @@ const iPhoneSeries = [
     iPhone15,
 ].reverse()
 
-const iPhones = iPhoneSeries.flat()
+const iPhones = iPhoneSeries.map(group => {
+    return group.reverse()
+}).flat()
 
 export {
     iPhoneSeries, iPhones
