@@ -196,7 +196,7 @@
 </template>
 <script>
 
-import iPhones from "@/iPhones";
+import {iPhoneSeries, iPhones} from "@/iPhones";
 import axios from "axios";
 import projInfo from '../package.json'
 import About from "@/About";
@@ -245,6 +245,7 @@ export default {
             mobileMode: false,
             latesOS: '最新',
             iPhones: iPhones,
+            iPhoneSeries: iPhoneSeries,
             iPhonesOrigin: iPhones,
 
             deviceMap: new Map(),

@@ -1,7 +1,8 @@
 const lastOS = '最新';
 
 const BASE_URL = 'http://apple-image.kylebing.cn/'
-export default [
+
+const iPhone = [
     {
         name: "iPhone 1",
         name_short: "1",
@@ -83,6 +84,9 @@ export default [
         waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
+]
+
+const iPhone3 = [
     {
         name: "iPhone 3G",
         name_short: "3G",
@@ -250,6 +254,9 @@ export default [
         waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
+]
+
+const iPhone4 = [
     {
         name: "iPhone 4",
         name_short: "4",
@@ -440,6 +447,9 @@ export default [
         waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
+]
+
+const iPhone5 = [
     {
         name: "iPhone 5",
         name_short: "5",
@@ -746,6 +756,9 @@ export default [
         waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
+]
+
+const iPhone6 = [
     {
         name: "iPhone 6",
         name_short: "6",
@@ -950,6 +963,9 @@ export default [
         waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
+]
+
+const iPhone6s = [
     {
         name: "iPhone 6s",
         name_short: "6s",
@@ -1156,6 +1172,9 @@ export default [
         waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
+]
+
+const iPhoneSE = [
     {
         name: "iPhone SE",
         name_short: "SE",
@@ -1260,6 +1279,220 @@ export default [
         waterResistant: {value: '', waterDepth: 0, timeHold: 0},
         price: "",
     },
+    {
+        name: "iPhone SE2",
+        name_short: "SE2",
+        hardwareName: 'iPhone12,8',
+        isTitleOnly: false,
+        pic: `${BASE_URL}FscAdH4BldrWPMWPrj3rEs5hNWlq`,
+        slogan: "Lots to love. Less to spend.",
+        isNew: false,
+        active: false,
+        release: "2020-04-24",
+        models: [
+            {name: "美，加", type: "A2275"},
+            {name: "", type: "A2296"},
+            {name: "国内", type: "A2298"},
+        ],
+        network: ["GSM", "EDGE", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
+        height: 138.4,
+        width: 67.3,
+        thickness: 7.3,
+        weight: 148,
+        os: {
+            init: "iOS 13.4",
+            last: lastOS
+        },
+        cpu: {
+            icon: 'A13',
+            model: 'A13',
+            rate: '2.65',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 4
+        },
+        sim: [{name: '国内', type: '单卡'}],
+        geekbenchScore: {
+            single: 0,
+            multi: 2849
+        },
+        memory: [
+            {size: "3", type: "LPDDR4X"}
+        ],
+        storage: ["64", "256"],
+        battery: '1821',
+        port: '闪电',
+        screen: {
+            brightness: '',
+            size: "4.7",
+            type: 'IPS LCD',
+            refreshRate: "",
+            width: 750,
+            height: 1334,
+            density: "326",
+            touch3D: false,
+            hdr: false,
+        },
+        cameras: {
+            type: '1',
+            front: {
+                name: '默认',
+                model: '',
+                aperture: 'ƒ/2.2',
+                focal: '',
+                pixelCount: '700万',
+                zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '720p', fps: []},
+                    {size: '1080p', fps: []},
+                ],
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: '',
+                    aperture: 'ƒ/1.8',
+                    focal: '',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [25, 30, 60, 120, 240]},
+                    ],
+                },
+            ]
+        },
+        colors: [
+            {name: 'Black', color: '#262529'},
+            {name: 'White', color: '#F3F3F3'},
+            {name: 'Product (Red)', color: '#BA0C2E'},
+        ],
+        charge: [
+            {name: '充电口', power: '12w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '15w'},
+        ],
+        unlockMethod: ['指纹解锁'],
+        applePay: false,
+        connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
+        waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
+        price: "",
+    },
+    {
+        name: "iPhone SE3",
+        name_short: "SE3",
+        hardwareName: 'iPhone14,6',
+        isTitleOnly: false,
+        pic: `${BASE_URL}FmVXrMwGuL9cxLSvVNynG3R_nwWU`,
+        slogan: "Love the power. Love the price.",
+        isNew: false,
+        active: false,
+        release: "2022-03-18",
+        models: [
+            {name: "国际 ", type: "A2783"},
+            {name: "北美洲", type: "A2595"},
+            {name: "国内", type: "A2785"},
+            {name: "日本", type: "A2782"},
+            {name: "俄罗斯", type: "A2784"},
+        ],
+        network: ["GSM", "EDGE", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
+        height: 138.4,
+        width: 67.3,
+        thickness: 7.3,
+        weight: 144,
+        os: {
+            init: "iOS 15",
+            last: lastOS
+        },
+        cpu: {
+            icon: 'A15',
+            model: 'A15',
+            rate: '3.20',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 4
+        },
+        sim: [{name: '国内', type: '单卡'}],
+        geekbenchScore: {
+            single: 0,
+            multi: 4546
+        },
+        memory: [
+            {size: "4", type: "LPDDR4X"}
+        ],
+        storage: ["64", "128", "256"],
+        battery: '2018',
+        port: '闪电',
+        screen: {
+            brightness: '625',
+            size: "4.7",
+            type: 'IPS LCD',
+            refreshRate: "",
+            width: 750,
+            height: 1334,
+            density: "326",
+            touch3D: false,
+            hdr: false,
+        },
+        cameras: {
+            type: '1',
+            front: {
+                name: '默认',
+                model: '',
+                aperture: 'ƒ/2.2',
+                focal: '26mm',
+                pixelCount: '700万',
+                zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '1080p', fps: []},
+                ],
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: '',
+                    aperture: 'ƒ/1.8',
+                    focal: '26mm',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4K', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [25, 30, 60, 120, 240]},
+                    ],
+                },
+            ]
+        },
+        colors: [
+            {name: 'Midnight', color: '#262529'},
+            {name: 'Starlight', color: '#F3F3F3'},
+            {name: 'Product (Red)', color: '#BA0C2E'},
+        ],
+        charge: [
+            {name: '充电口', power: '18w'},
+            {name: 'Qi', power: ''},
+        ],
+        unlockMethod: ['指纹'],
+        applePay: false,
+        connectivity: ["2G", "3G", "4G", "5G", "Wi-Fi", "蓝牙 5.0"],
+        waterResistant: {
+            value: 'IP67',
+            waterDepth: 1,
+            timeHold: 30
+        },
+        price: "",
+    },
+]
+
+const iPhone7 = [
+
     {
         name: "iPhone 7",
         name_short: "7",
@@ -1484,6 +1717,10 @@ export default [
         waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
         price: "",
     },
+]
+
+const iPhone8 = [
+
     {
         name: "iPhone 8",
         name_short: "8",
@@ -1704,7 +1941,9 @@ export default [
         waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
         price: "",
     },
+]
 
+const iPhoneX = [
     {
         name: "iPhone X",
         name_short: "X",
@@ -1817,7 +2056,6 @@ export default [
         waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
         price: "",
     },
-
     {
         name: "iPhone XS",
         name_short: "XS",
@@ -2165,6 +2403,9 @@ export default [
         waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
         price: "",
     },
+]
+
+const iPhone11 = [
     {
         name: "iPhone 11",
         name_short: "11",
@@ -2534,107 +2775,130 @@ export default [
         },
         price: "",
     },
+]
+
+const iPhone12 = [
     {
-        name: "iPhone SE2",
-        name_short: "SE2",
-        hardwareName: 'iPhone12,8',
+        name: "iPhone 12",
+        name_short: "12",
+        hardwareName: 'iPhone13,2',
         isTitleOnly: false,
-        pic: `${BASE_URL}FscAdH4BldrWPMWPrj3rEs5hNWlq`,
-        slogan: "Lots to love. Less to spend.",
+        pic: `${BASE_URL}FuSmVz8tgyBIC-3mOGnD8cVT7r8j`,
+        slogan: "Blast past fast.",
         isNew: false,
         active: false,
-        release: "2020-04-24",
+        release: "2020-10-23",
         models: [
-            {name: "美，加", type: "A2275"},
-            {name: "", type: "A2296"},
-            {name: "国内", type: "A2298"},
+            {name: "美国", type: "A2172"},
+            {name: "加拿大/日本", type: "A2402"},
+            {name: "国内", type: "A2404"},
+            {name: "其它", type: "A2403"},
         ],
-        network: ["GSM", "EDGE", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
-        height: 138.4,
-        width: 67.3,
-        thickness: 7.3,
-        weight: 148,
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 146.7,
+        width: 71.5,
+        thickness: 7.44,
+        weight: 162,
         os: {
-            init: "iOS 13.4",
+            init: "iOS 14.1",
             last: lastOS
         },
         cpu: {
-            icon: 'A13',
-            model: 'A13',
-            rate: '2.65',
+            icon: 'A14',
+            model: 'A14',
+            rate: '2.99',
             core: 6
         },
         gpu: {
             model: "Apple",
             core: 4
         },
-        sim: [{name: '国内', type: '单卡'}],
+        sim: [{name: '国内', type: '双卡双待'}],
         geekbenchScore: {
             single: 0,
-            multi: 2849
+            multi: 3863
         },
         memory: [
-            {size: "3", type: "LPDDR4X"}
+            {size: "4", type: "LPDDR4X"}
         ],
-        storage: ["64", "256"],
-        battery: '1821',
+        storage: ["64", "128", "256"],
+        battery: '2851',
         port: '闪电',
         screen: {
             brightness: '',
-            size: "4.7",
-            type: 'IPS LCD',
+            size: "6.1",
+            type: 'XDR OLED',
             refreshRate: "",
-            width: 750,
-            height: 1334,
-            density: "326",
+            width: 1170,
+            height: 2532,
+            density: "460",
             touch3D: false,
-            hdr: false,
+            hdr:  'HDR',
         },
         cameras: {
-            type: '1',
+            type: '2-vertical',
             front: {
                 name: '默认',
                 model: '',
                 aperture: 'ƒ/2.2',
-                focal: '',
-                pixelCount: '700万',
+                focal: '23mm',
+                pixelCount: '1200万',
                 zoomRate: '',
-                hdr: 'HDR',
+                hdr:  'HDR',
                 dimension: [
-                    {size: '720p', fps: []},
-                    {size: '1080p', fps: []},
+                    {size: '4K', fps: [24, 30, 60]},
+                    {size: '1080p', fps: [30,60,120]},
                 ],
             },
             back: [
                 {
                     name: '默认',
-                    model: '',
-                    aperture: 'ƒ/1.8',
-                    focal: '',
+                    model: '1.4μm',
+                    aperture: 'ƒ/1.6',
+                    focal: '26mm',
                     pixelCount: '1200万',
                     zoomRate: '',
-                    hdr: 'HDR',
+                    hdr:  'HDR',
                     dimension: [
-                        {size: '4K', fps: [24, 25, 30, 60]},
-                        {size: '1080p', fps: [25, 30, 60, 120, 240]},
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                        {size: '720p', fps: [240]},
                     ],
+                },
+                {
+                    name: '广角',
+                    model: '',
+                    aperture: 'ƒ/2.4',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    hdr:  'HDR',
+                    dimension: [],
                 },
             ]
         },
         colors: [
-            {name: 'Black', color: '#262529'},
-            {name: 'White', color: '#F3F3F3'},
-            {name: 'Product (Red)', color: '#BA0C2E'},
+            {name: 'Black', color: '#212125'},
+            {name: 'White', color: '#f5f5f7'},
+            {name: 'Product Red', color: '#d82e2e'},
+            {name: 'Green', color: '#d8efd5'},
+            {name: 'Blue', color: '#023b63'},
+            {name: 'Purple', color: '#b7afe6'},
         ],
         charge: [
-            {name: '充电口', power: '12w'},
-            {name: 'PD', power: '20-23w'},
+            {name: 'Qi', power: '7.5w'},
+            {name: 'Lightning', power: '20w'},
             {name: 'MagSafe', power: '15w'},
         ],
-        unlockMethod: ['指纹解锁'],
+        unlockMethod: ['面容解锁'],
         applePay: false,
-        connectivity: ["2G", "3G", "4G", "LTE", "Wi-Fi", "蓝牙 5.0"],
-        waterResistant: {value: 'IP67', waterDepth: 0, timeHold: 0},
+        connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
         price: "",
     },
     {
@@ -2749,129 +3013,6 @@ export default [
             {name: 'Qi', power: '7.5w'},
             {name: 'Lightning', power: '20w'},
             {name: 'MagSafe', power: '12w'},
-        ],
-        unlockMethod: ['面容解锁'],
-        applePay: false,
-        connectivity: ["2G", "3G", "4G", "LTE", "5G", "Wi-Fi 6", "蓝牙 5.0"],
-        waterResistant: {
-            value: 'IP68',
-            waterDepth: 6,  // 深度 m
-            timeHold: 30 // 时长 min
-        },
-        price: "",
-    },
-    {
-        name: "iPhone 12",
-        name_short: "12",
-        hardwareName: 'iPhone13,2',
-        isTitleOnly: false,
-        pic: `${BASE_URL}FuSmVz8tgyBIC-3mOGnD8cVT7r8j`,
-        slogan: "Blast past fast.",
-        isNew: false,
-        active: false,
-        release: "2020-10-23",
-        models: [
-            {name: "美国", type: "A2172"},
-            {name: "加拿大/日本", type: "A2402"},
-            {name: "国内", type: "A2404"},
-            {name: "其它", type: "A2403"},
-        ],
-        network: ["5G", "4G", "LTE", "3G", "2G"],
-        height: 146.7,
-        width: 71.5,
-        thickness: 7.44,
-        weight: 162,
-        os: {
-            init: "iOS 14.1",
-            last: lastOS
-        },
-        cpu: {
-            icon: 'A14',
-            model: 'A14',
-            rate: '2.99',
-            core: 6
-        },
-        gpu: {
-            model: "Apple",
-            core: 4
-        },
-        sim: [{name: '国内', type: '双卡双待'}],
-        geekbenchScore: {
-            single: 0,
-            multi: 3863
-        },
-        memory: [
-            {size: "4", type: "LPDDR4X"}
-        ],
-        storage: ["64", "128", "256"],
-        battery: '2851',
-        port: '闪电',
-        screen: {
-            brightness: '',
-            size: "6.1",
-            type: 'XDR OLED',
-            refreshRate: "",
-            width: 1170,
-            height: 2532,
-            density: "460",
-            touch3D: false,
-            hdr:  'HDR',
-        },
-        cameras: {
-            type: '2-vertical',
-            front: {
-                name: '默认',
-                model: '',
-                aperture: 'ƒ/2.2',
-                focal: '23mm',
-                pixelCount: '1200万',
-                zoomRate: '',
-                hdr:  'HDR',
-                dimension: [
-                    {size: '4K', fps: [24, 30, 60]},
-                    {size: '1080p', fps: [30,60,120]},
-                ],
-            },
-            back: [
-                {
-                    name: '默认',
-                    model: '1.4μm',
-                    aperture: 'ƒ/1.6',
-                    focal: '26mm',
-                    pixelCount: '1200万',
-                    zoomRate: '',
-                    hdr:  'HDR',
-                    dimension: [
-                        {size: '4k', fps: [24, 25, 30, 60]},
-                        {size: '1080p', fps: [30, 60, 120, 240]},
-                        {size: '720p', fps: [240]},
-                    ],
-                },
-                {
-                    name: '广角',
-                    model: '',
-                    aperture: 'ƒ/2.4',
-                    focal: '13mm',
-                    angel: '120',
-                    pixelCount: '1200万',
-                    zoomRate: '',
-                    hdr:  'HDR',
-                    dimension: [],
-                },
-            ]
-        },
-        colors: [
-            {name: 'Black', color: '#212125'},
-            {name: 'White', color: '#f5f5f7'},
-            {name: 'Product Red', color: '#d82e2e'},
-            {name: 'Green', color: '#d8efd5'},
-            {name: 'Blue', color: '#023b63'},
-            {name: 'Purple', color: '#b7afe6'},
-        ],
-        charge: [
-            {name: 'Qi', power: '7.5w'},
-            {name: 'Lightning', power: '20w'},
-            {name: 'MagSafe', power: '15w'},
         ],
         unlockMethod: ['面容解锁'],
         applePay: false,
@@ -3191,132 +3332,9 @@ export default [
         },
         price: "",
     },
-    {
-        name: "iPhone 13 Mini",
-        name_short: "13 mini",
-        hardwareName: 'iPhone14,4',
-        isTitleOnly: false,
-        pic: `${BASE_URL}FoOOaHnie8aDAWFCw8bvpTnM8GPo`,
-        slogan: "Your new superpower.",
-        isNew: false,
-        active: false,
-        release: "2021-09-15",
-        models: [
-            {name: "国内", type: "A2629"},
-            {name: "", type: "A2481"},
-            {name: "", type: "A2626"},
-            {name: "", type: "A2628"},
-            {name: "", type: "A2630"},
-        ],
-        network: ["5G", "4G", "LTE", "3G", "2G"],
-        height: 131.5,
-        width: 64.2,
-        thickness: 7.65,
-        weight: 140,
-        os: {
-            init: "iOS 15",
-            last: lastOS
-        },
-        cpu: {
-            icon: '',
-            model: 'A15',
-            rate: '3.2',
-            core: 6
-        },
-        gpu: {
-            model: "Apple",
-            core: 4
-        },
-        sim: [{name: '国内', type: '单卡'}],
-        geekbenchScore: {
-            single: 0,
-            multi: 4500
-        },
-        memory: [
-            {size: "4", type: "LPDDR4X"}
-        ],
-        storage: ["128", "256", "512"],
-        battery: '2406',
-        port: '闪电',
-        screen: {
-            brightness: '',
-            size: "5.4",
-            type: 'XDR OLED',
-            refreshRate: "",
-            width: 1080,
-            height: 2340,
-            density: "476",
-            touch3D: false,
-            hdr:  'HDR',
-        },
-        cameras: {
-            type: '2-cross',
-            front: {
-                name: '默认',
-                model: '',
-                aperture: 'ƒ/2.2',
-                focal: '23mm',
-                hdr: 'HDR',
-                pixelCount: '1200万',
-                zoomRate: '',
-                dimension: [
-                    {size: '4k', fps: [24, 25, 30, 60]},
-                    {size: '1080p', fps: [30, 60, 120]},
-                ]
-            },
-            back: [
-                {
-                    name: '默认',
-                    model: '1.7μm',
-                    aperture: 'ƒ/1.6',
-                    focal: '26mm',
-                    hdr: 'HDR',
-                    angle: '',
-                    pixelCount: '1200万',
-                    zoomRate: '',
-                    dimension: [
-                        {size: '4k', fps: [24, 30, 60]},
-                        {size: '1080p', fps: [30, 60, 120, 240]},
-                    ]
-                },
-                {
-                    name: '广角',
-                    model: 'Sony IMX772 1μm',
-                    aperture: 'ƒ/2.4',
-                    focal: '13mm',
-                    hdr: 'HDR',
-                    angel: '120',
-                    pixelCount: '1200万',
-                    zoomRate: '',
-                    dimension: [
-                        {size: '4k', fps: [24, 30, 60]},
-                        {size: '1080p', fps: [30, 60, 120]},
-                    ]
-                },
-            ]
-        },
-        colors: [
-            {name: 'Midnight', color: '#232a31'},
-            {name: 'Starlight', color: '#faf6f2'},
-            {name: 'Blue', color: '#276787'},
-            {name: 'Pink', color: '#faddd7'},
-            {name: 'Product Red', color: '#bf0013'},
-        ],
-        charge: [
-            {name: 'Qi无线', power: '7.5w'},
-            {name: '快充', power: '20w'},
-            {name: 'MagSafe', power: '12w'},
-        ],
-        unlockMethod: ['面容解锁'],
-        applePay: false,
-        connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
-        waterResistant: {
-            value: 'IP68',
-            waterDepth: 6,  // 深度 m
-            timeHold: 30 // 时长 min
-        },
-        price: "",
-    },
+]
+
+const iPhone13 = [
     {
         name: "iPhone 13",
         name_short: "13",
@@ -3436,6 +3454,132 @@ export default [
             {name: 'Qi无线', power: '7.5w'},
             {name: '快充', power: '20w'},
             {name: 'MagSafe', power: '15w'},
+        ],
+        unlockMethod: ['面容解锁'],
+        applePay: false,
+        connectivity: ["5G", "4G", "UWB", "蓝牙5.0", "2G"],
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
+        price: "",
+    },
+    {
+        name: "iPhone 13 Mini",
+        name_short: "13 mini",
+        hardwareName: 'iPhone14,4',
+        isTitleOnly: false,
+        pic: `${BASE_URL}FoOOaHnie8aDAWFCw8bvpTnM8GPo`,
+        slogan: "Your new superpower.",
+        isNew: false,
+        active: false,
+        release: "2021-09-15",
+        models: [
+            {name: "国内", type: "A2629"},
+            {name: "", type: "A2481"},
+            {name: "", type: "A2626"},
+            {name: "", type: "A2628"},
+            {name: "", type: "A2630"},
+        ],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 131.5,
+        width: 64.2,
+        thickness: 7.65,
+        weight: 140,
+        os: {
+            init: "iOS 15",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A15',
+            rate: '3.2',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 4
+        },
+        sim: [{name: '国内', type: '单卡'}],
+        geekbenchScore: {
+            single: 0,
+            multi: 4500
+        },
+        memory: [
+            {size: "4", type: "LPDDR4X"}
+        ],
+        storage: ["128", "256", "512"],
+        battery: '2406',
+        port: '闪电',
+        screen: {
+            brightness: '',
+            size: "5.4",
+            type: 'XDR OLED',
+            refreshRate: "",
+            width: 1080,
+            height: 2340,
+            density: "476",
+            touch3D: false,
+            hdr:  'HDR',
+        },
+        cameras: {
+            type: '2-cross',
+            front: {
+                name: '默认',
+                model: '',
+                aperture: 'ƒ/2.2',
+                focal: '23mm',
+                hdr: 'HDR',
+                pixelCount: '1200万',
+                zoomRate: '',
+                dimension: [
+                    {size: '4k', fps: [24, 25, 30, 60]},
+                    {size: '1080p', fps: [30, 60, 120]},
+                ]
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: '1.7μm',
+                    aperture: 'ƒ/1.6',
+                    focal: '26mm',
+                    hdr: 'HDR',
+                    angle: '',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '广角',
+                    model: 'Sony IMX772 1μm',
+                    aperture: 'ƒ/2.4',
+                    focal: '13mm',
+                    hdr: 'HDR',
+                    angel: '120',
+                    pixelCount: '1200万',
+                    zoomRate: '',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                    ]
+                },
+            ]
+        },
+        colors: [
+            {name: 'Midnight', color: '#232a31'},
+            {name: 'Starlight', color: '#faf6f2'},
+            {name: 'Blue', color: '#276787'},
+            {name: 'Pink', color: '#faddd7'},
+            {name: 'Product Red', color: '#bf0013'},
+        ],
+        charge: [
+            {name: 'Qi无线', power: '7.5w'},
+            {name: '快充', power: '20w'},
+            {name: 'MagSafe', power: '12w'},
         ],
         unlockMethod: ['面容解锁'],
         applePay: false,
@@ -3751,114 +3895,9 @@ export default [
         },
         price: "",
     },
-    {
-        name: "iPhone SE3",
-        name_short: "SE3",
-        hardwareName: 'iPhone14,6',
-        isTitleOnly: false,
-        pic: `${BASE_URL}FmVXrMwGuL9cxLSvVNynG3R_nwWU`,
-        slogan: "Love the power. Love the price.",
-        isNew: false,
-        active: false,
-        release: "2022-03-18",
-        models: [
-            {name: "国际 ", type: "A2783"},
-            {name: "北美洲", type: "A2595"},
-            {name: "国内", type: "A2785"},
-            {name: "日本", type: "A2782"},
-            {name: "俄罗斯", type: "A2784"},
-        ],
-        network: ["GSM", "EDGE", "CDMA2000", "EV-DO", "HSPA+", "LTE", "LTE Advanced"],
-        height: 138.4,
-        width: 67.3,
-        thickness: 7.3,
-        weight: 144,
-        os: {
-            init: "iOS 15",
-            last: lastOS
-        },
-        cpu: {
-            icon: 'A15',
-            model: 'A15',
-            rate: '3.20',
-            core: 6
-        },
-        gpu: {
-            model: "Apple",
-            core: 4
-        },
-        sim: [{name: '国内', type: '单卡'}],
-        geekbenchScore: {
-            single: 0,
-            multi: 4546
-        },
-        memory: [
-            {size: "4", type: "LPDDR4X"}
-        ],
-        storage: ["64", "128", "256"],
-        battery: '2018',
-        port: '闪电',
-        screen: {
-            brightness: '625',
-            size: "4.7",
-            type: 'IPS LCD',
-            refreshRate: "",
-            width: 750,
-            height: 1334,
-            density: "326",
-            touch3D: false,
-            hdr: false,
-        },
-        cameras: {
-            type: '1',
-            front: {
-                name: '默认',
-                model: '',
-                aperture: 'ƒ/2.2',
-                focal: '26mm',
-                pixelCount: '700万',
-                zoomRate: '',
-                hdr: 'HDR',
-                dimension: [
-                    {size: '1080p', fps: []},
-                ],
-            },
-            back: [
-                {
-                    name: '默认',
-                    model: '',
-                    aperture: 'ƒ/1.8',
-                    focal: '26mm',
-                    pixelCount: '1200万',
-                    zoomRate: '',
-                    hdr: 'HDR',
-                    dimension: [
-                        {size: '4K', fps: [24, 25, 30, 60]},
-                        {size: '1080p', fps: [25, 30, 60, 120, 240]},
-                    ],
-                },
-            ]
-        },
-        colors: [
-            {name: 'Midnight', color: '#262529'},
-            {name: 'Starlight', color: '#F3F3F3'},
-            {name: 'Product (Red)', color: '#BA0C2E'},
-        ],
-        charge: [
-            {name: '充电口', power: '18w'},
-            {name: 'Qi', power: ''},
-        ],
-        unlockMethod: ['指纹'],
-        applePay: false,
-        connectivity: ["2G", "3G", "4G", "5G", "Wi-Fi", "蓝牙 5.0"],
-        waterResistant: {
-            value: 'IP67',
-            waterDepth: 1,
-            timeHold: 30
-        },
-        price: "",
-    },
+]
 
+const iPhone14 = [
     {
         name: "iPhone 14",
         name_short: "14",
@@ -4425,7 +4464,9 @@ export default [
         },
         price: "",
     },
+]
 
+const iPhone15 = [
     {
         name: "iPhone 15",
         name_short: "15",
@@ -4978,6 +5019,28 @@ export default [
         },
         price: "",
     },
+]
 
-
+const iPhoneSeries = [
+    iPhone,
+    iPhone3,
+    iPhone4,
+    iPhone5,
+    iPhone6,
+    iPhone6s,
+    iPhone7,
+    iPhone8,
+    iPhoneSE,
+    iPhoneX,
+    iPhone11,
+    iPhone12,
+    iPhone13,
+    iPhone14,
+    iPhone15,
 ].reverse()
+
+const iPhones = iPhoneSeries.flat()
+
+export {
+    iPhoneSeries, iPhones
+}

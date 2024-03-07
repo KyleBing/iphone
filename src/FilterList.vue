@@ -1,17 +1,20 @@
 <template>
     <!-- FILTER LIST-->
     <div class="filter-list">
-        <div class="iphone-tag-list">
-            <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}]"
-                 v-for="item in iPhonesOrigin" :key="item.name_short"
-                 @click="filterTagToggle(item.name)"
-            >{{item.name_short}}</div>
+        <div class="iphone-tag-list" >
+           <div v-for="(iPhoneGroup, index) in iPhoneSeries" :key="index">
+               <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}]"
+                    v-for="item in iPhoneGroup" :key="item.name_short"
+                    @click="filterTagToggle(item.name)"
+               >{{item.name_short}}</div>
+           </div>
         </div>
     </div>
 </template>
 <script>
 
 import SwitchButton from "@/parts/SwitchButton";
+import {iPhoneSeries} from "@/iPhones";
 export default {
     name: "FilterList",
     components: {SwitchButton},
@@ -24,6 +27,7 @@ export default {
     },
     data(){
         return {
+            iPhoneSeries,
             selectedNames: []
         }
     },
@@ -36,6 +40,9 @@ export default {
     computed: {
     },
     methods: {
+        iPhoneSeries() {
+            return iPhoneSeries
+        },
         // 筛选手机信息
         filterTagToggle(deviceName) {
             if (this.selectedNames.includes(deviceName)) {
@@ -66,6 +73,7 @@ export default {
         flex-flow: row wrap;
         padding: 10px;
         .iphone-tag{
+            min-width: 50px;
             border: 1px solid $color-border;
             font-family: "Galvji", sans-serif;
             background-color: white;
