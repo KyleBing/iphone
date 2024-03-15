@@ -4,7 +4,7 @@
         <div class="iphone-tag-list" >
            <div v-for="(iPhoneGroup, index) in iPhoneSeries" :key="index">
                <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}]"
-                    v-for="item in iPhoneGroup" :key="item.name_short"
+                    v-for="item in iPhoneGroup.toReversed()" :key="item.name_short"
                     @click="filterTagToggle(item.name)"
                >{{item.name_short}}</div>
            </div>
