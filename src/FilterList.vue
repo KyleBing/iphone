@@ -6,7 +6,10 @@
                <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}]"
                     v-for="item in iPhoneGroup.toReversed()" :key="item.name_short"
                     @click="filterTagToggle(item.name)"
-               >{{item.name_short}}</div>
+               >
+                   <div class="name">{{ item.name_short }}</div>
+                   <div class="year">{{ item.release.substring(0, 4) }}</div>
+               </div>
            </div>
         </div>
     </div>
@@ -76,20 +79,38 @@ export default {
             background-color: white;
             white-space: nowrap;
             margin-bottom: 5px;
-            font-size: 13px;
             cursor: pointer;
             padding: 3px 8px;
             margin-right: 5px;
-            line-height: 1.3;
             @include border-radius(3px);
-            color: $text-main;
+            .name{
+                line-height: 1.3;
+                font-size: 13px;
+                color: $text-main;
+            }
+            .year{
+                line-height: 1;
+                color: $text-comment;
+                font-size: 8px;
+            }
             &:hover{
                 background-color: $bg-highlight;
+                .name{
+                    color: $text-main;
+                }
+                .year{
+                    color: $text-comment;
+                }
             }
             &.active{
                 background-color: #6a7282;
                 border-color: transparent;
-                color: white;
+                .name{
+                    color: white;
+                }
+                .year{
+                    color: white;
+                }
             }
         }
     }
@@ -116,8 +137,20 @@ export default {
                 border-color: $dark-border;
                 color: $dark-text;
                 background-color: $dark-bg;
+                .name{
+                    color: $dark-text-title;
+                }
+                .year{
+                    color: $dark-text-title;
+                }
                 &:hover{
                     background-color: $dark-bg-highlight;
+                    .name{
+                        color: $dark-text-subtitle;
+                    }
+                    .year{
+                        color: $dark-text-subtitle;
+                    }
                 }
                 &.active{
                 }
