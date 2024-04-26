@@ -4510,7 +4510,7 @@ const iPhone15 = [
             multi: 6301
         },
         memory: [
-            {size: "6", type: "LPDDR4X"}
+            {size: "6", type: "LPDDR5"}
         ],
         storage: ["128", "256", "512"],
         battery: '3349',
@@ -4636,7 +4636,7 @@ const iPhone15 = [
             multi: 6366
         },
         memory: [
-            {size: "6", type: "LPDDR4X"}
+            {size: "6", type: "LPDDR5"}
         ],
         storage: ["128", "256", "512"],
         battery: '4383',
