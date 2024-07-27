@@ -1,17 +1,17 @@
 <template>
-    <view class="donor-container">
-        <view class="donor-header">
-            <view class="title">赞赏列表</view>
-        </view>
-        <view class="donor-list">
-            <view class="donor-item" v-for="item in donors">
-                <view class="name">{{ item.name }}</view>
-                <view class="amount"><span class="flag">￥</span>{{ item.amount }}</view>
-                <!--            <view class="method">{{item.method}}</view>-->
-                <!--            <view class="date">{{item.date}}</view>-->
-            </view>
-        </view>
-    </view>
+    <div class="donor-container">
+        <div class="donor-header">
+            <div class="title">赞赏列表</div>
+        </div>
+        <div class="donor-list">
+            <div class="donor-item" v-for="item in donors">
+                <div class="name">{{ item.name }}</div>
+<!--                <div class="amount"><span class="flag">￥</span>{{ item.amount }}</div>-->
+<!--                <div class="method">{{item.method}}</div>-->
+<!--                <div class="date">{{item.date}}</div>-->
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -93,8 +93,8 @@ export default {
 }
 .donor-item{
     background-color: white;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     border: 1px solid $color-border;
     padding: 5px 15px;
     @include border-radius(5px);

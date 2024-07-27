@@ -1,15 +1,15 @@
 <template>
-    <view class="helper-container">
-        <view class="helper-header">
-            <view class="title">网站信息纠错者</view>
-            <view class="subtitle">排名不分先后</view>
-        </view>
-        <view class="helper-list">
-            <view class="helper-item" v-for="helper in helpers">
-                <view class="name">{{helper}}</view>
-            </view>
-        </view>
-    </view>
+    <div class="helper-container">
+        <div class="helper-header">
+            <div class="title">网站信息纠错者</div>
+            <div class="subtitle">排名不分先后</div>
+        </div>
+        <div class="helper-list">
+            <div class="helper-item" v-for="helper in helpers">
+                <div class="name">{{helper}}</div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
