@@ -1,7 +1,7 @@
 <template>
     <div class="helper-container">
         <div class="helper-header">
-            <div class="title">网站信息纠错者</div>
+            <div class="title">信息校正</div>
             <div class="subtitle">排名不分先后</div>
         </div>
         <div class="helper-list">
