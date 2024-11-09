@@ -4766,7 +4766,7 @@ const iPhone15 = [
         ],
         storage: ["128", "256", "512", "1024"],
         battery: '3274',
-        port: 'USB-C 3.0 10Gb/s',
+        port: 'USB-C 3.1 10Gb/s',
         screen: {
             brightness: '1000~2000',
             size: "6.1",
@@ -4916,7 +4916,7 @@ const iPhone15 = [
         ],
         storage: ["256", "512", "1024"],
         battery: '4422',
-        port: 'USB-C 3.0 10Gb/s',
+        port: 'USB-C 3.1 10Gb/s',
         screen: {
             brightness: '1000~2000',
             size: "6.7",
@@ -5025,7 +5025,7 @@ const iPhone16 = [
     {
         name: "iPhone 16",
         name_short: "16",
-        hardwareName: '',
+        hardwareName: 'iPhone17,3',
         isTitleOnly: false,
         pic: `${BASE_URL}Flg1-cbZPlsMzpMFYcDBrto01R6a`,
         slogan: "",
@@ -5033,6 +5033,9 @@ const iPhone16 = [
         active: true,
         release: "2024-09-10",
         models: [
+            {name: "A3081", type: ""},
+            {name: "A3286", type: ""},
+            {name: "A3287", type: ""},
             {name: "A3288", type: ""},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
@@ -5047,7 +5050,7 @@ const iPhone16 = [
         cpu: {
             icon: '',
             model: 'A18',
-            rate: '',
+            rate: '3.78',
             core: 6
         },
         gpu: {
@@ -5058,14 +5061,14 @@ const iPhone16 = [
             {name: '国内', type: '双卡双待'},
         ],
         geekbenchScore: {
-            single: 0,
-            multi: 0
+            single: 3268,
+            multi: 8011
         },
         memory: [
-            {size: "--", type: ""}
+            {size: "8", type: "LPDDR5X"}
         ],
         storage: ["128", "256", "512"],
-        battery: '',
+        battery: '3561',
         port: 'USB-C 2.0 480Mb/s',
         screen: {
             brightness: '1000~2000',
@@ -5133,11 +5136,11 @@ const iPhone16 = [
         charge: [
             {name: '充电口', power: '20w'},
             {name: 'PD', power: '20-23w'},
-            {name: 'MagSafe', power: '15w'},
+            {name: 'MagSafe', power: '25w'},
         ],
         unlockMethod: ['面容解锁'],
         applePay: false,
-        connectivity: ["5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
+        connectivity: ["WiFi7", "5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
         waterResistant: {
             value: 'IP68',
             waterDepth: 6,  // 深度 m
@@ -5148,7 +5151,7 @@ const iPhone16 = [
     {
         name: "iPhone 16 Plus",
         name_short: "16 Plus",
-        hardwareName: '',
+        hardwareName: 'iPhone17,4',
         isTitleOnly: false,
         pic: `${BASE_URL}FneRdvOBuzynWMU6rXJA_eZxMyuW`,
         slogan: "New camera. New design. Newphoria.",
@@ -5156,6 +5159,9 @@ const iPhone16 = [
         active: true,
         release: "2024-09-10",
         models: [
+            {name: "A3082", type: ""},
+            {name: "A3289", type: ""},
+            {name: "A3290", type: ""},
             {name: "A3291", type: ""},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
@@ -5170,7 +5176,7 @@ const iPhone16 = [
         cpu: {
             icon: '',
             model: 'A18',
-            rate: '',
+            rate: '3.78',
             core: 6
         },
         gpu: {
@@ -5181,14 +5187,14 @@ const iPhone16 = [
             {name: '国内', type: '双卡双待'},
         ],
         geekbenchScore: {
-            single: 0,
-            multi: 0
+            single: 3278,
+            multi: 8022
         },
         memory: [
-            {size: "--", type: ""}
+            {size: "8", type: "LPDDR5X"}
         ],
         storage: ["128", "256", "512"],
-        battery: '',
+        battery: '4674',
         port: 'USB-C 2.0 480Mb/s',
         screen: {
             brightness: '1000~2000',
@@ -5256,11 +5262,11 @@ const iPhone16 = [
         charge: [
             {name: '充电口', power: '20w'},
             {name: 'PD', power: '20-23w'},
-            {name: 'MagSafe', power: '15w'},
+            {name: 'MagSafe', power: '25w'},
         ],
         unlockMethod: ['面容解锁'],
         applePay: false,
-        connectivity: ["5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
+        connectivity: ["WiFi7", "5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
         waterResistant: {
             value: 'IP68',
             waterDepth: 6,  // 深度 m
@@ -5271,7 +5277,7 @@ const iPhone16 = [
     {
         name: "iPhone 16 Pro",
         name_short: "16 Pro",
-        hardwareName: '',
+        hardwareName: 'iPhone17,1',
         isTitleOnly: false,
         pic: `${BASE_URL}FrRL4rMpmwRvyLELv6FTMcFV7A_d`,
         slogan: "",
@@ -5279,6 +5285,9 @@ const iPhone16 = [
         active: true,
         release: "2024-09-10",
         models: [
+            {name: "A3083", type: ""},
+            {name: "A3292", type: ""},
+            {name: "A3293", type: ""},
             {name: "A3294", type: ""},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
@@ -5293,7 +5302,7 @@ const iPhone16 = [
         cpu: {
             icon: '',
             model: 'A18 Pro',
-            rate: '',
+            rate: '4.04',
             core: 6
         },
         gpu: {
@@ -5304,15 +5313,15 @@ const iPhone16 = [
             {name: '国内', type: '双卡双待'},
         ],
         geekbenchScore: {
-            single: 0,
-            multi: 0
+            single: 3406,
+            multi: 8413
         },
         memory: [
-            {size: "--", type: ""}
+            {size: "8", type: "LPDDR5X"}
         ],
         storage: ["128", "256", "512", "1024"],
-        battery: '',
-        port: 'USB-C 3.0 10Gb/s',
+        battery: '3582',
+        port: 'USB-C 3.1 10Gb/s',
         screen: {
             brightness: '1000~2000',
             size: "6.3",
@@ -5403,11 +5412,11 @@ const iPhone16 = [
         charge: [
             {name: '充电口', power: '20w'},
             {name: 'PD', power: '20-23w'},
-            {name: 'MagSafe', power: '15w'},
+            {name: 'MagSafe', power: '25w'},
         ],
         unlockMethod: ['面容解锁'],
         applePay: false,
-        connectivity: ["5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
+        connectivity: ["WiFi7", "5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
         waterResistant: {
             value: 'IP68',
             waterDepth: 6,  // 深度 m
@@ -5418,7 +5427,7 @@ const iPhone16 = [
     {
         name: "iPhone 16 Pro Max",
         name_short: "16 Pro Max",
-        hardwareName: '',
+        hardwareName: 'iPhone17,2',
         isTitleOnly: false,
         pic: `${BASE_URL}FrRL4rMpmwRvyLELv6FTMcFV7A_d`,
         slogan: "",
@@ -5426,6 +5435,9 @@ const iPhone16 = [
         active: true,
         release: "2024-09-10",
         models: [
+            {name: "A3084", type: ""},
+            {name: "A3295", type: ""},
+            {name: "A3296", type: ""},
             {name: "A3297", type: ""},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
@@ -5440,7 +5452,7 @@ const iPhone16 = [
         cpu: {
             icon: '',
             model: 'A18 Pro',
-            rate: '',
+            rate: '4.04',
             core: 6
         },
         gpu: {
@@ -5451,15 +5463,15 @@ const iPhone16 = [
             {name: '国内', type: '双卡双待'},
         ],
         geekbenchScore: {
-            single: 0,
-            multi: 0
+            single: 3394,
+            multi: 8360
         },
         memory: [
-            {size: "--", type: ""}
+            {size: "8", type: "LPDDR5X"}
         ],
         storage: ["256", "512", "1024"],
-        battery: '',
-        port: 'USB-C 3.0 10Gb/s',
+        battery: '4685',
+        port: 'USB-C 3.1 10Gb/s',
         screen: {
             brightness: '1000~2000',
             size: "6.9",
@@ -5550,11 +5562,11 @@ const iPhone16 = [
         charge: [
             {name: '充电口', power: '20w'},
             {name: 'PD', power: '20-23w'},
-            {name: 'MagSafe', power: '15w'},
+            {name: 'MagSafe', power: '25w'},
         ],
         unlockMethod: ['面容解锁'],
         applePay: false,
-        connectivity: ["5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
+        connectivity: ["WiFi7", "5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
         waterResistant: {
             value: 'IP68',
             waterDepth: 6,  // 深度 m
