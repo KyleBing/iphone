@@ -119,6 +119,12 @@ export default {
 @media (max-width: 768px){
     .filter-list{
         .iphone-tag-list{
+            justify-content: flex-start;
+            > div{
+                width: 100%;
+                display: flex;
+                flex-flow: row nowrap;
+            }
             .iphone-tag{
                 font-size: 14px;
                 padding: 5px 10px;
