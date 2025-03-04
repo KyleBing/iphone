@@ -91,7 +91,7 @@ export default {
                 font-weight: bold;
                 line-height: 1.3;
                 font-size: 13px;
-                color: $text-main;
+                color: $text-subtitle;
             }
             .year{
                 font-weight: bold;
@@ -116,6 +116,9 @@ export default {
                 }
                 .year{
                     color: white;
+                }
+                &.is-new{
+                    background: #6a7282!important;
                 }
             }
         }
@@ -155,16 +158,29 @@ export default {
                 .year{
                     color: $dark-text-title;
                 }
+                &.is-new{
+                    background: linear-gradient(to top right, transparentize($cyan, 0.95), transparentize(white, 0.95));
+                }
                 &:hover{
                     background-color: $dark-bg-highlight;
                     .name{
-                        color: $dark-text-subtitle;
+                        color: $dark-text-title;
                     }
                     .year{
-                        color: $dark-text-subtitle;
+                        color: $dark-text-title;
                     }
                 }
                 &.active{
+                    background-color: white;
+                    &.is-new{
+                        background: white !important;
+                    }
+                    .name{
+                        color: black;
+                    }
+                    .year{
+                        color: black;
+                    }
                 }
             }
         }
