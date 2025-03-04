@@ -5023,6 +5023,125 @@ const iPhone15 = [
 
 const iPhone16 = [
     {
+        name: "iPhone 16e",
+        name_short: "16e",
+        hardwareName: '',
+        isTitleOnly: false,
+        pic: `${BASE_URL}FpXk5KKH-APFPWWr3e4dVgICFY1W`,
+        slogan: "",
+        isNew: true,
+        active: true,
+        release: "2025-02-28",
+        models: [
+            {name: "A3410", type: ""},
+        ],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 146.7,
+        width: 71.5,
+        thickness: 7.8,
+        weight: 167,
+        os: {
+            init: "iOS 18.3",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A18',
+            rate: '3.78',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 5
+        },
+        sim: [
+            {name: '国内', type: '双卡双待'},
+        ],
+        geekbenchScore: {
+            single: 0,
+            multi: 0
+        },
+        memory: [
+            {size: "8", type: "LPDDR5"}
+        ],
+        storage: ["128", "256", "512"],
+        battery: '4005',
+        port: 'USB-C 2.0 480Mb/s',
+        screen: {
+            brightness: '800~1200',
+            size: "6.1",
+            type: 'XDR OLED',
+            refreshRate: "60", // hz
+            width: 1170,
+            height: 2532,
+            density: "460",
+            touch3D: false,
+            hdr:  'HDR',
+        },
+        cameras: {
+            type: '1',
+            front: {
+                name: '默认',
+                model: '',
+                aperture: 'ƒ/1.9',
+                focal: '23mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+                hdr:  'HDR',
+                dimension: [
+                    {size: '4k', fps: [24, 25, 30, 60]},
+                    {size: '1080p', fps: [25, 30, 60]},
+                ]
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: '',
+                    aperture: 'ƒ/1.6',
+                    focal: '26mm',
+                    pixelCount: '4800万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [25, 30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '长焦',
+                    model: '',
+                    aperture: 'ƒ/1.6',
+                    focal: '52mm',
+                    pixelCount: '4800万',
+                    zoomRate: 'x2',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+            ]
+        },
+        colors: [
+            {name: '黑色', color: '#444547'},
+            {name: '白色', color: '#f7f6f4'},
+        ],
+        charge: [
+            {name: '充电口', power: '20w'},
+            {name: 'PD', power: '20-23w'},
+            {name: 'MagSafe', power: '25w'},
+        ],
+        unlockMethod: ['面容解锁'],
+        applePay: false,
+        connectivity: [ "5G", "4G", "UWB", "蓝牙5.3", "2G", "NFC"],
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
+        price: "",
+    },
+    {
         name: "iPhone 16",
         name_short: "16",
         hardwareName: 'iPhone17,3',

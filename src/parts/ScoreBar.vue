@@ -1,13 +1,17 @@
 <template>
-    <div class="score-bar" v-if="iphone.geekbenchScore.multi">
-        <div class="bar-item" :style="`width: ${150}px`">
-            <div class="bar-current" :style="`width: ${percentage * 150}px`"></div>
-        </div>
-        <div class="score">
-            <span>{{ iphone.geekbenchScore.multi }}</span>
-            <span class="ml-2 percentage">{{ Math.floor((percentage * 100)).toFixed(0) }}%</span>
+    <div class="score-container">
+        <div class="label">跑分</div>
+        <div class="score-bar">
+            <div class="bar-item" :style="`width: ${130}px`">
+                <div class="bar-current" :style="`width: ${percentage * 130}px`"></div>
+            </div>
+            <div class="score">
+                <span>{{ iphone.geekbenchScore.multi || '×' }}</span>
+                <span class="ml-2 percentage">{{ Math.floor((percentage * 100)).toFixed(0) }}%</span>
+            </div>
         </div>
     </div>
+
 </template>
 
 <script>
@@ -33,9 +37,18 @@ export default {
 
 <style scoped lang="scss">
 @import "src/scss/plugin";
-
+.score-container{
+    margin-top: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    .label{
+        margin-right: 10px;
+        font-size: $fz-sm;
+        color: $text-main;
+    }
+}
 .score-bar{
-    margin-top: 10px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
