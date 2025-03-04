@@ -3,7 +3,7 @@
     <div class="filter-list">
         <div class="iphone-tag-list" >
            <div v-for="(iPhoneGroup, index) in iPhoneSeries" :key="index">
-               <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}]"
+               <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}, {'is-new': item.isNew}]"
                     v-for="item in iPhoneGroup.toReversed()" :key="item.name_short"
                     @click="filterTagToggle(item.name)"
                >
@@ -83,12 +83,18 @@ export default {
             padding: 3px 8px;
             margin-right: 5px;
             @include border-radius(3px);
+            &.is-new{
+                //border-color: black;
+                background: linear-gradient(to top right, lighten($cyan, 50%), white);
+            }
             .name{
+                font-weight: bold;
                 line-height: 1.3;
                 font-size: 13px;
                 color: $text-main;
             }
             .year{
+                font-weight: bold;
                 line-height: 1;
                 color: $text-comment;
                 font-size: 8px;
