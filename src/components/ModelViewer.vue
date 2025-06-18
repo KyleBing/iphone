@@ -20,13 +20,13 @@
                         <button @click="setCameraAngle('iso')" title="等轴测">等</button>
                     </div>
                 </div>
-                <button class="close-btn" @click="$emit('close')">×</button>
+                <button class="close-btn" @click="$emit('close')">关闭</button>
             </div>
             <div class="viewer-container">
                 <div class="canvas-wrapper">
                     <div ref="canvasContainer" class="canvas-container"></div>
                     <div class="operation-desc">
-                        操作说明：鼠标左键按住拖动可旋转视角，滚轮可缩放，右键按住拖动可平移
+                        操作说明：鼠标左键按住拖动可旋转视角，滚轮可缩放，右键按住拖动可平移。移动端双指拖动。
                     </div>
                 </div>
                 <div class="model-table">
@@ -649,16 +649,17 @@ export default {
             z-index: 2;
 
             @media (max-width: 768px) {
-                font-size: 32px;
+                font-size: 12px;
                 color: #333;
                 background: rgba(255, 255, 255, 0.9);
                 width: 40px;
                 height: 40px;
-                border-radius: 50%;
                 display: flex;
+                line-height: 1;
+                border-radius: 50%;
                 align-items: center;
                 justify-content: center;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
             }
 
             &:hover {
