@@ -539,6 +539,13 @@ export default {
         height: 90%;
         position: relative;
         overflow: auto;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+            padding: 10px;
+        }
     }
 
     .model-viewer-header {
@@ -547,14 +554,30 @@ export default {
         align-items: center;
         margin-bottom: 20px;
 
+        @media (max-width: 768px) {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            margin: 0;
+            z-index: 1;
+        }
+
         h3 {
             margin: 0;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
 
         .controls {
             display: flex;
             align-items: center;
             gap: 20px;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
 
         .spacing-control {
@@ -623,6 +646,20 @@ export default {
             cursor: pointer;
             padding: 0;
             color: #666;
+            z-index: 2;
+
+            @media (max-width: 768px) {
+                font-size: 32px;
+                color: #333;
+                background: rgba(255, 255, 255, 0.9);
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
 
             &:hover {
                 color: #333;
@@ -634,6 +671,11 @@ export default {
         display: flex;
         gap: 20px;
         height: calc(100% - 60px);
+
+        @media (max-width: 768px) {
+            height: 100%;
+            gap: 0;
+        }
     }
 
     .canvas-wrapper {
@@ -642,6 +684,10 @@ export default {
         position: relative;
         display: flex;
         flex-direction: column;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     .canvas-container {
@@ -657,6 +703,17 @@ export default {
         border-radius: 4px;
         align-self: flex-end;
         margin: 10px;
+
+        @media (max-width: 768px) {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            font-size: 10px;
+            padding: 4px 8px;
+            background: rgba(255, 255, 255, 0.9);
+        }
     }
 
     .model-table {
@@ -666,6 +723,10 @@ export default {
         padding: 10px;
         height: fit-content;
         font-size: 13px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
 
         table {
             width: 100%;
@@ -692,7 +753,7 @@ export default {
             th:nth-child(4) { width: 20%; }
 
             .model-name {
-        display: flex;
+                display: flex;
                 align-items: flex-start;
                 gap: 6px;
                 white-space: nowrap;
