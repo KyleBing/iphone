@@ -12,15 +12,30 @@
                </div>
            </div>
         </div>
+        <div class="view-3d-button" v-if="selectedNames.length > 0" @click="showModelViewer">
+            3D 尺寸对比
+        </div>
+        <ModelViewer 
+            v-if="showViewer"
+            :show="showViewer"
+            :model="selectedModel"
+            :models="selectedModels"
+            @close="showViewer = false"
+        />
     </div>
 </template>
 <script>
 
 import SwitchButton from "@/parts/SwitchButton";
 import {iPhoneSeries} from "@/iPhones";
+import ModelViewer from "@/components/ModelViewer.vue";
+
 export default {
     name: "FilterList",
-    components: {SwitchButton},
+    components: {
+        SwitchButton,
+        ModelViewer
+    },
     emits: ['updateShowingDevices'],
     props: {
         iPhonesOrigin: {
@@ -31,16 +46,22 @@ export default {
     data(){
         return {
             iPhoneSeries,
-            selectedNames: []
+            selectedNames: [],
+            showViewer: false
         }
     },
-    created() {
-
-    },
-    mounted() {
-
-    },
     computed: {
+        selectedModel() {
+            if (this.selectedNames.length > 0) {
+                return this.iPhonesOrigin.find(iphone => iphone.name === this.selectedNames[0]);
+            }
+            return null;
+        },
+        selectedModels() {
+            return this.selectedNames.map(name => 
+                this.iPhonesOrigin.find(iphone => iphone.name === name)
+            ).filter(Boolean);
+        }
     },
     methods: {
         // 筛选手机信息
@@ -52,19 +73,45 @@ export default {
             }
             this.$emit('updateShowingDevices', this.selectedNames)
         },
+        showModelViewer() {
+            this.showViewer = true;
+        }
     }
 }
 </script>
 
 <style lang="scss">
-
 @import "src/scss/plugin";
+
 .filter-list{
     background-color: $bg-highlight;
     padding: 20px 30px 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     border-bottom: 1px solid $color-border;
+
+    .view-3d-button {
+        margin-top: 15px;
+        padding: 8px 16px;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #45a049;
+        }
+
+        i {
+            font-size: 16px;
+        }
+    }
+
     .iphone-tag-list{
         @include border-radius(10px);
         max-width: 1440px;
@@ -84,7 +131,6 @@ export default {
             margin-right: 5px;
             @include border-radius(3px);
             &.is-new{
-                //border-color: black;
                 background: linear-gradient(to top right, lighten($cyan, 50%), white);
             }
             .name{
@@ -184,7 +230,5 @@ export default {
         }
     }
 }
-
-
 </style>
 
