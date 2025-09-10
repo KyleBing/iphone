@@ -5958,8 +5958,8 @@ const iPhone17 = [
         },
         cpu: {
             icon: '',
-            model: 'A18 Pro',
-            rate: '4.04',
+            model: 'A19 Pro',
+            rate: '',
             core: 6
         },
         gpu: {
