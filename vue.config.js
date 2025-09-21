@@ -7,6 +7,7 @@ module.exports = {
     outputDir: '../iphone',
 
     devServer: {
+        port: 1024,
         proxy: {
             '/portal': {
                 target: 'http://kylebing.cn/portal',

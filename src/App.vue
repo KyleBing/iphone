@@ -63,6 +63,12 @@
                                 </div>
                             </div>
                             <div class="main-ref-item">
+                                <div class="label">材质</div>
+                                <div class="value cyan">
+                                    <span>{{iphone.frameMaterial}}</span>
+                                </div>
+                            </div>
+                            <div class="main-ref-item">
                                 <div class="label">重量</div>
                                 <div class="value cyan">
                                     <span>{{iphone.weight}} g</span>
@@ -103,9 +109,9 @@
                             <div class="detail-item" :class="[{active: tags.some(item => item === 'os')}]">
                                 <div @click="tagToggle('os')" class="detail-item-label">系统</div>
                                 <div class="detail-item-content">
-                                    <div class="tip gradient-purple">{{iphone.os.init}} <span class="sup">初始</span></div>
+                                    <div class="tip">{{iphone.os.init}} <span class="sup">初始</span></div>
                                     <div class="tip">→</div>
-                                    <div class="tip gradient-purple">{{iphone.os.last}} <span class="sup">最后</span></div>
+                                    <div class="tip">{{iphone.os.last}} <span class="sup">最后</span></div>
                                 </div>
                             </div>
                             <div class="detail-item" :class="[{active: tags.some(item => item === 'connection')}]">
