@@ -6299,7 +6299,7 @@ const iPhone17 = [
                     name: '远焦',
                     model: '',
                     aperture: 'ƒ/2.8',
-                    focal: '120mm',
+                    focal: '200mm',
                     angel: '',
                     pixelCount: '4800万',
                     zoomRate: 'x8 光学变焦',
