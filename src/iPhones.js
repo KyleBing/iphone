@@ -41,7 +41,9 @@ const iPhone = [
             {size: "0.128", type: "eDRAM"}
         ],
         storage: ["4", "8", "16"],
-        battery: '1400',
+        battery: [
+            {name: '', mah: '1400',wh: ''},
+        ],
         port: '30针',
         screen: {
             brightness: '',
@@ -126,7 +128,9 @@ const iPhone3 = [
             {size: "0.128", type: "DRAM"}
         ],
         storage: ["8", "16"],
-        battery: '1150',
+        battery: [
+            {name: '', mah: '1150',wh: ''},
+        ],
         port: '30针',
         screen: {
             brightness: '',
@@ -211,7 +215,9 @@ const iPhone3 = [
             {size: "0.256", type: "DRAM"}
         ],
         storage: ["8", "16", "32"],
-        battery: '1220',
+        battery: [
+            {name: '', mah: '1220',wh: ''},
+        ],
         port: '30针',
         screen: {
             brightness: '',
@@ -299,7 +305,9 @@ const iPhone4 = [
             {size: "0.512", type: "DRAM"}
         ],
         storage: ["8", "16", "32"],
-        battery: '1420',
+        battery: [
+            {name: '', mah: '1420',wh: ''},
+        ],
         port: '30针',
         screen: {
             brightness: '',
@@ -390,7 +398,9 @@ const iPhone4 = [
             {size: "0.512", type: "DDR2"}
         ],
         storage: ["8", "16", "32", "64"],
-        battery: '1430',
+        battery: [
+            {name: '', mah: '1430',wh: ''},
+        ],
         port: '30针',
         screen: {
             brightness: '',
@@ -489,7 +499,9 @@ const iPhone5 = [
             {size: "1", type: "LPDDR2"}
         ],
         storage: ["16", "32", "64"],
-        battery: '1440',
+        battery: [
+            {name: '', mah: '1440',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -591,7 +603,9 @@ const iPhone5 = [
             {size: "1", type: "LPDDR2"}
         ],
         storage: ["8", "32"],
-        battery: '1510',
+        battery: [
+            {name: '', mah: '1510',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -697,7 +711,9 @@ const iPhone5 = [
             {size: "1", type: "LPDDR3"}
         ],
         storage: ["16", "32", "64"],
-        battery: '1560',
+        battery: [
+            {name: '', mah: '1560',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -802,7 +818,9 @@ const iPhone6 = [
             {size: "1", type: "LPDDR3"}
         ],
         storage: ["16", "32", "64", "128"],
-        battery: '1810',
+        battery: [
+            {name: '', mah: '1810',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -904,7 +922,9 @@ const iPhone6 = [
             {size: "1", type: "LPDDR3"}
         ],
         storage: ["16", "64", "128"],
-        battery: '2915',
+        battery: [
+            {name: '', mah: '2915',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -1009,7 +1029,9 @@ const iPhone6s = [
             {size: "2", type: "LPDDR4"}
         ],
         storage: ["16", "32", "64", "128"],
-        battery: '1715',
+        battery: [
+            {name: '', mah: '1715',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -1112,7 +1134,9 @@ const iPhone6s = [
             {size: "2", type: "LPDDR4"}
         ],
         storage: ["16", "32", "64", "128"],
-        battery: '2750',
+        battery: [
+            {name: '', mah: '2750',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -1218,7 +1242,9 @@ const iPhoneSE = [
             {size: "2", type: "LPDDR4"}
         ],
         storage: ["16", "32", "64", "128"],
-        battery: '1624',
+        battery: [
+            {name: '', mah: '1624',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -1322,7 +1348,9 @@ const iPhoneSE = [
             {size: "3", type: "LPDDR4X"}
         ],
         storage: ["64", "256"],
-        battery: '1821',
+        battery: [
+            {name: '', mah: '1821',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -1427,7 +1455,9 @@ const iPhoneSE = [
             {size: "4", type: "LPDDR4X"}
         ],
         storage: ["64", "128", "256"],
-        battery: '2018',
+        battery: [
+            {name: '', mah: '2018',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '625',
@@ -1536,7 +1566,9 @@ const iPhone7 = [
             {size: "2", type: "LPDDR4"}
         ],
         storage: ["32", "128", "256"],
-        battery: '1960',
+        battery: [
+            {name: '', mah: '1960',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -1641,7 +1673,9 @@ const iPhone7 = [
             {size: "3", type: "LPDDR4"}
         ],
         storage: ["32", "128", "256"],
-        battery: '2900',
+        battery: [
+            {name: '', mah: '2900',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -1764,7 +1798,9 @@ const iPhone8 = [
             {size: "2", type: "LPDDR4X"}
         ],
         storage: ["64", "128", "256"],
-        battery: '1821',
+        battery: [
+            {name: '', mah: '1821',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -1867,7 +1903,9 @@ const iPhone8 = [
             {size: "3", type: "LPDDR4X"}
         ],
         storage: ["64", "128", "256"],
-        battery: '2691',
+        battery: [
+            {name: '', mah: '2691',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -1987,7 +2025,9 @@ const iPhoneX = [
             {size: "3", type: "LPDDR4X"}
         ],
         storage: ["64", "256"],
-        battery: '2716',
+        battery: [
+            {name: '', mah: '2716',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '625',
@@ -2100,7 +2140,9 @@ const iPhoneX = [
             {size: "4", type: "LPDDR4X"}
         ],
         storage: ["64", "256", "512"],
-        battery: '2658',
+        battery: [
+            {name: '', mah: '2658',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '625',
@@ -2220,7 +2262,9 @@ const iPhoneX = [
             {size: "4", type: "LPDDR4X"}
         ],
         storage: ["64", "256", "512"],
-        battery: '3174',
+        battery: [
+            {name: '', mah: '3174',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '625',
@@ -2341,7 +2385,9 @@ const iPhoneX = [
             {size: "3", type: "LPDDR4X"}
         ],
         storage: ["64", "128", "256"],
-        battery: '2942',
+        battery: [
+            {name: '', mah: '2942',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '625',
@@ -2449,7 +2495,9 @@ const iPhone11 = [
             {size: "4", type: "LPDDR4X"}
         ],
         storage: ["64", "128", "256"],
-        battery: '3110',
+        battery: [
+            {name: '', mah: '3110',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '625',
@@ -2571,7 +2619,9 @@ const iPhone11 = [
             {size: "4", type: "LPDDR4X"}
         ],
         storage: ["64", "256", "512"],
-        battery: '3046',
+        battery: [
+            {name: '', mah: '3046',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '800~1200',
@@ -2695,7 +2745,9 @@ const iPhone11 = [
             {size: "4", type: "LPDDR4X"}
         ],
         storage: ["64", "256", "512"],
-        battery: '3969',
+        battery: [
+            {name: '', mah: '3969',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '800~1200',
@@ -2822,7 +2874,9 @@ const iPhone12 = [
             {size: "4", type: "LPDDR4X"}
         ],
         storage: ["64", "128", "256"],
-        battery: '2851',
+        battery: [
+            {name: '', mah: '2851',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -2945,7 +2999,9 @@ const iPhone12 = [
             {size: "4", type: "LPDDR4X"}
         ],
         storage: ["64", "128", "256"],
-        battery: '2227',
+        battery: [
+            {name: '', mah: '2227',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -3068,7 +3124,9 @@ const iPhone12 = [
             {size: "6", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512"],
-        battery: '2815',
+        battery: [
+            {name: '', mah: '2815',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '800~1200',
@@ -3222,7 +3280,9 @@ const iPhone12 = [
             {size: "6", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512"],
-        battery: '3687',
+        battery: [
+            {name: '', mah: '3687',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '800~1200',
@@ -3384,7 +3444,9 @@ const iPhone13 = [
             {size: "4", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512"],
-        battery: '3227',
+        battery: [
+            {name: '', mah: '3227',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -3512,7 +3574,9 @@ const iPhone13 = [
             {size: "4", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512"],
-        battery: '2406',
+        battery: [
+            {name: '', mah: '2406',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '',
@@ -3642,7 +3706,9 @@ const iPhone13 = [
             {size: "6", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512", "1024"],
-        battery: '3095',
+        battery: [
+            {name: '', mah: '3095',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '1000~1200',
@@ -3795,7 +3861,9 @@ const iPhone13 = [
             {size: "6", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512", "1024"],
-        battery: '4352',
+        battery: [
+            {name: '', mah: '4352',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '1000~1200', // cd/㎡
@@ -3952,7 +4020,9 @@ const iPhone14 = [
             {size: "6", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512"],
-        battery: '3279',
+        battery: [
+            {name: '', mah: '3279',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '1000~1200',
@@ -4083,7 +4153,9 @@ const iPhone14 = [
             {size: "6", type: "LPDDR4X"}
         ],
         storage: ["128", "256", "512"],
-        battery: '4325',
+        battery: [
+            {name: '', mah: '4325',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '1000~1200',
@@ -4214,7 +4286,9 @@ const iPhone14 = [
             {size: "6", type: "LPDDR5"}
         ],
         storage: ["128", "256", "512", "1024"],
-        battery: '3200',
+        battery: [
+            {name: '', mah: '3200',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '1000~2000',
@@ -4368,7 +4442,9 @@ const iPhone14 = [
             {size: "6", type: "LPDDR5"}
         ],
         storage: ["128", "256", "512", "1024"],
-        battery: '4323',
+        battery: [
+            {name: '', mah: '4323',wh: ''},
+        ],
         port: '闪电',
         screen: {
             brightness: '1000~2000',
@@ -4522,7 +4598,9 @@ const iPhone15 = [
             {size: "6", type: "LPDDR5"}
         ],
         storage: ["128", "256", "512"],
-        battery: '3349',
+        battery: [
+            {name: '', mah: '3349',wh: ''},
+        ],
         port: 'USB-C 2.0 480Mb/s',
         screen: {
             brightness: '1000~2000',
@@ -4649,7 +4727,9 @@ const iPhone15 = [
             {size: "6", type: "LPDDR5"}
         ],
         storage: ["128", "256", "512"],
-        battery: '4383',
+        battery: [
+            {name: '', mah: '4383',wh: ''},
+        ],
         port: 'USB-C 2.0 480Mb/s',
         screen: {
             brightness: '1000~2000',
@@ -4776,7 +4856,9 @@ const iPhone15 = [
             {size: "8", type: "LPDDR5"}
         ],
         storage: ["128", "256", "512", "1024"],
-        battery: '3274',
+        battery: [
+            {name: '', mah: '3274',wh: ''},
+        ],
         port: 'USB-C 3.1 10Gb/s',
         screen: {
             brightness: '1000~2000',
@@ -4927,7 +5009,9 @@ const iPhone15 = [
             {size: "8", type: "LPDDR5"}
         ],
         storage: ["256", "512", "1024"],
-        battery: '4422',
+        battery: [
+            {name: '', mah: '4422',wh: ''},
+        ],
         port: 'USB-C 3.1 10Gb/s',
         screen: {
             brightness: '1000~2000',
@@ -5078,7 +5162,9 @@ const iPhone16 = [
             {size: "8", type: "LPDDR5"}
         ],
         storage: ["128", "256", "512"],
-        battery: '4005',
+        battery: [
+            {name: '', mah: '4005',wh: ''},
+        ],
         port: 'USB-C 2.0 480Mb/s',
         screen: {
             brightness: '800~1200',
@@ -5201,7 +5287,9 @@ const iPhone16 = [
             {size: "8", type: "LPDDR5X"}
         ],
         storage: ["128", "256", "512"],
-        battery: '3561',
+        battery: [
+            {name: '', mah: '3561',wh: ''},
+        ],
         port: 'USB-C 2.0 480Mb/s',
         screen: {
             brightness: '1000~2000',
@@ -5328,7 +5416,9 @@ const iPhone16 = [
             {size: "8", type: "LPDDR5X"}
         ],
         storage: ["128", "256", "512"],
-        battery: '4674',
+        battery: [
+            {name: '', mah: '4674',wh: ''},
+        ],
         port: 'USB-C 2.0 480Mb/s',
         screen: {
             brightness: '1000~2000',
@@ -5455,7 +5545,9 @@ const iPhone16 = [
             {size: "8", type: "LPDDR5X"}
         ],
         storage: ["128", "256", "512", "1024"],
-        battery: '3582',
+        battery: [
+            {name: '', mah: '3582',wh: ''},
+        ],
         port: 'USB-C 3.1 10Gb/s',
         screen: {
             brightness: '1000~2000',
@@ -5606,7 +5698,9 @@ const iPhone16 = [
             {size: "8", type: "LPDDR5X"}
         ],
         storage: ["256", "512", "1024"],
-        battery: '4685',
+        battery: [
+            {name: '', mah: '4685',wh: ''},
+        ],
         port: 'USB-C 3.1 10Gb/s',
         screen: {
             brightness: '1000~2000',
@@ -5742,7 +5836,7 @@ const iPhone17 = [
         cpu: {
             icon: '',
             model: 'A19',
-            rate: '',
+            rate: '4.26',
             core: 6
         },
         gpu: {
@@ -5757,9 +5851,12 @@ const iPhone17 = [
             multi: 0
         },
         memory: [
+            {size: "8", type: "LPDDR5X"}
         ],
         storage: ["256", "512"],
-        battery: '',
+        battery: [
+            // {name: '', mah: '',wh: ''},
+        ],
         port: 'USB-C 2.0 480Mb/s',
         screen: {
             brightness: '1000~3000',
@@ -5868,7 +5965,7 @@ const iPhone17 = [
         cpu: {
             icon: '',
             model: 'A19 Pro',
-            rate: '',
+            rate: '4.26',
             core: 6
         },
         gpu: {
@@ -5883,9 +5980,12 @@ const iPhone17 = [
             multi: 0
         },
         memory: [
+            {size: "12", type: "LPDDR5X"}
         ],
         storage: ["256", "512", "1024"],
-        battery: '',
+        battery: [
+            // {name: '', mah: '',wh: ''},
+        ],
         port: 'USB-C 2.0 480Mb/s',
         screen: {
             brightness: '1000~3000',
@@ -5979,7 +6079,7 @@ const iPhone17 = [
         cpu: {
             icon: '',
             model: 'A19 Pro',
-            rate: '',
+            rate: '4.26',
             core: 6
         },
         gpu: {
@@ -5994,9 +6094,13 @@ const iPhone17 = [
             multi: 0
         },
         memory: [
+            {size: "12", type: "LPDDR5X"}
         ],
         storage: [ "256", "512", "1024"],
-        battery: '',
+        battery: [
+            {name: '非eSim', mah: '3988',wh: '15.534'},
+            {name: 'eSim', mah: '4252',wh: '16.558'},
+        ],
         port: 'USB-C 3.1 10Gb/s',
         screen: {
             brightness: '1000~3000',
@@ -6128,7 +6232,7 @@ const iPhone17 = [
         cpu: {
             icon: '',
             model: 'A19 Pro',
-            rate: '',
+            rate: '4.26',
             core: 6
         },
         gpu: {
@@ -6143,9 +6247,13 @@ const iPhone17 = [
             multi: 0
         },
         memory: [
+            {size: "12", type: "LPDDR5X"}
         ],
         storage: ["256", "512", "1024", "2048"],
-        battery: '',
+        battery: [
+            {name: '非eSim', mah: '4823',wh: '18.748'},
+            {name: 'eSim', mah: '5088',wh: '19.772'},
+        ],
         port: 'USB-C 3.1 10Gb/s',
         screen: {
             brightness: '1000~3000',

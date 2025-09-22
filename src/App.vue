@@ -96,8 +96,7 @@
                             <div class="detail-item" :class="[{active: tags.some(item => item === 'battery')}]">
                                 <div @click="tagToggle('battery')" class="detail-item-label">电池</div>
                                 <div class="detail-item-content">
-                                    <div class="tip" v-if="iphone.battery">{{iphone.battery}} mah</div>
-                                    <div class="tip" v-else>-</div>
+                                    <BatteryItem :itemInfo="battery" v-for="(battery, index) in iphone.battery" :key="index"/>
                                 </div>
                             </div>
                             <div class="detail-item" :class="[{active: tags.some(item => item === 'hardwareName')}]">
@@ -213,6 +212,7 @@ import FilterList from "@/FilterList";
 import SvgScreen from "@/svg/SvgScreen.vue";
 import Port from "@/parts/Port.vue";
 import StorageItem from "@/parts/StorageItem.vue";
+import BatteryItem from "@/parts/BatteryItem.vue";
 import SimItem from "@/parts/SimItem.vue";
 import SvgCamera3 from "@/svg/SvgCamera3";
 import SvgCamera2Cross from "@/svg/SvgCamera2Cross";
@@ -230,6 +230,7 @@ import ScoreBar from "@/parts/ScoreBar.vue";
 
 export default {
     components: {
+        BatteryItem,
         ScoreBar,
         SvgCamera3Radar15,
         Opening,
