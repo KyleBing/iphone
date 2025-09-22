@@ -25,33 +25,26 @@
         </div>
     </div>
 </template>
-<script>
-import {mapMutations, mapState} from "vuex";
+<script lang="ts" setup>
 import QRCode from "@/qr.js"
+import {useProjectStore} from "@/useProjectStore.ts";
+import {ref, onMounted} from "vue";
 
-export  default {
-    name: 'Share',
-    data(){
-        return {
-            shareQrCode: '',
-            shareQrCodeQQ: '',
+const projectStore = useProjectStore()
 
-            linkAddress: 'http://kylebing.cn/tools/iphone/',
-            linkQQ: 'https://jq.qq.com/?_wv=1027&k=Z8E0HrWA'
-        }
-    },
-    mounted(){
-        this.shareQrCodeQQ = QRCode.generatePNG(this.linkQQ)
-        this.shareQrCode = QRCode.generatePNG(this.linkAddress)
-    },
-    computed: {
-        ...mapState(['insets', 'isShareShowed'])
-    },
-    methods: {
-        ...mapMutations(['SET_SHOW_SHARE']),
-        toggleShare(){
-            this.SET_SHOW_SHARE(!this.isShareShowed)
-        }
-    }
+const shareQrCode = ref('')
+const shareQrCodeQQ = ref('')
+
+const linkAddress = 'http://kylebing.cn/tools/iphone/'
+const linkQQ = 'https://jq.qq.com/?_wv=1027&k=Z8E0HrWA'
+
+onMounted(() => {
+    shareQrCodeQQ.value = QRCode.generatePNG(linkQQ)
+    shareQrCode.value = QRCode.generatePNG(linkAddress)
+})
+
+
+function toggleShare(){
+    projectStore.isShareShowed = !projectStore.isShareShowed
 }
 </script>

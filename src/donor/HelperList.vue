@@ -12,40 +12,33 @@
     </div>
 </template>
 
-<script>
+<script lang="ts" setup>
 import axios from "axios";
-export default {
-    name: "HelperList",
-    data(){
-        return {
-            helpers: []
-        }
-    },
-    mounted() {
-        this.getDonors()
-    },
-    methods: {
-        getDonors(){
-            axios({
-                url: 'http://kylebing.cn/portal/diary/get-latest-public-diary-with-keyword',
-                params: {
-                    keyword: 'iphone-helper-list'
-                }
-            })
-                .then(res => {
-                    if (res.status === 200){
-                        this.helpers = []
-                        if (res.data.data && res.data.data.content){
-                            this.helpers = res.data.data.content.split('\n')
-                        }
-                    }
-                })
-                .catch(err => {
-                    console.log(err)
-                })
+const helpers = ref([])
 
+onMounted(() => {
+    getDonors()
+})
+
+function getDonors() {
+    axios({
+        url: 'http://kylebing.cn/portal/diary/get-latest-public-diary-with-keyword',
+        params: {
+            keyword: 'iphone-helper-list'
         }
-    }
+    })
+        .then(res => {
+            if (res.status === 200) {
+                helpers.value = []
+                if (res.data.data && res.data.data.content) {
+                    helpers.value = res.data.data.content.split('\n')
+                }
+            }
+        })
+        .catch(err => {
+            console.log(err)
+        })
+
 }
 </script>
 

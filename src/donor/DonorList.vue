@@ -14,48 +14,41 @@
     </div>
 </template>
 
-<script>
+<script lang="ts" setup>
 import axios from "axios";
-export default {
-    name: "DonorList",
-    data(){
-        return {
-            donors: []  // 2023-10-19,微信,无名,6
-        }
-    },
-    mounted() {
-        this.getDonors()
-    },
-    methods: {
-        getDonors(){
-            axios({
-                url: 'http://kylebing.cn/portal/diary/get-latest-public-diary-with-keyword',
-                params: {
-                    keyword: 'iphone-donor-list'
-                }
-            })
-                .then(res => {
-                    if (res.status === 200){
-                        this.donors = []
-                        let donorListStr = res.data.data.content
-                        donorListStr && donorListStr.split('\n').forEach(str => {
-                            let tempArray = str.split(',')
-                            this.donors.push({
-                                date: tempArray[0],
-                                method: tempArray[1],
-                                name: tempArray[2],
-                                amount: Number(tempArray[3]),
-                            })
-                        })
-                        this.donors.sort((a,b) => b.amount - a.amount)
-                    }
-                })
-                .catch(err => {
-                    console.log(err)
-                })
 
+const donors = ref([])  // 2023-10-19,微信,无名,6
+
+onMounted(() => {
+    getDonors()
+})
+
+function getDonors() {
+    axios({
+        url: 'http://kylebing.cn/portal/diary/get-latest-public-diary-with-keyword',
+        params: {
+            keyword: 'iphone-donor-list'
         }
-    }
+    })
+        .then(res => {
+            if (res.status === 200) {
+                donors.value = []
+                let donorListStr = res.data.data.content
+                donorListStr && donorListStr.split('\n').forEach(str => {
+                    let tempArray = str.split(',')
+                    donors.value.push({
+                        date: tempArray[0],
+                        method: tempArray[1],
+                        name: tempArray[2],
+                        amount: Number(tempArray[3]),
+                    })
+                })
+                donors.value.sort((a, b) => b.amount - a.amount)
+            }
+        })
+        .catch(err => {
+            console.log(err)
+        })
 }
 </script>
 

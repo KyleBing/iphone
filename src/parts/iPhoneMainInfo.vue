@@ -10,22 +10,18 @@
     </div>
 </template>
 
-<script>
+<script lang="ts" setup>
 import ScoreBar from "@/parts/ScoreBar";
-export default {
-    name: "iPhoneMainInfo",
-    components: {ScoreBar},
-    props: {
-        iphone: {
-            type: Object,
-            default: {}
-        },
-        maxScore: {
-            type: Number,
-            default: 0
-        }
-    }
+
+interface Props {
+    iphone: any,
+    maxScore: number
 }
+const props = withDefaults(defineProps<Props>(), {
+    iphone: {},
+    maxScore: 0
+})
+
 </script>
 
 <style scoped lang="scss">

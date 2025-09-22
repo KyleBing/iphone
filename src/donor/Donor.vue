@@ -17,55 +17,51 @@
     </div>
 </template>
 
-<script>
+<script lang="ts" setup>
 
-import Ad3D from "@/ad/Ad3D";
+import Ad3D from "@/ad/Ad3D.vue";
 
 import SwitchButton from "@/parts/SwitchButton";
 import {marked} from "marked";
 import DonorList from "@/donor/DonorList";
 import axios from "axios";
 import HelperList from "@/donor/HelperList";
-export default {
-    name: "Donor",
-    emits: ['FlipPenal'],
-    components: {HelperList, DonorList, Ad3D, SwitchButton},
-    data(){
-        return {
-            article: '',
-        }
-    },
-    mounted() {
-        this.getDonationDesc()
-    },
-    methods: {
-        changeMousePoint(event){
-            this.x = event.offsetX
-            this.y = event.offsetY
-        },
-        getDonationDesc(){
-            axios({
-                url: 'http://kylebing.cn/portal/diary/get-latest-public-diary-with-keyword',
-                params: {
-                    keyword: 'iPhone赞赏说明'
-                }
-            })
-                .then(res => {
-                    if (res.status === 200){
-                        this.article = res.data.data.content
-                    }
-                })
-                .catch(err => {
-                    console.log(err)
-                })
-        }
-    },
-    computed: {
-        articleHtml(){
-            return marked.parse(this.article)
-        }
-    }
+
+const emits = defineEmits(['FlipPenal'])
+
+const article = ref('')
+
+
+onMounted(() => {
+    getDonationDesc()
+})
+
+
+function changeMousePoint(event) {
+    x.value = event.offsetX
+    y.value = event.offsetY
 }
+
+function getDonationDesc() {
+    axios({
+        url: 'http://kylebing.cn/portal/diary/get-latest-public-diary-with-keyword',
+        params: {
+            keyword: 'iPhone赞赏说明'
+        }
+    })
+        .then(res => {
+            if (res.status === 200) {
+                article.value = res.data.data.content
+            }
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}
+
+const articleHtml = computed(() => {
+    return marked.parse(article.value)
+})
 </script>
 
 <style scoped lang="scss">

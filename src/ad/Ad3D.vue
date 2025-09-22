@@ -4,7 +4,7 @@
              @mousemove="changeMousePoint"
              :style="`
              height: ${adBoardHeight}px; width: ${adBoardWidth}px;
-             transform: rotateY(${x<adBoardWidth/2 ? '-': ''}${Math.abs(x-adBoardWidth/2)/adBoardWidth*rotateAngleY}deg) rotateX(-${y/adBoardHeight*rotateAngleX}deg)
+             transform: rotateY(${x < adBoardWidth / 2 ? '-' : ''}${Math.abs(x - adBoardWidth / 2) / adBoardWidth * rotateAngleY}deg) rotateX(-${y / adBoardHeight * rotateAngleX}deg)
              `"
         >
             <div class="ad-qr">
@@ -30,24 +30,19 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: "Ad3D",
-    data(){
-        return {
-            x: 0,
-            y: 0,
-            adBoardWidth: 240,
-            adBoardHeight: 80,
-            rotateAngleY: 45,
-            rotateAngleX: 15,
-        }
-    },
-    methods: {
-        changeMousePoint(event){
-            this.x = event.offsetX
-            this.y = event.offsetY
-        }
+<script lang="ts" setup>
+
+const x = ref(0)
+const y = ref(0)
+const adBoardWidth = ref(240)
+const adBoardHeight = ref(80)
+const rotateAngleY = ref(45)
+const rotateAngleX = ref(15)
+
+function changeMousePoint(event) {
+    changeMousePoint(event){
+        x.value = event.offsetX
+        y.value = event.offsetY
     }
 }
 </script>

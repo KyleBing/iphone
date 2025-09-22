@@ -44,115 +44,108 @@
         </div>
     </div>
 </template>
-<script>
+<script lang="ts" setup>
 import projInfo from '../package.json'
 import axios from "axios";
-import {mapMutations, mapState} from "vuex";
+import {useProjectStore} from "@/useProjectStore.ts";
 import Ad3D from "@/ad/Ad3D";
-export  default {
-    components: {Ad3D},
-    emits: ['toggleShare'],
-    data(){
-        return {
-            dateLastUpdate: projInfo.dateModify,
-            // thumb up
-            pingPongInterval: null,
-            thumbsUpKey: 'iphone',
-            heartActive: false,
-            thumbsUpCount: 0,
+
+const emits = defineEmits(['toggleShare'])
+const dateLastUpdate = projInfo.dateModify
+// thumb up
+const pingPongInterval = ref(null)
+const thumbsUpKey = 'iphone'
+const heartActive = ref(false)
+const thumbsUpCount = ref(0)
+
+const projectStore = useProjectStore()
+
+onMounted(() => {
+    getInitThumbsUpCount()
+    websocketInit()
+})
+
+function toggleShare() {
+    projectStore.isShareShowed = !projectStore.isShareShowed
+}
+
+// 点赞功能
+function getInitThumbsUpCount() {
+    axios({
+        url: 'http://kylebing.cn/portal/thumbs-up?key=' + thumbsUpKey.value,
+    })
+        .then(res => {
+            if (res.data && res.data.data) {
+                thumbsUpCount.value = res.data.data
+            }
+        })
+}
+function websocketInit() {
+    websocket.value = new WebSocket('ws://kylebing.cn/ws')
+    websocket.value.onopen = websocketOnOpen
+    websocket.value.onmessage = websocketOnMessage
+    websocket.value.onerror = websocketOnError
+    websocket.value.onclose = websocketClose
+}
+function websocketOnOpen() {
+    portStatus.value = 'success'
+    pingPongInterval.value = setInterval(() => {
+        if (websocket.value) {
+            switch (websocket.value.readyState) {
+                case 0: // connecting
+                    break;
+                case 1: // open
+                    let message = new WSMessage(WSMessage.type.heartBeat, 'ping')
+                    websocket.value.send(JSON.stringify(message))
+                    break;
+                case 2:  // closing
+                    clearInterval(pingPongInterval.value)
+                    break;
+                case 3: // closed
+                    clearInterval(pingPongInterval.value)
+                    break;
+            }
         }
-    },
-    computed: {
-        ...mapState(['isShareShowed'])
-    },
-    mounted(){
-        this.getInitThumbsUpCount()
-        this.websocketInit()
-    },
-    methods: {
-        ...mapMutations(["SET_SHOW_SHARE"]),
-        toggleShare(){
-            this.SET_SHOW_SHARE(!this.isShareShowed)
-        },
-        // 点赞功能
-        getInitThumbsUpCount() {
-            axios({
-                url: 'http://kylebing.cn/portal/thumbs-up?key=' + this.thumbsUpKey,
-            })
-                .then(res => {
-                    if (res.data && res.data.data) {
-                        this.thumbsUpCount = res.data.data
-                    }
-                })
-        },
-        websocketInit() {
-            this.websocket = new WebSocket('ws://kylebing.cn/ws')
-            this.websocket.onopen = this.websocketOnOpen
-            this.websocket.onmessage = this.websocketOnMessage
-            this.websocket.onerror = this.websocketOnError
-            this.websocket.onclose = this.websocketClose
-        },
-        websocketOnOpen() {
-            this.portStatus = 'success'
-            this.pingPongInterval = setInterval(() => {
-                if (this.websocket) {
-                    switch (this.websocket.readyState) {
-                        case 0: // connecting
-                            break;
-                        case 1: // open
-                            let message = new WSMessage(WSMessage.type.heartBeat, 'ping')
-                            this.websocket.send(JSON.stringify(message))
-                            break;
-                        case 2:  // closing
-                            clearInterval(this.pingPongInterval)
-                            break;
-                        case 3: // closed
-                            clearInterval(this.pingPongInterval)
-                            break;
-                    }
-                }
-            }, 10000)
-        },
-        websocketOnMessage(res) {
-            let receivedMessage = JSON.parse(res.data)
-            switch (receivedMessage.type) {
-                case WSMessage.type.heartBeat:
-                    break;
-                case WSMessage.type.thumbsUp:
-                    if (receivedMessage.content.key === this.thumbsUpKey) {
-                        this.thumbsUpCount = receivedMessage.content.count
-                    }
-                    break;
+    }, 10000)
+}
+function websocketOnMessage(res) {
+    let receivedMessage = JSON.parse(res.data)
+    switch (receivedMessage.type) {
+        case WSMessage.type.heartBeat:
+            break;
+        case WSMessage.type.thumbsUp:
+            if (receivedMessage.content.key === thumbsUpKey.value) {
+                thumbsUpCount.value = receivedMessage.content.count
             }
-        },
-        websocketOnError() {
-            this.portStatus = 'error'
-            this.websocket.send('on error')
-        },
-        websocketClose() {
-            this.portStatus = 'closed'
-            console.log('socket has closed')
-        },
-        thumbsUp() {
-            this.sendMessage(this.thumbsUpKey)
-        },
-        sendMessage(key) {
-            if (this.websocket) {
-                this.heartActive = true
-                let message = new WSMessage(WSMessage.type.thumbsUp, {
-                    key: key
-                })
-                this.websocket.send(JSON.stringify(message))
-            }
-        },
+            break;
+    }
+}
+function websocketOnError() {
+    portStatus.value = 'error'
+    websocket.value.send('on error')
+}
+function websocketClose() {
+    portStatus.value = 'closed'
+    console.log('socket has closed')
+}
+function thumbsUp() {
+    sendMessage(thumbsUpKey.value)
+}
+function sendMessage(key) {
+    if (websocket.value) {
+        heartActive.value = true
+        let message = new WSMessage(WSMessage.type.thumbsUp, {
+            key: key
+        })
+        websocket.value.send(JSON.stringify(message))
     }
 }
 
 
 class WSMessage {
     constructor(type, content) {
-        this.type = type
-        this.content = content
+        type.value = type
+        content.value = content
     }
 
     static type = {

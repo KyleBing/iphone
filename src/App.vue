@@ -14,9 +14,9 @@
             <Donor @FlipPenal="flipPanel" v-if="isDocationShowed"/>
         </transition>
 
-        <SwitchButton  @click="flipPanel" v-if="isDocationShowed"/>
+        <SwitchButton @click="flipPanel" v-if="isDocationShowed"/>
 
-<!--        <Opening/>-->
+        <!--<Opening/>-->
 
         <div class="iphone-list">
             <div class="iphone" v-for="(iphone, index) in iPhones" :key="index">
@@ -27,23 +27,23 @@
                             <div class="main-ref-item">
                                 <div class="label">CPU</div>
                                 <div class="value magenta">
-                                    <span class="mr-3">{{iphone.cpu.model}}</span>
-                                    <span v-if="iphone.cpu.rate">{{iphone.cpu.rate}} <i class="multiply">×</i> {{iphone.cpu.core}}</span>
+                                    <span class="mr-3">{{ iphone.cpu.model }}</span>
+                                    <span v-if="iphone.cpu.rate">{{ iphone.cpu.rate }} <i class="multiply">×</i> {{ iphone.cpu.core }}</span>
                                     <span v-else>-</span>
                                 </div>
                             </div>
                             <div class="main-ref-item">
                                 <div class="label">GPU</div>
                                 <div class="value cyan">
-                                    <span>{{iphone.gpu.model || '-'}}</span>
-                                    <span v-if="iphone.gpu.core"><i class="multiply">×</i> {{iphone.gpu.core}}</span>
+                                    <span>{{ iphone.gpu.model || '-' }}</span>
+                                    <span v-if="iphone.gpu.core"><i class="multiply">×</i> {{ iphone.gpu.core }}</span>
                                 </div>
                             </div>
                             <div class="main-ref-item">
                                 <div class="label">内存</div>
                                 <div class="value" v-if="iphone.memory.length > 0" v-for="memory in iphone.memory">
-                                    <span class="mr-2">{{memory.size}}GB</span>
-                                    <span class="little">{{memory.type}}</span>
+                                    <span class="mr-2">{{ memory.size }}GB</span>
+                                    <span class="little">{{ memory.type }}</span>
                                 </div>
                                 <div class="value" v-if="iphone.memory.length === 0">
                                     <div class="title">-</div>
@@ -65,7 +65,7 @@
                             <div class="main-ref-item">
                                 <div class="label">重量</div>
                                 <div class="value cyan">
-                                    <span>{{iphone.weight}} g</span>
+                                    <span>{{ iphone.weight }} g</span>
                                 </div>
                             </div>
                             <ScoreBar :iphone="iphone" :max-score="maxScore"/>
@@ -90,28 +90,30 @@
                             <div class="detail-item" :class="[{active: tags.some(item => item === 'battery')}]">
                                 <div @click="tagToggle('battery')" class="detail-item-label">电池</div>
                                 <div class="detail-item-content">
-                                    <div class="tip" v-if="iphone.battery">{{iphone.battery}} mah</div>
+                                    <div class="tip" v-if="iphone.battery">{{ iphone.battery }} mah</div>
                                     <div class="tip" v-else>-</div>
                                 </div>
                             </div>
                             <div class="detail-item" :class="[{active: tags.some(item => item === 'hardwareName')}]">
                                 <div @click="tagToggle('hardwareName')" class="detail-item-label">硬件</div>
                                 <div class="detail-item-content">
-                                    <div class="tip">{{iphone.hardwareName}}</div>
+                                    <div class="tip">{{ iphone.hardwareName }}</div>
                                 </div>
                             </div>
                             <div class="detail-item" :class="[{active: tags.some(item => item === 'os')}]">
                                 <div @click="tagToggle('os')" class="detail-item-label">系统</div>
                                 <div class="detail-item-content">
-                                    <div class="tip gradient-purple">{{iphone.os.init}} <span class="sup">初始</span></div>
+                                    <div class="tip gradient-purple">{{ iphone.os.init }} <span class="sup">初始</span>
+                                    </div>
                                     <div class="tip">→</div>
-                                    <div class="tip gradient-purple">{{iphone.os.last}} <span class="sup">最后</span></div>
+                                    <div class="tip gradient-purple">{{ iphone.os.last }} <span class="sup">最后</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="detail-item" :class="[{active: tags.some(item => item === 'connection')}]">
                                 <div @click="tagToggle('connection')" class="detail-item-label">连接</div>
                                 <div class="detail-item-content" v-if="iphone.connectivity.length">
-                                    <div class="tip" v-for="(item, index) in iphone.connectivity">{{item}}</div>
+                                    <div class="tip" v-for="(item, index) in iphone.connectivity">{{ item }}</div>
                                 </div>
                                 <div class="detail-item-content" v-else>
                                     <div class="tip">-</div>
@@ -120,14 +122,14 @@
                             <div class="detail-item" :class="[{active: tags.some(item => item === 'port')}]">
                                 <div @click="tagToggle('port')" class="detail-item-label">接口</div>
                                 <div class="detail-item-content">
-                                    <Port :port="iphone.port" />
+                                    <Port :port="iphone.port"/>
                                 </div>
                             </div>
                             <div class="detail-item" :class="[{active: tags.some(item => item === 'waterResistant')}]">
                                 <div @click="tagToggle('waterResistant')" class="detail-item-label">防水</div>
                                 <div class="detail-item-content">
-                                    <div class="tip">{{iphone.waterResistant.value || '-'}}
-                                        <span v-if="iphone.waterResistant.waterDepth">(水下{{iphone.waterResistant.waterDepth}}米 {{iphone.waterResistant.timeHold}}分钟)</span>
+                                    <div class="tip">{{ iphone.waterResistant.value || '-' }}
+                                        <span v-if="iphone.waterResistant.waterDepth">(水下{{ iphone.waterResistant.waterDepth }}米 {{ iphone.waterResistant.timeHold }}分钟)</span>
                                     </div>
                                 </div>
                             </div>
@@ -194,151 +196,125 @@
         <Share/>
     </div>
 </template>
-<script>
+<script lang="ts" setup>
 
-import {iPhoneSeries, iPhones} from "@/iPhones";
-import axios from "axios";
-import projInfo from '../package.json'
-import About from "@/About";
-import Share from "@/Share";
-import iPhoneFooter from "@/iPhoneFooter";
-import {mapMutations} from "vuex";
-import FilterList from "@/FilterList";
+import { ref, computed, onMounted } from 'vue'
+import {iPhoneSeries, iPhones} from "@/iPhones.ts";
+import About from "@/About.vue";
+import Share from "@/Share.vue";
+import iPhoneFooter from "@/iPhoneFooter.vue";
+import FilterList from "@/FilterList.vue";
 import SvgScreen from "@/svg/SvgScreen.vue";
 import Port from "@/parts/Port.vue";
 import StorageItem from "@/parts/StorageItem.vue";
 import SimItem from "@/parts/SimItem.vue";
-import SvgCamera3 from "@/svg/SvgCamera3";
-import SvgCamera2Cross from "@/svg/SvgCamera2Cross";
-import SvgCamera1 from "@/svg/SvgCamera1";
-import SvgCamera2Vertical from "@/svg/SvgCamera2Vertical";
-import SvgCamera2PortraitSimple from "@/svg/SvgCamera2PortraitSimple";
-import SvgCamera2VerticalSimple from "@/svg/SvgCamera2VerticalSimple";
-import SvgCamera3Radar from "@/svg/SvgCamera3Radar";
+import SvgCamera3 from "@/svg/SvgCamera3.vue";
+import SvgCamera2Cross from "@/svg/SvgCamera2Cross.vue";
+import SvgCamera1 from "@/svg/SvgCamera1.vue";
+import SvgCamera2Vertical from "@/svg/SvgCamera2Vertical.vue";
+import SvgCamera2PortraitSimple from "@/svg/SvgCamera2PortraitSimple.vue";
+import SvgCamera2VerticalSimple from "@/svg/SvgCamera2VerticalSimple.vue";
+import SvgCamera3Radar from "@/svg/SvgCamera3Radar.vue";
 import iPhoneMainInfo from "@/parts/iPhoneMainInfo"
-import Donor from "@/donor/Donor";
-import SwitchButton from "@/parts/SwitchButton";
+import Donor from "@/donor/Donor.vue";
+import SwitchButton from "@/parts/SwitchButton.vue";
 import Opening from "@/parts/Opening.vue";
-import SvgCamera3Radar15 from "@/svg/SvgCamera3Radar15";
+import SvgCamera3Radar15 from "@/svg/SvgCamera3Radar15.vue";
 import ScoreBar from "@/parts/ScoreBar.vue";
+import {useProjectStore} from "@/useProjectStore.ts";
 
-export default {
-    components: {
-        ScoreBar,
-        SvgCamera3Radar15,
-        Opening,
-        SwitchButton,
-        Donor,
-        iPhoneMainInfo,
-        SvgCamera3Radar,
-        SvgCamera2VerticalSimple,
-        SvgCamera2PortraitSimple,
-        SvgCamera2Vertical,
-        SvgCamera1,
-        SvgCamera2Cross,
-        SvgCamera3, SimItem, StorageItem, Port, SvgScreen, FilterList, Share, About, iPhoneFooter},
-    el: "#app",
-    data(){
-        return {
-            // 浏览器参数
-            portraitMode: false,
-            mobileMode: false,
-            latesOS: '最新',
-            iPhones: iPhones,
-            iPhoneSeries: iPhoneSeries,
-            iPhonesOrigin: iPhones,
+// 浏览器参数
+const portraitMode = ref(false)
+const mobileMode = ref(false)
+const latesOS = ref('最新')
+const iPhonesOrigin = ref(iPhones)
 
-            deviceMap: new Map(),
+let deviceMap = new Map()
 
-            // 机型信息筛选
-            selectedNames: [], // 已选中的名字
+// 机型信息筛选
+const selectedNames = ref([]) // 已选中的名字
 
-            tags: [],
-            keyword: '',
-            tipShowed: false,
+const tags = ref([])
+const keyword = ref('')
+const tipShowed = ref(false)
 
-            // share info
-            isShareShowed: false,
-            insets: {
-                height: innerHeight,
-                width: innerWidth
-            },
-            shareQrCode: null,
-            shareQrCodeQQ: null,
-            linkAddress: 'http://kylebing.cn/tools/iphone/',
-            linkQQ: 'https://jq.qq.com/?_wv=1027&k=Z8E0HrWA',
+// share info
+const isShareShowed = ref(false)
+const insets = ref({
+    height: innerHeight,
+    width: innerWidth
+})
+const shareQrCode = ref(null)
+const shareQrCodeQQ = ref(null)
+const linkAddress = 'http://kylebing.cn/tools/iphone/'
+const linkQQ = 'https://jq.qq.com/?_wv=1027&k=Z8E0HrWA'
 
-            isDocationShowed: false,
+const isDocationShowed = ref(false)
+
+const projectStore = useProjectStore()
+
+onMounted(() => {
+    let chromeCore = /Chrome/i.test(navigator.userAgent)
+    let mobileMode = /Mobile/i.test(navigator.userAgent)
+    portraitMode.value = window.innerWidth > window.innerHeight
+    mobileMode.value = mobileMode
+
+
+    generateDeviceMap() // 生成 iPhone Map
+
+    // onresize
+    window.onresize = () => {
+        projectStore.insets = {
+            height: innerHeight,
+            width: innerWidth
         }
-    },
-    mounted() {
-        // 全屏相关
-        let chromeCore = /Chrome/i.test(navigator.userAgent)
-        let mobileMode = /Mobile/i.test(navigator.userAgent)
-        this.portraitMode = window.innerWidth > window.innerHeight
-        this.mobileMode = mobileMode
+    }
+    // shareQrCode.value = QRCode.generatePNG(linkAddress.value, {margin: 1})
+    // shareQrCodeQQ.value = QRCode.generatePNG(linkQQ.value, {margin: 1})
+})
 
+function flipPanel() {
+    console.log('FlipPenal')
+    isDocationShowed.value = !isDocationShowed.value
+}
 
-        this.generateDeviceMap() // 生成 iPhone Map
+function toggleShare() {
+    isShareShowed.value = !isShareShowed.value
+}
 
-        // onresize
-        onresize = () => {
-            this.SET_INSETS(
-                {
-                    height: innerHeight,
-                    width: innerWidth
-                }
-            )
-        }
-        // this.shareQrCode = QRCode.generatePNG(this.linkAddress, {margin: 1})
-        // this.shareQrCodeQQ = QRCode.generatePNG(this.linkQQ, {margin: 1})
+function generateDeviceMap() {
+    iPhones.value.forEach(device => {
+        deviceMap.set(device.name, device)
+    })
+}
 
-    },
-    methods: {
-        ...mapMutations(['SET_INSETS']),
-        flipPanel(){
-            console.log('FlipPenal')
-            this.isDocationShowed = !this.isDocationShowed
-        },
-        toggleShare() {
-            this.isShareShowed = !this.isShareShowed
-        },
-        generateDeviceMap() {
-            this.iPhones.forEach(device => {
-                this.deviceMap.set(device.name, device)
-            })
-        },
-        tagToggle(tag) {
-            if (this.tags.some(item => item === tag)) {
-                this.tags.splice(this.tags.indexOf(tag), 1)
-            } else {
-                this.tags.push(tag)
-            }
-        },
-
-
-        updateShowingDevices(selectedNames) {
-            if (selectedNames.length > 0){
-                this.selectedNames = selectedNames
-                this.iPhones = this.selectedNames.map(name => this.deviceMap.get(name))
-            } else {
-                this.iPhones = [...this.iPhonesOrigin]
-            }
-        },
-    },
-    computed: {
-        maxScore() {
-            let max = 0
-            iPhones.forEach(item => {
-                if (max < item.geekbenchScore.multi) {
-                    max = item.geekbenchScore.multi
-                }
-            })
-            return max
-        }
+function tagToggle(tag: string) {
+    if (tags.value.some(item => item === tag)) {
+        tags.value.splice(tags.value.indexOf(tag), 1)
+    } else {
+        tags.value.push(tag)
     }
 }
 
+
+function updateShowingDevices(selectedNames: string[]) {
+    if (selectedNames.length > 0) {
+        selectedNames.value = selectedNames
+        iPhones.value = selectedNames.value.map(name => deviceMap.get(name))
+    } else {
+        iPhones.value = [...iPhonesOrigin.value]
+    }
+}
+
+const maxScore = computed(() => {
+    let max = 0
+    iPhones.value.forEach(item => {
+        if (max < item.geekbenchScore.multi) {
+            max = item.geekbenchScore.multi
+        }
+    })
+    return max
+})
 
 
 </script>
