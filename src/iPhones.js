@@ -5970,7 +5970,7 @@ const iPhone17 = [
         },
         gpu: {
             model: "Apple",
-            core: 5
+            core: 6
         },
         sim: [
             {name: '国内', type: '双eSim'},
