@@ -109,6 +109,37 @@ export default {
             return '#' + colors[index % colors.length].toString(16).padStart(6, '0');
         };
 
+        // Compute bounding box center of all models (rotation center)
+        const getModelsCenter = () => {
+            if (!boxes.value.length) {
+                return { center: new THREE.Vector3(0, 0, 0), sizeX: 0, sizeY: 0, sizeZ: 0 };
+            }
+            const box3 = new THREE.Box3();
+            let minX = Infinity, maxX = -Infinity;
+            let minY = Infinity, maxY = -Infinity;
+            let minZ = Infinity, maxZ = -Infinity;
+            boxes.value.forEach(box => {
+                box3.setFromObject(box);
+                minX = Math.min(minX, box3.min.x);
+                maxX = Math.max(maxX, box3.max.x);
+                minY = Math.min(minY, box3.min.y);
+                maxY = Math.max(maxY, box3.max.y);
+                minZ = Math.min(minZ, box3.min.z);
+                maxZ = Math.max(maxZ, box3.max.z);
+            });
+            const center = new THREE.Vector3(
+                (minX + maxX) / 2,
+                (minY + maxY) / 2,
+                (minZ + maxZ) / 2
+            );
+            return {
+                center,
+                sizeX: maxX - minX,
+                sizeY: maxY - minY,
+                sizeZ: maxZ - minZ
+            };
+        };
+
         const createLabel = (text, position) => {
             const canvas = document.createElement('canvas');
             const context = canvas.getContext('2d');
@@ -318,11 +349,20 @@ export default {
             controls.value.maxDistance = 1000;
             controls.value.enableZoom = true;
             controls.value.zoomSpeed = 1.0;
-            controls.value.target.set(0, 0, 0); // Set orbit center to origin
 
-            // Set initial camera position for better view
-            camera.value.position.set(200, 400, 200); // Position camera along z-axis
-            camera.value.lookAt(0, 100, 0);
+            // Calculate center of all models and set rotation target to midpoint
+            const { center: modelsCenter, sizeX, sizeY, sizeZ } = getModelsCenter();
+            controls.value.target.copy(modelsCenter);
+
+            // Position camera relative to models center
+            const maxSize = Math.max(sizeX, sizeY, sizeZ);
+            const cameraDistance = Math.max(maxSize * 2, 200);
+            camera.value.position.set(
+                modelsCenter.x + cameraDistance * 0.5,
+                modelsCenter.y + cameraDistance * 0.5,
+                modelsCenter.z + cameraDistance * 0.5
+            );
+            camera.value.lookAt(modelsCenter);
 
             // Start animation loop
             animate();
@@ -420,6 +460,12 @@ export default {
                     }
                 }
             });
+
+            // Keep rotation center at midpoint of all models
+            if (controls.value && boxes.value.length > 0) {
+                const { center } = getModelsCenter();
+                controls.value.target.copy(center);
+            }
         };
 
         const toggleLayout = () => {
@@ -448,13 +494,17 @@ export default {
         });
 
         const setCameraAngle = (angle) => {
-            if (!camera.value || !controls.value) return;
+            if (!camera.value || !controls.value || !boxes.value.length) return;
+
+            const { center, sizeX, sizeY, sizeZ } = getModelsCenter();
+            const maxSize = Math.max(sizeX, sizeY, sizeZ);
+            const cameraDistance = Math.max(maxSize * 2, 200);
 
             const positions = {
-                front: { x: 0, y: 100, z: 400 },
-                side: { x: 300, y: 100, z: 0 },
-                top: { x: 0, y: 500, z: 0 },
-                iso: { x: 200, y: 400, z: 200 }
+                front: { x: center.x, y: center.y, z: center.z + cameraDistance },
+                side: { x: center.x + cameraDistance, y: center.y, z: center.z },
+                top: { x: center.x, y: center.y + cameraDistance, z: center.z },
+                iso: { x: center.x + cameraDistance * 0.5, y: center.y + cameraDistance * 0.5, z: center.z + cameraDistance * 0.5 }
             };
 
             const pos = positions[angle];
@@ -465,7 +515,7 @@ export default {
             const startPos = camera.value.position.clone();
             const startTime = Date.now();
 
-            const animate = () => {
+            const animateCamera = () => {
                 const elapsed = Date.now() - startTime;
                 const progress = Math.min(elapsed / duration, 1);
 
@@ -475,15 +525,15 @@ export default {
                     : 1 - Math.pow(-2 * progress + 2, 2) / 2;
 
                 camera.value.position.lerpVectors(startPos, new THREE.Vector3(pos.x, pos.y, pos.z), easeProgress);
-                controls.value.target.set(0, 0, 0);
+                controls.value.target.copy(center);
                 controls.value.update();
 
                 if (progress < 1) {
-                    requestAnimationFrame(animate);
+                    requestAnimationFrame(animateCamera);
                 }
             };
 
-            animate();
+            animateCamera();
         };
 
         onMounted(() => {

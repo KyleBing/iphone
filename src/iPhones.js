@@ -5855,7 +5855,7 @@ const iPhone17 = [
         ],
         storage: ["256", "512"],
         battery: [
-            // {name: '', mah: '',wh: ''},
+            {name: '', mah: '3692',wh: '14.351', voltage: '3.887'},
         ],
         port: 'USB-C 2.0 480Mb/s',
         screen: {
@@ -5943,7 +5943,7 @@ const iPhone17 = [
         isTitleOnly: false,
         pic: `${BASE_URL}Foqnm7oXdt0ZFV7hRFF_eVjxjVBz`,
         frameMaterial: '钛',
-        slogan: "",
+        slogan: "The thinnest iPhone ever. With the power of pro inside.",
         isNew: true,
         active: true,
         release: "2025-09-10",
@@ -5984,7 +5984,7 @@ const iPhone17 = [
         ],
         storage: ["256", "512", "1024"],
         battery: [
-            // {name: '', mah: '',wh: ''},
+            {name: '', mah: '3149',wh: '12.263', voltage: '3.894'},
         ],
         port: 'USB-C 2.0 480Mb/s',
         screen: {
@@ -6098,8 +6098,8 @@ const iPhone17 = [
         ],
         storage: [ "256", "512", "1024"],
         battery: [
-            {name: '非eSim', mah: '3988',wh: '15.534'},
-            {name: 'eSim', mah: '4252',wh: '16.558'},
+            {name: '非eSim', mah: '3988',wh: '15.534', voltage: '3.895'},
+            {name: 'eSim', mah: '4252',wh: '16.558', voltage: '3.894'},
         ],
         port: 'USB-C 3.1 10Gb/s',
         screen: {
@@ -6251,8 +6251,8 @@ const iPhone17 = [
         ],
         storage: ["256", "512", "1024", "2048"],
         battery: [
-            {name: '非eSim', mah: '4823',wh: '18.748'},
-            {name: 'eSim', mah: '5088',wh: '19.772'},
+            {name: '非eSim', mah: '4823',wh: '18.748', voltage: '3.887'},
+            {name: 'eSim', mah: '5088',wh: '19.772', voltage: '3.886'},
         ],
         port: 'USB-C 3.1 10Gb/s',
         screen: {
