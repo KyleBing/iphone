@@ -6,6 +6,7 @@ const iPhone = [
     {
         name: "iPhone 1",
         name_short: "1",
+        name_mini: "1",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}Fk4-rTzQwnQ3qKdRH8aB8V-tG0zm`,
@@ -92,6 +93,7 @@ const iPhone3 = [
     {
         name: "iPhone 3G",
         name_short: "3G",
+        name_mini: "3G",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}FtFG1Rtzdaldq5YwCePE7ERsBYR3`,
@@ -176,6 +178,7 @@ const iPhone3 = [
     {
         name: "iPhone 3Gs",
         name_short: "3Gs",
+        name_mini: "3Gs",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}FgOCMQdvrYudeSrKhNJ1cTMQJm1u`,
@@ -266,6 +269,7 @@ const iPhone4 = [
     {
         name: "iPhone 4",
         name_short: "4",
+        name_mini: "4",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}Fo8KAfo_m4jFE_VhQvFycSL3LcrW`,
@@ -362,6 +366,7 @@ const iPhone4 = [
     {
         name: "iPhone 4s",
         name_short: "4s",
+        name_mini: "4s",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}FrtIbWUuWT_eaqSmWzFhDIJ4oZTY`,
@@ -463,6 +468,7 @@ const iPhone5 = [
     {
         name: "iPhone 5",
         name_short: "5",
+        name_mini: "5",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}Fh-n1hua76xusu-sH5Mw3Be49FSE`,
@@ -561,6 +567,7 @@ const iPhone5 = [
     {
         name: "iPhone 5c",
         name_short: "5c",
+        name_mini: "5c",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}FnTuH37l52As2S5YYROOAsGzNvtL`,
@@ -668,6 +675,7 @@ const iPhone5 = [
     {
         name: "iPhone 5s",
         name_short: "5s",
+        name_mini: "5s",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}FpICSW69ejJfIKJj9SsrrZMwdw97`,
@@ -778,6 +786,7 @@ const iPhone6 = [
     {
         name: "iPhone 6",
         name_short: "6",
+        name_mini: "6",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}Fjwza2hWgZyjVGISzilNhpMMvTZZ`,
@@ -882,6 +891,7 @@ const iPhone6 = [
     {
         name: "iPhone 6 plus",
         name_short: "6 plus",
+        name_mini: "6P",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}FsqnUTWUlyJVWwpdKVRMVsm9GXdV`,
@@ -989,6 +999,7 @@ const iPhone6s = [
     {
         name: "iPhone 6s",
         name_short: "6s",
+        name_mini: "6s",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}FoXQ_EP3HQg6G2afJXPl9HFndJy_`,
@@ -1094,6 +1105,7 @@ const iPhone6s = [
     {
         name: "iPhone 6s plus",
         name_short: "6s plus",
+        name_mini: "6SP",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}FvaC92CxARf03bidtr-mlfJ0DM7v`,
@@ -1202,6 +1214,7 @@ const iPhoneSE = [
     {
         name: "iPhone SE",
         name_short: "SE",
+        name_mini: "SE",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}FkqrEY7drVGEf-T8ocv-N_Q6G1sv`,
@@ -1308,6 +1321,7 @@ const iPhoneSE = [
     {
         name: "iPhone SE2",
         name_short: "SE2",
+        name_mini: "SE2",
         hardwareName: 'iPhone12,8',
         isTitleOnly: false,
         pic: `${BASE_URL}FscAdH4BldrWPMWPrj3rEs5hNWlq`,
@@ -1413,6 +1427,7 @@ const iPhoneSE = [
     {
         name: "iPhone SE3",
         name_short: "SE3",
+        name_mini: "SE3",
         hardwareName: 'iPhone14,6',
         isTitleOnly: false,
         pic: `${BASE_URL}FmVXrMwGuL9cxLSvVNynG3R_nwWU`,
@@ -1526,6 +1541,7 @@ const iPhone7 = [
     {
         name: "iPhone 7",
         name_short: "7",
+        name_mini: "7",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}Fgjm3G_Ilqw4hfAE7FWCLkRkkbRC`,
@@ -1633,6 +1649,7 @@ const iPhone7 = [
     {
         name: "iPhone 7 plus",
         name_short: "7 plus",
+        name_mini: "7P",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}Fn4d0UMcGCQSWZ_cSOr8gtEFF1FS`,
@@ -1758,6 +1775,7 @@ const iPhone8 = [
     {
         name: "iPhone 8",
         name_short: "8",
+        name_mini: "8",
         hardwareName: 'iPhone10,1 iPhone10,4',
         isTitleOnly: false,
         pic: `${BASE_URL}FoFCWhjXPcpM4G125mrMUXu_1gIW`,
@@ -1863,6 +1881,7 @@ const iPhone8 = [
     {
         name: "iPhone 8 Plus",
         name_short: "8 Plus",
+        name_mini: "8P",
         hardwareName: 'iPhone10,2 iPhone10,5',
         isTitleOnly: false,
         pic: `${BASE_URL}Fl0DhgKCAwsZLVmZuFBG4WuP0ntc`,
@@ -1985,6 +2004,7 @@ const iPhoneX = [
     {
         name: "iPhone X",
         name_short: "X",
+        name_mini: "X",
         hardwareName: 'iPhone10,3, iPhone10,6',
         isTitleOnly: false,
         pic: `${BASE_URL}Fhm17HNz7R4yYIRfPjY7oSRdg4Lg`,
@@ -2099,6 +2119,7 @@ const iPhoneX = [
     {
         name: "iPhone XS",
         name_short: "XS",
+        name_mini: "XS",
         hardwareName: 'iPhone11,2',
         isTitleOnly: false,
         pic: `${BASE_URL}FuQiE18mdB61ew10doeJkQJbBWCe`,
@@ -2221,6 +2242,7 @@ const iPhoneX = [
     {
         name: "iPhone XS Max",
         name_short: "XS Max",
+        name_mini: "XSM",
         hardwareName: 'iPhone11,4 iPhone11,6',
         isTitleOnly: false,
         pic: `${BASE_URL}FuQiE18mdB61ew10doeJkQJbBWCe`,
@@ -2343,6 +2365,7 @@ const iPhoneX = [
     {
         name: "iPhone XR",
         name_short: "XR",
+        name_mini: "XR",
         hardwareName: 'iPhone11,8',
         isTitleOnly: false,
         pic: `${BASE_URL}Foa0LaQR_yx3tP2qUi4Ol1i0j4Ql`,
@@ -2455,6 +2478,7 @@ const iPhone11 = [
     {
         name: "iPhone 11",
         name_short: "11",
+        name_mini: "11",
         hardwareName: 'iPhone12,1',
         isTitleOnly: false,
         pic: `${BASE_URL}FmyDkqsxD7bvahZl8v3iKXRyKN10`,
@@ -2579,6 +2603,7 @@ const iPhone11 = [
     {
         name: "iPhone 11 Pro",
         name_short: "11 Pro",
+        name_mini: "11P",
         hardwareName: 'iPhone12,3',
         isTitleOnly: false,
         pic: `${BASE_URL}FiEnin0Ui7Jyq7dGVg6DU2XtSMzW`,
@@ -2705,6 +2730,7 @@ const iPhone11 = [
     {
         name: "iPhone 11 Pro Max",
         name_short: "11 Pro Max",
+        name_mini: "11PM",
         hardwareName: 'iPhone12,5',
         isTitleOnly: false,
         pic: `${BASE_URL}FiEnin0Ui7Jyq7dGVg6DU2XtSMzW`,
@@ -2833,6 +2859,7 @@ const iPhone12 = [
     {
         name: "iPhone 12",
         name_short: "12",
+        name_mini: "12",
         hardwareName: 'iPhone13,2',
         isTitleOnly: false,
         pic: `${BASE_URL}FuSmVz8tgyBIC-3mOGnD8cVT7r8j`,
@@ -2958,6 +2985,7 @@ const iPhone12 = [
     {
         name: "iPhone 12 Mini",
         name_short: "12 Mini",
+        name_mini: "12M",
         hardwareName: 'iPhone13,1',
         isTitleOnly: false,
         pic: `${BASE_URL}FsBkRgTDO2I18Q_pc2RId_3tgoF8`,
@@ -3083,6 +3111,7 @@ const iPhone12 = [
     {
         name: "iPhone 12 Pro",
         name_short: "12 Pro",
+        name_mini: "12P",
         hardwareName: 'iPhone13,3',
         isTitleOnly: false,
         pic: `${BASE_URL}FkocNbP_dhEli7NT8QJf9pFMNy-I`,
@@ -3239,6 +3268,7 @@ const iPhone12 = [
     {
         name: "iPhone 12 Pro Max ",
         name_short: "12 Pro Max",
+        name_mini: "12PM",
         hardwareName: 'iPhone13,4',
         isTitleOnly: false,
         pic: `${BASE_URL}Fk_dI5iincN7G3AbauGekaVcx_DE`,
@@ -3398,6 +3428,7 @@ const iPhone13 = [
     {
         name: "iPhone 13",
         name_short: "13",
+        name_mini: "13",
         hardwareName: 'iPhone14,5',
         isTitleOnly: false,
         pic: `${BASE_URL}FtgVizdsYyl_nCc5SWKZ2jtlq1NC`,
@@ -3531,6 +3562,7 @@ const iPhone13 = [
     {
         name: "iPhone 13 Mini",
         name_short: "13 mini",
+        name_mini: "13M",
         hardwareName: 'iPhone14,4',
         isTitleOnly: false,
         pic: `${BASE_URL}FoOOaHnie8aDAWFCw8bvpTnM8GPo`,
@@ -3660,6 +3692,7 @@ const iPhone13 = [
     {
         name: "iPhone 13 Pro",
         name_short: "13 Pro",
+        name_mini: "13P",
         hardwareName: 'iPhone14,2',
         isTitleOnly: false,
         pic: `${BASE_URL}FidLoukTvZG8Sv5wZDiWi_ooEoAK`,
@@ -3815,6 +3848,7 @@ const iPhone13 = [
     {
         name: "iPhone 13 Pro Max ",
         name_short: "13 Pro Max",
+        name_mini: "13PM",
         hardwareName: 'iPhone14,3',
         isTitleOnly: false,
         pic: `${BASE_URL}FgEqeDTIKhfN2gw9gJa1wI1goSQg`,
@@ -3973,6 +4007,7 @@ const iPhone14 = [
     {
         name: "iPhone 14",
         name_short: "14",
+        name_mini: "14",
         hardwareName: 'iPhone14,7',
         isTitleOnly: false,
         pic: `${BASE_URL}Fp7SAUS5RU_RFLpe5zeWEA4eAcOP`,
@@ -4106,6 +4141,7 @@ const iPhone14 = [
     {
         name: "iPhone 14 Plus",
         name_short: "14 Plus",
+        name_mini: "14P",
         hardwareName: 'iPhone14,8',
         isTitleOnly: false,
         pic: `${BASE_URL}FpZNenwa7MlTI4ytGQzPZ1BHc2EB`,
@@ -4239,6 +4275,7 @@ const iPhone14 = [
     {
         name: "iPhone 14 Pro",
         name_short: "14 Pro",
+        name_mini: "14P",
         hardwareName: 'iPhone15,2',
         isTitleOnly: false,
         pic: `${BASE_URL}Fma1VhVCS_cAJHIK5dvVPA8-9R__`,
@@ -4395,6 +4432,7 @@ const iPhone14 = [
     {
         name: "iPhone 14 Pro Max",
         name_short: "14 Pro Max",
+        name_mini: "14PM",
         hardwareName: 'iPhone15,3',
         isTitleOnly: false,
         pic: `${BASE_URL}Fma1VhVCS_cAJHIK5dvVPA8-9R__`,
@@ -4554,6 +4592,7 @@ const iPhone15 = [
     {
         name: "iPhone 15",
         name_short: "15",
+        name_mini: "15",
         hardwareName: 'iPhone15,4',
         isTitleOnly: false,
         pic: `${BASE_URL}FhMbefkLQZWGAVhOBGVQtGCWlfr2`,
@@ -4683,6 +4722,7 @@ const iPhone15 = [
     {
         name: "iPhone 15 Plus",
         name_short: "15 Plus",
+        name_mini: "15P",
         hardwareName: 'iPhone15,5',
         isTitleOnly: false,
         pic: `${BASE_URL}Fipw4PWx72ys9GXzxOZHGanSBqu2`,
@@ -4812,6 +4852,7 @@ const iPhone15 = [
     {
         name: "iPhone 15 Pro",
         name_short: "15 Pro",
+        name_mini: "15P",
         hardwareName: 'iPhone16,1',
         isTitleOnly: false,
         pic: `${BASE_URL}Fupt6lIfMr8rjz00pnTt8jB2uMJN`,
@@ -4965,6 +5006,7 @@ const iPhone15 = [
     {
         name: "iPhone 15 Pro Max",
         name_short: "15 Pro Max",
+        name_mini: "15PM",
         hardwareName: 'iPhone16,2',
         isTitleOnly: false,
         pic: `${BASE_URL}Fljk6Vb_dKNwSSCe_0-4a-PMobIY`,
@@ -5121,7 +5163,8 @@ const iPhone16 = [
     {
         name: "iPhone 16e",
         name_short: "16e",
-        hardwareName: '',
+        name_mini: "16e",
+        hardwareName: 'iPhone17,5',
         isTitleOnly: false,
         pic: `${BASE_URL}FpXk5KKH-APFPWWr3e4dVgICFY1W`,
         frameMaterial: '铝',
@@ -5243,6 +5286,7 @@ const iPhone16 = [
     {
         name: "iPhone 16",
         name_short: "16",
+        name_mini: "16",
         hardwareName: 'iPhone17,3',
         isTitleOnly: false,
         pic: `${BASE_URL}Flg1-cbZPlsMzpMFYcDBrto01R6a`,
@@ -5372,6 +5416,7 @@ const iPhone16 = [
     {
         name: "iPhone 16 Plus",
         name_short: "16 Plus",
+        name_mini: "16P",
         hardwareName: 'iPhone17,4',
         isTitleOnly: false,
         pic: `${BASE_URL}FneRdvOBuzynWMU6rXJA_eZxMyuW`,
@@ -5501,6 +5546,7 @@ const iPhone16 = [
     {
         name: "iPhone 16 Pro",
         name_short: "16 Pro",
+        name_mini: "16PR",
         hardwareName: 'iPhone17,1',
         isTitleOnly: false,
         pic: `${BASE_URL}FrRL4rMpmwRvyLELv6FTMcFV7A_d`,
@@ -5654,6 +5700,7 @@ const iPhone16 = [
     {
         name: "iPhone 16 Pro Max",
         name_short: "16 Pro Max",
+        name_mini: "16PM",
         hardwareName: 'iPhone17,2',
         isTitleOnly: false,
         pic: `${BASE_URL}FrRL4rMpmwRvyLELv6FTMcFV7A_d`,
@@ -5810,7 +5857,8 @@ const iPhone17 = [
     {
         name: "iPhone 17",
         name_short: "17",
-        hardwareName: '',
+        name_mini: "17",
+        hardwareName: 'iPhone18,3',
         isTitleOnly: false,
         pic: `${BASE_URL}FgjvYxpd9qSypPeYn9t5oaAClQwX`,
         frameMaterial: '铝',
@@ -5819,10 +5867,10 @@ const iPhone17 = [
         active: true,
         release: "2025-09-10",
         models: [
-            // {name: "A3081", type: ""},
-            // {name: "A3286", type: ""},
-            // {name: "A3287", type: ""},
-            // {name: "A3288", type: ""},
+            {name: "A3258", type: ""},
+            {name: "A3519", type: ""},
+            {name: "A3520", type: ""},
+            {name: "A3521", type: ""},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 149.6,
@@ -5939,7 +5987,8 @@ const iPhone17 = [
     {
         name: "iPhone 17 Air",
         name_short: "17 Air",
-        hardwareName: '',
+        name_mini: "17A",
+        hardwareName: 'iPhone18,4',
         isTitleOnly: false,
         pic: `${BASE_URL}Foqnm7oXdt0ZFV7hRFF_eVjxjVBz`,
         frameMaterial: '钛',
@@ -5948,10 +5997,10 @@ const iPhone17 = [
         active: true,
         release: "2025-09-10",
         models: [
-            // {name: "A3082", type: ""},
-            // {name: "A3289", type: ""},
-            // {name: "A3290", type: ""},
-            // {name: "A3291", type: ""},
+            {name: "A3260", type: ""},
+            {name: "A3516", type: ""},
+            {name: "A3517", type: ""},
+            {name: "A3518", type: ""},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 156.2,
@@ -6053,7 +6102,8 @@ const iPhone17 = [
     {
         name: "iPhone 17 Pro",
         name_short: "17 Pro",
-        hardwareName: '',
+        name_mini: "17P",
+        hardwareName: 'iPhone18,1',
         isTitleOnly: false,
         pic: `${BASE_URL}Fq7NCSiwToJJRsba1EKdGn4YUEuI`,
         frameMaterial: '铝',
@@ -6062,10 +6112,10 @@ const iPhone17 = [
         active: true,
         release: "2025-09-10",
         models: [
-            // {name: "A3083", type: ""},
-            // {name: "A3292", type: ""},
-            // {name: "A3293", type: ""},
-            // {name: "A3294", type: ""},
+            {name: "A3256", type: ""},
+            {name: "A3522", type: ""},
+            {name: "A3523", type: ""},
+            {name: "A3524", type: ""},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 150.0,
@@ -6206,7 +6256,8 @@ const iPhone17 = [
     {
         name: "iPhone 17 Pro Max",
         name_short: "17 Pro Max",
-        hardwareName: '',
+        name_mini: "17PM",
+        hardwareName: 'iPhone18,2',
         isTitleOnly: false,
         pic: `${BASE_URL}Fq7NCSiwToJJRsba1EKdGn4YUEuI`,
         frameMaterial: '铝',
@@ -6215,10 +6266,10 @@ const iPhone17 = [
         active: true,
         release: "2025-09-10",
         models: [
-            // {name: "A3084", type: ""},
-            // {name: "A3295", type: ""},
-            // {name: "A3296", type: ""},
-            // {name: "A3297", type: ""},
+            {name: "A3257", type: ""},
+            {name: "A3525", type: ""},
+            {name: "A3526", type: ""},
+            {name: "A3527", type: ""},
         ],
         network: ["5G", "4G", "LTE", "3G", "2G"],
         height: 163.4,

@@ -38,7 +38,7 @@
             </div>
             <div class="author-info">
                 <p>主页：<a class="link" target="_blank" href="http://kylebing.cn/">kylebing.cn</a></p>
-                <p>更新：<a class="link" target="_blank" href="https://en.wikipedia.org/wiki/IPhone">{{dateLastUpdate}}</a></p>
+                <p>更新：<a class="link" target="_blank" href="https://en.wikipedia.org/wiki/List_of_iPhone_models">{{dateLastUpdate}}</a></p>
                 <p>分享：<span @click="toggleShare">点击扫一扫</span></p>
             </div>
         </div>

@@ -4,10 +4,10 @@
         <div class="iphone-tag-list" >
            <div v-for="(iPhoneGroup, index) in iPhoneSeries" :key="index">
                <div :class="['iphone-tag', {active: selectedNames.includes(item.name)}, {'is-new': item.isNew}]"
-                    v-for="item in iPhoneGroup.toReversed()" :key="item.name_short"
+                    v-for="item in iPhoneGroup.toReversed()" :key="item.name_mini"
                     @click="filterTagToggle(item.name)"
                >
-                   <div class="name">{{ item.name_short }}</div>
+                   <div class="name">{{ item.name_mini }}</div>
                    <div class="year">{{ item.release.substring(0, 4) }}</div>
                </div>
            </div>
@@ -15,7 +15,7 @@
         <div class="view-3d-button" v-if="selectedNames.length > 0" @click="showModelViewer">
             3D 尺寸对比
         </div>
-        <ModelViewer 
+        <ModelViewer
             v-if="showViewer"
             :show="showViewer"
             :model="selectedModel"
@@ -58,7 +58,7 @@ export default {
             return null;
         },
         selectedModels() {
-            return this.selectedNames.map(name => 
+            return this.selectedNames.map(name =>
                 this.iPhonesOrigin.find(iphone => iphone.name === name)
             ).filter(Boolean);
         }
@@ -120,6 +120,10 @@ export default {
         flex-flow: row wrap;
         padding: 10px;
         .iphone-tag{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
             min-width: 50px;
             border: 1px solid $color-border;
             font-family: "Galvji", sans-serif;
@@ -136,12 +140,13 @@ export default {
             .name{
                 line-height: 1.3;
                 font-size: 13px;
+                margin-right: 10px;
                 color: $text-main;
             }
             .year{
                 line-height: 1;
                 color: $text-comment;
-                font-size: 8px;
+                font-size: 10px;
             }
             &:hover{
                 background-color: $bg-highlight;
