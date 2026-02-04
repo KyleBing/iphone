@@ -5546,7 +5546,7 @@ const iPhone16 = [
     {
         name: "iPhone 16 Pro",
         name_short: "16 Pro",
-        name_mini: "16PR",
+        name_mini: "16P",
         hardwareName: 'iPhone17,1',
         isTitleOnly: false,
         pic: `${BASE_URL}FrRL4rMpmwRvyLELv6FTMcFV7A_d`,
