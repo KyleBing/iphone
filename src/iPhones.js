@@ -891,7 +891,7 @@ const iPhone6 = [
     {
         name: "iPhone 6 plus",
         name_short: "6 plus",
-        name_mini: "6P",
+        name_mini: "6+",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}FsqnUTWUlyJVWwpdKVRMVsm9GXdV`,
@@ -1105,7 +1105,7 @@ const iPhone6s = [
     {
         name: "iPhone 6s plus",
         name_short: "6s plus",
-        name_mini: "6SP",
+        name_mini: "6S+",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}FvaC92CxARf03bidtr-mlfJ0DM7v`,
@@ -1649,7 +1649,7 @@ const iPhone7 = [
     {
         name: "iPhone 7 plus",
         name_short: "7 plus",
-        name_mini: "7P",
+        name_mini: "7+",
         hardwareName: '',
         isTitleOnly: false,
         pic: `${BASE_URL}Fn4d0UMcGCQSWZ_cSOr8gtEFF1FS`,
@@ -1881,7 +1881,7 @@ const iPhone8 = [
     {
         name: "iPhone 8 Plus",
         name_short: "8 Plus",
-        name_mini: "8P",
+        name_mini: "8+",
         hardwareName: 'iPhone10,2 iPhone10,5',
         isTitleOnly: false,
         pic: `${BASE_URL}Fl0DhgKCAwsZLVmZuFBG4WuP0ntc`,
@@ -4141,7 +4141,7 @@ const iPhone14 = [
     {
         name: "iPhone 14 Plus",
         name_short: "14 Plus",
-        name_mini: "14P",
+        name_mini: "14+",
         hardwareName: 'iPhone14,8',
         isTitleOnly: false,
         pic: `${BASE_URL}FpZNenwa7MlTI4ytGQzPZ1BHc2EB`,
@@ -4722,7 +4722,7 @@ const iPhone15 = [
     {
         name: "iPhone 15 Plus",
         name_short: "15 Plus",
-        name_mini: "15P",
+        name_mini: "15+",
         hardwareName: 'iPhone15,5',
         isTitleOnly: false,
         pic: `${BASE_URL}Fipw4PWx72ys9GXzxOZHGanSBqu2`,
@@ -5416,7 +5416,7 @@ const iPhone16 = [
     {
         name: "iPhone 16 Plus",
         name_short: "16 Plus",
-        name_mini: "16P",
+        name_mini: "16+",
         hardwareName: 'iPhone17,4',
         isTitleOnly: false,
         pic: `${BASE_URL}FneRdvOBuzynWMU6rXJA_eZxMyuW`,
