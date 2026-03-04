@@ -5855,6 +5855,119 @@ const iPhone16 = [
 
 const iPhone17 = [
     {
+        name: "iPhone 17e",
+        name_short: "17e",
+        name_mini: "17e",
+        hardwareName: 'iPhone18,5',
+        isTitleOnly: false,
+        pic: `${BASE_URL}FpXk5KKH-APFPWWr3e4dVgICFY1W`,
+        frameMaterial: '铝',
+        slogan: "",
+        isNew: true,
+        active: true,
+        release: "2026-03-11",
+        models: [
+            {name: "A3575", type: ""},
+            {name: "A3634", type: ""},
+            {name: "A3635", type: ""},
+        ],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 146.7,
+        width: 71.5,
+        thickness: 7.8,
+        weight: 172,
+        os: {
+            init: "iOS 26.3",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A19',
+            rate: '4.26',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 4
+        },
+        sim: [
+            {name: '国内', type: '双卡双待'},
+        ],
+        geekbenchScore: {
+            single: 0,
+            multi: 0
+        },
+        memory: [
+            {size: "8", type: "LPDDR5"}
+        ],
+        storage: ["256", "512"],
+        battery: [
+            {name: '', mah: '4005', wh: ''},
+        ],
+        port: 'USB-C',
+        screen: {
+            brightness: '800~1200',
+            size: "6.1",
+            type: 'XDR OLED',
+            refreshRate: "60",
+            width: 1170,
+            height: 2532,
+            density: "460",
+            touch3D: false,
+            hdr: 'HDR10',
+        },
+        cameras: {
+            type: '1',
+            front: {
+                name: '默认',
+                model: '',
+                aperture: 'ƒ/1.9',
+                focal: '20mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '4k', fps: [24, 25, 30, 60]},
+                    {size: '1080p', fps: [25, 30, 60]},
+                ]
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: '48MP Fusion',
+                    aperture: 'ƒ/1.6',
+                    focal: '26mm',
+                    pixelCount: '4800万',
+                    zoomRate: '1x、2x',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [25, 30, 60, 120, 240]},
+                    ]
+                },
+            ]
+        },
+        colors: [
+            {name: '白色', color: '#FDFDFD'},
+            {name: '黑色', color: '#1d1d1f'},
+            {name: '柔粉色', color: '#e8b4bc'},
+        ],
+        charge: [
+            {name: '充电口', power: '30w'},
+            {name: 'PD', power: '30w'},
+            {name: 'MagSafe', power: '25w'},
+        ],
+        unlockMethod: ['面容解锁'],
+        applePay: false,
+        connectivity: ["WiFi6", "5G", "4G", "蓝牙5.3", "2G", "NFC"],
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,
+            timeHold: 30
+        },
+        price: "599",
+    },
+    {
         name: "iPhone 17",
         name_short: "17",
         name_mini: "17",
