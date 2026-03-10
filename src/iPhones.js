@@ -5198,8 +5198,8 @@ const iPhone16 = [
             {name: '国内', type: '双卡双待'},
         ],
         geekbenchScore: {
-            single: 0,
-            multi: 0
+            single: 3242,
+            multi: 7979
         },
         memory: [
             {size: "8", type: "LPDDR5"}
@@ -6008,8 +6008,8 @@ const iPhone17 = [
             {name: '国内', type: '双卡双待'},
         ],
         geekbenchScore: {
-            single: 0,
-            multi: 0
+            single: 3626,
+            multi: 9249
         },
         memory: [
             {size: "8", type: "LPDDR5X"}
@@ -6138,8 +6138,8 @@ const iPhone17 = [
             {name: '国内', type: '双eSim'},
         ],
         geekbenchScore: {
-            single: 0,
-            multi: 0
+            single: 3677,
+            multi: 9413
         },
         memory: [
             {size: "12", type: "LPDDR5X"}
@@ -6253,8 +6253,8 @@ const iPhone17 = [
             {name: '国内', type: '双卡双待'},
         ],
         geekbenchScore: {
-            single: 0,
-            multi: 0
+            single: 3778,
+            multi: 9805
         },
         memory: [
             {size: "12", type: "LPDDR5X"}
@@ -6407,8 +6407,8 @@ const iPhone17 = [
             {name: '国内', type: '双卡双待'},
         ],
         geekbenchScore: {
-            single: 0,
-            multi: 0
+            single: 3792,
+            multi: 9836
         },
         memory: [
             {size: "12", type: "LPDDR5X"}

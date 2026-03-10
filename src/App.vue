@@ -4,17 +4,17 @@
 
         <FilterList @FlipPenal="flipPanel" :iPhonesOrigin="iPhonesOrigin" @updateShowingDevices="updateShowingDevices"/>
 
-        <SwitchButton @click="flipPanel" v-if="!isDocationShowed"/>
+        <SwitchButton @click="flipPanel" v-if="!isDonationShowed"/>
 
         <transition
             enter-active-class="animate__animated animate__slideInLeft"
             leave-active-class="animate__animated animate__slideOutRight animate__fast"
             appear-active-class=""
         >
-            <Donor @FlipPenal="flipPanel" v-if="isDocationShowed"/>
+            <Donor @FlipPenal="flipPanel" v-if="isDonationShowed"/>
         </transition>
 
-        <SwitchButton  @click="flipPanel" v-if="isDocationShowed"/>
+        <SwitchButton  @click="flipPanel" v-if="isDonationShowed"/>
 
 <!--        <Opening/>-->
 
@@ -250,7 +250,7 @@ export default {
             // 浏览器参数
             portraitMode: false,
             mobileMode: false,
-            latesOS: '最新',
+            latestOS: '最新',
             iPhones: iPhones,
             iPhoneSeries: iPhoneSeries,
             iPhonesOrigin: iPhones,
@@ -275,7 +275,7 @@ export default {
             linkAddress: 'http://kylebing.cn/tools/iphone/',
             linkQQ: 'https://jq.qq.com/?_wv=1027&k=Z8E0HrWA',
 
-            isDocationShowed: false,
+            isDonationShowed: false,
         }
     },
     mounted() {
@@ -305,7 +305,7 @@ export default {
         ...mapMutations(['SET_INSETS']),
         flipPanel(){
             console.log('FlipPenal')
-            this.isDocationShowed = !this.isDocationShowed
+            this.isDonationShowed = !this.isDonationShowed
         },
         toggleShare() {
             this.isShareShowed = !this.isShareShowed
