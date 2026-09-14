@@ -5863,7 +5863,7 @@ const iPhone17 = [
         pic: `${BASE_URL}FpXk5KKH-APFPWWr3e4dVgICFY1W`,
         frameMaterial: '铝',
         slogan: "",
-        isNew: true,
+        isNew: false,
         active: true,
         release: "2026-03-11",
         models: [
@@ -5976,7 +5976,7 @@ const iPhone17 = [
         pic: `${BASE_URL}FgjvYxpd9qSypPeYn9t5oaAClQwX`,
         frameMaterial: '铝',
         slogan: "",
-        isNew: true,
+        isNew: false, // 已被 18 Pro 系列取代新品标记
         active: true,
         release: "2025-09-10",
         models: [
@@ -6106,7 +6106,7 @@ const iPhone17 = [
         pic: `${BASE_URL}Foqnm7oXdt0ZFV7hRFF_eVjxjVBz`,
         frameMaterial: '钛',
         slogan: "The thinnest iPhone ever. With the power of pro inside.",
-        isNew: true,
+        isNew: false,
         active: true,
         release: "2025-09-10",
         models: [
@@ -6221,7 +6221,7 @@ const iPhone17 = [
         pic: `${BASE_URL}Fq7NCSiwToJJRsba1EKdGn4YUEuI`,
         frameMaterial: '铝',
         slogan: "",
-        isNew: true,
+        isNew: false,
         active: true,
         release: "2025-09-10",
         models: [
@@ -6375,7 +6375,7 @@ const iPhone17 = [
         pic: `${BASE_URL}Fq7NCSiwToJJRsba1EKdGn4YUEuI`,
         frameMaterial: '铝',
         slogan: "",
-        isNew: true,
+        isNew: false,
         active: true,
         release: "2025-09-10",
         models: [
@@ -6522,6 +6522,436 @@ const iPhone17 = [
     }
 ]
 
+// iPhone 18 系列（2026.09：Pro / Pro Max / Duo）
+const iPhone18 = [
+    {
+        name: "iPhone Duo",
+        name_short: "Duo",
+        name_mini: "Duo",
+        hardwareName: 'iPhone19,3',
+        isTitleOnly: false,
+        // Duo 产品图（七牛样式 thumbnail_1000px）
+        pic: 'http://diary-container.kylebing.cn/Fs6twrw3oGUTewsveX64ljxdo_xP-thumbnail_1000px',
+        frameMaterial: '钛',
+        slogan: "The largest iPhone display ever. In a thin, foldable design.",
+        isNew: true,
+        active: true,
+        release: "2026-10-23",
+        models: [],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        // 合盖尺寸；展开 117.8 × 164.6 × 5.2
+        height: 117.8,
+        width: 84.1,
+        thickness: 11.3,
+        weight: 254,
+        os: {
+            init: "iOS 27",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A20 Pro',
+            rate: '4.5',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 7
+        },
+        sim: [
+            {name: '全球', type: '双eSim'},
+        ],
+        geekbenchScore: {
+            single: 0,
+            multi: 0
+        },
+        memory: [
+            {size: "12", type: "LPDDR5X"}
+        ],
+        storage: ["256", "512", "1024", "2048"],
+        battery: [
+            {name: '双电芯', mah: '5800', wh: ''},
+        ],
+        port: 'USB-C 3.1 10Gb/s',
+        screen: {
+            brightness: '1000~3000',
+            size: "7.6",
+            type: 'XDR OLED 折叠 / 外屏 5.4',
+            refreshRate: "1 ~ 120", // hz
+            width: 1878,
+            height: 2670,
+            density: "430",
+            touch3D: false,
+            hdr: 'HDR',
+        },
+        cameras: {
+            type: '2-vertical-simple',
+            front: {
+                name: '默认',
+                model: 'Center Stage',
+                aperture: 'ƒ/2.2',
+                focal: '23mm',
+                pixelCount: '1200万',
+                zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '4k', fps: [24, 25, 30, 60]},
+                    {size: '1080p', fps: [25, 30, 60]},
+                ]
+            },
+            back: [
+                {
+                    name: '默认',
+                    model: '48MP Fusion',
+                    aperture: 'ƒ/1.6',
+                    focal: '26mm',
+                    pixelCount: '4800万',
+                    zoomRate: 'x2 光学变焦',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60]},
+                        {size: '1080p', fps: [25, 30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '广角',
+                    model: '48MP Fusion',
+                    aperture: 'ƒ/2.2',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '4800万',
+                    zoomRate: '0.5',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+            ]
+        },
+        colors: [
+            {name: '星空白', color: '#f7f5f2'},
+            {name: '夜空黑', color: '#1c1c1e'},
+        ],
+        charge: [
+            {name: '充电口', power: '60w'},
+            {name: 'PD', power: '60w'},
+            {name: 'MagSafe', power: '25w'},
+        ],
+        unlockMethod: ['面容解锁'],
+        applePay: false,
+        connectivity: ["WiFi7", "5G", "4G", "UWB", "蓝牙6", "Thread", "2G", "NFC"],
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
+        price: "1999",
+    },
+    {
+        name: "iPhone 18 Pro",
+        name_short: "18 Pro",
+        name_mini: "18P",
+        hardwareName: 'iPhone19,1',
+        isTitleOnly: false,
+        // 18 Pro 产品图（七牛样式 thumbnail_1000px）
+        pic: 'http://diary-container.kylebing.cn/Ft1h_F8XNw9dK60bBnyohCZ_S9cq-thumbnail_1000px',
+        frameMaterial: '铝',
+        slogan: "",
+        isNew: true,
+        active: true,
+        release: "2026-09-18",
+        models: [],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 150.0,
+        width: 71.9,
+        thickness: 8.75,
+        weight: 211,
+        os: {
+            init: "iOS 27",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A20 Pro',
+            rate: '4.5',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 7
+        },
+        sim: [
+            {name: '国内', type: '双卡双待'},
+        ],
+        geekbenchScore: {
+            single: 0,
+            multi: 0
+        },
+        memory: [
+            {size: "12", type: "LPDDR5X"}
+        ],
+        storage: ["256", "512", "1024", "2048"],
+        battery: [
+            {name: '非eSim', mah: '4056', wh: ''},
+            {name: 'eSim', mah: '4288', wh: ''},
+        ],
+        port: 'USB-C 3.1 10Gb/s',
+        screen: {
+            brightness: '1000~3000',
+            size: "6.3",
+            type: 'XDR OLED ProMotion',
+            refreshRate: "1 ~ 120", // hz
+            width: 1206,
+            height: 2622,
+            density: "460",
+            touch3D: false,
+            hdr: 'HDR',
+        },
+        cameras: {
+            type: '3-radar-15',
+            front: {
+                name: '默认',
+                model: '',
+                aperture: 'ƒ/1.9',
+                focal: '23mm',
+                pixelCount: '1800万',
+                zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '4k', fps: [24, 30, 60]},
+                    {size: '1080p', fps: [30, 60, 120]},
+                ]
+            },
+            back: [ // 次序位置特定，会影响镜头布局
+                {
+                    name: '默认',
+                    model: '48MP Fusion 可变光圈',
+                    aperture: 'ƒ/1.48–ƒ/4',
+                    focal: '24mm',
+                    pixelCount: '4800万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60, 120]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                    ]
+                },
+                {
+                    name: '远焦',
+                    model: '',
+                    aperture: 'ƒ/2.8',
+                    focal: '120mm',
+                    angel: '',
+                    pixelCount: '4800万',
+                    zoomRate: 'x8 光学变焦',
+                    hdr: '10 bit HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60, 120]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '广角',
+                    model: '1.4μm',
+                    aperture: 'ƒ/2.2',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '4800万',
+                    zoomRate: '0.5',
+                    hdr: '10 bit HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60, 120]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '雷达',
+                    model: '3D LiDAR scanner',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: '',
+                    hdr: false,
+                    dimension: []
+                },
+            ]
+        },
+        colors: [
+            {name: '黑色', color: '#1d1d1f'},
+            {name: '银色', color: '#f5f5f5'},
+            {name: '冰川色', color: '#c5d8e8'},
+            {name: '勃艮第酒红', color: '#6b2d3c'},
+        ],
+        charge: [
+            {name: '充电口', power: '60w'},
+            {name: 'PD', power: '60w'},
+            {name: 'MagSafe', power: '25w'},
+        ],
+        unlockMethod: ['面容解锁'],
+        applePay: false,
+        connectivity: ["WiFi7", "5G", "4G", "UWB", "蓝牙6", "Thread", "2G", "NFC"],
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
+        price: "1199",
+    },
+    {
+        name: "iPhone 18 Pro Max",
+        name_short: "18 Pro Max",
+        name_mini: "18PM",
+        hardwareName: 'iPhone19,2',
+        isTitleOnly: false,
+        // 暂与 18 Pro 同图（七牛样式 thumbnail_1000px）
+        pic: 'http://diary-container.kylebing.cn/Ft1h_F8XNw9dK60bBnyohCZ_S9cq-thumbnail_1000px',
+        frameMaterial: '铝',
+        slogan: "",
+        isNew: true,
+        active: true,
+        release: "2026-09-18",
+        models: [],
+        network: ["5G", "4G", "LTE", "3G", "2G"],
+        height: 163.4,
+        width: 78,
+        thickness: 8.75,
+        weight: 249,
+        os: {
+            init: "iOS 27",
+            last: lastOS
+        },
+        cpu: {
+            icon: '',
+            model: 'A20 Pro',
+            rate: '4.5',
+            core: 6
+        },
+        gpu: {
+            model: "Apple",
+            core: 7
+        },
+        sim: [
+            {name: '国内', type: '双卡双待'},
+        ],
+        geekbenchScore: {
+            single: 0,
+            multi: 0
+        },
+        memory: [
+            {size: "12", type: "LPDDR5X"}
+        ],
+        storage: ["256", "512", "1024", "2048"],
+        battery: [
+            {name: '非eSim', mah: '5391', wh: ''},
+            {name: 'eSim', mah: '5567', wh: ''},
+        ],
+        port: 'USB-C 3.1 10Gb/s',
+        screen: {
+            brightness: '1000~3000',
+            size: "6.9",
+            type: 'XDR OLED ProMotion',
+            refreshRate: "1 ~ 120", // hz
+            width: 1320,
+            height: 2868,
+            density: "460",
+            touch3D: false,
+            hdr: 'HDR',
+        },
+        cameras: {
+            type: '3-radar-15',
+            front: {
+                name: '默认',
+                model: '',
+                aperture: 'ƒ/1.9',
+                focal: '23mm',
+                pixelCount: '1800万',
+                zoomRate: '',
+                hdr: 'HDR',
+                dimension: [
+                    {size: '4k', fps: [24, 30, 60]},
+                    {size: '1080p', fps: [30, 60, 120]},
+                ]
+            },
+            back: [ // 次序位置特定，会影响镜头布局
+                {
+                    name: '默认',
+                    model: '48MP Fusion 可变光圈',
+                    aperture: 'ƒ/1.48–ƒ/4',
+                    focal: '24mm',
+                    pixelCount: '4800万',
+                    zoomRate: '',
+                    hdr: 'HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 30, 60, 120]},
+                        {size: '1080p', fps: [30, 60, 120]},
+                    ]
+                },
+                {
+                    name: '远焦',
+                    model: '',
+                    aperture: 'ƒ/2.8',
+                    focal: '120mm',
+                    angel: '',
+                    pixelCount: '4800万',
+                    zoomRate: 'x8 光学变焦',
+                    hdr: '10 bit HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60, 120]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '广角',
+                    model: '1.4μm',
+                    aperture: 'ƒ/2.2',
+                    focal: '13mm',
+                    angel: '120',
+                    pixelCount: '4800万',
+                    zoomRate: 'x0.5',
+                    hdr: '10 bit HDR',
+                    dimension: [
+                        {size: '4k', fps: [24, 25, 30, 60, 120]},
+                        {size: '1080p', fps: [30, 60, 120, 240]},
+                    ]
+                },
+                {
+                    name: '雷达',
+                    model: '3D LiDAR scanner',
+                    aperture: '',
+                    focal: '',
+                    angel: '',
+                    pixelCount: '',
+                    zoomRate: '',
+                    hdr: false,
+                    dimension: []
+                },
+            ]
+        },
+        colors: [
+            {name: '黑色', color: '#1d1d1f'},
+            {name: '银色', color: '#f5f5f5'},
+            {name: '冰川色', color: '#c5d8e8'},
+            {name: '勃艮第酒红', color: '#6b2d3c'},
+        ],
+        charge: [
+            {name: '充电口', power: '60w'},
+            {name: 'PD', power: '60w'},
+            {name: 'MagSafe', power: '25w'},
+        ],
+        unlockMethod: ['面容解锁'],
+        applePay: false,
+        connectivity: ["WiFi7", "5G", "4G", "UWB", "蓝牙6", "Thread", "2G", "NFC"],
+        waterResistant: {
+            value: 'IP68',
+            waterDepth: 6,  // 深度 m
+            timeHold: 30 // 时长 min
+        },
+        price: "1299",
+    }
+]
+
 const iPhoneSeries = [
     iPhone,
     iPhone3,
@@ -6540,6 +6970,7 @@ const iPhoneSeries = [
     iPhone15,
     iPhone16,
     iPhone17,
+    iPhone18,
 ].reverse()
 
 const iPhones = iPhoneSeries.map(group => {

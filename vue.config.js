@@ -10,7 +10,7 @@ module.exports = {
         port: 1024,
         proxy: {
             '/portal': {
-                target: 'http://kylebing.cn/portal',
+                target: 'https://kylebing.cn/portal',
                 changeOrigin: true,
                 pathRewrite: {'': ''},
             },
